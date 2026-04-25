@@ -151,3 +151,27 @@ Det här projektet är lika mycket en portfolio som det är en dokumentation av 
 Det här är början.  
 En början jag är stolt över, för den är min – och den är på väg åt rätt håll.  
 Jag bygger inte bara en portfolio. Jag bygger min kompetens, mitt uttryck och min framtid.
+
+---
+
+---
+
+---
+
+README – anteckningar för nästa session
+
+Artikel 1 (About me) är klar och uppdelad i stycken.
+
+Artikel 2 ska handla om My skills (konkret, kort, lätt att skumma).
+
+Artikel 3 ska handla om What drives me / Values / Personality (reflektion, utveckling, kultur).
+
+HTML först → CSS senare.
+
+Fortsätt med artikel 2 nästa gång.
+
+---
+
+---
+
+---
