@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jill med J</title>
+</head>
+
+<!--id används för stora sektioner, navigationsmål, unika delar av sidan -->
+<!--class används för layout (grid, flex, container), komponenter (cards, knappar, artiklar), styling (färg, spacing, typografi), grupper (nav-links, footer-links)-->
+
+<!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+<body>
+
+     <nav>
+
+
+        <div class="nav-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar  -->
+
+            <!-- img = min logga-->
+            <img src="images/logga.png" alt="Jills logga">
+            <!-- img = min underskrift -->
+            <img src="images/underskrift.png" alt="Jills underskrift">
+
+        </div>
+
+
+        <div class="nav-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar  -->
+
+            <a href="#projects">Se mina projekt</a> <!-- CTA scrolla/hoppa (kontaktformuläret längst ned på sidan innan footern (behöver id + #)--><!-- # är typ lika med id men! egentligen refererar det till ett id, med # i en länk betyder det att länken pekar på ett element med ett id som heter det som står efter # -->
+
+
+            <a href="#contact">Contact me</a><!-- CTA scrolla/hoppa (kontaktformuläret längst ned på sidan innan footern (behöver id + #)-->
+            <!-- # är typ lika med id men! egentligen refererar det till ett id, med # i en länk betyder det att länken pekar på ett element med ett id som heter det som står efter # -->
+
+            <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a> <!-- CTA- action-- ladda ned = behöver inget id > <!-- # är typ lika med id men! egentligen refererar det till ett id, med # i en länk betyder det att länken pekar på ett element med ett id som heter det som står efter # -->
+            
+        </div>
+       
+
+    </nav>
+
+
+
+<!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->    
+
+
+
+    <header>
+
+        <h1>Jill med J</h1>
+
+    </header>
+
+<!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+    <main>
+
+        <!-- HeroSection to answer the three questions -->
+        <section id="hero"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) -->
+            
+            <h1>Jill med J - Systemutvecklare to be</h1> <!-- answer question who I am (my title/company)-->
+            <p class="tagline">Lärande utvecklare som trivs bäst när idéer får delas.</p> <!-- tagline -->
+
+            <p>Jag lär, bygger och utvecklas inom programmering och systemutveckling — steg för steg, med nyfikenhet, kreativitet och
+            envishet.</p> <!-- answer What I do (vet/kan/förmågor/kunskaper)--> <!--min lärandeidentitet-->
+
+            <p>Jag kombinerar struktur, språkglädje och kod till lösningar som är tydliga, genomtänkta och lätta att använda. Jag trivs
+            i samarbeten där man får tänka högt, bygga tillsammans och lära av varandra.</p> <!-- (answer)How I can help you (syftet med att anställa mig/det jag kan bidraga med/ge/leverera)--> <!--min sociala/värdeidentitet-->
+
+            <a href="#projects" class="cta">Se mina projekt</a>
+
+        </section> 
+
+
+
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    <!-- Scrolla neråt för att se nedan - id tack, javascripthooks om jag senare vill animera någonting-->
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+        <!-- ABOUT / SHOWCASE -->
+        <section id="about"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) -->
+
+            <h1>Me and my doing</h1> <!-- Showing my doings, alternativa rubriker: About me, Who I am, My Story, My Background, This is me --> 
+
+            <article> 
+                <!-- <h2>Who I am/My approach/My story</h2> -->
+            </article>
+            <article>
+                <!-- <h2>My Background/My skills/My process</h2>-->
+            </article>
+            <article>
+                <!-- <h2>What drives me/My values/My personlaity(/The Special about Me)</h2> -->
+            </article>
+
+        </section> <!-- sections ska ha egen rubrik, sections används för innehåll med egen rubrik, en section = eget tema, footer = section men inte en egen innehållssection, ingen rubrik-->
+
+
+
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+
+        <!-- PROJECTS --> <!-- från ovan <a href="#projects">Se mina projekt</a> -->
+        <section id="projects"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) --> 
+
+            <h1>Portfolio</h1> <!-- Syfte: Convince why I am the one for them, alternativa rubriker: My Projects, Selected Work, What I've built, Case Studies, Portfolio -->
+
+            <article>
+
+                <h2>Projektets namn (1)</h2>
+                <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 1 -->
+                <a href="#">Läs mer</a>
+
+            </article> 
+
+            <article>
+
+                <h2>Projektets namn (2)</h2>
+                <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 2 -->
+                <a href="#">Läs mer</a>
+
+            </article> 
+
+            <article >
+                
+                <h2>Projektets namn (3)</h2>
+                <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 3 -->
+                <a href="#">Läs mer</a>
+
+            </article> 
+
+            <article>Se ytterligare projekt som jag gjort/arbetar med</article> <!-- klcikbar -->
+
+        </section>
+
+
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+
+        <section id="contact"> <!-- kontaktformulär --> <!-- från ovan <a href="#contact">Contact me</a>-->
+            
+            <!-- (allmänt kontaktformulär -->
+
+            <!-- (maila mig direkt(förprogrammerat meddelande som skickas iväg när de fyllt i required informations) )mailto‑länk (maila migformulär) -->
+             
+
+            <!--särskild checkbox att fylla i och då visas: typ:  (förprogrammerat meddelande som skickas iväg när de fyllt i required informations) Alternativ 3: Mailto‑länk
+            CTA: “Låt oss samtala” → öppnar mail:
+            
+            html
+            <a href="mailto:jill@example.com">Låt oss samtala</a>
+            De kan skriva:
+            
+            “Hej Jill, kan vi ta ett samtal? Mitt nummer är …”
+            
+            Du bestämmer om och när du ringer. -->
+
+            
+            
+
+        </section>
+
+    </main>
+
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+    <footer>
+
+        <div class="footer-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar -->
+            <!-- img = min logga-->
+            <img src="images/logga.png" alt="Jills logga">
+            <!-- img = min underskrift -->
+            <img src="images/underskrift.png" alt="Jills underskrift">
+            <!-- alternativt img = min underskrift snett palcerat i sidans högra hörn -->
+        </div>
+        
+
+        <div class="footer-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar-->
+            
+            <a href="#projects">Se mina projekt</a>
+            
+            <a href="#contact">Contact me</a>
+            
+            <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a>
+            
+        </div>
+
+
+
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    <!-- Scrolla neråt för att se nedan - id tack-->
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+
+    </footer>
+    
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    <!-- <link scr=".js"> -->
+    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+</body>
+
+</html>
