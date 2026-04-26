@@ -1,0 +1,49 @@
+.SVG för perfekt skalning utan att tappa skärpa
+
+.PNG för bilder med transparant bakgrund för att bilden ska kunna passa mot olika bakgrunder.
+
+⭐ Dina tre filer — och varför de är perfekta tillsammans
+✔️ 1. Frame 1.svg
+Det här är din huvudlogga i SVG‑format.
+
+Skarp i alla storlekar
+
+Perfekt för webben
+
+Liten filstorlek
+
+Oändligt skalbar
+
+Bäst för din portfolio
+
+Det är den du kommer använda i HTML.
+
+✔️ 2. logoBackground.png
+Det här är din logga med bakgrund, som PNG.
+
+Den är bra för:
+
+sociala medier
+
+CV
+
+Word/PDF
+
+presentationer
+
+situationer där du vill att loggan ska se exakt likadan ut överallt
+
+PNG är en “platt” bild — den ändras inte beroende på bakgrund.
+
+✔️ 3. logoNoBackground.png
+Det här är din logga utan bakgrund, som PNG.
+
+Den är bra när du vill:
+
+lägga loggan ovanpå en annan färg
+
+använda den i dokument där du vill att bakgrunden ska synas igenom
+
+ha en snabb, enkel bildfil utan SVG‑kod
+
+PNG med transparent bakgrund är superanvändbart i många sammanhang.

@@ -119,6 +119,7 @@ Den här listan kommer att förändras, växa och ibland krympa – precis som e
 Här kommer jag lägga in bilder som visar hur projektet utvecklas över tid.
 
 _Plats reserverad för framtida glimtar._
+<img src="Images/PNG/logoNoBackground.pnglogo.png" alt="Min logga">
 
 ---
 
