@@ -1,0 +1,72 @@
+/* =========================================
+   SPACING.CSS
+   - Globala spacing-variabler
+   - Marginaler och padding-regler
+   - Vertikal rytm
+
+      ⭐ Varför detta är rätt 
+      ✔ Sektioner får luft automatiskt Du slipper lägga margin i varje komponent. 
+      ✔ Rubriker får luft neråt h2+* är en smart CSS‑selektor som betyder: “Ge margin-top till det första elementet efter en h2”. 
+      ✔ Text blir luftig och lättläst p+p ger luft mellan stycken. 
+      ✔ Listor får luft från text p+ul är en vanlig typografisk regel.
+   ========================================= */
+
+/* =========================================
+      SPACING.CSS
+      ========================================= */
+
+/* --- Globala spacing-variabler -------------------- */
+
+
+
+
+
+/* --- Standard-marginaler -------------------------- */
+
+
+
+
+
+
+/* --- Standard-padding ----------------------------- */
+
+
+
+
+
+/* --- Vertikal rytm -------------------------------- */
+
+/* =========================================
+         SPACING.CSS – GLOBALA AVSTÅND
+         ========================================= */
+
+/* Standardavstånd mellan sektioner */
+/* section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+} */
+
+/* Avstånd mellan rubrik och innehåll */
+/* h2+* {
+    margin-top: 1rem;
+} */
+
+/* Avstånd mellan stycken */
+/* p+p {
+    margin-top: 1rem;
+} */
+
+/* Avstånd mellan listor och text */
+/* p+ul,
+p+ol {
+    margin-top: 1rem;
+} */
+
+/* Avstånd mellan figure-element */
+/* figure {
+    margin: 0;
+} */
+
+/* figure+figure {
+    margin-top: 1.5rem;
+} */

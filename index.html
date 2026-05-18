@@ -1,302 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jill med J</title>
-</head>
-
-<!--id används för stora sektioner, navigationsmål, unika delar av sidan -->
-<!--class används för layout (grid, flex, container), komponenter (cards, knappar, artiklar), styling (färg, spacing, typografi), grupper (nav-links, footer-links)-->
-
-<!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-<body>
-
-     <nav>
-
-
-        <div class="nav-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar  -->
-            
-            <img src="Images/SVG/logo.svg" alt="Min logga">
-            
-            
-            <img src="Images/PNG/signature.png" alt="Min underskrift">
-
-        </div>
-
-
-        <div class="nav-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar  -->
-
-            <a href="#projects">Se mina projekt</a> <!-- CTA scrolla/hoppa (kontaktformuläret längst ned på sidan innan footern (behöver id + #)--><!-- # är typ lika med id men! egentligen refererar det till ett id, med # i en länk betyder det att länken pekar på ett element med ett id som heter det som står efter # -->
-
-
-            <a href="#contact">Contact me</a><!-- CTA scrolla/hoppa (kontaktformuläret längst ned på sidan innan footern (behöver id + #)-->
-            <!-- # är typ lika med id men! egentligen refererar det till ett id, med # i en länk betyder det att länken pekar på ett element med ett id som heter det som står efter # -->
-
-            <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a> <!-- CTA- action-- ladda ned = behöver inget id > <!-- # är typ lika med id men! egentligen refererar det till ett id, med # i en länk betyder det att länken pekar på ett element med ett id som heter det som står efter # -->
-            
-        </div>
-       
-
-    </nav>
-
-
-
-<!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->    
-
-
-
-    <header>
-        <img src="Images/SVG/Frame 1.svg" alt="Min logga">
-        <h1>Jill med J</h1>
-
-    </header>
-
-<!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-    <main>
-
-        <!-- HeroSection to answer the three questions -->
-        <section id="hero"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) -->
-            
-            <h1>Jill med J - Systemutvecklare to be</h1> <!-- answer question who I am (my title/company)-->
-
-            <p class="tagline">Lärande utvecklare som trivs bäst när idéer får delas.</p> <!-- tagline -->
-
-            
-            
-            
-            
-            
-            
-            <p>Jag lär mig — och jag älskar det.</p> <!-- answer What I do (vet/kan/förmågor/kunskaper)--> <!--min lärandeidentitet-->
-
-            <p>Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.</p> <!-- (answer)How I can help you (syftet med att anställa mig/det jag kan bidraga med/ge/leverera)--> <!--min sociala/värdeidentitet-->
-
-            <a href="#projects" class="cta">Se mina projekt</a>
-
-        </section> 
-
-
-
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-    <!-- Scrolla neråt för att se nedan - id tack, javascripthooks om jag senare vill animera någonting-->
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-        <!-- ABOUT / SHOWCASE -->
-        <section id="about"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) -->
-
-            <h1>About me</h1> <!-- Showing my doings, alternativa rubriker: About me, Who I am, My Story, My Background, This is me --> 
-
-            <article>
-
-                <p>
-                    Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
-                    nyfikenhet på hur olika områden hänger ihop i olika sammanhang — och har vuxit till en vilja att förstå, bygga och
-                    förbättra digitala lösningar.
-                </p>
-
-                <p>
-                    Jag lär mig genom att göra, testa och tänka högt. Jag uppskattar särskilt när idéer får delas och när man utforskar
-                    tillsammans. För mig är det viktigt att en arbetsplats är en miljö där man trivs, känner sig trygg och kan bidra till en
-                    positiv kultur — gärna med inslag av skratt då och då. Det är i samarbeten jag utvecklas som mest.
-                </p>
-
-                <p>
-                    Språk, kommunikation och struktur är tre av mina starkaste verktyg. Jag tycker om att formulera mig tydligt, skapa
-                    ordning i komplexitet och bygga lösningar som är begripliga både för användare och utvecklare. För mig räcker det inte
-                    att kod fungerar — den ska också vara lätt att förstå.
-                </p>
-
-                <p>
-                    Som person är jag prestigelös, nyfiken och envis på ett konstruktivt sätt. Jag tar mig an problem steg för steg,
-                    reflekterar över vad jag lär mig och letar ständigt efter bättre sätt att arbeta.
-                </p>
-
-                <p>
-                    Min bakgrund som lärare har stärkt mig i att kommunicera, presentera och skapa goda relationer. Jag trivs med att lära
-                    ut, stå inför människor och vara en tydlig och positiv förebild — något jag tar med mig in i utvecklaryrket, både i
-                    samarbeten och i hur jag tänker kring användarupplevelser.
-                </p>
-
-                <p>
-                    Just nu bygger jag min grund inom JavaScript, HTML, CSS och systemutveckling i stort — och jag ser fram emot att
-                    fortsätta växa i rollen. Mitt mål är att bidra i team där man lär av varandra, bygger tillsammans och skapar genomtänkta
-                    och hållbara lösningar.
-                </p>
-
-            </article>
-
-            <article>
-
-                <h2>My skills</h2>
-
-                <p>
-                    Jag har en grund inom C#, programmeringslogik och struktur, och har arbetat med att koppla C# program i Visual Studio
-                    Community till databaser. Jag använder Git och GitHub för versionshantering och har erfarenhet av Autofac för
-                    beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
-                </p>
-
-                <h3>Tekniska färdigheter</h3>
-                
-                <ul>  <!-- ul>li*7 : ) -->
-
-                    <li>C# - programmering, struktur och databaskoppling</li>
-                    <li>HTML - semantisk struktur och tydliga dokument</li>
-                    <li>CSS - layout, typografi och responsiv design</li>
-                    <li>JavaScript - logik och grundläggande DOM förståelse</li>
-                    <li>Git & GitHub - versionshantering och samarbete</li>
-                    <li>Autofac - beroendehantering</li>
-                    <li>Figma - design, strukturering och export av komponenter</li>
-
-                </ul>
-
-                <p>
-                    Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
-                    processer. Mitt fokus ligger på att skriva tydlig kod, skapa struktur och hitta arbetssätt som gör utvecklingen hållbar
-                    och lätt att förstå.
-                </p>
-
-            </article>
-            <article>
-
-                <h2>What drives me</h2>
-
-                <p>
-                    Jag drivs av att bidra till arbetsmiljöer där kommunikation, trygghet och nyfikenhet får ta plats. Jag tror på ett “vi”
-                    i teamet — där alla känner sig välkomna, där det är högt i tak och där man delar kunskap för att växa tillsammans. Jag
-                    är långt ifrån mätt på förståelse och lärande, och jag trivs i miljöer där man får utforska, reflektera och förbättra
-                    både arbetssätt och rutiner. Jag värderar inte bara större förändringar, utan också de små — de som trots sin enkelhet
-                    kan skapa stora effekter och ringar på vattnet. Jag vill bidra till kulturer där struktur, omtanke och utveckling går
-                    hand i hand. En plats där man vill vara och komma tillbaka till.
-                </p>
-
-                <p>
-                    Dessutom har jag ett naturligt starkt intresse av verksamhetsutveckling — särskilt hur reflektion kan användas för att förbättra
-                    arbetssätt, rutiner och samarbete. För mig handlar verksamhetsutveckling inte bara om organisationer på hög nivå, utan
-                    om hur arbete faktiskt fungerar i praktiken: på individnivå, i gruppen och i verksamheten som helhet. Jag tror att även
-                    små förändringar i arbetssätt kan skapa stora effekter i helheten.
-                </p>
-                
-            </article>
-
-        </section> <!-- sections ska ha egen rubrik, sections används för innehåll med egen rubrik, en section = eget tema, footer = section men inte en egen innehållssection, ingen rubrik-->
-
-
-
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-    <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-
-        <!-- PROJECTS --> <!-- från ovan <a href="#projects">Se mina projekt</a> -->
-        <section id="projects"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) --> 
-
-            <h1>Portfolio</h1> <!-- Syfte: Convince why I am the one for them, alternativa rubriker: My Projects, Selected Work, What I've built, Case Studies, Portfolio -->
-
-            <article>
-
-                <h2>Projektets namn (1)</h2>
-                <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 1 -->
-                <a href="#">Läs mer</a>
-
-            </article> 
-
-            <article>
-
-                <h2>Projektets namn (2)</h2>
-                <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 2 -->
-                <a href="#">Läs mer</a>
-
-            </article> 
-
-            <article >
-                
-                <h2>Projektets namn (3)</h2>
-                <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 3 -->
-                <a href="#">Läs mer</a>
-
-            </article> 
-
-            <article>Se ytterligare projekt som jag gjort/arbetar med</article> <!-- klcikbar -->
-
-        </section>
-
-
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-    <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-
-        <section id="contact"> <!-- kontaktformulär --> <!-- från ovan <a href="#contact">Contact me</a>-->
-            
-            <!-- (allmänt kontaktformulär -->
-
-            <!-- (maila mig direkt(förprogrammerat meddelande som skickas iväg när de fyllt i required informations) )mailto‑länk (maila migformulär) -->
-             
-
-            <!--särskild checkbox att fylla i och då visas: typ:  (förprogrammerat meddelande som skickas iväg när de fyllt i required informations) Alternativ 3: Mailto‑länk
-            CTA: “Låt oss samtala” → öppnar mail:
-            
-            html
-            <a href="mailto:jill@example.com">Låt oss samtala</a>
-            De kan skriva:
-            
-            “Hej Jill, kan vi ta ett samtal? Mitt nummer är …”
-            
-            Du bestämmer om och när du ringer. -->
-
-            
-            
-
-        </section>
-
-    </main>
-
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-    <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-    <footer>
-
-        <div class="footer-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar -->
-            <!-- img = min logga-->
-            <img src="Images/SVG/logo.svg" alt="Jills logga">
-            <!-- img = min underskrift -->
-            <img src="Images/PNG/signature.png" alt="Jills underskrift">
-            <!-- alternativt img = min underskrift snett palcerat i sidans högra hörn -->
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 1. RESET (måste alltid komma först) -->
+        <link rel="stylesheet" href="CSS/global-utils/reset.css">
         
+        <!-- 2. DESIGN SYSTEM (globala regler som allt bygger på) -->
+        <link rel="stylesheet" href="CSS/designs/colors.css">
+        <link rel="stylesheet" href="CSS/designs/spacing.css">
+        <link rel="stylesheet" href="CSS/designs/typography.css">
 
-        <div class="footer-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar-->
-            
-            <a href="#projects">Se mina projekt</a>
-            
-            <a href="#contact">Contact me</a>
-            
-            <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a>
-            
-        </div>
+        <!-- 3. UTILITIES (hjälpklasser som används överallt) -->
+        <link rel="stylesheet" href="CSS/global-utils/helpers.css">
+        
+        <!-- layout.css ? -->
+
+        <!-- 4. COMPONENTS (specifika sektioner) -->
+        <link rel="stylesheet" href="CSS/components/nav.css">
+        <link rel="stylesheet" href="CSS/components/hero.css">
+        <link rel="stylesheet" href="CSS/components/projects.css">
+        <link rel="stylesheet" href="CSS/components/cards.css">
+        <link rel="stylesheet" href="CSS/components/tables.css">
+        <link rel="stylesheet" href="CSS/components/forms.css">
+        <link rel="stylesheet" href="CSS/components/footer.css">
+        
+        <!-- 5. DEBUG (sist, så den kan skriva över allt) -->
+        <link rel="stylesheet" href="CSS/global-utils/debug.css">
 
 
+        <title>Jill med J</title>
+    </head>
+
+    <!--id används för stora sektioner, navigationsmål, unika delar av sidan -->
+    <!--class används för layout (grid, flex, container), komponenter (cards, knappar, artiklar), styling (färg, spacing, typografi), grupper (nav-links, footer-links)-->
 
     <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-    <!-- Scrolla neråt för att se nedan - id tack-->
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+    <body class="debug">
+        <nav class="nav-container">
+            <div class="nav-inner-container">
+                <div class="nav-brand"> 
+                    <img src="Images/SVG/logo.svg"alt="Min logga">
+                    <img src="Images/PNG/signature.png" alt="Min underskrift">
+                </div>
+                
+                <ul class="nav-ul">
+                    <li>
+                        <a href="#projects">
+                            <span class="no-break">Se mina projekt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="no-break">Contact me</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cv/JillmedJ-CV.pdf" download>
+                            <span class="no-break">Ladda ned mitt CV</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <main>
+            <section id="hero">
+                <div class="hero-inner-container">
+                    <img src="Images/SVG/logo.svg"  alt="Min logga">
+                    <h1>Jill med J - Systemutvecklare to be</h1>
+                    <p class="tagline">Lärande utvecklare som trivs bäst när idéer får delas.</p>
+                    <p>Jag lär mig — och jag älskar det.</p>
+                    <p>Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.</p>
+                    <a href="#projects" class="cta">Se mina projekt</a>
+                </div>
+            </section> 
 
 
 
-    </footer>
-    
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-    <!-- <link scr=".js"> -->
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-</body>
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <!-- Scrolla neråt för att se nedan - id tack, javascripthooks om jag senare vill animera någonting-->
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <header>
+        
+            <h1>Jill med J</h1>
+        
+        </header>
+
+
+            <!-- ABOUT / SHOWCASE -->
+            <section id="about"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) -->
+
+                <h1>About me</h1> <!-- Showing my doings, alternativa rubriker: About me, Who I am, My Story, My Background, This is me --> 
+
+                <article>
+
+                    <p>
+                        Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
+                        nyfikenhet på hur olika områden hänger ihop i olika sammanhang — och har vuxit till en vilja att förstå, bygga och
+                        förbättra digitala lösningar.
+                    </p>
+
+                    <p>
+                        Jag lär mig genom att göra, testa och tänka högt. Jag uppskattar särskilt när idéer får delas och när man utforskar
+                        tillsammans. För mig är det viktigt att en arbetsplats är en miljö där man trivs, känner sig trygg och kan bidra till en
+                        positiv kultur — gärna med inslag av skratt då och då. Det är i samarbeten jag utvecklas som mest.
+                    </p>
+
+                    <p>
+                        Språk, kommunikation och struktur är tre av mina starkaste verktyg. Jag tycker om att formulera mig tydligt, skapa
+                        ordning i komplexitet och bygga lösningar som är begripliga både för användare och utvecklare. För mig räcker det inte
+                        att kod fungerar — den ska också vara lätt att förstå.
+                    </p>
+
+                    <p>
+                        Som person är jag prestigelös, nyfiken och envis på ett konstruktivt sätt. Jag tar mig an problem steg för steg,
+                        reflekterar över vad jag lär mig och letar ständigt efter bättre sätt att arbeta.
+                    </p>
+
+                    <p>
+                        Min bakgrund som lärare har stärkt mig i att kommunicera, presentera och skapa goda relationer. Jag trivs med att lära
+                        ut, stå inför människor och vara en tydlig och positiv förebild — något jag tar med mig in i utvecklaryrket, både i
+                        samarbeten och i hur jag tänker kring användarupplevelser.
+                    </p>
+
+                    <p>
+                        Just nu bygger jag min grund inom JavaScript, HTML, CSS och systemutveckling i stort — och jag ser fram emot att
+                        fortsätta växa i rollen. Mitt mål är att bidra i team där man lär av varandra, bygger tillsammans och skapar genomtänkta
+                        och hållbara lösningar.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h2>My skills</h2>
+
+                    <p>
+                        Jag har en grund inom C#, programmeringslogik och struktur, och har arbetat med att koppla C# program i Visual Studio
+                        Community till databaser. Jag använder Git och GitHub för versionshantering och har erfarenhet av Autofac för
+                        beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
+                    </p>
+
+                    <h3>Tekniska färdigheter</h3>
+                    
+                    <ul>  <!-- ul>li*7 : ) -->
+
+                        <li>C# - programmering, struktur och databaskoppling</li>
+                        <li>HTML - semantisk struktur och tydliga dokument</li>
+                        <li>CSS - layout, typografi och responsiv design</li>
+                        <li>JavaScript - logik och grundläggande DOM förståelse</li>
+                        <li>Git & GitHub - versionshantering och samarbete</li>
+                        <li>Autofac - beroendehantering</li>
+                        <li>Figma - design, strukturering och export av komponenter</li>
+
+                    </ul>
+
+                    <p>
+                        Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
+                        processer. Mitt fokus ligger på att skriva tydlig kod, skapa struktur och hitta arbetssätt som gör utvecklingen hållbar
+                        och lätt att förstå.
+                    </p>
+
+                </article>
+                <article>
+
+                    <h2>What drives me</h2>
+
+                    <p>
+                        Jag drivs av att bidra till arbetsmiljöer där kommunikation, trygghet och nyfikenhet får ta plats. Jag tror på ett “vi”
+                        i teamet — där alla känner sig välkomna, där det är högt i tak och där man delar kunskap för att växa tillsammans. Jag
+                        är långt ifrån mätt på förståelse och lärande, och jag trivs i miljöer där man får utforska, reflektera och förbättra
+                        både arbetssätt och rutiner. Jag värderar inte bara större förändringar, utan också de små — de som trots sin enkelhet
+                        kan skapa stora effekter och ringar på vattnet. Jag vill bidra till kulturer där struktur, omtanke och utveckling går
+                        hand i hand. En plats där man vill vara och komma tillbaka till.
+                    </p>
+
+                    <p>
+                        Dessutom har jag ett naturligt starkt intresse av verksamhetsutveckling — särskilt hur reflektion kan användas för att förbättra
+                        arbetssätt, rutiner och samarbete. För mig handlar verksamhetsutveckling inte bara om organisationer på hög nivå, utan
+                        om hur arbete faktiskt fungerar i praktiken: på individnivå, i gruppen och i verksamheten som helhet. Jag tror att även
+                        små förändringar i arbetssätt kan skapa stora effekter i helheten.
+                    </p>
+                    
+                </article>
+
+            </section> <!-- sections ska ha egen rubrik, sections används för innehåll med egen rubrik, en section = eget tema, footer = section men inte en egen innehållssection, ingen rubrik-->
+
+
+
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+
+
+        <!-- utklippt medan ordnar med grid i projects-sektionen-->
+
+        <h1>Portfolio</h1>
+        <!-- Syfte: Convince why I am the one for them, alternativa rubriker: My Projects, Selected Work, What I've built, Case Studies, Portfolio -->
+
+            <!-- PROJECTS --> <!-- från ovan <a href="#projects">Se mina projekt</a> -->
+            <section class="grid-container" id="projects"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) --> 
+
+                
+
+                <article class="item">
+
+                    <h2>Projektets namn (1)</h2>
+                    <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 1 -->
+                    <a href="#">Läs mer</a>
+
+                </article> 
+
+                <article class="item">
+
+                    <h2>Projektets namn (2)</h2>
+                    <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 2 -->
+                    <a href="#">Läs mer</a>
+
+                </article> 
+
+                <article class="item">
+                    
+                    <h2>Projektets namn (3)</h2>
+                    <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 3 -->
+                    <a href="#">Läs mer</a>
+
+                </article>
+
+            </section>
+           
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+
+            <section id="contact"> <!-- kontaktformulär --> <!-- från ovan <a href="#contact">Contact me</a>-->
+                
+                <!-- (allmänt kontaktformulär -->
+
+                <!-- (maila mig direkt(förprogrammerat meddelande som skickas iväg när de fyllt i required informations) )mailto‑länk (maila migformulär) -->
+                
+
+                <!--särskild checkbox att fylla i och då visas: typ:  (förprogrammerat meddelande som skickas iväg när de fyllt i required informations) Alternativ 3: Mailto‑länk
+                CTA: “Låt oss samtala” → öppnar mail:
+                
+                html
+                <a href="mailto:jill@example.com">Låt oss samtala</a>
+                De kan skriva:
+                
+                “Hej Jill, kan vi ta ett samtal? Mitt nummer är …”
+                
+                Du bestämmer om och när du ringer. -->
+
+                <h2 id="text-box-h2">Kommunicera med mig!</h2>
+
+                <label>Vad vill du förmedla? </label>
+                
+                <input id="text-box">
+                <button id="text-box-submit">Submit</button>
+                <p id="output"> </p>
+
+                
+                
+
+                
+
+            </section>
+
+        </main>
+
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+        <footer>
+
+            <div class="footer-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar -->
+                <!-- img = min logga-->
+                <img src="Images/SVG/logo.svg" alt="Jills logga">
+                <!-- img = min underskrift -->
+                <img src="Images/PNG/signature.png" alt="Jills underskrift">
+                <!-- alternativt img = min underskrift snett palcerat i sidans högra hörn -->
+            </div>
+            
+
+            <div class="footer-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar-->
+                
+                <a href="#projects">Se mina projekt</a>
+                
+                <a href="#contact">Contact me</a>
+                
+                <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a>
+                
+            </div>
+
+
+
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <!-- Scrolla neråt för att se nedan - id tack-->
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+
+
+
+        </footer>
+        
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <script src="index.js"></script>
+        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+    </body>
 
 </html>

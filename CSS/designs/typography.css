@@ -1,0 +1,126 @@
+/* =========================================
+   TYPOGRAFI – GRUNDINSTÄLLNINGAR
+   ========================================= */
+body {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* =========================================
+   RUBRIKER – FONT-FAMILY
+   ========================================= */
+h1,
+h2 {
+    font-family: "Lugrasimo", "Fira Sans", Arial, sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: 600;
+}
+
+/* =========================================
+   RUBRIKSTORLEKAR
+   ========================================= */
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: rgb(150, 16, 145);
+    border: 2px dotted rgb(186, 88, 173);
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgb(208, 29, 202);
+    border: 2px dotted rgb(223, 41, 198);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: rgb(222, 30, 215);
+    border: 2px dotted rgb(223, 41, 198);
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* =========================================
+   BRÖDTEXT
+   ========================================= */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(232, 107, 227);
+    border: 2px dotted rgb(217, 28, 192);
+}
+
+figcaption {
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+/* =========================================
+   LÄNKAR
+   ========================================= */
+a {
+    color: rgb(162, 34, 158);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   IKONER – GLOBALT
+   ========================================= */
+/* 
+   Ikoner följer textens storlek automatiskt.
+   1em = lika stor som texten
+   1.2em = lite större och mer balanserat visuellt
+*/
+.icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+/* =========================================
+   IKONER – SPECIALFALL (valfritt)
+   ========================================= */
+
+/* Navigation: lite mindre ikoner */
+nav .icon {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+/* H1: lite större ikon för att matcha stor rubrik */
+h1 .icon {
+    width: 1.4em;
+    height: 1.4em;
+}

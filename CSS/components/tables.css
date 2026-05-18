@@ -1,0 +1,53 @@
+/* =========================================
+   TABLES.CSS
+
+   /* ⭐ Hur flex och grid passar in i detta Tänk så här: 🟩 Flexbox=layout inuti en rad eller kolumn Flex är bäst när du vill: lägga saker bredvid varandra centrera saker styra ordning låta saker wrap:a skapa knapprader,
+         nav,
+         kort i rad,
+         logga+text Flex är “lokal layout”. 🟦 Grid=layout av hela sektioner Grid är bäst när du vill: skapa kolumnsystem skapa komplexa layouter styra både rader och kolumner göra tidningsliknande layout placera element i ett rutnät Grid är “global layout”. 
+         
+         5) Tabell
+         → vanlig table‑layout
+   ========================================= */
+
+/* --- Tabellens container -------------------------- */
+/* Ex: overflow-x: auto för mobil, max-width */
+
+
+
+/* --- Grundtabell (table) -------------------------- */
+/* Ex: border-collapse, width: 100% */
+
+
+
+/* --- Tabellhuvud (thead, th) ---------------------- */
+/* Ex: bakgrundsfärg, text-align, padding */
+
+
+
+/* --- Tabellrader (tr) ----------------------------- */
+/* Ex: zebra-striping, hover-effekter */
+
+
+
+/* --- Tabellceller (td) ---------------------------- */
+/* Ex: padding, border-bottom */
+
+
+
+/* --- Bilder i tabeller ---------------------------- */
+/* Ex: .animal-icon { width, height, border-radius } */
+
+
+
+/* --- Länkar i tabeller ---------------------------- */
+/* Ex: färg, hover, underline */
+
+
+
+/* --- Responsiva tabeller -------------------------- */
+
+/* Ex: table blir block, rader staplas, labels visas */
+/* @media (max-width: 600px) {
+    
+} */

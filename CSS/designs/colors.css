@@ -1,0 +1,101 @@
+/* =========================================
+   COLORS.CSS - Färgpalett
+   - Färgvariabler (CSS custom properties)
+   - Primära, sekundära, accentfärger
+   - Bakgrundsfärger
+   - Textfärger
+   ========================================= */
+
+
+/* --- Färgvariabler (CSS custom properties) -------- */
+
+
+:root {
+      --color-bg: #f7a3e5; /* --- --color-bg är ett namn, ex. #ffffff är värdet = > sä här används detta: background-color: var(--color-bg); = “Hämta värdet från variabeln --color-bg och använd det här.” = > Det är som att skriva:  background-color: #ffffff; …fast mycket smartare,
+            för du kan ändra färgen på ett ställe och hela sidan uppdateras.-------- */
+      --color-text: #d653ba;
+
+      --brand-pink: #c24aa8;
+      --brand-pink-dark: #a02185;
+
+
+/* --- Basfärger - som används överallt------------------------------ */
+
+      --color-white: #ffffff;
+      --color-black: #1a1a1a;
+
+      /* --- Gråskala -→ -- */
+      /* Gråskala (för subtila element,
+      borders,
+      skuggor, bra för text, borders, bakgrunder) */
+      --gray-100: #f7f7f7;
+      --gray-200: #e5e5e5;
+      --gray-300: #cccccc;
+      --gray-400: #999999;
+      --gray-500: #666666;
+      --gray-600: #333333;
+
+/* --- Primära färger (rosa tema (snällt och glatt)------------------------------- */
+      --pink-100: #f7a3e5;
+      /* ljus bakgrund */
+      --pink-200: #e97ad2;
+      /* mellanrosa */
+      --pink-300: #d653ba;
+      /* textrosa */
+      --pink-400: #c24aa8;
+      /* brand */
+      --pink-500: #a02185;
+      /* mörk brand */
+
+      /* --- Brandfärger ------------------------------ */
+      --brand-bg: var(--pink-100);
+      --brand: var(--pink-400);
+      --brand-dark: var(--pink-500);
+
+
+/* --- Sekundära färger (gult tema) = som kompletterar primär/brand color----------------------------- */
+
+      --yellow-100: #fff7b3;
+      /* ljus, mjuk gul – bakgrund */
+      --yellow-200: #ffe866;
+      /* mellan – highlight */
+      --yellow-300: #ffd633;
+      /* stark – accent */
+      --yellow-400: #ffbf00;
+      /* brand-accent */
+      --yellow-500: #e6a800;
+      /* mörkare accent */
+
+
+
+/* --- Accentfärger --→ en färg som används sparsamt för att dra uppmärksamhet ------------------------------- */
+
+      --accent: var(--yellow-300);
+      --accent: var(--pink-300);
+
+/* --- Bakgrundsfärger ---→ ljus bakgrund, mörk bakgrund, sektion-bakgrund--------------------------- */
+      --bg-main: var(--pink-100);
+      --bg-section: var(--gray-100);
+      --bg-dark: var(--pink-500);
+
+
+
+
+/* --- Textfärger ---→ mörk text, ljus text, rubriktext-------------------------------- */
+      --text-heading: var(--pink-500);
+      --text-body: var(--pink-300);
+      --text-light: var(--color-white);
+
+      --button-color: #f7a3e5;
+
+}
+/* 
+EX
+Du kan styla hero med: css background-color: var(--bg-main);
+color: var(--text-body);
+✔ Du kan styla nav med: css background-color: var(--pink-500);
+color: var(--color-white);
+✔ Du kan styla rubriker med: css color: var(--text-heading);
+✔ Du kan styla CTA-knappar med: css background-color: var(--brand);
+✔ Du kan styla hover med: css background-color: var(--brand-dark);
+✔ Du kan styla sektioner med: css background-color: var(--bg-section); */

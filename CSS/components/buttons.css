@@ -1,0 +1,88 @@
+/* =========================================
+   BUTTONS.CSS
+   ========================================= */
+
+/* -----------------------------------------
+   Grundknappar (default button styles)
+   - Standardutseende för alla knappar
+   - Padding, border-radius, font-weight
+   - Bakgrundsfärg, textfärg
+   - Transitioner
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Hover-effekter
+   - Färgändringar vid hover
+   - Skugga, border, ljusning/mörkning
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Fokus & aktiva tillstånd (focus/active)
+   - focus-visible
+   - tangentbordsfokus
+   - active-state
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Primärknapp (.btn-primary)
+   - Huvudfärg
+   - Hover-färg
+   - Disabled-state
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Sekundärknapp (.btn-secondary)
+   - Alternativ färg
+   - Border-styles
+   - Hover-effekter
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Ikonknappar (.btn-icon)
+   - Knappar som bara innehåller ikon
+   - Storlek, centrering
+   - Hover-effekter
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Små knappar (.btn-small)
+   - Mindre padding
+   - Mindre font-size
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Stora knappar (.btn-large)
+   - Större padding
+   - Större font-size
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Blockknappar (100% bredd)
+   - width: 100%
+   - display: block
+   - Centrering
+   ----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Responsiva knappar (media queries)
+   - Anpassa storlek, padding, textstorlek
+   ----------------------------------------- */
+/* @media (max-width: 600px) {} */

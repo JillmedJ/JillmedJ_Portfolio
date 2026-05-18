@@ -1,0 +1,43 @@
+/* =========================================
+   FORMS.CSS
+   ========================================= */
+
+/* --- Formulärens container ------------------------ */
+/* Ex: form { max-width, margin, padding } */
+
+
+
+/* --- Etiketter (label) ---------------------------- */
+/* Ex: spacing, font-weight, display-block */
+
+
+
+/* --- Inputfält (text, number, email, etc.) -------- */
+/* Ex: padding, border, border-radius, background */
+
+
+
+/* --- Fokus-styling (focus-visible) ---------------- */
+/* Ex: outline, border-color, glow-effekter */
+
+
+
+/* --- Felmeddelanden / validation ------------------ */
+/* Ex: .error-message, .input-error */
+
+
+
+/* --- Knappar i formulär --------------------------- */
+/* Ex: submit-knappens stil (om inte i buttons.css) */
+
+
+
+/* --- Layout för formulär (grid/flex) -------------- */
+/* Ex: två kolumner, en kolumn, spacing */
+
+
+
+/* --- Responsiva formulär -------------------------- */ /* Anpassa kolumner, input-bredd, spacing */
+/* @media (max-width: 600px) {
+    
+} */

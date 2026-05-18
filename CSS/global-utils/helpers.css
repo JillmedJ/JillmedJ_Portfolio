@@ -1,0 +1,169 @@
+/* =========================================
+   HELPERS.CSS – GLOBALA HJÄLPKLASSER
+   Dessa klasser är små, återanvändbara verktyg
+   som du kan använda i ALLA projekt och ALLA sektioner.
+   De är inte knutna till en specifik komponent.
+   ========================================= */
+
+
+   /* =========================================
+   GLOBALE CONTAINERS -  (.layouta / .container)
+   ========================================= */
+
+
+/* --- Layout-hjälpare - Centrerar innehåll och begränsar maxbredd */
+
+/* .layouta
+   - En standardcontainer för att centrera innehåll
+   - Begränsar maxbredden så att text inte blir för bred
+   - Ger luft runt innehållet
+   - Perfekt för sektioner som textblock, cards, gallerier
+*/
+
+.layouta {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* --- Utility-klasser (text-center, flex-center) --- */
+/* =========================================
+   TEXT-HJÄLPARE
+   ========================================= */
+
+/* Centrera text horisontellt */
+.text-center {
+    text-align: center;
+}
+
+/* Högerjustera text */
+.text-right {
+    text-align: right;
+}
+
+/* Vänsterjustera text (standard, men bra att ha) */
+.text-left {
+    text-align: left;
+}
+
+/* =========================================
+   FLEX-HJÄLPARE
+   ========================================= */
+
+/* flex-center
+   - Perfekt när du vill centrera ALLT i en container
+   - Används i hero, modals, knapprader, ikoner
+*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex-col
+   - Gör att flexbarn staplas i kolumn
+   - Bra för formulär, kort, hero-innehåll
+*/
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   TILLGÄNGLIGHET
+   ========================================= */
+
+/* .hidden
+   - Tar bort element helt från layouten
+   - Bra för att dölja saker temporärt
+*/
+.hidden {
+    display: none !important;
+}
+
+/* .hidden-input
+   - Döljer input visuellt men behåller funktionalitet
+   - Används för custom checkboxes, radio-knappar, etc.
+*/
+.hidden-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* --- Små hjälpfunktioner som används överallt ----- */
+
+/* =========================================
+   BILDHANTERING
+   ========================================= */
+
+/* img
+   - Gör att bilder aldrig blir större än sin container
+   - Fixar att bilder inte skapar konstiga mellanrum
+   - Detta är en av de viktigaste globala reglerna
+*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+
+/* =========================================
+   SPACING-HJÄLPARE
+   ========================================= */
+
+/* Små klasser för snabb spacing
+   - Perfekt när du behöver lite luft utan att skriva ny CSS
+   - Bra i prototyper och små justeringar
+*/
+
+.padding-top {
+    padding-top: 1rem;
+}
+
+.padding-bottom {
+    padding-bottom: 1rem;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   TEXTBETEENDE
+   ========================================= */
+
+/* .no-break
+   - Hindrar text från att radbrytas
+   - Perfekt för namn, ord som ska hållas ihop, logotyper
+*/
+.no-break {
+    white-space: nowrap;
+}
+
+
+/* 
+🌟 Hur ska du tänka kring helpers.css? 
+Helpers.css är som en verktygslåda. 
+Du ska INTE: memorera allt använda allt hela tiden känna att du “måste” använda dem Du ska: veta att de finns använda dem när de löser ett problem se dem som små genvägar
+
+🌟 När behövs dessa klasser? 
+Här är konkreta exempel: 
+✔ När du vill centrera en sektion html <section class="layouta">
+✔ När du vill centrera text html <h2 class="text-center">Välkommen</h2>
+✔ När du vill centrera ALLT i en container html <div class="flex-center">
+✔ När du vill stapla saker i kolumn html <div class="flex-col">
+✔ När du vill dölja något html <div class="hidden">
+✔ När du vill att text inte ska brytas html <span class="no-break">Zoo-ho</span>
+✔ När du vill lägga till snabb spacing html <p class="margin-bottom">Hej !</p>
+
+🌟 Varför är helpers.css så bra?
+För att: du slipper skriva samma CSS om och om igen du får konsekvent styling du får snabbare workflow du får renare komponentfiler du får bättre struktur */

@@ -1,0 +1,125 @@
+/* =========================================
+   NAV.CSS
+   - Navigationens layout
+   - Ikoner i menyn
+   - Hover-effekter
+   - Mobilmeny (media queries)
+   ========================================= */
+
+/* ⭐ Hur flex och grid passar in i detta Tänk så här: 🟩 Flexbox=layout inuti en rad eller kolumn Flex är bäst när du vill: lägga saker bredvid varandra centrera saker styra ordning låta saker wrap:a skapa knapprader,
+   nav,
+   kort i rad,
+   logga+text Flex är “lokal layout”. 🟦 Grid=layout av hela sektioner Grid är bäst när du vill: skapa kolumnsystem skapa komplexa layouter styra både rader och kolumner göra tidningsliknande layout placera element i ett rutnät Grid är “global layout”. 
+   ⭐ Hur de kombineras i en riktig sida En typisk sida kan se ut så här: 
+   
+   1) Navigation → flex (ikon + text, horisontell rad)
+ */
+
+/* Desktop styles */
+
+/* Mobile styles */
+
+/* Mobilnav */
+/* @media (max-width: 600px) {
+
+} */
+
+/* =========================================
+   NAV.CSS
+   ========================================= */
+
+/* --- Navigationens container ---------------------- */
+
+/* Yttersta nav-elementet, som en "bakgrundsremsa" – full bredd,
+bakgrund, padding */
+.nav-container {
+   background-color: var(--color-bg);
+   /* Bakgrundsfärg hämtad från colors.css */
+   padding: 1rem 0;
+   /* Lite luft ovanför och under nav */
+}
+
+/* Inre container som styra layouten och som håller ihop logga + länkar */
+.nav-inner-container {
+   max-width: 1000px;
+   /* Begränsar bredden så nav inte blir för bred */
+   margin: 0 auto;
+   /* Centrerar nav-innehållet på sidan */
+   padding: 0 1rem;
+   /* Lite sidomarginal */
+   display: flex;
+   /* Gör att barnen (logga + länkar) ligger i rad */
+   justify-content: space-between;
+   /* Logga till vänster, länkar till höger */
+   align-items: center;
+   /* Vertikal centrering */
+}
+
+/* Logga + signatur */
+.nav-brand {
+   display: flex;
+   /* Lägger bilderna i rad */
+   align-items: center;
+   /* Vertikal centrering */
+   gap: 1rem;
+   /* Avstånd mellan logga och signatur */
+}
+
+.nav-brand img {
+   max-height: 50px; /* Hindrar signaturen från att bli gigantisk */
+   max-width: 150px;
+   height: auto;
+   width: auto;
+   object-fit: contain;
+}
+
+/* Lista med länkar */
+.nav-ul {
+   display: flex;
+   /* Gör att li ligger i rad */
+   gap: 2rem;
+   /* Avstånd mellan länkarna */
+   list-style: none;
+   /* Tar bort punkter */
+   margin: 0;
+   /* Tar bort default-marginal */
+   padding: 0;
+   /* Tar bort default-padding */
+}
+
+
+
+/* --- Lista & länkar ------------------------------- */
+
+/* Länkarna i nav */
+.nav-ul a {
+   text-decoration: none;
+   /* Tar bort understrykning */
+   color: var(--color-text);
+   /* Textfärg från colors.css */
+   font-weight: 500;
+   /* Lite tydligare text */
+}
+
+/* --- Ikoner i navigationen ------------------------ */
+
+
+
+
+
+/* --- Hover-effekter ------------------------------- */
+
+/* Hover-effekt (valfri) */
+.nav-ul a:hover {
+   color: var(--brand-green);
+   /* Accentfärg från colors.css */
+}
+
+
+
+/* --- Mobilmeny (media queries) -------------------- */
+
+/* Mobilnav */
+/* @media (max-width: 600px) {
+    
+} */

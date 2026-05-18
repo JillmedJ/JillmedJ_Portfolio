@@ -1,0 +1,33 @@
+/* =========================================
+RESET.CSS
+- Nollställer standardstilar
+- Sätter box-sizing
+- Tar bort margin/padding
+
+grunden som gör att resten av din CSS blir förutsägbar,
+ren och lätt att jobba med.
+========================================= */
+
+*,
+/* alla element */
+*::before,
+/* välj även deras pseudo‑element (::before och ::after) */
+*::after {
+
+    /* --- Nollställer standardstilar ------------------- */
+
+    -webkit-box-sizing: border-box;
+    /* -webkit-box-sizing: border-box; är för att även inkludera äldre webbläsare (för webbläsare med webbkit-motorer */
+
+    /* --- Sätter box-sizing ---------------------------- */
+
+    box-sizing: border-box;
+    /* box-sizing: border-box; är den viktigaste delen av en modern reset. Det gör layouten förutsägbar och är standard i alla seriösa projekt. */
+
+    /* --- Tar bort margin/padding ---------------------- */
+
+    margin: 0;
+    /* slipper browser‑skillnader och får full kontroll. */
+    padding: 0;
+    /* slipper browser‑skillnader och får full kontroll. */
+}

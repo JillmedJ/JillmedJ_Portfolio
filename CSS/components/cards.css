@@ -1,0 +1,40 @@
+/* =========================================
+   CARDS.CSS (Djurkort)
+   ========================================= 
+   
+      /* ⭐ Hur flex och grid passar in i detta Tänk så här: 🟩 Flexbox=layout inuti en rad eller kolumn Flex är bäst när du vill: lägga saker bredvid varandra centrera saker styra ordning låta saker wrap:a skapa knapprader,
+         nav,
+         kort i rad,
+         logga+text Flex är “lokal layout”. 🟦 Grid=layout av hela sektioner Grid är bäst när du vill: skapa kolumnsystem skapa komplexa layouter styra både rader och kolumner göra tidningsliknande layout placera element i ett rutnät Grid är “global layout”. 
+         
+                  4) Kort (cards) → flex (bild + text vertikalt)
+   */
+
+/* --- Djurkortets container (figure.animal-card) --- */
+/* Border, padding, bakgrund, rundning, skugga */
+
+
+
+/* --- Bild i djurkortet ---------------------------- */
+/* Storlek, objektanpassning, border-radius */
+
+
+
+/* --- Text i djurkortet (figcaption) --------------- */
+/* Font-size, färg, centrering */
+
+
+
+/* --- Hover-effekter ------------------------------- */
+/* Skugga, lyft, färgändring */
+
+
+
+/* --- Variationer av kort (om du vill ha flera) ---- */
+/* Ex: .animal-card--large, .animal-card--compact */
+
+
+
+/* --- Responsiv styling för kort ------------------- */
+/* Mindre padding, mindre text, mindre bilder */
+/* @media (max-width: 600px) {} */
