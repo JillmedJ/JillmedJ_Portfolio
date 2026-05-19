@@ -1,0 +1,109 @@
+
+.about-me-container {
+    background-color: var(--brand-dark);
+    /* Mörk rosa bakgrund */
+    padding: 1rem 0;
+    /* Luft ovanför och under nav */
+    color: var(--text-body);
+        /* Ljus rosa text */
+        /* border-radius: var(--border-radius-md);
+        border: 20px solid transparent;
+            border-image: linear-gradient(to right, var(--pink-300), var(--yellow-300)) 1; */
+
+            
+}
+
+.about-me-header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    /* Centrerar nav-innehållet */
+    padding: 1.5rem;
+    /* luft */
+    
+    gap: 2.5rem;
+    
+    
+}
+
+.about-me-inner-container {
+    max-width: 1000px; /* Begränsar bredden */
+    margin: 0 auto; /* Centrerar nav-innehållet */
+    padding: 2.5rem; /* luft */
+    gap: 2.5rem;
+
+    display: flex; /* Lägger logga + länkar i rad */
+    flex-wrap: wrap;
+
+    justify-content: center;
+    background-color: var(--bg-inner);
+    
+
+}
+
+.about-me-container p {
+
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: var(--bg-section);
+    
+    border-radius: 0.5rem;
+    
+
+    
+
+}
+
+.about-me-container::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: var(--yellow-300);
+    bottom: 0;
+    left: 0;
+}
+
+.p1 {
+
+
+}
+
+.p2 {
+
+
+}
+
+.p3 {
+
+
+}
+
+.p4 {
+
+
+}
+
+.p5 {
+
+}
+
+.p6 {
+
+
+}
+
+
+
+
+#about h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    
+    background-color: var(--yellow-300);
+    margin: 0.2rem auto 0;
+}

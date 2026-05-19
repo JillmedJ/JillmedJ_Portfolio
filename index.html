@@ -20,7 +20,7 @@
         <!-- 4. COMPONENTS (specifika sektioner) -->
         <link rel="stylesheet" href="CSS/components/nav.css">
         <link rel="stylesheet" href="CSS/components/hero.css">
-        <link rel="stylesheet" href="CSS/components/projects.css">
+        <link rel="stylesheet" href="CSS/components/about-me.css">
         <link rel="stylesheet" href="CSS/components/cards.css">
         <link rel="stylesheet" href="CSS/components/tables.css">
         <link rel="stylesheet" href="CSS/components/forms.css">
@@ -32,11 +32,6 @@
 
         <title>Jill med J</title>
     </head>
-
-    <!--id används för stora sektioner, navigationsmål, unika delar av sidan -->
-    <!--class används för layout (grid, flex, container), komponenter (cards, knappar, artiklar), styling (färg, spacing, typografi), grupper (nav-links, footer-links)-->
-
-    <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
 
     <body class="debug">
         <nav class="nav-container">
@@ -66,7 +61,6 @@
             </div>
         </nav>
 
-
         <main>
             <section id="hero">
                 <div class="hero-inner-container">
@@ -79,55 +73,44 @@
                 </div>
             </section> 
 
-
-
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-        <!-- Scrolla neråt för att se nedan - id tack, javascripthooks om jag senare vill animera någonting-->
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-        <header>
-        
-            <h1>Jill med J</h1>
-        
-        </header>
-
-
             <!-- ABOUT / SHOWCASE -->
-            <section id="about"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) -->
+            <section class="about-me-container" id="about">
+                <header class="about-me-header">
+                    <h2>About me</h2>
+                </header>
+                
+                <article class="about-me-inner-container">
 
-                <h1>About me</h1> <!-- Showing my doings, alternativa rubriker: About me, Who I am, My Story, My Background, This is me --> 
-
-                <article>
-
-                    <p>
+                    <p class="I-am-p p1">
                         Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
                         nyfikenhet på hur olika områden hänger ihop i olika sammanhang — och har vuxit till en vilja att förstå, bygga och
                         förbättra digitala lösningar.
                     </p>
 
-                    <p>
+                    <p class="I-do-p p2">
                         Jag lär mig genom att göra, testa och tänka högt. Jag uppskattar särskilt när idéer får delas och när man utforskar
                         tillsammans. För mig är det viktigt att en arbetsplats är en miljö där man trivs, känner sig trygg och kan bidra till en
                         positiv kultur — gärna med inslag av skratt då och då. Det är i samarbeten jag utvecklas som mest.
                     </p>
 
-                    <p>
+                    <p clas="I-communicate-p p3">
                         Språk, kommunikation och struktur är tre av mina starkaste verktyg. Jag tycker om att formulera mig tydligt, skapa
                         ordning i komplexitet och bygga lösningar som är begripliga både för användare och utvecklare. För mig räcker det inte
                         att kod fungerar — den ska också vara lätt att förstå.
                     </p>
 
-                    <p>
+                    <p class="I-as-problemsolver-p p4">
                         Som person är jag prestigelös, nyfiken och envis på ett konstruktivt sätt. Jag tar mig an problem steg för steg,
                         reflekterar över vad jag lär mig och letar ständigt efter bättre sätt att arbeta.
                     </p>
 
-                    <p>
+                    <p class="my-background-p p5">
                         Min bakgrund som lärare har stärkt mig i att kommunicera, presentera och skapa goda relationer. Jag trivs med att lära
                         ut, stå inför människor och vara en tydlig och positiv förebild — något jag tar med mig in i utvecklaryrket, både i
                         samarbeten och i hur jag tänker kring användarupplevelser.
                     </p>
 
-                    <p>
+                    <p class="me-as-team-member-p p6">
                         Just nu bygger jag min grund inom JavaScript, HTML, CSS och systemutveckling i stort — och jag ser fram emot att
                         fortsätta växa i rollen. Mitt mål är att bidra i team där man lär av varandra, bygger tillsammans och skapar genomtänkta
                         och hållbara lösningar.
@@ -136,16 +119,20 @@
                 </article>
 
                 <article>
+                    <header>
+                        <h2>My skills</h2>
+                    </header>
 
-                    <h2>My skills</h2>
-
-                    <p>
+                    <p class=" p1">
                         Jag har en grund inom C#, programmeringslogik och struktur, och har arbetat med att koppla C# program i Visual Studio
                         Community till databaser. Jag använder Git och GitHub för versionshantering och har erfarenhet av Autofac för
                         beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
                     </p>
 
-                    <h3>Tekniska färdigheter</h3>
+                    <header>
+                        <h3>Tekniska färdigheter</h3>
+                    </header>
+                    
                     
                     <ul>  <!-- ul>li*7 : ) -->
 
@@ -159,7 +146,7 @@
 
                     </ul>
 
-                    <p>
+                    <p class=" p2">
                         Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
                         processer. Mitt fokus ligger på att skriva tydlig kod, skapa struktur och hitta arbetssätt som gör utvecklingen hållbar
                         och lätt att förstå.
@@ -167,10 +154,11 @@
 
                 </article>
                 <article>
+                    <header>
+                        <h2>What drives me</h2>
+                    </header>
 
-                    <h2>What drives me</h2>
-
-                    <p>
+                    <p class=" p1">
                         Jag drivs av att bidra till arbetsmiljöer där kommunikation, trygghet och nyfikenhet får ta plats. Jag tror på ett “vi”
                         i teamet — där alla känner sig välkomna, där det är högt i tak och där man delar kunskap för att växa tillsammans. Jag
                         är långt ifrån mätt på förståelse och lärande, och jag trivs i miljöer där man får utforska, reflektera och förbättra
@@ -179,7 +167,7 @@
                         hand i hand. En plats där man vill vara och komma tillbaka till.
                     </p>
 
-                    <p>
+                    <p class=" p2">
                         Dessutom har jag ett naturligt starkt intresse av verksamhetsutveckling — särskilt hur reflektion kan användas för att förbättra
                         arbetssätt, rutiner och samarbete. För mig handlar verksamhetsutveckling inte bara om organisationer på hög nivå, utan
                         om hur arbete faktiskt fungerar i praktiken: på individnivå, i gruppen och i verksamheten som helhet. Jag tror att även

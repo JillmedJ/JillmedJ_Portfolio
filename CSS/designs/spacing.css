@@ -4,26 +4,73 @@
    - Marginaler och padding-regler
    - Vertikal rytm
 
-      ⭐ Varför detta är rätt 
-      ✔ Sektioner får luft automatiskt Du slipper lägga margin i varje komponent. 
-      ✔ Rubriker får luft neråt h2+* är en smart CSS‑selektor som betyder: “Ge margin-top till det första elementet efter en h2”. 
-      ✔ Text blir luftig och lättläst p+p ger luft mellan stycken. 
-      ✔ Listor får luft från text p+ul är en vanlig typografisk regel.
+    ⭐ Varför detta är rätt 
+    ✔ Sektioner får luft automatiskt Du slipper lägga margin i varje komponent. 
+    ✔ Rubriker får luft neråt h2+* är en smart CSS‑selektor som betyder: “Ge margin-top till det första elementet efter en h2”. 
+    ✔ Text blir luftig och lättläst p+p ger luft mellan stycken. 
+    ✔ Listor får luft från text p+ul är en vanlig typografisk regel.
    ========================================= */
 
 /* =========================================
-      SPACING.CSS
-      ========================================= */
+    SPACING.CSS
+    ========================================= */
 
 /* --- Globala spacing-variabler -------------------- */
 
+:root { 
+    /* Spacing scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+}
+
+/* Exexmpel på hur desa variabler används:
+
+i komponenter: 
+.nav-container {
+    padding: var(--space-sm) 0;
+} padding i nav
+
+.nav-ul {
+    gap: var(--space-md);
+} gap i nav-länkar
 
 
+i layout:
 
+.about-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+} spacing i en flex-container
+
+#about {
+    padding: var(--space-md) var(--space-sm);
+} padding i en sektion
+
+
+i typography
+
+h2+* {
+    margin-top: var(--space-sm);
+} ger luft efter rubriker
+
+p+p {
+    margin-top: var(--space-sm);
+} ger luft mellan stycken
+
+
+*/
 
 /* --- Standard-marginaler -------------------------- */
 
-
+/*  Här kan du lägga regler som:
+    .mt-lg { margin-top: var(--space-lg); }
+    .mb-md { margin-bottom: var(--space-md); }
+   Men det är bara om du vill ha utility‑klasser.
+*/
 
 
 
@@ -31,7 +78,10 @@
 /* --- Standard-padding ----------------------------- */
 
 
-
+/* valfritt.
+   Du kan skapa utility‑klasser som:
+      .p-section { padding: 2rem 1rem; }
+*/
 
 
 /* --- Vertikal rytm -------------------------------- */
@@ -41,32 +91,57 @@
          ========================================= */
 
 /* Standardavstånd mellan sektioner */
-/* section {
+section {
     margin-top: 4rem;
     margin-bottom: 4rem;
-} */
+    /* 
+        Detta är global spacing.
+        Alla sektioner får samma luft.
+        Du ska INTE lägga detta i komponenterna.
+    */
+}
 
 /* Avstånd mellan rubrik och innehåll */
-/* h2+* {
+h2+* {
     margin-top: 1rem;
-} */
+    /* 
+        Detta är typografisk spacing.
+        Det betyder: “ge luft efter en h2”.
+        Du slipper lägga margin i varje komponent.
+    */
+}
+
 
 /* Avstånd mellan stycken */
-/* p+p {
+p+p {
     margin-top: 1rem;
-} */
+    /* 
+        Detta är standard typografi.
+        Alla stycken får luft automatiskt.
+    */
+}
 
 /* Avstånd mellan listor och text */
-/* p+ul,
+p+ul,
 p+ol {
     margin-top: 1rem;
-} */
+    /* 
+        Detta är också typografisk spacing.
+        Listor får luft från text.
+    */
+}
 
 /* Avstånd mellan figure-element */
-/* figure {
+figure {
     margin: 0;
-} */
+    /* 
+        Nollställer figurer så du har kontroll.
+    */
+}
 
-/* figure+figure {
+figure+figure {
     margin-top: 1.5rem;
-} */
+    /* 
+        Luft mellan figurer (t.ex. bilder).
+    */
+}

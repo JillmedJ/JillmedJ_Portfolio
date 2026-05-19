@@ -1,33 +1,29 @@
 /* =========================================
-   COLORS.CSS - Färgpalett
-   - Färgvariabler (CSS custom properties)
-   - Primära, sekundära, accentfärger
-   - Bakgrundsfärger
-   - Textfärger
-   ========================================= */
+   COLORS.CSS – Färgpalett
+   =========================================
+   Här ligger ALLA färgvariabler för hela sidan.
+   Du använder dem så här i andra filer:
+
+   background-color: var(--bg-main);
+   color: var(--text-body);
+   border-color: var(--gray-300);
+   background-color: var(--btn-bg);
+   color: var(--btn-text-hover);
+
+   Du kan alltså kopiera var(--namn) och klistra in
+   direkt i andra CSS-filer.
+========================================= */
 
 
-/* --- Färgvariabler (CSS custom properties) -------- */
-
+/* =========================================
+   BASFÄRGER (neutrala)
+========================================= */
 
 :root {
-      --color-bg: #f7a3e5; /* --- --color-bg är ett namn, ex. #ffffff är värdet = > sä här används detta: background-color: var(--color-bg); = “Hämta värdet från variabeln --color-bg och använd det här.” = > Det är som att skriva:  background-color: #ffffff; …fast mycket smartare,
-            för du kan ändra färgen på ett ställe och hela sidan uppdateras.-------- */
-      --color-text: #d653ba;
-
-      --brand-pink: #c24aa8;
-      --brand-pink-dark: #a02185;
-
-
-/* --- Basfärger - som används överallt------------------------------ */
-
       --color-white: #ffffff;
       --color-black: #1a1a1a;
 
-      /* --- Gråskala -→ -- */
-      /* Gråskala (för subtila element,
-      borders,
-      skuggor, bra för text, borders, bakgrunder) */
+      /* Gråskala – bra för borders, skuggor, subtil text */
       --gray-100: #f7f7f7;
       --gray-200: #e5e5e5;
       --gray-300: #cccccc;
@@ -35,7 +31,12 @@
       --gray-500: #666666;
       --gray-600: #333333;
 
-/* --- Primära färger (rosa tema (snällt och glatt)------------------------------- */
+
+      /* =========================================
+       PRIMÄRA FÄRGER (rosa tema)
+       – din brand, din personlighet
+    ========================================= */
+
       --pink-100: #f7a3e5;
       /* ljus bakgrund */
       --pink-200: #e97ad2;
@@ -47,55 +48,170 @@
       --pink-500: #a02185;
       /* mörk brand */
 
-      /* --- Brandfärger ------------------------------ */
+      /* Brandfärger (för knappar, highlights, nav) */
       --brand-bg: var(--pink-100);
       --brand: var(--pink-400);
       --brand-dark: var(--pink-500);
 
 
-/* --- Sekundära färger (gult tema) = som kompletterar primär/brand color----------------------------- */
+      /* =========================================
+       SEKUNDÄRA FÄRGER (gult tema)
+       – accentfärger som kompletterar rosa
+    ========================================= */
 
       --yellow-100: #fff7b3;
-      /* ljus, mjuk gul – bakgrund */
+      /* ljus bakgrund */
       --yellow-200: #ffe866;
-      /* mellan – highlight */
+      /* highlight */
       --yellow-300: #ffd633;
-      /* stark – accent */
+      /* accent */
       --yellow-400: #ffbf00;
-      /* brand-accent */
+      /* stark accent */
       --yellow-500: #e6a800;
-      /* mörkare accent */
+      /* mörk accent */
 
 
-
-/* --- Accentfärger --→ en färg som används sparsamt för att dra uppmärksamhet ------------------------------- */
+      /* =========================================
+       ACCENTFÄRGER
+       – används sparsamt för att dra blickar
+    ========================================= */
 
       --accent: var(--yellow-300);
-      --accent: var(--pink-300);
+      /* primär accent */
+      --accent-strong: var(--yellow-400);
 
-/* --- Bakgrundsfärger ---→ ljus bakgrund, mörk bakgrund, sektion-bakgrund--------------------------- */
+
+      /* =========================================
+       BAKGRUNDSFÄRGER
+    ========================================= */
+
       --bg-main: var(--pink-100);
-      --bg-section: var(--gray-100);
+      /* huvudbakgrund */
+      --bg-inner: var(--pink-400); /* inner section huvudbakgrund */
+      --bg-section: var(--pink-100);
+      /* sektioner */
       --bg-dark: var(--pink-500);
+      /* mörk sektion */
 
 
+      /* =========================================
+       TEXTFÄRGER
+    ========================================= */
 
-
-/* --- Textfärger ---→ mörk text, ljus text, rubriktext-------------------------------- */
-      --text-heading: var(--pink-500);
       --text-body: var(--pink-300);
-      --text-light: var(--color-white);
+      /* brödtext */
+      --text-heading: var(--pink-500);
+      /* rubriker */
+      --text-muted: var(--gray-500);
+      /* svag text */
+      --text-accent: var(--yellow-400);
+      /* gul highlight */
+      --text-highlight: var(--pink-200);
+      /* ljus rosa highlight */
 
-      --button-color: #f7a3e5;
 
+      /* =========================================
+       KNAPPFÄRGER (text + bakgrund)
+    ========================================= */
+
+      /* Bakgrund */
+      --btn-bg: var(--pink-400);
+      /* rosa knapp */
+      --btn-bg-hover: var(--pink-500);
+      /* mörkare rosa vid hover */
+
+      /* Text */
+      --btn-text: var(--pink-100);
+      /* ljus rosa text */
+      --btn-text-hover: var(--yellow-300);
+      /* gul text vid hover */
+
+      /* Alternativ textfärg för knappar */
+      --text-button: var(--pink-300);
+      /* rosa text */
+      --text-button-hover: var(--yellow-300);
+      /* gul text */
+
+
+
+      /* =========================================
+      Border-tokens
+         ========================================= */
+            --border-thin: 1px;
+            --border-medium: 2px;
+            --border-thick: 4px;
+      
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 16px;
 }
-/* 
-EX
-Du kan styla hero med: css background-color: var(--bg-main);
-color: var(--text-body);
-✔ Du kan styla nav med: css background-color: var(--pink-500);
-color: var(--color-white);
-✔ Du kan styla rubriker med: css color: var(--text-heading);
-✔ Du kan styla CTA-knappar med: css background-color: var(--brand);
-✔ Du kan styla hover med: css background-color: var(--brand-dark);
-✔ Du kan styla sektioner med: css background-color: var(--bg-section); */
+
+
+
+/* =========================================
+   EXEMPEL – så här använder du färgerna
+   (dessa rader ska INTE aktiveras, bara läsas)
+========================================= */
+
+/*
+Hero:
+    background-color: var(--bg-main);
+    color: var(--text-body);
+
+Nav:
+    background-color: var(--pink-500);
+    color: var(--color-white);
+
+Rubriker:
+    color: var(--text-heading);
+
+CTA-knapp:
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+
+CTA-hover:
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text-hover);
+
+Sektioner:
+    background-color: var(--bg-section);
+
+Accenttext:
+    color: var(--text-accent);
+
+Dekorlinje under rubrik:
+    background-color: var(--yellow-300);
+
+Borders
+.nav-container {
+      border-bottom: var(--border-thin) solid var(--pink-200);
+}
+.card {
+      border: var(--border-medium) solid var(--pink-300);
+      border-radius: var(--border-radius-md);
+}
+.btn {
+      border: var(--border-thin) solid var(--yellow-300);
+      border-radius: var(--border-radius-sm);
+}
+.section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: var(--border-thick);
+      background-color: var(--yellow-300);
+      border-radius: var(--border-radius-sm);
+      margin-top: var(--space-sm);
+}
+.btn:hover {
+      border-color: var(--yellow-400);
+      border-width: var(--border-medium);
+}
+.card {
+            padding: var(--space-md);
+            border: var(--border-medium) solid var(--pink-300);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--space-lg);
+      }
+
+*/
