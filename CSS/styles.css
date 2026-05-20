@@ -19,3 +19,41 @@
 @import "components/hero.css";
 @import "components/cards.css";
 @import "components/footer.css";
+
+/* === GLOBAL BODY BACKGROUND === */
+/* body {
+    background: linear-gradient(to bottom,
+        var(--pink-100) 0%,
+        var(--pink-200) 5%,
+        var(--pink-300) 10%,
+        var(--pink-400) 30%,
+        var(--pink-500) 40%,
+        var(--yellow-300) 60%,
+        var(--yellow-200) 75%,
+        var(--yellow-100) 100%);
+} */
+/* body {
+    background: linear-gradient(to bottom,
+        var(--pink-100) 0%,
+        var(--pink-200) 10%,
+        var(--pink-300) 25%,
+        var(--pink-400) 40%,
+        var(--pink-500) 55%,
+        var(--yellow-300) 80%,
+        var(--yellow-200) 90%,
+        var(--yellow-100) 100%);
+} */
+body {
+    background: linear-gradient(to bottom,
+        var(--pink-100) 0%,
+        /* var(--pink-200) 8%, */
+        /* var(--pink-300) 8%, */
+        var(--pink-400) 10%,
+        var(--pink-500) 35%,
+        var(--yellow-400) 60%,
+        var(--yellow-300) 70%,
+        var(--yellow-200) 90%,
+        var(--yellow-100) 100%);
+}
+/* 
+⭐ Hur du ska tänka (superenkelt) Ju närmare varandra procentvärdena ligger → desto kortare övergång Ju längre ifrån varandra → desto mjukare och längre övergång Vill du ha mjukare → flytta isär dem Vill du ha hårdare kant → lägg dem nära varandra */

@@ -11,8 +11,6 @@
     --space-xl: 6rem;
 }
 /* Exexmpel på hur desa variabler används:
-
-
     padding: var(--space-sm) 0;
 
     gap: var(--space-md);
@@ -25,7 +23,6 @@
 
     margin-top: var(--space-sm);
 
-
 /* --- Standard-marginaler -------------------------- */
 
 /*  Här kan du lägga regler som:
@@ -35,7 +32,6 @@
 */
 
 /* --- Standard-padding ----------------------------- */
-
 
 /* valfritt.
    Du kan skapa utility‑klasser som:

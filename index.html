@@ -13,24 +13,35 @@
             <div class="container flex-between">
 
                 <div class="nav-brand flex-gap"> 
-                    <img src="Images/SVG/logo.svg"alt="Min logga">
-                    <img src="Images/PNG/signature.png" alt="Min underskrift">
+                    <a href="#hero" class="nav-brand">
+                        <img src="Images/SVG/logo.svg"alt="Min logga">
+                        <img src="Images/PNG/signature.png" alt="Min underskrift">
+                    </a>
                 </div>
                 
                 <ul class="nav-ul">
                     <li>
                         <a href="#projects">
-                            <span class="no-break">Se mina projekt</span>
+                            <span class="nav-icon">
+                                <!-- Här kommer SVG senare <svg...>... -->
+                                </span>
+                            <span class="nav-text no-break">Se mina projekt</span>
                         </a>
                     </li>
                     <li>
                         <a href="#contact">
-                            <span class="no-break">Contact me</span>
+                            <span class="nav-icon">
+                                <!-- Här kommer SVG senare <svg...>...-->
+                                </span>
+                            <span class="nav-text no-break">Contact me</span>
                         </a>
                     </li>
                     <li>
                         <a href="cv/JillmedJ-CV.pdf" download>
-                            <span class="no-break">Ladda ned mitt CV</span>
+                            <span class="nav-icon">
+                                <!-- Här kommer SVG senare <svg...>...-->
+                                </span>
+                            <span class="nav-text no-break">Ladda ned mitt CV</span>
                         </a>
                     </li>
                 </ul>
@@ -52,49 +63,57 @@
 
             <!-- ABOUT / SHOWCASE -->
             <section class="section about-me-container" id="about">
-                
-                
-                <article class=" container about-me-inner-container">
+                <article class="container about-text">
 
                     <header class="about-me-header">
-                        <h2>About me</h2>
+                        <div class="about-me-inner-container flex-between">
+                            <h2>About me</h2>
+
+                            <figure class="about-image">
+                                <img src="Images/SVG/logo.svg" alt="Min logga" loading="lazy" decoding="acync">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
                     </header>
+                    
+                    <div class="grid-2 flow about-text">
 
-                    <p class="I-am-p p1">
-                        Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
-                        nyfikenhet på hur olika områden hänger ihop i olika sammanhang — och har vuxit till en vilja att förstå, bygga och
-                        förbättra digitala lösningar.
-                    </p>
+                        <p class="I-am-p p1">
+                            Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
+                            nyfikenhet på hur olika områden hänger ihop i olika sammanhang — och har vuxit till en vilja att förstå, bygga och
+                            förbättra digitala lösningar.
+                        </p>
 
-                    <p class="I-do-p p2">
-                        Jag lär mig genom att göra, testa och tänka högt. Jag uppskattar särskilt när idéer får delas och när man utforskar
-                        tillsammans. För mig är det viktigt att en arbetsplats är en miljö där man trivs, känner sig trygg och kan bidra till en
-                        positiv kultur — gärna med inslag av skratt då och då. Det är i samarbeten jag utvecklas som mest.
-                    </p>
+                        <p class="I-do-p p2">
+                            Jag lär mig genom att göra, testa och tänka högt. Jag uppskattar särskilt när idéer får delas och när man utforskar
+                            tillsammans. För mig är det viktigt att en arbetsplats är en miljö där man trivs, känner sig trygg och kan bidra till en
+                            positiv kultur — gärna med inslag av skratt då och då. Det är i samarbeten jag utvecklas som mest.
+                        </p>
 
-                    <p clas="I-communicate-p p3">
-                        Språk, kommunikation och struktur är tre av mina starkaste verktyg. Jag tycker om att formulera mig tydligt, skapa
-                        ordning i komplexitet och bygga lösningar som är begripliga både för användare och utvecklare. För mig räcker det inte
-                        att kod fungerar — den ska också vara lätt att förstå.
-                    </p>
+                        <p class="I-communicate-p p3">
+                            Språk, kommunikation och struktur är tre av mina starkaste verktyg. Jag tycker om att formulera mig tydligt, skapa
+                            ordning i komplexitet och bygga lösningar som är begripliga både för användare och utvecklare. För mig räcker det inte
+                            att kod fungerar — den ska också vara lätt att förstå.
+                        </p>
 
-                    <p class="I-as-problemsolver-p p4">
-                        Som person är jag prestigelös, nyfiken och envis på ett konstruktivt sätt. Jag tar mig an problem steg för steg,
-                        reflekterar över vad jag lär mig och letar ständigt efter bättre sätt att arbeta.
-                    </p>
+                        <p class="I-as-problemsolver-p p4">
+                            Som person är jag prestigelös, nyfiken och envis på ett konstruktivt sätt. Jag tar mig an problem steg för steg,
+                            reflekterar över vad jag lär mig och letar ständigt efter bättre sätt att arbeta.
+                        </p>
 
-                    <p class="my-background-p p5">
-                        Min bakgrund som lärare har stärkt mig i att kommunicera, presentera och skapa goda relationer. Jag trivs med att lära
-                        ut, stå inför människor och vara en tydlig och positiv förebild — något jag tar med mig in i utvecklaryrket, både i
-                        samarbeten och i hur jag tänker kring användarupplevelser.
-                    </p>
+                        <p class="my-background-p p5">
+                            Min bakgrund som lärare har stärkt mig i att kommunicera, presentera och skapa goda relationer. Jag trivs med att lära
+                            ut, stå inför människor och vara en tydlig och positiv förebild — något jag tar med mig in i utvecklaryrket, både i
+                            samarbeten och i hur jag tänker kring användarupplevelser.
+                        </p>
 
-                    <p class="me-as-team-member-p p6">
-                        Just nu bygger jag min grund inom JavaScript, HTML, CSS och systemutveckling i stort — och jag ser fram emot att
-                        fortsätta växa i rollen. Mitt mål är att bidra i team där man lär av varandra, bygger tillsammans och skapar genomtänkta
-                        och hållbara lösningar.
-                    </p>
-
+                        <p class="me-as-team-member-p p6">
+                            Just nu bygger jag min grund inom JavaScript, HTML, CSS och systemutveckling i stort — och jag ser fram emot att
+                            fortsätta växa i rollen. Mitt mål är att bidra i team där man lär av varandra, bygger tillsammans och skapar genomtänkta
+                            och hållbara lösningar.
+                        </p>
+                    </div>
+                    
                 </article>
 
                 <article class="container">
@@ -103,11 +122,13 @@
                         <h2>My skills</h2>
                     </header>
 
-                    <p class=" p1">
-                        Jag har en grund inom C#, programmeringslogik och struktur, och har arbetat med att koppla C# program i Visual Studio
-                        Community till databaser. Jag använder Git och GitHub för versionshantering och har erfarenhet av Autofac för
-                        beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
-                    </p>
+                    <div class="grid-2 flow">
+                        <p class=" p1">
+                            Jag har en grund inom C#, programmeringslogik och struktur, och har arbetat med att koppla C# program i Visual Studio
+                            Community till databaser. Jag använder Git och GitHub för versionshantering och har erfarenhet av Autofac för
+                            beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
+                        </p>
+                    </div>
 
                     <div class="container">
                         <header>
@@ -115,7 +136,6 @@
                         </header>
                     
                         <ul>  <!-- ul>li*7 : ) -->
-
                             <li>C# - programmering, struktur och databaskoppling</li>
                             <li>HTML - semantisk struktur och tydliga dokument</li>
                             <li>CSS - layout, typografi och responsiv design</li>
@@ -123,15 +143,16 @@
                             <li>Git & GitHub - versionshantering och samarbete</li>
                             <li>Autofac - beroendehantering</li>
                             <li>Figma - design, strukturering och export av komponenter</li>
-
                         </ul>
                     </div>
 
-                    <p class=" p2">
-                        Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
-                        processer. Mitt fokus ligger på att skriva tydlig kod, skapa struktur och hitta arbetssätt som gör utvecklingen hållbar
-                        och lätt att förstå.
-                    </p>
+                    <div class="grid-2 flow">
+                        <p class=" p2">
+                            Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
+                            processer. Mitt fokus ligger på att skriva tydlig kod, skapa struktur och hitta arbetssätt som gör utvecklingen hållbar
+                            och lätt att förstå.
+                        </p>
+                    </div>
 
                 </article>
 
@@ -141,21 +162,24 @@
                         <h2>What drives me</h2>
                     </header>
 
-                    <p class=" p1">
-                        Jag drivs av att bidra till arbetsmiljöer där kommunikation, trygghet och nyfikenhet får ta plats. Jag tror på ett “vi”
-                        i teamet — där alla känner sig välkomna, där det är högt i tak och där man delar kunskap för att växa tillsammans. Jag
-                        är långt ifrån mätt på förståelse och lärande, och jag trivs i miljöer där man får utforska, reflektera och förbättra
-                        både arbetssätt och rutiner. Jag värderar inte bara större förändringar, utan också de små — de som trots sin enkelhet
-                        kan skapa stora effekter och ringar på vattnet. Jag vill bidra till kulturer där struktur, omtanke och utveckling går
-                        hand i hand. En plats där man vill vara och komma tillbaka till.
-                    </p>
+                    <div class="grid-2 flow">
 
-                    <p class=" p2">
-                        Dessutom har jag ett naturligt starkt intresse av verksamhetsutveckling — särskilt hur reflektion kan användas för att förbättra
-                        arbetssätt, rutiner och samarbete. För mig handlar verksamhetsutveckling inte bara om organisationer på hög nivå, utan
-                        om hur arbete faktiskt fungerar i praktiken: på individnivå, i gruppen och i verksamheten som helhet. Jag tror att även
-                        små förändringar i arbetssätt kan skapa stora effekter i helheten.
-                    </p>
+                        <p class=" p1">
+                            Jag drivs av att bidra till arbetsmiljöer där kommunikation, trygghet och nyfikenhet får ta plats. Jag tror på ett “vi”
+                            i teamet — där alla känner sig välkomna, där det är högt i tak och där man delar kunskap för att växa tillsammans. Jag
+                            är långt ifrån mätt på förståelse och lärande, och jag trivs i miljöer där man får utforska, reflektera och förbättra
+                            både arbetssätt och rutiner. Jag värderar inte bara större förändringar, utan också de små — de som trots sin enkelhet
+                            kan skapa stora effekter och ringar på vattnet. Jag vill bidra till kulturer där struktur, omtanke och utveckling går
+                            hand i hand. En plats där man vill vara och komma tillbaka till.
+                        </p>
+
+                        <p class=" p2">
+                            Dessutom har jag ett naturligt starkt intresse av verksamhetsutveckling — särskilt hur reflektion kan användas för att förbättra
+                            arbetssätt, rutiner och samarbete. För mig handlar verksamhetsutveckling inte bara om organisationer på hög nivå, utan
+                            om hur arbete faktiskt fungerar i praktiken: på individnivå, i gruppen och i verksamheten som helhet. Jag tror att även
+                            små förändringar i arbetssätt kan skapa stora effekter i helheten.
+                        </p>
+                    </div>
                     
                 </article>
 

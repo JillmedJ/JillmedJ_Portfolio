@@ -1,72 +1,58 @@
 
 .about-me-container {
-    background-color: var(--pink-500);
+    /* background-color: var(--pink-500); */
     /* Mörk rosa bakgrund */
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     /* Luft ovanför och under nav */
-    color: var(--text-body);
+    /* color: var(--text-body); */
         /* Ljus rosa text */
         /* border-radius: var(--border-radius-md);
         border: 20px solid transparent;
             border-image: linear-gradient(to right, var(--pink-300), var(--yellow-300)) 1; */
 
-            
+}
+
+about-me-container about-me-header {
+    
+
 }
 
 .about-me-header {
-
-    display: flex;
+    align-self: start;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    */
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* Centrerar nav-innehållet */
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     /* luft */
     
-    gap: 2.5rem;
-    
-    
-    
+    /* gap: 2.5rem; */
+    /* margin-bottom: 0; */
 }
 
-.about-me-inner-container {
-    max-width: 1000px; /* Begränsar bredden */
-    margin: 0 auto; /* Centrerar nav-innehållet */
-    padding: 2.5rem; /* luft */
-    gap: 2.5rem;
-
-    display: flex; /* Lägger logga + länkar i rad */
-    flex-wrap: wrap;
-
-    justify-content: center;
-    background-color: var(--pink-400);
-
-    border: 10px solid transparent;
-        border-image: linear-gradient(to right,
-                var(--pink-300),
-                var(--pink-200),
-                var(--yellow-200),
-                var(--yellow-300)) 1;
-    
-
-}
 
 .about-me-container p {
 
-    text-align: center;
+    /* text-align: center;
     padding: 1rem 3rem;
     background-color: var(--bg-section);
     
     border-radius: 0.5rem;
-    
+     */
 
-    border: 20px solid transparent;
+    /* border: 20px solid transparent;
         border-image: linear-gradient(to right,
                 var(--pink-300),
                 var(--pink-200),
                 var(--yellow-200),
-                var(--yellow-300)) 1;
+                var(--yellow-300)) 1; */
+
+}
+
+.about-me-inner-container {
+    /* display: flex */
 
 }
 
@@ -84,6 +70,32 @@
         left: 0;
         border-radius: var(--border-radius-sm);
 } */
+
+#about h2 {
+
+    /* padding: 1rem 3rem; */
+    /* border: 10px solid transparent;
+        border-image: linear-gradient(to right,
+                var(--pink-300),
+                var(--pink-200),
+                var(--yellow-200),
+                var(--yellow-300)) 1; */
+    
+
+
+}
+
+.about-image {
+    width: 100%;
+    max-width: 200px;
+    object-fit: contain;
+    height: auto;    
+}
+
+.about-text {
+
+    /* padding: 1rem; */
+}
 
 .p1 {
 
@@ -114,21 +126,6 @@
 
 }
 
-#about h2 {
-
-    padding: 1rem 3rem;
-    border: 10px solid transparent;
-        border-image: linear-gradient(to right,
-                var(--pink-300),
-                var(--pink-200),
-                var(--yellow-200),
-                var(--yellow-300)) 1;
-
-                
-}
-
-
-
 /* #about h2::after {
 
     
@@ -147,3 +144,19 @@ content: "";
 
                 
 } */
+@media (max-width: 700px) {
+    .about-me-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 1rem auto 0;
+    }
+}
+@media (max-width: 600px) {
+    .about-image {
+        margin-top: 2rem;
+    }
+}
+

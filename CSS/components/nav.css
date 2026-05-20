@@ -36,17 +36,24 @@
    NAV-LÄNKAR (UL + LI + A)
 ========================================= */
 .nav-ul {
-   display: flex;
-
-   gap: 2rem;
+   display: flex;    
+   justify-content: center; /* Mobil: centrerad ikonrad */
+   gap: 0.75rem; /* mindre gap */ /* Mobil: kompakt */
    margin: 0; /* inre luft: */
    padding: 0; /*  inre luft: */
 
    list-style: none;
 }
 
-/* Länkarna */
+/* =========================================
+LÄNKARNA (ikon + text)
+========================================= */
+
 .nav-ul a {
+   display: flex; /* Viktigt för ikon + text */
+   align-items: center; 
+   gap: 0.5rem; /* Avstånd mellan ikon och text */
+
    text-decoration: none;
    font-weight: 500;
    color: var(--pink-100); /* Ljus rosa text */
@@ -59,3 +66,44 @@
 .nav-ul a:hover {
    color: var(--yellow-300); /* Gul accent vid hover */
 }
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+   
+/* MOBIL (default) – bara ikoner */
+.nav-text {
+   display: none;
+}
+
+/* MELLAN (≥ 600px) – ikon + text, horisontellt */
+@media (min-width: 600px) {
+   .nav-text {
+      display: inline;
+   }
+
+   .nav-ul {
+      /* flex-direction: row; */
+      justify-content: flex-end; /* Länkarna hamnar till höger */
+      gap: 1.5rem; /* normal gap */
+   }
+}
+
+@media (min-width: 900px) {
+   .nav-ul {
+      gap: 2rem; /* luftigt */
+   }
+}
+
+/* STOR (≥ 1200px) – vertikal nav */
+/* @media (min-width: 1200px) {
+   .nav-container .container {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .nav-ul {
+      flex-direction: column;
+      gap: 1.5rem;
+   }  
+} */
