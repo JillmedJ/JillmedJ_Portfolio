@@ -1,0 +1,83 @@
+/* =========================================
+   LAYERS.CSS – Lagerfärger för djup & nivåer
+   =========================================
+   Här ligger ALLA lagerfärger som används för
+   att skapa visuellt djup i sektioner, boxar,
+   kort, rubriker och pseudo-element.
+========================================= */
+
+:root {
+
+    /* =========================================
+       LAGER 1 – MÖRKT (bakgrund längst bak)
+       ========================================= */
+    --layer-1: var(--pink-500);
+    /* Exempel:
+       background-color: var(--layer-1);
+       (yttersta sektionen)
+    */
+
+
+    /* =========================================
+       LAGER 2 – MÖRK MELLANROSA
+       ========================================= */
+    --layer-2: var(--pink-400);
+    /* Exempel:
+       background-color: var(--layer-2);
+       (inner container)
+    */
+
+
+    /* =========================================
+       LAGER 3 – MELLANROSA (kortbakgrund)
+       ========================================= */
+    --layer-3: var(--pink-300);
+    /* Exempel:
+       background-color: var(--layer-3);
+       (kort, boxar, paneler)
+    */
+
+
+    /* =========================================
+       LAGER 4 – LJUSROSA (textkort)
+       ========================================= */
+    --layer-4: var(--pink-200);
+    /* Exempel:
+       background-color: var(--layer-4);
+       (textkort, små boxar)
+    */
+
+
+    /* =========================================
+       LAGER 5 – LJUSAST (highlight)
+       ========================================= */
+    --layer-5: var(--pink-100);
+    /* Exempel:
+       background-color: var(--layer-5);
+       (highlight, små element)
+    */
+
+
+    /* =========================================
+       ACCENTLAGER – GULT
+       ========================================= */
+    --layer-accent: var(--yellow-300);
+    /* Exempel:
+       background-color: var(--layer-accent);
+       (accentlinjer, små detaljer)
+    */
+
+
+    /* =========================================
+       GRADIENTLAGER – ROSA → GUL
+       ========================================= */
+    --layer-gradient: linear-gradient(to right,
+            var(--pink-300),
+            var(--pink-200),
+            var(--yellow-200),
+            var(--yellow-300));
+    /* Exempel:
+       background: var(--layer-gradient);
+       (pseudo-element, dekorlinjer, ramar)
+    */
+}

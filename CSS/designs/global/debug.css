@@ -1,0 +1,110 @@
+/* =========================================
+   DEBUG.CSS – VERKTYG FÖR ATT SE LAYOUTEN
+   Aktiveras genom att lägga klassen .debug på <body>
+========================================= */
+
+
+/* =========================================
+   1) Outline på ALLA element
+   – Hjälper dig se struktur, storlek och placering
+========================================= */
+
+.debug * {
+   outline: 1px solid rgba(0, 255, 255, 0.5);
+   /* cyan */
+}
+
+/* Exempel på specifik sektion */
+#hero {
+   outline: 4px solid red;
+}
+
+
+
+/* =========================================
+   2) Visa flex-containrar
+   – Färglägger flexboxar så du ser dem direkt
+========================================= */
+
+.debug .flex,
+.debug [style*="flex"],
+.debug [class*="flex"] {
+   background-color: rgba(0, 255, 0, 0.05);
+}
+
+
+
+/* =========================================
+   3) Visa grid-containrar
+   – Färglägger grid så du ser rutnätet
+========================================= */
+
+.debug .grid,
+.debug [style*="grid"],
+.debug [class*="grid"] {
+   background-color: rgba(0, 0, 255, 0.05);
+}
+
+
+
+/* =========================================
+   4) Visa overflow-problem
+   – Markerar element som sticker utanför viewporten
+========================================= */
+
+.debug * {
+   overflow: visible !important;
+}
+
+.debug .overflow-check {
+   outline: 2px dashed orange;
+}
+
+
+
+/* =========================================
+   5) Visa element som är 0px höga
+   – Perfekt när något “inte syns”
+========================================= */
+
+.debug *:empty {
+   background-color: rgba(255, 0, 0, 0.1);
+}
+
+
+
+/* =========================================
+   6) Visa spacing
+   – Gör padding och margin synliga
+========================================= */
+
+.debug .show-padding {
+   background-color: rgba(0, 255, 255, 0.1);
+}
+
+.debug .show-margin {
+   outline: 2px dotted rgba(255, 0, 255, 0.4);
+}
+
+
+
+/* =========================================
+   7) Visa bilder
+   – Markerar bilder så du ser deras storlek
+========================================= */
+
+.debug img {
+   background-color: rgba(0, 128, 255, 0.05);
+   outline: 3px solid magenta !important;
+}
+
+
+
+/* =========================================
+   8) Alternativ outline-läge
+   – Mer subtil, röd ton
+========================================= */
+
+.debug-outline * {
+   outline: 1px solid rgba(255, 0, 0, 0.3);
+}

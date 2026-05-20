@@ -2,41 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- 1. RESET (måste alltid komma först) -->
-        <link rel="stylesheet" href="CSS/global-utils/reset.css">
-        
-        <!-- 2. DESIGN SYSTEM (globala regler som allt bygger på) -->
-        <link rel="stylesheet" href="CSS/designs/colors.css">
-        <link rel="stylesheet" href="CSS/designs/spacing.css">
-        <link rel="stylesheet" href="CSS/designs/typography.css">
-
-        <!-- 3. UTILITIES (hjälpklasser som används överallt) -->
-        <link rel="stylesheet" href="CSS/global-utils/helpers.css">
-        
-        <!-- layout.css ? -->
-
-        <!-- 4. COMPONENTS (specifika sektioner) -->
-        <link rel="stylesheet" href="CSS/components/nav.css">
-        <link rel="stylesheet" href="CSS/components/hero.css">
-        <link rel="stylesheet" href="CSS/components/about-me.css">
-        <link rel="stylesheet" href="CSS/components/cards.css">
-        <link rel="stylesheet" href="CSS/components/tables.css">
-        <link rel="stylesheet" href="CSS/components/forms.css">
-        <link rel="stylesheet" href="CSS/components/footer.css">
-        
-        <!-- 5. DEBUG (sist, så den kan skriva över allt) -->
-        <link rel="stylesheet" href="CSS/global-utils/debug.css">
-
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="stylesheet" href="CSS/styles.css">
         <title>Jill med J</title>
     </head>
 
     <body class="debug">
-        <nav class="nav-container">
-            <div class="nav-inner-container">
-                <div class="nav-brand"> 
+
+        <nav class="container nav-container">
+            <div class="container flex-between">
+
+                <div class="nav-brand flex-gap"> 
                     <img src="Images/SVG/logo.svg"alt="Min logga">
                     <img src="Images/PNG/signature.png" alt="Min underskrift">
                 </div>
@@ -58,12 +34,13 @@
                         </a>
                     </li>
                 </ul>
+
             </div>
         </nav>
 
         <main>
-            <section id="hero">
-                <div class="hero-inner-container">
+            <section class="container" id="hero">
+                <div class="container flow text-center">
                     <img src="Images/SVG/logo.svg"  alt="Min logga">
                     <h1>Jill med J - Systemutvecklare to be</h1>
                     <p class="tagline">Lärande utvecklare som trivs bäst när idéer får delas.</p>
@@ -74,12 +51,14 @@
             </section> 
 
             <!-- ABOUT / SHOWCASE -->
-            <section class="about-me-container" id="about">
-                <header class="about-me-header">
-                    <h2>About me</h2>
-                </header>
+            <section class="section about-me-container" id="about">
                 
-                <article class="about-me-inner-container">
+                
+                <article class=" container about-me-inner-container">
+
+                    <header class="about-me-header">
+                        <h2>About me</h2>
+                    </header>
 
                     <p class="I-am-p p1">
                         Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
@@ -118,7 +97,8 @@
 
                 </article>
 
-                <article>
+                <article class="container">
+
                     <header>
                         <h2>My skills</h2>
                     </header>
@@ -129,22 +109,23 @@
                         beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
                     </p>
 
-                    <header>
-                        <h3>Tekniska färdigheter</h3>
-                    </header>
+                    <div class="container">
+                        <header>
+                            <h3>Tekniska färdigheter</h3>
+                        </header>
                     
-                    
-                    <ul>  <!-- ul>li*7 : ) -->
+                        <ul>  <!-- ul>li*7 : ) -->
 
-                        <li>C# - programmering, struktur och databaskoppling</li>
-                        <li>HTML - semantisk struktur och tydliga dokument</li>
-                        <li>CSS - layout, typografi och responsiv design</li>
-                        <li>JavaScript - logik och grundläggande DOM förståelse</li>
-                        <li>Git & GitHub - versionshantering och samarbete</li>
-                        <li>Autofac - beroendehantering</li>
-                        <li>Figma - design, strukturering och export av komponenter</li>
+                            <li>C# - programmering, struktur och databaskoppling</li>
+                            <li>HTML - semantisk struktur och tydliga dokument</li>
+                            <li>CSS - layout, typografi och responsiv design</li>
+                            <li>JavaScript - logik och grundläggande DOM förståelse</li>
+                            <li>Git & GitHub - versionshantering och samarbete</li>
+                            <li>Autofac - beroendehantering</li>
+                            <li>Figma - design, strukturering och export av komponenter</li>
 
-                    </ul>
+                        </ul>
+                    </div>
 
                     <p class=" p2">
                         Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
@@ -153,7 +134,9 @@
                     </p>
 
                 </article>
-                <article>
+
+                <article class="container">
+
                     <header>
                         <h2>What drives me</h2>
                     </header>
@@ -176,26 +159,14 @@
                     
                 </article>
 
-            </section> <!-- sections ska ha egen rubrik, sections används för innehåll med egen rubrik, en section = eget tema, footer = section men inte en egen innehållssection, ingen rubrik-->
-
-
-
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-        <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-
-
-        <!-- utklippt medan ordnar med grid i projects-sektionen-->
-
-        <h1>Portfolio</h1>
-        <!-- Syfte: Convince why I am the one for them, alternativa rubriker: My Projects, Selected Work, What I've built, Case Studies, Portfolio -->
-
+            </section>
+        
             <!-- PROJECTS --> <!-- från ovan <a href="#projects">Se mina projekt</a> -->
-            <section class="grid-container" id="projects"> <!-- id används för ex. scroll-navgation, ska beskriva vad elementet är (inte hur det ser ut) --> 
+            <section class="section grid-container" id="projects">
 
-                
+                <h2>Portfolio</h2>
+                <!-- Syfte: Convince why I am the one for them, alternativa rubriker: My Projects, Selected Work, What I've built, Case Studies, Portfolio -->
+
 
                 <article class="item">
 
@@ -223,13 +194,7 @@
 
             </section>
            
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-        <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
-
-            <section id="contact"> <!-- kontaktformulär --> <!-- från ovan <a href="#contact">Contact me</a>-->
+            <section class="section" id="contact"> <!-- kontaktformulär --> <!-- från ovan <a href="#contact">Contact me</a>-->
                 
                 <!-- (allmänt kontaktformulär -->
 
@@ -264,45 +229,31 @@
 
         </main>
 
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-        <!-- Scrolla neråt för att se nedan - id tack , javascripthooks om jag senare vill animera någonting-->
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
+        <footer class="section">
 
-
-        <footer>
-
-            <div class="footer-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar -->
-                <!-- img = min logga-->
-                <img src="Images/SVG/logo.svg" alt="Jills logga">
-                <!-- img = min underskrift -->
-                <img src="Images/PNG/signature.png" alt="Jills underskrift">
-                <!-- alternativt img = min underskrift snett palcerat i sidans högra hörn -->
-            </div>
-            
-
-            <div class="footer-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar-->
+            <div class="container">
+                <div class="footer-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar -->
+                    <!-- img = min logga-->
+                    <img src="Images/SVG/logo.svg" alt="Jills logga">
+                    <!-- img = min underskrift -->
+                    <img src="Images/PNG/signature.png" alt="Jills underskrift">
+                    <!-- alternativt img = min underskrift snett palcerat i sidans högra hörn -->
+                </div>
                 
-                <a href="#projects">Se mina projekt</a>
-                
-                <a href="#contact">Contact me</a>
-                
-                <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a>
-                
-            </div>
 
-
-
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-        <!-- Scrolla neråt för att se nedan - id tack-->
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
-
-
+                <div class="footer-links"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar-->
+                    
+                    <a href="#projects">Se mina projekt</a>
+                    
+                    <a href="#contact">Contact me</a>
+                    
+                    <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a>
+                    
+                </div>
+          </div>
 
         </footer>
         
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
         <script src="index.js"></script>
-        <!-- ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤-->
     </body>
-
 </html>

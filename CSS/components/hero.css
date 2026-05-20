@@ -1,130 +1,68 @@
 /* =========================================
-   HERO.CSS
-   - Layout för hero-sektionen
-   - Färger hämtas från colors.css
-   - Centrering, spacing, typografi
+   HERO.CSS – Unik styling för hero-sektionen
 ========================================= */
-
 
 /* =========================================
-   YTTERSTA HERO-SEKTIONEN
-   =========================================
-   Här styr du bakgrundsfärg och luft runt hero.
-   Exempel:
-       background-color: var(--bg-main);
+   YTTERSTA HERO-SEKTIONEN 
 ========================================= */
-
 #hero {
-   padding: 4rem 1rem;
-   /* Luft runt hero */
-   background-color: var(--bg-main);
-   /* Rosa huvudbakgrund */
-   color: var(--text-body);
-   /* Rosa brödtext */
-   
-}
+   min-height: 100svh;
 
-
-/* =========================================
-   INRE CONTAINER
-   =========================================
-   Håller ihop allt innehåll i hero.
-========================================= */
-
-.hero-inner-container {
-   max-width: 700px;
-   /* Begränsar textbredden */
-   margin: 0 auto;
-   /* Centrerar allt */
-   text-align: center;
-   /* Centrerar texten */
    display: flex;
-   flex-direction: column;
-   gap: 1rem;
-   /* Avstånd mellan elementen */
-   
-}
+   align-items: center;
 
+   background-color: var(--bg-main); /* Rosa huvudbakgrund */
+   color: var(--text-body); /* Rosa brödtext */
+
+}
 
 /* =========================================
    RUBRIK (H1)
 ========================================= */
-
 #hero h1 {
-   font-size: 2rem;
-   line-height: 1.2;
-   margin-top: 1rem;
-   color: var(--text-heading);
-   /* Mörkare rosa rubrik */
-}
 
+   
+   font-size: 2rem;
+   line-height: 1.2; /* margin-top: 1rem; */
+   color: var(--text-heading); /* Mörkare rosa rubrik */
+}
 
 /* =========================================
    TAGLINE
 ========================================= */
-
 .tagline {
    font-size: 1.25rem;
    font-weight: 500;
-   color: var(--text-body);
-   /* Rosa brödtext */
-   margin-bottom: 0.5rem;
-   
+   color: var(--text-body); /* Rosa brödtext */
 }
-
 
 /* =========================================
    CTA-KNAPP
 ========================================= */
-
 .cta {
    display: inline-block;
    padding: 0.75rem 1.5rem;
+   border-radius: 0.5rem;
+
+   text-decoration: none; /* border-radius: 0.5rem; */
+   font-weight: 600; /* margin-top: 1rem;*/
 
    /* Bakgrundsfärg och textfärg från colors.css */
-   background-color: var(--btn-bg);
-   /* Rosa knapp */
-   color: var(--btn-text);
-   /* Ljus rosa text */
-
-   text-decoration: none;
-   border-radius: 0.5rem;
-   font-weight: 600;
-   margin-top: 1rem;
-}
+   background-color: var(--btn-bg); /* Rosa knapp */
+   color: var(--btn-text); /* Ljus rosa text */   
+} 
 
 /* Hover-effekt */
 .cta:hover {
-   background-color: var(--btn-bg-hover);
-   /* Mörkare rosa */
-   color: var(--btn-text-hover);
-   /* Gul text */
+   background-color: var(--btn-bg-hover); /* Mörkare rosa */
+   color: var(--btn-text-hover); /* Gul text */
 }
-
 
 /* =========================================
    HERO-BILD (LOGGA)
 ========================================= */
-
-.hero-inner-container img {
-   max-width: 250px;
-   /* Justerbar storlek */
+#hero img {
+   width: 100%;
+   max-width: 900px; /* Justerbar storlek */
    margin: 0 auto;
-}
-
-
-/* =========================================
-   MEDIA QUERIES (mobil)
-========================================= */
-
-/*
-@media (max-width: 600px) {
-    #hero h1 {
-        font-size: 1.6rem;
-    }
-
-    .hero-inner-container img {
-        max-width: 180px;
-    }
-}
-*/
+} 

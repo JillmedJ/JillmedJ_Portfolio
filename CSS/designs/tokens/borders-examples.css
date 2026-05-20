@@ -1,0 +1,227 @@
+/* =========================================
+   BORDERS-EXAMPLES.CSS – Färdiga borderklasser
+   =========================================
+   Dessa klasser använder tokens från borders.css.
+   Lägg dem direkt på HTML-element för snabb styling.
+========================================= */
+
+
+/* =========================================
+   1. KLASSISKA BORDERS
+========================================= */
+
+/* Tunn solid border */
+.border-thin {
+    border: var(--border-thin) var(--border-style-solid) var(--pink-300);
+}
+
+/* Exempel:
+   <div class="border-thin">...</div>
+*/
+
+
+/* Medium solid border */
+.border-medium {
+    border: var(--border-medium) var(--border-style-solid) var(--pink-400);
+}
+
+/* Exempel:
+   <div class="border-medium">...</div>
+*/
+
+
+/* Tjock solid border */
+.border-thick {
+    border: var(--border-thick) var(--border-style-solid) var(--yellow-300);
+}
+
+/* Exempel:
+   <div class="border-thick">...</div>
+*/
+
+
+/* Double border */
+.border-double {
+    border-width: 6px;
+    border-style: var(--border-style-double);
+    border-color: var(--pink-400);
+}
+
+/* Exempel:
+   <div class="border-double">...</div>
+*/
+
+
+
+/* =========================================
+   2. BORDER RADIUS
+========================================= */
+
+.radius-sm {
+    border-radius: var(--border-radius-sm);
+}
+
+.radius-md {
+    border-radius: var(--border-radius-md);
+}
+
+.radius-lg {
+    border-radius: var(--border-radius-lg);
+}
+
+.radius-pill {
+    border-radius: var(--border-radius-pill);
+}
+
+/* Exempel:
+   <button class="radius-pill">Knapp</button>
+*/
+
+
+
+/* =========================================
+   3. GRADIENT BORDERS
+========================================= */
+
+/* Horisontell rosa → gul */
+.border-gradient-horizontal {
+    border: var(--border-chunky) solid transparent;
+    border-image: var(--border-gradient-horizontal) 1;
+}
+
+/* Exempel:
+   <div class="border-gradient-horizontal">...</div>
+*/
+
+
+/* Vertikal rosa → gul */
+.border-gradient-vertical {
+    border: var(--border-chunky) solid transparent;
+    border-image: var(--border-gradient-vertical) 1;
+}
+
+/* Exempel:
+   <div class="border-gradient-vertical">...</div>
+*/
+
+
+/* Mjuk pastellmix */
+.border-gradient-soft {
+    border: 8px solid transparent;
+    border-image: var(--border-gradient-soft) 1;
+}
+
+/* Exempel:
+   <div class="border-gradient-soft">...</div>
+*/
+
+
+
+/* =========================================
+   4. GLOW / NEON BORDERS
+========================================= */
+
+/* Rosa glow */
+.border-glow-pink {
+    box-shadow: var(--border-glow-pink);
+}
+
+/* Exempel:
+   <div class="border-glow-pink">...</div>
+*/
+
+
+/* Gul glow */
+.border-glow-yellow {
+    box-shadow: var(--border-glow-yellow);
+}
+
+/* Exempel:
+   <div class="border-glow-yellow">...</div>
+*/
+
+
+
+/* =========================================
+   5. SHADOW BORDERS (falska borders)
+========================================= */
+
+.border-shadow-pink {
+    box-shadow: var(--border-shadow-pink);
+}
+
+.border-shadow-yellow {
+    box-shadow: var(--border-shadow-yellow);
+}
+
+/* Exempel:
+   <div class="border-shadow-yellow">...</div>
+*/
+
+
+
+/* =========================================
+   6. DEKORLINJER (pseudo-element)
+========================================= */
+
+/* Tunn dekorlinje under element */
+.decor-line-thin {
+    position: relative;
+}
+
+.decor-line-thin::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: var(--decor-line-thin);
+    width: 100%;
+    background-color: var(--yellow-300);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Exempel:
+   <h2 class="decor-line-thin">Rubrik</h2>
+*/
+
+
+/* Tjock dekorlinje */
+.decor-line-thick {
+    position: relative;
+}
+
+.decor-line-thick::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: var(--decor-line-thick);
+    width: 100%;
+    background-color: var(--pink-300);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Exempel:
+   <h2 class="decor-line-thick">Rubrik</h2>
+*/
+
+
+/* Gradient dekorlinje */
+.decor-line-gradient {
+    position: relative;
+}
+
+.decor-line-gradient::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: var(--decor-line-thick);
+    width: 100%;
+    background: var(--decor-line-gradient);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Exempel:
+   <h2 class="decor-line-gradient">Rubrik</h2>
+*/

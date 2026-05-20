@@ -1,0 +1,220 @@
+/* =========================================
+   BORDERS.CSS – Border Tokens & Effekter
+   =========================================
+   Här ligger ALLA border-relaterade variabler:
+   – tjocklekar
+   – radius
+   – stilar
+   – gradient-borders
+   – glow/shadow-borders
+   – dekorlinjer (pseudo-element)
+   Varje token har exempel direkt bredvid.
+========================================= */
+
+:root {
+
+    /* =========================================
+       BORDER TJOCKLEKAR
+       ========================================= */
+
+    --border-thin: 1px;
+    /* tunn linje – subtil
+                                Ex: border: var(--border-thin) solid var(--pink-300); */
+
+    --border-medium: 2px;
+    /* standardram
+                                Ex: border: var(--border-medium) solid var(--pink-400); */
+
+    --border-thick: 4px;
+    /* tydlig ram
+                                Ex: border: var(--border-thick) solid var(--yellow-300); */
+
+    --border-chunky: 10px;
+    /* dekorativ, för effekter
+                                Ex: border: var(--border-chunky) solid transparent; */
+
+
+    /* =========================================
+       BORDER RADIUS
+       ========================================= */
+
+    --border-radius-sm: 4px;
+    /* små rundningar (knappar)
+                                    Ex: border-radius: var(--border-radius-sm); */
+
+    --border-radius-md: 8px;
+    /* kort, boxar
+                                    Ex: border-radius: var(--border-radius-md); */
+
+    --border-radius-lg: 16px;
+    /* stora boxar
+                                    Ex: border-radius: var(--border-radius-lg); */
+
+    --border-radius-pill: 999px;
+    /* pillerform
+                                    Ex: border-radius: var(--border-radius-pill); */
+
+
+    /* =========================================
+       BORDER STILAR
+       ========================================= */
+
+    --border-style-solid: solid;
+    /* vanlig solid linje */
+    --border-style-dashed: dashed;
+    /* streckad linje */
+    --border-style-dotted: dotted;
+    /* prickad linje */
+    --border-style-double: double;
+    /* dubbel linje (kräver minst 3–4px) */
+
+
+    /* =========================================
+       GRADIENT BORDERS
+       ========================================= */
+
+    /* Rosa → Gul (horisontell) */
+    --border-gradient-horizontal: linear-gradient(to right,
+            var(--pink-300),
+            var(--pink-200),
+            var(--yellow-200),
+            var(--yellow-300));
+    /* Exempel:
+       border: 6px solid transparent;
+       border-image: var(--border-gradient-horizontal) 1; */
+
+
+    /* Rosa → Gul (vertikal) */
+    --border-gradient-vertical: linear-gradient(to bottom,
+            var(--pink-300),
+            var(--yellow-300));
+    /* Exempel:
+       border: 6px solid transparent;
+       border-image: var(--border-gradient-vertical) 1; */
+
+
+    /* Mjuk pastellmix – mjukare övergång */
+    --border-gradient-soft: linear-gradient(90deg,
+            var(--pink-300) 0%,
+            var(--pink-200) 25%,
+            var(--yellow-200) 75%,
+            var(--yellow-300) 100%);
+    /* Exempel:
+       border: 8px solid transparent;
+       border-image: var(--border-gradient-soft) 1; */
+
+
+    /* =========================================
+       GLOW / NEON BORDERS (box-shadow)
+       ========================================= */
+
+    --border-glow-pink: 0 0 12px var(--pink-300);
+    /* Ex: box-shadow: var(--border-glow-pink); */
+
+    --border-glow-yellow: 0 0 12px var(--yellow-300);
+    /* Ex: box-shadow: var(--border-glow-yellow); */
+
+
+    /* =========================================
+       SHADOW BORDERS (falska borders)
+       ========================================= */
+
+    --border-shadow-pink: 0 0 0 4px var(--pink-300);
+    /* Ex: box-shadow: var(--border-shadow-pink); */
+
+    --border-shadow-yellow: 0 0 0 4px var(--yellow-300);
+    /* Ex: box-shadow: var(--border-shadow-yellow); */
+
+
+    /* =========================================
+       DEKORLINJER (pseudo-element)
+       ========================================= */
+
+    --decor-line-thin: 4px;
+    /* tunn dekorlinje
+                                 Ex: height: var(--decor-line-thin); */
+
+    --decor-line-thick: 8px;
+    /* tjock dekorlinje
+                                 Ex: height: var(--decor-line-thick); */
+
+    --decor-line-gradient: linear-gradient(to right,
+            var(--pink-300),
+            var(--pink-200),
+            var(--yellow-200),
+            var(--yellow-300));
+    /* Exempel:
+       .section-title::after {
+           content: "";
+           display: block;
+           height: var(--decor-line-thick);
+           background: var(--decor-line-gradient);
+           border-radius: var(--border-radius-sm);
+       }
+    */
+}
+
+
+
+
+/* ⭐ HUR DU ANVÄNDER DEM I ANDRA FILER (Alla exempel är direkt användbara i dina komponenter.) 🟣 1. Klassisk border css .card {
+    border: var(--border-medium) var(--border-style-solid) var(--pink-300);
+    border-radius: var(--border-radius-md);
+}
+
+🟣 2. Double border css .box {
+    border-width: 6px;
+    border-style: var(--border-style-double);
+    border-color: var(--pink-400);
+}
+
+🟣 3. Gradient border (horisontell) css .about-me-inner-container {
+    border: var(--border-chunky) solid transparent;
+    border-image: var(--border-gradient-horizontal) 1;
+}
+
+🟣 4. Gradient border (vertikal) css .hero-box {
+    border: 8px solid transparent;
+    border-image: var(--border-gradient-vertical) 1;
+}
+
+🟣 5. Soft pastel gradient border css .info-box {
+    border: 6px solid transparent;
+    border-image: var(--border-gradient-soft) 1;
+}
+
+🟣 6. Glow border (neon‑effekt) css .btn:hover {
+    box-shadow: var(--border-glow-pink);
+}
+
+🟣 7. Shadow border (falsk border) css .highlight-box {
+    box-shadow: var(--border-shadow-yellow);
+}
+
+🟣 8. Pseudo-element dekorlinje (tunn) css .section-title::after {
+    content: "";
+    display: block;
+    height: var(--decor-line-thin);
+    width: 60px;
+    margin: 0.5rem auto 0;
+    background: var(--yellow-300);
+    border-radius: var(--border-radius-sm);
+}
+
+🟣 9. Pseudo-element dekorlinje (gradient) css .section-title::after {
+    content: "";
+    display: block;
+    height: var(--decor-line-thick);
+    width: 100%;
+    background: var(--decor-line-gradient);
+    border-radius: var(--border-radius-sm);
+}
+
+⭐ 10. Pseudo-element som “lager” bakom boxar css .about-me-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--decor-line-gradient);
+    z-index: -1;
+    border-radius: var(--border-radius-lg);
+} */

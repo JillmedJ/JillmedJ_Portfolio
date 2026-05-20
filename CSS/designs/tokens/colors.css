@@ -1,0 +1,114 @@
+/* =========================================
+   COLORS.CSS – Färgpalett (endast färger)
+   =========================================
+   Här ligger ALLA färgvariabler för hela sidan.
+   Dessa används i andra filer för bakgrund,
+   text, knappar, highlights och sektioner.
+========================================= */
+
+:root {
+
+    /* =========================================
+       BASFÄRGER (neutrala)
+       ========================================= */
+    --color-white: #ffffff;
+    /* ren vit */
+    --color-black: #1a1a1a;
+    /* djup svart */
+
+    /* Gråskala – bra för borders, skuggor, subtil text */
+    --gray-100: #f7f7f7;
+    --gray-200: #e5e5e5;
+    --gray-300: #cccccc;
+    --gray-400: #999999;
+    --gray-500: #666666;
+    --gray-600: #333333;
+
+
+    /* =========================================
+       PRIMÄRA FÄRGER (rosa tema)
+       ========================================= */
+    --pink-100: #f7a3e5;
+    /* ljus bakgrund */
+    --pink-200: #e97ad2;
+    /* mellanrosa */
+    --pink-300: #d653ba;
+    /* textrosa */
+    --pink-400: #c24aa8;
+    /* brand */
+    --pink-500: #a02185;
+    /* mörk brand */
+
+    /* Brandfärger (för knappar, highlights, nav) */
+    --brand-bg: var(--pink-100);
+    --brand: var(--pink-400);
+    --brand-dark: var(--pink-500);
+
+
+    /* =========================================
+       SEKUNDÄRA FÄRGER (gult tema)
+       ========================================= */
+    --yellow-100: #fff7b3;
+    /* ljus bakgrund */
+    --yellow-200: #ffe866;
+    /* highlight */
+    --yellow-300: #ffd633;
+    /* accent */
+    --yellow-400: #ffbf00;
+    /* stark accent */
+    --yellow-500: #e6a800;
+    /* mörk accent */
+
+
+    /* =========================================
+       ACCENTFÄRGER
+       ========================================= */
+    --accent: var(--yellow-300);
+    /* primär accent */
+    --accent-strong: var(--yellow-400);
+    /* stark accent */
+
+
+    /* =========================================
+       BAKGRUNDSFÄRGER
+       ========================================= */
+    --bg-main: var(--pink-100);
+    /* huvudbakgrund */
+    --bg-inner: var(--pink-400);
+    /* inner sektion */
+    --bg-section: var(--pink-100);
+    --bg-dark: var(--pink-500);
+    /* mörk sektion */
+
+
+    /* =========================================
+       TEXTFÄRGER
+       ========================================= */
+    --text-body: var(--pink-300);
+    /* brödtext */
+    --text-heading: var(--pink-500);
+    /* rubriker */
+    --text-muted: var(--gray-500);
+    /* svag text */
+    --text-accent: var(--yellow-400);
+    /* gul highlight */
+    --text-highlight: var(--pink-200);
+    /* ljus rosa highlight */
+
+
+    /* =========================================
+       KNAPPFÄRGER
+       ========================================= */
+    --btn-bg: var(--pink-400);
+    /* rosa knapp */
+    --btn-bg-hover: var(--pink-500);
+    /* hover */
+    --btn-text: var(--pink-100);
+    /* ljus text */
+    --btn-text-hover: var(--yellow-300);
+    /* gul hovertext */
+
+    --text-button: var(--pink-300);
+    /* alternativ text */
+    --text-button-hover: var(--yellow-300);
+}

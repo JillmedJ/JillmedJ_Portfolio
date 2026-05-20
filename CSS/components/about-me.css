@@ -1,6 +1,6 @@
 
 .about-me-container {
-    background-color: var(--brand-dark);
+    background-color: var(--pink-500);
     /* Mörk rosa bakgrund */
     padding: 1rem 0;
     /* Luft ovanför och under nav */
@@ -27,6 +27,7 @@
     gap: 2.5rem;
     
     
+    
 }
 
 .about-me-inner-container {
@@ -39,7 +40,14 @@
     flex-wrap: wrap;
 
     justify-content: center;
-    background-color: var(--bg-inner);
+    background-color: var(--pink-400);
+
+    border: 10px solid transparent;
+        border-image: linear-gradient(to right,
+                var(--pink-300),
+                var(--pink-200),
+                var(--yellow-200),
+                var(--yellow-300)) 1;
     
 
 }
@@ -53,19 +61,29 @@
     border-radius: 0.5rem;
     
 
-    
+    border: 20px solid transparent;
+        border-image: linear-gradient(to right,
+                var(--pink-300),
+                var(--pink-200),
+                var(--yellow-200),
+                var(--yellow-300)) 1;
 
 }
 
-.about-me-container::before {
+/* .about-me-container::before {
     content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: var(--yellow-300);
-    bottom: 0;
-    left: 0;
-}
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: linear-gradient(to right,
+                var(--pink-300),
+                var(--pink-200),
+                var(--yellow-200),
+                var(--yellow-300));
+        bottom: 0;
+        left: 0;
+        border-radius: var(--border-radius-sm);
+} */
 
 .p1 {
 
@@ -96,14 +114,36 @@
 
 }
 
+#about h2 {
+
+    padding: 1rem 3rem;
+    border: 10px solid transparent;
+        border-image: linear-gradient(to right,
+                var(--pink-300),
+                var(--pink-200),
+                var(--yellow-200),
+                var(--yellow-300)) 1;
+
+                
+}
 
 
 
-#about h2::after {
-    content: "";
-    display: block;
-    height: 2px;
+/* #about h2::after {
+
     
+content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+
     background-color: var(--yellow-300);
     margin: 0.2rem auto 0;
-}
+    background: linear-gradient(to right,
+            var(--pink-300),
+            var(--yellow-300));
+            margin: 0.5rem auto 0;
+                border-radius: var(--border-radius-sm);
+
+                
+} */

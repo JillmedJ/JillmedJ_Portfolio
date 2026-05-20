@@ -1,0 +1,166 @@
+/* =========================================
+   LAYERS-EXAMPLES.CSS – Färdiga lagerklasser
+   =========================================
+   Dessa klasser använder tokens från layers.css.
+   Perfekt för snabb styling och konsekvent djup.
+========================================= */
+
+
+/* =========================================
+   1. BAKGRUNDSLAGER
+========================================= */
+
+.layer-1-bg {
+    background-color: var(--layer-1);
+}
+
+/* Exempel:
+   <section class="layer-1-bg">...</section>
+*/
+
+
+.layer-2-bg {
+    background-color: var(--layer-2);
+}
+
+/* Exempel:
+   <div class="layer-2-bg">...</div>
+*/
+
+
+.layer-3-bg {
+    background-color: var(--layer-3);
+}
+
+/* Exempel:
+   <div class="layer-3-bg">...</div>
+*/
+
+
+.layer-4-bg {
+    background-color: var(--layer-4);
+}
+
+/* Exempel:
+   <p class="layer-4-bg">...</p>
+*/
+
+
+.layer-5-bg {
+    background-color: var(--layer-5);
+}
+
+/* Exempel:
+   <div class="layer-5-bg">...</div>
+*/
+
+
+.layer-accent-bg {
+    background-color: var(--layer-accent);
+}
+
+/* Exempel:
+   <span class="layer-accent-bg">...</span>
+*/
+
+
+
+/* =========================================
+   2. GRADIENTLAGER
+========================================= */
+
+.layer-gradient-bg {
+    background: var(--layer-gradient);
+}
+
+/* Exempel:
+   <div class="layer-gradient-bg">...</div>
+*/
+
+
+
+/* =========================================
+   3. LAGERKORT (kort i kort)
+========================================= */
+
+.layer-card {
+    background-color: var(--layer-3);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-md);
+}
+
+/* Exempel:
+   <div class="layer-card">...</div>
+*/
+
+
+.layer-card-light {
+    background-color: var(--layer-4);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-md);
+}
+
+/* Exempel:
+   <div class="layer-card-light">...</div>
+*/
+
+
+
+/* =========================================
+   4. LAGER + BORDER (kombination)
+========================================= */
+
+.layer-gradient-border {
+    border: 10px solid transparent;
+    border-image: var(--layer-gradient) 1;
+    border-radius: var(--border-radius-lg);
+}
+
+/* Exempel:
+   <div class="layer-gradient-border">...</div>
+*/
+
+
+
+/* =========================================
+   5. DEKORLINJER (pseudo-element)
+========================================= */
+
+.layer-accent-line {
+    position: relative;
+}
+
+.layer-accent-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-color: var(--layer-accent);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Exempel:
+   <h2 class="layer-accent-line">Rubrik</h2>
+*/
+
+
+.layer-gradient-line {
+    position: relative;
+}
+
+.layer-gradient-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: var(--layer-gradient);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Exempel:
+   <h2 class="layer-gradient-line">Rubrik</h2>
+*/

@@ -1,0 +1,181 @@
+/* =========================================
+   UTILITIES.CSS – Layout & struktur
+   ========================================= */
+
+/* =========================================
+1) CONTAINERS
+========================================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Smalare container (t.ex. textblock) */
+.container-narrow {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* =========================================
+   2) SEKTIONER
+========================================= */
+.section {
+    padding: 4rem 0;
+}
+
+.section-sm {
+    padding: 2rem 0;
+}
+
+.section-lg {
+    padding: 6rem 0;
+}
+
+/* =========================================
+   5) FLOW-SPACING (automatisk vertikal spacing)
+========================================= */
+/* 
+   .flow
+   – Lägger automatiskt spacing mellan alla barn
+   – Perfekt för formulär, textblock, kortlistor
+*/
+.flow>*+* {
+    margin-top: 1rem;
+}
+
+.flow-lg>*+* {
+    margin-top: 2rem;
+}
+
+/* =========================================
+   3) GRID-SYSTEM
+========================================= */
+
+/* Två kolumner */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* Tre kolumner */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Auto-fit grid (responsivt) */
+.grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* =========================================
+   4) FLEX-SYSTEM
+========================================= */
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-gap {
+    display: flex;
+    gap: 1rem;
+}
+
+/* =========================================
+   5) GLOBALA heights
+========================================= */
+.vh-100 {
+    min-height: 100svh;
+}
+
+.vh-75 {
+    min-height: 75svh;
+}
+
+.vh-50 {
+    min-height: 50svh;
+}
+
+/* =========================================
+6) GLOBALA MAX-WIDTHS
+========================================= */
+.max-400 {
+    max-width: 400px;
+}
+
+.max-600 {
+    max-width: 600px;
+}
+
+.max-800 {
+    max-width: 800px;
+}
+
+.max-1000 {
+    max-width: 1000px;
+}
+
+/* =========================================
+   7) VISUELLT DOLDA ELEMENT (tillgänglighet)
+========================================= */
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* =========================================
+   7) RESPONSIVA HJÄLPKLASSER
+========================================= */
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* =========================================
+   9) TEXTBLOCK
+========================================= */
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 60ch;
+    margin-bottom: 1.5rem;
+}

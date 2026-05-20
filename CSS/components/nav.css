@@ -1,11 +1,9 @@
 /* =========================================
    NAV.CSS
-   - Navigationens layout
    - Färger från colors.css
    - Hover-effekter
    - Mobilanpassning
 ========================================= */
-
 
 /* =========================================
    YTTERSTA NAV-KONTAINERN
@@ -13,103 +11,51 @@
    Detta är bakgrundsremsan som sträcker sig
    över hela sidans bredd.
 ========================================= */
-
 .nav-container {
-   background-color: var(--brand-dark);
-   /* Mörk rosa bakgrund */
+   background-color: var(--brand-dark); /* Mörk rosa bakgrund */
+   color: var(--color-white); /* Vit text i nav (för kontrast) */
    padding: 1rem 0;
-   /* inre luft: Luft ovanför och under nav */
-   color: var(--color-white);
-   /* Vit text i nav (för kontrast) */
 }
-
-
-/* =========================================
-   INRE NAV-KONTAINER
-   =========================================
-   Håller ihop logga + länkar och centrerar dem.
-========================================= */
-
-.nav-inner-container {
-   max-width: 1000px;
-   /* Begränsar bredden */
-   margin: 0 auto;
-   /* inre luft: Centrerar nav-innehållet */
-   padding: 0 1rem;
-   /* inre luft: Sidomarginal */
-   display: flex;
-   /* Lägger logga + länkar i rad */
-   justify-content: space-between;
-   align-items: center;
-}
-
 
 /* =========================================
    LOGGA + SIGNATUR
 ========================================= */
-
 .nav-brand {
    display: flex;
    align-items: center;
    gap: 1rem;
-   /* inre luft: Avstånd mellan logga och text */
 }
 
 .nav-brand img {
-   max-height: 50px;
-   max-width: 150px;
-   height: auto;
+   height: 50px;
    width: auto;
    object-fit: contain;
-   
 }
-
 
 /* =========================================
    NAV-LÄNKAR (UL + LI + A)
 ========================================= */
-
 .nav-ul {
    display: flex;
+
    gap: 2rem;
-   /* inre luft: Avstånd mellan länkar */
-   list-style: none;
    margin: 0; /* inre luft: */
    padding: 0; /*  inre luft: */
+
+   list-style: none;
 }
 
 /* Länkarna */
 .nav-ul a {
    text-decoration: none;
    font-weight: 500;
-   color: var(--pink-100);
-   /* Ljus rosa text */
+   color: var(--pink-100); /* Ljus rosa text */
    transition: color 0.2s ease;
 }
-
 
 /* =========================================
    HOVER-EFFEKT
 ========================================= */
-
 .nav-ul a:hover {
-   color: var(--yellow-300);
-   /* Gul accent vid hover */
+   color: var(--yellow-300); /* Gul accent vid hover */
 }
-
-
-/* =========================================
-   MOBILMENY (media queries)
-========================================= */
-
-/*
-@media (max-width: 600px) {
-    .nav-ul {
-        gap: 1rem;
-    }
-
-    .nav-brand img {
-        max-width: 120px;
-    }
-}
-*/
