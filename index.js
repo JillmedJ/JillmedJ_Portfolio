@@ -13,3 +13,6 @@ document.getElementById("text-box-submit").onclick = function(){
     document.getElementById("text-box-h2").textContent = `Din kommunikation: ${usersCommunication}`;
 }
 
+// #####################################################################
+
+console.log($0);

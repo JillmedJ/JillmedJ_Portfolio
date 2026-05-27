@@ -69,7 +69,6 @@
     flex-direction: column;
 }
 
-
 /* =========================================
    TILLGÄNGLIGHET
    ========================================= */
@@ -91,7 +90,6 @@
     opacity: 0;
     pointer-events: none;
 }
-
 
 /* --- Små hjälpfunktioner som används överallt ----- */
 
@@ -146,7 +144,6 @@ img {
 .no-break {
     white-space: nowrap;
 }
-
 
 /* 
 🌟 Hur ska du tänka kring helpers.css? 
