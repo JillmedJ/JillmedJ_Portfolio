@@ -9,7 +9,43 @@
 
     <body class="debug">
 
-        <nav class="container nav-container">
+        <header>
+            <nav aria-label="Huvudnavigation">
+                <a href="#hero" class="nav-brand">
+                    <img src="visuals/images/SVG/logo.svg" alt="Min logga">
+                    <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="#projects">
+                            <span class="nav-icon">
+                                <!-- Här kommer SVG senare <svg...>... -->
+                            </span>
+                            <span class="nav-text no-break">Se mina projekt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="nav-icon">
+                                <!-- Här kommer SVG senare <svg...>...-->
+                            </span>
+                            <span class="nav-text no-break">Contact me</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cv/JillmedJ-CV.pdf" download>
+                            <span class="nav-icon">
+                                <!-- Här kommer SVG senare <svg...>...-->
+                            </span>
+                            <span class="nav-text no-break">Ladda ned mitt CV</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- <nav class="container nav-container">
             <div class="container flex-between">
 
                 <div class="nav-brand flex-gap"> 
@@ -24,7 +60,7 @@
                         <a href="#projects">
                             <span class="nav-icon">
                                 <!-- Här kommer SVG senare <svg...>... -->
-                                </span>
+                                <!-- </span>
                             <span class="nav-text no-break">Se mina projekt</span>
                         </a>
                     </li>
@@ -32,25 +68,43 @@
                         <a href="#contact">
                             <span class="nav-icon">
                                 <!-- Här kommer SVG senare <svg...>...-->
-                                </span>
+                                <!-- </span>
                             <span class="nav-text no-break">Contact me</span>
                         </a>
                     </li>
                     <li>
                         <a href="cv/JillmedJ-CV.pdf" download>
-                            <span class="nav-icon">
+                            <span class="nav-icon"> -->
                                 <!-- Här kommer SVG senare <svg...>...-->
-                                </span>
+                                <!-- </span>
                             <span class="nav-text no-break">Ladda ned mitt CV</span>
                         </a>
                     </li>
                 </ul>
 
             </div>
-        </nav>
+        </nav>  -->
 
         <main>
-            <section class="container" id="hero">
+
+            <section aria-labelledby="hero-title">
+                <header>
+                    <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
+                    <h1 id="hero-title">Jill med J - Systemutvecklare to be</h1>
+                    <p class="tagline">Lärande utvecklare som trivs bäst när idéer får delas.</p>
+                </header>
+                
+                <p>Jag lär mig — och jag älskar det.</p>
+
+                <p>Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.</p>
+
+                <footer>
+                    <a href="#projects" class="cta">Se mina projekt</a>
+                </footer>
+                
+            </section>
+
+            <!-- <section class="container" id="hero">
                 <div class="container flow text-center">
                     <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
                     <h1>Jill med J - Systemutvecklare to be</h1>
@@ -59,18 +113,76 @@
                     <p>Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.</p>
                     <a href="#projects" class="cta">Se mina projekt</a>
                 </div>
-            </section> 
+            </section>  -->
 
             <!-- ABOUT / SHOWCASE -->
-            <section class="section about-me-container" id="about">
-                <article class="container about-text">
+            <section aria-labelledby="about-title" id="about">
+
+                <header>
+                    <h2 id="about-title">About me</h2>
+                    <figure class="about-image">
+                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
+                        <figcaption></figcaption>
+                    </figure>
+                </header>
+
+                <article>
+                    <header>
+                        <h3>My path</h3>
+                        <figure class="about-image">
+                            <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
+                            <figcaption></figcaption>
+                        </figure>
+                    </header>
+                    
+                    <p>
+                        Jag är en lärande utvecklare som trivs där struktur möter kreativitet. Min väg in i systemutveckling började med en
+                        nyfikenhet på hur olika områden hänger ihop i olika sammanhang — och har vuxit till en vilja att förstå, bygga och
+                        förbättra digitala lösningar.
+                    </p>
+                    
+                    <p>
+                        Jag lär mig genom att göra, testa och tänka högt. Jag uppskattar särskilt när idéer får delas och när man utforskar
+                        tillsammans. För mig är det viktigt att en arbetsplats är en miljö där man trivs, känner sig trygg och kan bidra
+                        till en
+                        positiv kultur — gärna med inslag av skratt då och då. Det är i samarbeten jag utvecklas som mest.
+                    </p>
+                    
+                    <p>
+                        Språk, kommunikation och struktur är tre av mina starkaste verktyg. Jag tycker om att formulera mig tydligt, skapa
+                        ordning i komplexitet och bygga lösningar som är begripliga både för användare och utvecklare. För mig räcker det
+                        inte
+                        att kod fungerar — den ska också vara lätt att förstå.
+                    </p>
+                    
+                    <p>
+                        Som person är jag prestigelös, nyfiken och envis på ett konstruktivt sätt. Jag tar mig an problem steg för steg,
+                        reflekterar över vad jag lär mig och letar ständigt efter bättre sätt att arbeta.
+                    </p>
+                    
+                    <p>
+                        Min bakgrund som lärare har stärkt mig i att kommunicera, presentera och skapa goda relationer. Jag trivs med att
+                        lära
+                        ut, stå inför människor och vara en tydlig och positiv förebild — något jag tar med mig in i utvecklaryrket, både i
+                        samarbeten och i hur jag tänker kring användarupplevelser.
+                    </p>
+                    
+                    <p>
+                        Just nu bygger jag min grund inom JavaScript, HTML, CSS och systemutveckling i stort — och jag ser fram emot att
+                        fortsätta växa i rollen. Mitt mål är att bidra i team där man lär av varandra, bygger tillsammans och skapar
+                        genomtänkta
+                        och hållbara lösningar.</p>
+                </article>
+                
+
+                <!-- <article class="container about-text">
 
                     <header class="about-me-header">
                         <div class="about-me-inner-container flex-between">
                             <h2>About me</h2>
 
                             <figure class="about-image">
-                                <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="acync">
+                                <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
                                 <figcaption></figcaption>
                             </figure>
                         </div>
@@ -115,25 +227,30 @@
                     </div>
                     
                     
-                </article>
+                </article> -->
 
-                <article class="container">
+                <!-- <article class="container"> -->
+                <article>
 
                     <header>
-                        <h2>My skills</h2>
+                        <h3>My skills</h3>
+                        <figure class="about-image">
+                            <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
+                            <figcaption></figcaption>
+                        </figure>
                     </header>
-
-                    <div class="grid-2 flow">
-                        <p class=" p1">
+                    <!-- <divclass="grid-2 flow"> -->
+                    
+                        <p>
                             Jag har en grund inom C#, programmeringslogik och struktur, och har arbetat med att koppla C# program i Visual Studio
                             Community till databaser. Jag använder Git och GitHub för versionshantering och har erfarenhet av Autofac för
                             beroendehantering. Utöver det bygger jag just nu upp min kompetens inom webbutveckling med HTML, CSS och JavaScript.
                         </p>
-                    </div>
+                    <!-- </div> -->
 
-                    <div class="container">
+                    <!-- <div class="container"> -->
                         <header>
-                            <h3>Tekniska färdigheter</h3>
+                            <h4>Tekniska färdigheter</h4>
                         </header>
                     
                         <ul>  <!-- ul>li*7 : ) -->
@@ -145,10 +262,10 @@
                             <li>Autofac - beroendehantering</li>
                             <li>Figma - design, strukturering och export av komponenter</li>
                         </ul>
-                    </div>
+                    <!-- </div>
 
-                    <div class="grid-2 flow">
-                        <p class=" p2">
+                    <div class="grid-2 flow"> -->
+                        <p>
                             Just nu utvecklas jag inom att förstå och bygga smidiga, logiska och effektiva arbetsflöden — både i kod och i
                             processer. Mitt fokus ligger på att skriva tydlig kod, skapa struktur och hitta arbetssätt som gör utvecklingen hållbar
                             och lätt att förstå.
@@ -157,15 +274,15 @@
 
                 </article>
 
-                <article class="container">
-
+                <!-- <article class="container"> -->
+                <article>
                     <header>
-                        <h2>What drives me</h2>
+                        <h3>What drives me</h3>
                     </header>
 
-                    <div class="grid-2 flow">
+                    <!-- <div class="grid-2 flow"> -->
 
-                        <p class=" p1">
+                        <p>
                             Jag drivs av att bidra till arbetsmiljöer där kommunikation, trygghet och nyfikenhet får ta plats. Jag tror på ett “vi”
                             i teamet — där alla känner sig välkomna, där det är högt i tak och där man delar kunskap för att växa tillsammans. Jag
                             är långt ifrån mätt på förståelse och lärande, och jag trivs i miljöer där man får utforska, reflektera och förbättra
@@ -174,13 +291,13 @@
                             hand i hand. En plats där man vill vara och komma tillbaka till.
                         </p>
 
-                        <p class=" p2">
+                        <p>
                             Dessutom har jag ett naturligt starkt intresse av verksamhetsutveckling — särskilt hur reflektion kan användas för att förbättra
                             arbetssätt, rutiner och samarbete. För mig handlar verksamhetsutveckling inte bara om organisationer på hög nivå, utan
                             om hur arbete faktiskt fungerar i praktiken: på individnivå, i gruppen och i verksamheten som helhet. Jag tror att även
                             små förändringar i arbetssätt kan skapa stora effekter i helheten.
                         </p>
-                    </div>
+                    <!-- </div> -->
                     
                 </article>
                 <footer>
@@ -194,46 +311,61 @@
 
             </section>
         
-            <!-- PROJECTS --> <!-- från ovan <a href="#projects">Se mina projekt</a> -->
-            <section class="section grid-container" id="projects">
-
-                <h2>Portfolio</h2>
-                <!-- Syfte: Convince why I am the one for them, alternativa rubriker: My Projects, Selected Work, What I've built, Case Studies, Portfolio -->
-
+            <!-- <section class="section grid-container" id="projects"> -->
+            <section id="projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Portfolio</h2>
 
                 <article class="item">
-
-                    <h2>Projektets namn (1)</h2>
-                    <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 1 -->
-                    <a href="#">Läs mer</a>
-
-                </article> 
-
-                <article class="item">
-
-                    <h2>Projektets namn (2)</h2>
-                    <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 2 -->
-                    <a href="#">Läs mer</a>
-
-                </article> 
-
-                <article class="item">
+                       <header>
+                        <h3>Projektets namn (1)</h3>
+                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
+                    </header>
                     
-                    <h2>Projektets namn (3)</h2>
-                    <p>Kort beskrivning av projektet.</p> <!-- Show/tell about Projekt 3 -->
+                    <p>Kort beskrivning av projektet.</p>
+                    <a href="#">Läs mer</a>
+
+                </article> 
+
+                <article class="item">
+                    <header>
+                        <h3>Projektets namn (2)</h3>
+                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
+                    </header>
+                    
+                    <p>Kort beskrivning av projektet.</p>
+                    <a href="#">Läs mer</a>
+
+                </article> 
+
+                <article class="item">
+                    <header>
+                        <h3>Projektets namn (3)</h3>
+                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
+                    </header>
+                    
+                    <p>Kort beskrivning av projektet.</p>
                     <a href="#">Läs mer</a>
 
                 </article>
 
-                <footer>
-                    <div class="container">
-                    <a href="#hero" class="nav-brand">
-                        <img src="visuals/images/SVG/logo.svg" alt="Min logga">
-                        <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
-                    </a>
-                    <a href="#projects">Mina projekt</a>
-                    <a href="cv/JillmedJ-CV.pdf" download>Ladda ned mitt CV</a>
-                    </div>
+                <footer aria-label="Projektsektionens länkar">
+                    <!-- <div class="container"> -->
+                        <ul>
+                            <li>
+                                <a href="https://github.com/JillmedJ" target="_blank">Annat jag har hittat på.</a>
+                            </li>
+                            <li>
+                                <a href="https://låtsaslänk1" target="_blank">Läs mer om projekt 1</a>
+                            </li>
+                            <li>
+                                <a href="https://låtsaslänk2" target="_blank">Läs mer om projekt 2</a>
+                            </li>
+                            <li>
+                                <a href="https://låtsaslänk3" target="_blank">Läs mer om projekt 3</a>
+                            </li>
+                        </ul>
+                    
+                    <!-- </div> -->
                 </footer>
 
             </section>
@@ -241,50 +373,83 @@
 
 
 
-            <section class="section" id="contact"> <!-- kontaktformulär --> 
+
+
+            <!-- <section class="section" id="contact"> -->
+            <section id="contact" aria-labelledby="contact-title">
 
                 <header>
-                    <h2>
-                        <a href="#contact">Contact me</a>
-                    </h2>
-                    <h3>Kontaktformulär</h3>
-                    <p>Jag är nyfiken på vad du tänker. Kontakta gärna mig via kontaktformuläret nedan.</p>
+                    <h2 id="contact-title">Contact me</h2>
+                    <h3>Nyfiken? Hör av dig!</h3>
+                    <p>Jag är nämligen också nyfiken på vad du tänker och vad jag kan hjälpa dig med. Skriv gärna några rader nedan.</p>
                 </header>
 
-                <form adction="https://formshow.systementor.se" method="post">
+                <form action="https://formshow.systementor.se" method="POST">
                 
                     <div class="container"> <!-- class? -->
-                        <label for="header">Kontakta mig!</label>
-                        <p>Vänligen fyll i följande fält.</p>
+                        <p>Fyll i dina uppgifter nedan.</p>
 
-                        <label for="email"></label>
-                        <input class="input" type="text" id="email" name="email" placeholder="Din email" required>
+                        <label for="email">Din e-postadress</label>
+                        <input type="email" id="email" name="email" placeholder="namne@example.com" required>
 
-                        <label for="full-name"></label>
-                        <input type="text" id="full-name" name="full-name" placeholder="Ditt för- och efternamn" required>
+                        <label for="full-name">Ditt för- och efternamn</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Kent Hellgren" required>
                     </div>
 
-                    <div class="radio-checks">
-                        <input class="radio-option" id="radio-private" type="radio" name="radio-check required>
-                        <label for="radio">Jag kontaktar dig privat.</label>
 
-                        <input class="radio-option" id="radio-company" type="radio" name="radio-check" required>
-                        <label for="radio-option">Jag, via ett företag, kontaktar dig.</label>
+                    <fieldset>
+                        <legend>Vem kontaktar mig?</legend>
 
-                        <input class="radio-option" id="radio-other" type="radio" name="radio-check" required>
-                        <label for="radio-option">Jag kontaktar dig av någon annan anledning.</label>
-                    </div>
+                        <input 
+                            type="radio" 
+                            id="radio-private" 
+                            name="radio-check" 
+                            required
+                            value="private"
+                        >
+                        <label for="radio-private">Privat kontakt</label>
+                                                
+                        <input 
+                            type="radio" 
+                            id="radio-company" 
+                            name="radio-check"
+                            required
+                            value="company"
+                        >
+                        <label for="radio-company">Företagskontakt</label>
+                        
+                        <input 
+                            type="radio" 
+                            id="radio-other" 
+                            name="radio-check" 
+                            required
+                            value="other
+                        >
+                        <label for="radio-other">Annat syfte</label>
+
+                    </fieldset>
+                   
 
                     <div class="form">
-                        <label for="text-area"></label>
-                        <textarea class="form-text-area" id="text-area" name="text-area" rows="5" cols="60" placeholder="Din text"></textarea>
+                        <label for="message">Ditt meddelande</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            placeholder="Skriv ditt meddelande här..."
+                            required
+                        ></textarea>
                         <!-- <button class="btn-reset" type="reset">Reset</button> -->
                     </div>
                     
                     <div>
-                        <button class="btn-post" type="submit">Submit</button>
+                        <button class="btn-post" type="submit">Skicka</button>
                     </div>
                 </form>
+                
+                <p>Vill du hellre maila direkt?</p>
+                <a href="mailto:jilljeginder@gmail.com">jilljeginder@gmail.com</a>
+                <p>Jag svarar så snart jag kan. Jag är alltid nyfiken på nya idéer, samarbeten och frågor.</p>
                 
                 <footer>
                     <a href="#hero" class="nav-brand">
@@ -310,13 +475,7 @@
                 
                 Du bestämmer om och när du ringer. -->
 
-                <h2 id="text-box-h2">Kommunicera med mig!</h2>
-
-                <label>Vad vill du förmedla? </label>
                 
-                <input id="text-box">
-                <button id="text-box-submit">Submit</button>
-                <p id="output"> </p>
 
                 
                 
