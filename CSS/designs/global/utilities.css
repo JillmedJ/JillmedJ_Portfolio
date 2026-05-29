@@ -2,8 +2,23 @@
    UTILITIES.CSS – Layout & struktur
    ========================================= */
 
+   /* =========================================
+   1) SEKTIONER - yttre lager  (sidan i boken)
+========================================= */
+   .section {
+       padding: 4rem 0;
+   }
+
+   .section-sm {
+       padding: 2rem 0;
+   }
+
+   .section-lg {
+       padding: 6rem 0;
+   }
+
 /* =========================================
-1) CONTAINERS
+2) CONTAINERS - för layout och innehåll (ett inre lager) begränsar bredden + centrerar på innehåller (en del av innehållet på sidan (.section))
 ========================================= */
 .container {
     max-width: 1200px;
@@ -18,20 +33,6 @@
     padding: 0 1rem;
 }
 
-/* =========================================
-   2) SEKTIONER
-========================================= */
-.section {
-    padding: 4rem 0;
-}
-
-.section-sm {
-    padding: 2rem 0;
-}
-
-.section-lg {
-    padding: 6rem 0;
-}
 
 /* =========================================
    5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad

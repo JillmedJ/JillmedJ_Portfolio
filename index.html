@@ -218,8 +218,57 @@
 
             </section>
            
-            <section class="section" id="contact"> <!-- kontaktformulär --> <!-- från ovan <a href="#contact">Contact me</a>-->
+
+
+
+            <section class="section" id="contact"> <!-- kontaktformulär --> 
+
+                <header>
+                    <h2>
+                        <a href="#contact">Contact me</a>
+                    </h2>
+                    <h3>Kontaktformulär</h3>
+                    <p>Jag är nyfiken på vad du tänker. Kontakta gärna mig via kontaktformuläret nedan.</p>
+                </header>
+
+                <form adction="https://formshow.systementor.se" method="post">
                 
+                    <div class="container"> <!-- class? -->
+                        <label for="header">Kontakta mig!</label>
+                        <p>Fyll gärna i följande fält.</p>
+
+                        <label for="email"></label>
+                        <input class="input" type="text" id="email" name="email" placeholder="Din email">
+
+                        <label for="full-name"></label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Ditt för- och efternamn">
+                    </div>
+
+                    <div class="radio-checks">
+                        <input class="radio-option" id="radio-private" type="radio" name="radio-check">
+                        <label for="radio">Jag kontaktar dig privat.</label>
+
+                        <input class="radio-option" id="radio-company" type="radio" name="radio-check">
+                        <label for="radio-option">Jag, via ett företag, kontaktar dig.</label>
+
+                        <input class="radio-option" id="radio-other" type="radio" name="radio-check">
+                        <label for="radio-option">Jag kontaktar dig av någon annan anledning.</label>
+                    </div>
+
+                    <div class="form">
+                        <label for="text-area"></label>
+                        <textarea class="form-text-area" id="text-area" name="text-area" rows="5" cols="60" placeholder="Din text"></textarea>
+                        <button class="btn-clear" type="reset">Reset</button>
+                    </div>
+                    
+                    <div>
+                        <button class="btn-post" type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <footer>
+
+                </footer>
                 <!-- (allmänt kontaktformulär -->
 
                 <!-- (maila mig direkt(förprogrammerat meddelande som skickas iväg när de fyllt i required informations) )mailto‑länk (maila migformulär) -->
@@ -256,12 +305,13 @@
         <footer class="section">
 
             <div class="container">
-                <div class="footer-brand"> <!-- class används för styling av ex. layout, färger, typografi och komponenter, återanvändbara komponenter, kan beskriva hur något ser ut eller fungerar -->
-                    <!-- img = min logga-->
-                    <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
-                    <!-- img = min underskrift -->
-                    <img src="visuals/images/PNG/signature.png" alt="Jills underskrift">
-                    <!-- alternativt img = min underskrift snett palcerat i sidans högra hörn -->
+                <div class="footer-brand"> 
+
+                    <a href="#hero" class="nav-brand">
+                        <img src="visuals/images/SVG/logo.svg" alt="Min logga">
+                        <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
+                    </a>
+                    
                 </div>
                 
 
