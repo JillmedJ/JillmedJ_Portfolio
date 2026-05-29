@@ -16,3 +16,10 @@ document.getElementById("text-box-submit").onclick = function(){
 // #####################################################################
 
 console.log($0);
+{/* <h2 id="text-box-h2">Kommunicera med mig!</h2>
+
+                <label>Vad vill du förmedla? </label>
+                
+                <input id="text-box">
+                <button id="text-box-submit">Submit</button>
+                <p id="output"> </p> */}
