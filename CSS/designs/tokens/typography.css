@@ -96,7 +96,11 @@ a:hover {
     width: 1.2em;
     height: 1.2em;
     vertical-align: middle;
+
+    transition: color 0.2s ease, filter 0.2s ease, transform 0.2s ease;
 }
+
+
 
 /* =========================================
    IKONER – SPECIALFALL (valfritt)
