@@ -22,8 +22,22 @@
 
 /* --- Footer-text ---------------------------------- */
 
+.footer-links a:hover {
+   color: var(--accent-strong);
+}
 
 /* --- Footer-ikoner -------------------------------- */
+.footer-links a:hover .icon {
+   color: var(--accent-strong);
+}
+
+
+
+.footer-links a:hover img.icon {
+   transform: scale(1.1);
+   transition: transform 0.2s ease;
+}
+
 
 
 /* --- Responsiv footer ----------------------------- */

@@ -1,4 +1,33 @@
 Jill med J – Min portfolio (pågående arbete)
+
+Senast uppdaterad: 1 juni 2026
+CTA‑strategi (sammanfattning)
+Primär CTA:
+
+Contact me
+
+Placeras i nav och hero
+
+Ser ut som en knapp
+
+Sekundära CTA:er:
+
+Se mina projekt
+
+Ladda ner CV
+
+Placeras i hero, sektioner, footer
+
+Ser ut som vanliga länkar
+
+Sociala CTA:er:
+
+GitHub, LinkedIn, Instagram, Facebook
+
+Endast ikoner
+
+Placeras i footer
+
 Senast uppdaterad: 26 april 2026
 
 Välkommen hit.
