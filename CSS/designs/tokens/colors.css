@@ -111,4 +111,9 @@
     --text-button: var(--pink-300);
     /* alternativ text */
     --text-button-hover: var(--yellow-300);
+
+   /* =========================================
+       IKON-FÄRGER
+       ========================================= */
+   --icon-color: var(--pink-500);
 }
