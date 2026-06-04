@@ -18,17 +18,13 @@
 .hero-tagline {
    font-size: 1.25rem;
    font-weight: 500;
-   max-width: 40ch;
-   margin-left: auto;
-   margin-right: auto;
-   /* color: var(--text-body);  Rosa brödtext */
-}
 
-/* =========================================
-CTA i hero – extra spacing
-========================================= */
-#hero .cta {
-   margin-top: 2rem;
+   
+   /* color: var(--text-body);  Rosa brödtext */
+
+   display: inline-block;
+   max-width: 40ch;
+   text-align: center;
 }
 
 /* =========================================
@@ -37,7 +33,9 @@ CTA i hero – extra spacing
 #hero img {
    width: 100%;
    max-width: 900px; /* Justerbar storlek */
+
    margin: 0 auto;
+
    display: block;
 }
 
@@ -46,22 +44,13 @@ CTA i hero – extra spacing
 ========================================= */
 @media (min-width: 600px) {
 
-   #hero {
-      padding: 6rem 0;
-   }
-
    #hero h1 {
-      font-size: 2.5rem;
-      /* större rubrik */
+      font-size: 2.5rem; /* större rubrik */
    }
 
-   .tagline {
+   .hero-tagline {
       font-size: 1.4rem;
       max-width: 45ch;
-   }
-
-   #hero .cta {
-      margin-top: 2.5rem;
    }
 }
 
@@ -70,21 +59,13 @@ CTA i hero – extra spacing
 ========================================= */
 @media (min-width: 900px) {
 
-   #hero {
-      padding: 8rem 0;
-   }
-
    #hero h1 {
       font-size: 3rem;
    }
 
-   .tagline {
+   .hero-tagline {
       font-size: 1.5rem;
       max-width: 50ch;
-   }
-
-   #hero .cta {
-      margin-top: 3rem;
    }
 
    #hero img {
