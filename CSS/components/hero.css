@@ -34,18 +34,10 @@
 /* =========================================
    CTA-KNAPP
 ========================================= */
-.ctat {
-   display: inline-block;
-   padding: 0.75rem 1.5rem;
-   border-radius: 0.5rem;
+#hero .cta {
+   margin-top: 2rem;
 
-   text-decoration: none; /* border-radius: 0.5rem; */
-   font-weight: 600; /* margin-top: 1rem;*/
-
-   /* Bakgrundsfärg och textfärg från colors.css */
-   background-color: var(--btn-bg); /* Rosa knapp */
-   color: var(--btn-text); /* Ljus rosa text */   
-} 
+}
 
 /* Hover-effekt */
 .cta:hover {

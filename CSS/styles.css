@@ -19,6 +19,7 @@
 @import "components/hero.css";
 @import "components/cards.css";
 @import "components/footer.css";
+@import "components/cta.css";
 
 /* === GLOBAL BODY BACKGROUND === */
 /* body {

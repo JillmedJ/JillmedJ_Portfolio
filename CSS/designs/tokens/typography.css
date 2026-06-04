@@ -116,12 +116,7 @@ Flex löser baseline-problem:
 - gap fungerar konsekvent
 - fungerar för både SVG och PNG
 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.heading-with-icon {
     display: flex;
     align-items: center;
     gap: 0.5em;
