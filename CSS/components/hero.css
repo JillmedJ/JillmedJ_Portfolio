@@ -8,8 +8,8 @@
 #hero {
    
 
-   background-color: var(--bg-main); /* Rosa huvudbakgrund */
-   color: var(--text-body); /* Rosa brödtext */
+   /*background-color: var(--bg-main);  Rosa huvudbakgrund */
+   /*color: var(--text-body);  Rosa brödtext */
 }
 
 /* =========================================
@@ -17,10 +17,9 @@
 ========================================= */
 #hero h1 {
 
-   
    font-size: 2rem;
    line-height: 1.2; /* margin-top: 1rem; */
-   color: var(--text-heading); /* Mörkare rosa rubrik */
+   /* color: var(--text-heading);  Mörkare rosa rubrik */
 }
 
 /* =========================================
@@ -29,13 +28,13 @@
 .tagline {
    font-size: 1.25rem;
    font-weight: 500;
-   color: var(--text-body); /* Rosa brödtext */
+   /* color: var(--text-body);  Rosa brödtext */
 }
 
 /* =========================================
    CTA-KNAPP
 ========================================= */
-.cta {
+.ctat {
    display: inline-block;
    padding: 0.75rem 1.5rem;
    border-radius: 0.5rem;
