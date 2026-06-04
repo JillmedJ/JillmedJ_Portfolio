@@ -1,7 +1,6 @@
 /* =========================================
    HERO.CSS – Unik styling för hero-sektionen
 
-
       – Grundlayout (mobil först)
 ========================================= */
 /* =========================================
@@ -19,7 +18,6 @@
    font-size: 1.25rem;
    font-weight: 500;
 
-   
    /* color: var(--text-body);  Rosa brödtext */
 
    display: inline-block;
@@ -35,6 +33,7 @@
    max-width: 900px; /* Justerbar storlek */
 
    margin: 0 auto;
+   margin-bottom: var(--space-md);
 
    display: block;
 }

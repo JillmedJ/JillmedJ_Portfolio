@@ -8,16 +8,16 @@
    1) Outline på ALLA element
    – Hjälper dig se struktur, storlek och placering
 ========================================= */
-
+/* cyan */
 .debug * {
    outline: 1px solid rgba(0, 255, 255, 0.5);
-   /* cyan */
+   
 }
 
 /* Exempel på specifik sektion */
-#hero {
+/* #hero {
    outline: 4px solid red;
-}
+} */
 
 
 
@@ -32,8 +32,6 @@
    background-color: rgba(0, 255, 0, 0.05);
 }
 
-
-
 /* =========================================
    3) Visa grid-containrar
    – Färglägger grid så du ser rutnätet
@@ -44,8 +42,6 @@
 .debug [class*="grid"] {
    background-color: rgba(0, 0, 255, 0.05);
 }
-
-
 
 /* =========================================
    4) Visa overflow-problem
@@ -60,8 +56,6 @@
    outline: 2px dashed orange;
 }
 
-
-
 /* =========================================
    5) Visa element som är 0px höga
    – Perfekt när något “inte syns”
@@ -70,8 +64,6 @@
 .debug *:empty {
    background-color: rgba(255, 0, 0, 0.1);
 }
-
-
 
 /* =========================================
    6) Visa spacing
@@ -86,8 +78,6 @@
    outline: 2px dotted rgba(255, 0, 255, 0.4);
 }
 
-
-
 /* =========================================
    7) Visa bilder
    – Markerar bilder så du ser deras storlek
@@ -97,8 +87,6 @@
    background-color: rgba(0, 128, 255, 0.05);
    outline: 3px solid magenta !important;
 }
-
-
 
 /* =========================================
    8) Alternativ outline-läge
