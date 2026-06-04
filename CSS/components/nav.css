@@ -21,24 +21,6 @@
 }
 
 /* =========================================
-   LOGGA + SIGNATUR
-========================================= */
-/* Brand: två bilder bredvid varandra.
-   Detta är nav-specifikt → ligger här. */
-.nav-brand {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-.nav-brand img {
-   height: 50px;
-   width: auto;
-   object-fit: contain;
-}
-
-
-/* =========================================
    NAV-LÄNKAR (UL + LI + A) UL: navens länklista. Layouten (flex) är nav-specifik → ligger här.
 ========================================= */
 .nav-ul {
