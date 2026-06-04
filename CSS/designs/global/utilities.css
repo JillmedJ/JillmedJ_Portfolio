@@ -150,7 +150,24 @@
 }
 
 /* =========================================
-   5) GLOBALA heights
+   5) FLEX-SYSTEM - centrera vertikalt
+========================================= */
+
+/* Syfte: ex hero-sektion */
+.center-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Syfte: för att slippa duplicera flex, mindre flex-containers som redan har fått flex via andra klasser, men via denna kunna lägga till vertikal centrering*/
+.center-vertical-already-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================
+   6) GLOBALA heights
 ========================================= */
 .vh-100 {
     min-height: 100svh;
@@ -165,7 +182,7 @@
 }
 
 /* =========================================
-6) GLOBALA MAX-WIDTHS
+7) GLOBALA MAX-WIDTHS
 ========================================= */
 .max-400 {
     max-width: 400px;
@@ -184,7 +201,7 @@
 }
 
 /* =========================================
-   7) VISUELLT DOLDA ELEMENT (tillgänglighet)
+   8) VISUELLT DOLDA ELEMENT (tillgänglighet)
 ========================================= */
 
 .visually-hidden {
@@ -200,7 +217,7 @@
 }
 
 /* =========================================
-   8) IKON HJÄLPKLASS
+   9) IKON HJÄLPKLASS
 ========================================= */
 .icon {
     color: var(--icon-color);
@@ -210,7 +227,7 @@
 }
 
 /* =========================================
-   9) TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande pragraftexter.
+   10) TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande pragraftexter.
 ========================================= */
 .lead {
     font-size: 1.25rem;
@@ -218,7 +235,6 @@
     max-width: 60ch;
     margin-bottom: 1.5rem;
 }
-
 
 .text-center {
     text-align: center;
@@ -249,7 +265,7 @@
 }
 
 /* =========================================
-   10) RESPONSIVA HJÄLPKLASSER
+   11) RESPONSIVA HJÄLPKLASSER
 ========================================= */
 
 @media (max-width: 768px) {

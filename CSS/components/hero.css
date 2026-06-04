@@ -1,48 +1,34 @@
 /* =========================================
    HERO.CSS – Unik styling för hero-sektionen
-========================================= */
 
+
+      – Grundlayout (mobil först)
+========================================= */
 /* =========================================
    YTTERSTA HERO-SEKTIONEN 
 ========================================= */
 #hero {
-   
-
    /*background-color: var(--bg-main);  Rosa huvudbakgrund */
    /*color: var(--text-body);  Rosa brödtext */
 }
 
 /* =========================================
-   RUBRIK (H1)
-========================================= */
-#hero h1 {
-
-   font-size: 2rem;
-   line-height: 1.2; /* margin-top: 1rem; */
-   /* color: var(--text-heading);  Mörkare rosa rubrik */
-}
-
-/* =========================================
    TAGLINE
 ========================================= */
-.tagline {
+.hero-tagline {
    font-size: 1.25rem;
    font-weight: 500;
+   max-width: 40ch;
+   margin-left: auto;
+   margin-right: auto;
    /* color: var(--text-body);  Rosa brödtext */
 }
 
 /* =========================================
-   CTA-KNAPP
+CTA i hero – extra spacing
 ========================================= */
 #hero .cta {
    margin-top: 2rem;
-
-}
-
-/* Hover-effekt */
-.cta:hover {
-   background-color: var(--btn-bg-hover); /* Mörkare rosa */
-   color: var(--btn-text-hover); /* Gul text */
 }
 
 /* =========================================
@@ -52,4 +38,56 @@
    width: 100%;
    max-width: 900px; /* Justerbar storlek */
    margin: 0 auto;
-} 
+   display: block;
+}
+
+/* =========================================
+   TABLET (≥ 600px)
+========================================= */
+@media (min-width: 600px) {
+
+   #hero {
+      padding: 6rem 0;
+   }
+
+   #hero h1 {
+      font-size: 2.5rem;
+      /* större rubrik */
+   }
+
+   .tagline {
+      font-size: 1.4rem;
+      max-width: 45ch;
+   }
+
+   #hero .cta {
+      margin-top: 2.5rem;
+   }
+}
+
+/* =========================================
+   DESKTOP (≥ 900px)
+========================================= */
+@media (min-width: 900px) {
+
+   #hero {
+      padding: 8rem 0;
+   }
+
+   #hero h1 {
+      font-size: 3rem;
+   }
+
+   .tagline {
+      font-size: 1.5rem;
+      max-width: 50ch;
+   }
+
+   #hero .cta {
+      margin-top: 3rem;
+   }
+
+   #hero img {
+      max-width: 1000px;
+   }
+}
