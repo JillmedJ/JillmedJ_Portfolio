@@ -6,14 +6,10 @@
    YTTERSTA HERO-SEKTIONEN 
 ========================================= */
 #hero {
-   min-height: 100svh;
-
-   display: flex;
-   align-items: center;
+   
 
    background-color: var(--bg-main); /* Rosa huvudbakgrund */
    color: var(--text-body); /* Rosa brödtext */
-
 }
 
 /* =========================================

@@ -9,11 +9,11 @@
        padding: 4rem 0;
    }
 
-   .section-sm {
+   .section-small {
        padding: 2rem 0;
    }
 
-   .section-lg {
+   .section-large {
        padding: 6rem 0;
    }
 
@@ -119,6 +119,11 @@
 ========================================= */
 .flex {
     display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
 }
 
 .flex-between {
