@@ -75,9 +75,13 @@ ul {
    LÄNKAR
    ========================================= */
 a {
-    
     text-decoration: none;
     font-weight: 600;
+
+    /* Nedan: Gör att text + ikon alltid linjerar perfekt */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
 a:hover {
@@ -91,17 +95,47 @@ a:hover {
    Ikoner följer textens storlek automatiskt.
    1em = lika stor som texten
    1.2em = lite större och mer balanserat visuellt
-*/
+
+   inline-block+vertical-align gör att ikoner linjerar med text i löpande stycken. */
 .icon {
     width: 1.2em;
     height: 1.2em;
-    vertical-align: middle;
-
+    
     transition: color 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+
+    display: inline-block;
+    vertical-align: middle; 
 }
 
+/* =========================================
+   RUBRIKER MED IKONER
+   ========================================= */
+/*
+Flex löser baseline-problem:
+- text och ikon centreras vertikalt
+- gap fungerar konsekvent
+- fungerar för både SVG och PNG
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
 
-
+/* Ikonstorlek i rubriker */
+h2 .icon,
+h3 .icon,
+h4 .icon,
+h5 .icon,
+h6 .icon {
+    width: 1.1em;
+    height: 1.1em;
+}
 /* =========================================
    IKONER – SPECIALFALL (valfritt)
    ========================================= */
@@ -117,3 +151,11 @@ h1 .icon {
     width: 1.4em;
     height: 1.4em;
 }
+
+
+/* vertical-align: middle; fungerar bara på inline-element (inline-block och table-cell) ej block-element.
+text har en basline
+svg har en egen baseline
+img har en egen basaline
+
+dessa matchar inte alltid*/
