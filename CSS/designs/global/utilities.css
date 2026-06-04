@@ -133,6 +133,12 @@
     align-items: center;
 }
 
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -198,7 +204,7 @@
    8) IKON HJÄLPKLASS
 ========================================= */
 .icon {
-    color: var(--icon-color);
+    
     width: 1.25rem;
     height: 1.25rem;
     display: inline-block;
