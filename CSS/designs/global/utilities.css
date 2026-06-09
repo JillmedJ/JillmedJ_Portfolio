@@ -1,21 +1,30 @@
 /* =========================================
-   UTILITIES.CSS – Layout & struktur
-   ========================================= */
-
-   /* =========================================
-   1) SEKTIONER - yttre lager  (sidan i boken)
+UTILITIES.CSS – Layout & struktur
 ========================================= */
-   .section {
-       padding: 4rem 0;
-   }
 
-   .section-small {
-       padding: 2rem 0;
-   }
+/* =========================================
+1) SEKTIONER - yttre lager  (sidan i boken)
+========================================= */
+.section {
+    padding: 4rem 0;
+}
 
-   .section-large {
-       padding: 6rem 0;
-   }
+.section-small {
+    padding: 2rem 0;
+}
+
+.section-large {
+    padding: 6rem 0;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
 
 /* =========================================
 2) CONTAINERS - för layout och innehåll (ett inre lager) begränsar bredden + centrerar på innehåller (en del av innehållet på sidan (.section))
@@ -37,11 +46,11 @@
    5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad
 ========================================= */
 /* 
-   .flow
-   – Lägger automatiskt spacing mellan alla barn ovantill
-   – Perfekt för formulär, textblock, kortlistor
-   Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x.
-   Lämplig för grid (men också flex och block)
+.flow
+– Lägger automatiskt spacing mellan alla barn ovantill
+– Perfekt för formulär, textblock, kortlistor
+Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x.
+Lämplig för grid (men också flex och block)
 */
 .flow> * { 
     margin-top: 1rem; /* Alla barn får spacing ovanför sig */
@@ -52,11 +61,11 @@
 }
 
 /* 
-   .flow
-   – Lägger automatiskt spacing mellan alla barn ovantill
-   – Perfekt för formulär, textblock, kortlistor
-   Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x. MEN! bara mellan sig inte ovanför det första 
-   Lämplig för vertikala listor, ej grid.
+.flow
+– Lägger automatiskt spacing mellan alla barn ovantill
+– Perfekt för formulär, textblock, kortlistor
+Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x. MEN! bara mellan sig inte ovanför det första 
+Lämplig för vertikala listor, ej grid.
 */
 .flow-vertical>*+* {
     margin-top: 1rem;
@@ -67,13 +76,13 @@
 }
 
 /* =========================================
-   FLOW-SPACING (modern, gap-baserad)
-   -----------------------------------------
-   – Lägger spacing mellan alla barn
-   – Påverkar inte första eller sista elementet
-   – Fungerar perfekt i grid, flex och block
-   – Rekommenderad version
-   Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “första barnet får ingen margin”‑problem, inga visuella illusioner superförutsägbart
+FLOW-SPACING (modern, gap-baserad)
+-----------------------------------------
+– Lägger spacing mellan alla barn
+– Påverkar inte första eller sista elementet
+– Fungerar perfekt i grid, flex och block
+– Rekommenderad version
+Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “första barnet får ingen margin”‑problem, inga visuella illusioner superförutsägbart
 ========================================= */
 
 .flow-whole {
@@ -88,8 +97,17 @@
     gap: 2rem; /* Större spacing-variant */
 
 }
+
+.flex-whole-row {
+    display: flex;
+    /* Staplar barn vertikalt */
+    flex-direction: row;
+    gap: 1rem;
+    /* Avstånd mellan alla barn */
+
+}
 /* =========================================
-   3) GRID-SYSTEM
+3) GRID-SYSTEM
 ========================================= */
 
 /* Två kolumner */
@@ -114,7 +132,7 @@
 }
 
 /* =========================================
-   4) FLEX-SYSTEM
+4) FLEX-SYSTEM
 ========================================= */
 .flex {
     display: flex;
@@ -149,7 +167,7 @@
 }
 
 /* =========================================
-   5) FLEX-SYSTEM - centrera vertikalt
+5) FLEX-SYSTEM - centrera vertikalt
 ========================================= */
 
 /* Syfte: ex hero-sektion */
@@ -166,7 +184,7 @@
 }
 
 /* =========================================
-   6) GLOBALA heights
+6) GLOBALA heights - lämplig för ex. hero
 ========================================= */
 .vh-100 {
     min-height: 100svh;
@@ -200,7 +218,7 @@
 }
 
 /* =========================================
-   8) VISUELLT DOLDA ELEMENT (tillgänglighet)
+8) VISUELLT DOLDA ELEMENT (tillgänglighet)
 ========================================= */
 
 .visually-hidden {
@@ -216,7 +234,7 @@
 }
 
 /* =========================================
-   9) IKON HJÄLPKLASS
+9) IKON HJÄLPKLASS
 ========================================= */
 .icon {
     color: var(--icon-color);
@@ -226,7 +244,7 @@
 }
 
 /* =========================================
-   10) TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande pragraftexter.
+10) TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande pragraftexter.
 ========================================= */
 .lead {
     font-size: 1.25rem;
@@ -264,7 +282,31 @@
 }
 
 /* =========================================
-   11) RESPONSIVA HJÄLPKLASSER
+11) SECTION-FOOTER
+========================================= */
+.section-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.section-footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    
+    
+}
+
+.section-footer-brand img {
+    max-height: 60px;
+    height: auto;
+}
+
+/* =========================================
+12) RESPONSIVA HJÄLPKLASSER
 ========================================= */
 
 @media (max-width: 768px) {
@@ -276,5 +318,19 @@
 @media (min-width: 769px) {
     .hide-desktop {
         display: none !important;
+    }
+}
+
+.grid-auto-mobile {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    /* default: 1 kolumn på mobil */
+}
+
+@media (min-width: 768px) {
+    .grid-auto-mobile {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 kolumner på tablet/desktop */
     }
 }

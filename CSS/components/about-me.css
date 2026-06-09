@@ -18,7 +18,7 @@ about-me-container about-me-header {
 }
 
 .about-me-header {
-    align-self: start;
+    /* align-self: start; */
     /* display: flex;
     justify-content: center;
     */
@@ -89,7 +89,10 @@ about-me-container about-me-header {
     width: 100%;
     max-width: 200px;
     object-fit: contain;
-    height: auto;    
+    height: auto;
+    margin-top: 1rem;
+
+    justify-self: center;
 }
 
 .about-text {

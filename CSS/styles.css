@@ -17,6 +17,7 @@
 /* COMPONENTS */
 @import "components/nav.css";
 @import "components/hero.css";
+@import "components/about-me.css";
 @import "components/cards.css";
 @import "components/footer.css";
 @import "components/cta.css";
