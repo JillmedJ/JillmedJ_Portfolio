@@ -1,5 +1,5 @@
 /* =========================================
-   NAV.CSS
+   NAV.CSS    NAV – komponentens egna regler
    - Färger från colors.css
    - Hover-effekter
    - Mobilanpassning
@@ -11,33 +11,22 @@
    Detta är bakgrundsremsan som sträcker sig
    över hela sidans bredd.
 ========================================= */
-.nav-container {
+/* Navens bakgrund och textfärg.
+   Detta är unikt för nav → ska ligga här. */
+.nav {
    background-color: var(--brand-dark); /* Mörk rosa bakgrund */
    color: var(--color-white); /* Vit text i nav (för kontrast) */
-   padding: 1rem 0;
+   padding: 0.7rem;
+  
 }
 
 /* =========================================
-   LOGGA + SIGNATUR
-========================================= */
-.nav-brand {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-.nav-brand img {
-   height: 50px;
-   width: auto;
-   object-fit: contain;
-}
-
-/* =========================================
-   NAV-LÄNKAR (UL + LI + A)
+   NAV-LÄNKAR (UL + LI + A) UL: navens länklista. Layouten (flex) är nav-specifik → ligger här.
 ========================================= */
 .nav-ul {
    display: flex;    
-   justify-content: center; /* Mobil: centrerad ikonrad */
+   justify-content: center; /* Mobil: centrerad ikonrad */ /* ← FIXAR VERTIKAL CENTRERING */
+   align-items: center;
    gap: 0.75rem; /* mindre gap */ /* Mobil: kompakt */
    margin: 0; /* inre luft: */
    padding: 0; /*  inre luft: */
@@ -46,15 +35,15 @@
 }
 
 /* =========================================
-LÄNKARNA (ikon + text)
+LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
 ========================================= */
-
 .nav-ul a {
    display: flex; /* Viktigt för ikon + text */
    align-items: center; 
    gap: 0.5rem; /* Avstånd mellan ikon och text */
 
    text-decoration: none;
+
    font-weight: 500;
    color: var(--pink-100); /* Ljus rosa text */
    transition: color 0.2s ease;
@@ -77,6 +66,8 @@ LÄNKARNA (ikon + text)
 }
 
 /* MELLAN (≥ 600px) – ikon + text, horisontellt */
+/* Mellan: visa text + öka gap.
+   Detta är nav-specifik responsiv logik → ligger här. */
 @media (min-width: 600px) {
    .nav-text {
       display: inline;
@@ -89,6 +80,8 @@ LÄNKARNA (ikon + text)
    }
 }
 
+/* Stor: ännu mer luft.
+   Nav-specifik responsiv logik → ligger här. */
 @media (min-width: 900px) {
    .nav-ul {
       gap: 2rem; /* luftigt */
