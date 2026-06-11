@@ -172,6 +172,10 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     gap: 1rem;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 /* =========================================
 5) FLEX-SYSTEM - centrera vertikalt
 ========================================= */
@@ -322,8 +326,6 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     gap: 1rem;
     margin-bottom: 2rem;
     padding: 0.5rem;
-    
-    
 }
 
 .section-footer-brand img {
