@@ -5,46 +5,39 @@
    De är inte knutna till en specifik komponent.
    ========================================= */
 
-
-   /* =========================================
-   GLOBALE CONTAINERS -  (.layouta / .container)
-   ========================================= */
-
-
-/* --- Layout-hjälpare - Centrerar innehåll och begränsar maxbredd */
-
-/* .layouta
-   - En standardcontainer för att centrera innehåll
-   - Begränsar maxbredden så att text inte blir för bred
-   - Ger luft runt innehållet
-   - Perfekt för sektioner som textblock, cards, gallerier
-*/
-
-.layouta {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
 /* --- Utility-klasser (text-center, flex-center) --- */
 /* =========================================
    TEXT-HJÄLPARE
    ========================================= */
+   /* Centrera text horisontellt */
+   .text-center {
+      text-align: center;
+   }
+   
+   /* Vänsterjustera text (standard, men bra att ha) */ .text-left {
+      text-align: left;  
+   }
 
-/* Centrera text horisontellt */
-.text-center {
-    text-align: center;
-}
+   /* Högerjustera text */
+   .text-right {
+      text-align: right;     
+   }
 
-/* Högerjustera text */
-.text-right {
-    text-align: right;
-}
+   .text-muted {
+      color: var(--text-muted);
+   }
 
-/* Vänsterjustera text (standard, men bra att ha) */
-.text-left {
-    text-align: left;
-}
+   .text-bold {
+      font-weight: 700;
+   }
+
+   .text-small {
+      font-size: 0.875rem;
+   }
+
+   .text-large {
+      font-size: 1.25rem; 
+   }
 
 /* =========================================
    FLEX-HJÄLPARE
@@ -67,6 +60,14 @@
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.justify-center {
+   justify-content: center;
+}
+
+.align-center {
+   align-items: center;
 }
 
 /* =========================================
@@ -106,6 +107,56 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* =========================================
+VISUELLT DOLDA ELEMENT (tillgänglighet)
+========================================= */
+
+.visually-hidden {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   padding: 0 !important;
+   margin: -1px !important;
+   overflow: hidden !important;
+   clip: rect(0, 0, 0, 0) !important;
+   white-space: nowrap !important;
+   border: 0 !important;
+}
+
+/* =========================================
+   IKON HJÄLPKLASS
+========================================= */
+.icon {
+   width: 1.25rem;
+   height: 1.25rem;
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+/* =========================================
+   LOGO HJÄLPKLASS
+========================================= */
+.brand-logo {
+   height: 50px;
+   /* eller 40px om du vill */
+   width: auto;
+
+   object-fit: contain;
+   display: block;
+}
+
+.brand-logo-small {
+   height: 30px;
+   /* eller 20px om du vill */
+   width: auto;
+   object-fit: contain;
+
+   display: block;
 }
 
 /* =========================================

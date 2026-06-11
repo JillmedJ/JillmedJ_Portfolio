@@ -4,6 +4,7 @@
 
 #projects {
       padding: var(--space-xl) 0;
+      
 }
 
 #projects .section-tagline {
@@ -12,7 +13,6 @@
       margin: 0 auto var(--space-lg);
       text-align: center;
 }
-
 
 /* GRID */
 #projects .grid-auto {
@@ -36,6 +36,11 @@
 }
 
 /* CARD */
+.project-card {
+      border-radius: 0.5rem;
+      background-color: var(--pink-200);
+}
+
 .project-card img {
       width: 100%;
       border-radius: var(--radius-md);
@@ -45,5 +50,17 @@
 .project-title {
       font-size: 1.3rem;
       font-weight: 600;
+
+      margin: 0 2rem;
       margin-bottom: var(--space-sm);
+      padding: 0.5rem 1rem;
+      
+
+      border-radius: 0.5rem;
+      background-color: var(--pink-400);
+}
+
+.project-card .cta {
+
+      margin-bottom: 1rem;
 }
