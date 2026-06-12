@@ -2,10 +2,6 @@
    PORTFOLIO / PROJECTS SECTION
 ========================================= */
 
-#projects {
-      padding: var(--space-xl) 0;
-      
-}
 
 #projects .section-tagline {
       font-size: 1.1rem;
@@ -14,10 +10,13 @@
       text-align: center;
 }
 
+#project .container {
+      /* padding: 0 var(--space-lg);  biter inte på cardsen*/
+}
+
 /* GRID */
 #projects .grid-auto {
       display: grid;
-      gap: var(--space-lg);
       grid-template-columns: 1fr;
 }
 
@@ -39,10 +38,14 @@
 .project-card {
       border-radius: 0.5rem;
       background-color: var(--pink-200);
+      padding: var(--space-md);
+      
 }
 
 .project-card img {
-      width: 100%;
+      width: 90%;
+      margin: var(--space-md) auto;
+
       border-radius: var(--radius-md);
       margin-bottom: var(--space-md);
 }
@@ -51,16 +54,15 @@
       font-size: 1.3rem;
       font-weight: 600;
 
-      margin: 0 2rem;
-      margin-bottom: var(--space-sm);
-      padding: 0.5rem 1rem;
-      
+      padding: 0.6rem 1rem;
 
       border-radius: 0.5rem;
       background-color: var(--pink-400);
+
+      text-align: center;
 }
 
 .project-card .cta {
 
-      margin-bottom: 1rem;
+      margin-top: auto;
 }
