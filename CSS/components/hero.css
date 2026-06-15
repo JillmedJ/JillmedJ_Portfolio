@@ -36,7 +36,16 @@
    margin-bottom: var(--space-md);
 
    display: block;
+
+   object-fit: contain;
+
+   height: auto;
+
 }
+
+/* height: 50px;
+width: auto;
+object-fit: contain; */
 
 /* =========================================
    TABLET (≥ 600px)
