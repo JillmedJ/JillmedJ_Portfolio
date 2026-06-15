@@ -12,7 +12,11 @@
 @import "designs/global/helpers.css";
 @import "designs/global/debug.css";
 @import "designs/global/utilities.css";
-/* ← här */
+
+/* GLOBAL BEHAVIOR */
+/* html {
+    scroll-behavior: smooth;
+} */
 
 /* COMPONENTS */
 @import "components/nav.css";
