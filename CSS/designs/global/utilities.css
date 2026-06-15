@@ -18,7 +18,7 @@ UTILITIES.CSS – Layout & struktur
 }
 
 /* =========================================
-1) SEKTIONER - yttre lager  (sidan i boken)
+1) SEKTIONER - yttre lager ("sidan i boken")
 ========================================= */
 .section {
     padding: 4rem 0;
@@ -238,7 +238,7 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 }
 
 /* =========================================
-10) TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande pragraftexter.
+10) TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande paragraftexter.
 ========================================= */
 .lead {
     font-size: 1.25rem;
