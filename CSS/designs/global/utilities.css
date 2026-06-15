@@ -57,6 +57,13 @@ UTILITIES.CSS – Layout & struktur
     padding: 0 1rem;
 }
 
+/* Ännu smalare container (t.ex. textblock) */
+.container-even-more-narrow {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 /* =========================================
    5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad
 ========================================= */
@@ -76,10 +83,6 @@ Lämplig för grid (men också flex och block)
 }
 
 /* 
-.flow
-– Lägger automatiskt spacing mellan alla barn ovantill
-– Perfekt för formulär, textblock, kortlistor
-Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x. MEN! bara mellan sig inte ovanför det första 
 Lämplig för vertikala listor, ej grid.
 */
 .flow-vertical>*+* {
@@ -113,7 +116,8 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 
 }
 
-.flex-whole-row {
+/* borde kanske byta namnet från -row till -horisontal.. */
+.flew-whole-row {
     display: flex;
     /* Staplar barn vertikalt */
     flex-direction: row;
@@ -221,6 +225,13 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 /* =========================================
 7) GLOBALA MAX-WIDTHS
 ========================================= */
+
+.max-200 {
+    max-width: 200px;
+}
+.max-300 {
+    max-width: 300px;
+}
 .max-400 {
     max-width: 400px;
 }
