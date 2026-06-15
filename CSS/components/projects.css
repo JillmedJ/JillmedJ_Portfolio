@@ -1,24 +1,129 @@
 /* =========================================
    PORTFOLIO / PROJECTS SECTION
+   – Sektionens övergripande styling
+   – Text, tagline, container
 ========================================= */
-
 
 #projects .section-tagline {
       font-size: 1.1rem;
-      max-width: 55ch;
+      max-width: 55ch; /* ch är en typografisk enhet som alltså ger 1ch per teckenbredd.*/
       margin: 0 auto var(--space-lg);
       text-align: center;
 }
 
-#project .container {
-      /* padding: 0 var(--space-lg);  biter inte på cardsen*/
-}
+/* =========================================
+   GRID
+   – Baslayout för cardsen
+   – 1 kolumn på mobil
+========================================= */
 
-/* GRID */
 #projects .grid-auto {
       display: grid;
       grid-template-columns: 1fr;
+      /* gap hanteras av utilities.css (flow-whole i cardsen) */
 }
+
+/* =========================================
+   CARD
+   – Komponentens bas
+   – Bakgrund, padding, rundning
+========================================= */
+
+.project-card {
+      border-radius: var(--border-radius-md);
+      padding: var(--space-md); /* padding här ger luft runt rubrik, bild och CTA */
+
+      /* Din gradient – behålls exakt som du gjort den */
+      background: linear-gradient(to bottom,
+                  var(--pink-100) 0%,
+                  var(--pink-300) 12%,
+                  var(--pink-400) 20%,
+                  var(--yellow-400) 60%,
+                  var(--yellow-300) 80%,
+                  var(--yellow-200) 90%,
+                  var(--yellow-100) 100%);
+}
+
+.project-card:hover {
+      transform: translateY(-6px);
+      /* lyfter kortet lite */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      /* mjuk skugga */ 
+}
+
+/* =========================================
+   CARD IMAGE
+   – Centrering, proportioner, spacing
+========================================= */
+
+.project-card img {
+      width: 90%;
+      max-width: 300px;
+      display: block;
+      margin: var(--space-md) auto;
+      /* centrerar + spacing */
+      border-radius: var(--border-radius-md);
+}
+
+/* =========================================
+   CARD TITLE
+   – Rubrikens utseende
+   – Ingen margin behövs tack vare card-padding + flow-whole
+   – Gradient-border med rundade hörn (pseudo-element)
+========================================= */
+
+.project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.6rem 1rem;
+      text-align: center;
+
+      background-color: var(--pink-400); /* Bakgrundsfärg */
+      overflow: hidden; /* Viktigt: klipper innehållet så att hörnen blir runda */
+
+      border-radius: var(--border-radius-md); /* Token-driven border-radius (samma som CTA, cards, bilder) */
+
+      position: relative; /* krävs för pseudo-elementet */
+      z-index: 1;
+}
+
+.project-title::before { /* Gradient-border som följer border-radius */
+      content: "";
+      position: absolute;
+      inset: 0; /* täcker hela ytan */
+      padding: 4px; /* border-bredd */
+      border-radius: inherit; /* ärver exakt samma rundning som titeln */
+      background: var(--border-gradient-soft); /* min gradient-token från border.css*/
+      -webkit-mask: /* Mask-trick som skapar en "hålighet" i mitten = riktig border */
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude; 
+      z-index: -1; /* lägger border bakom innehållet */
+}
+
+.project-title:hover {
+      transform: translateY(-6px);
+      /* lyfter kortet lite */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            /* mjuk skugga */
+}
+
+
+/* =========================================
+   CTA I CARD
+   – margin-top: auto fungerar tack vare flow-whole (flex-col)
+========================================= */
+
+.project-card .cta {
+      margin-top: auto;
+}
+
+/* =========================================
+   MEDIA QUERIES
+   – Alla samlade längst ned (best practice)
+   – Gridens responsiva kolumner
+========================================= */
 
 /* TABLET */
 @media (min-width: 600px) {
@@ -32,37 +137,4 @@
       #projects .grid-auto {
             grid-template-columns: repeat(3, 1fr);
       }
-}
-
-/* CARD */
-.project-card {
-      border-radius: 0.5rem;
-      background-color: var(--pink-200);
-      padding: var(--space-md);
-      
-}
-
-.project-card img {
-      width: 90%;
-      margin: var(--space-md) auto;
-
-      border-radius: var(--radius-md);
-      margin-bottom: var(--space-md);
-}
-
-.project-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-
-      padding: 0.6rem 1rem;
-
-      border-radius: 0.5rem;
-      background-color: var(--pink-400);
-
-      text-align: center;
-}
-
-.project-card .cta {
-
-      margin-top: auto;
 }
