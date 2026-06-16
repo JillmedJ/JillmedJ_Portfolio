@@ -38,7 +38,8 @@ UTILITIES.CSS – Layout & struktur
     gap: 1rem;
     text-align: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    /* margin-bottom: 3rem; */
 }
 
 /* =========================================
@@ -292,16 +293,6 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     height: auto;
 }
 
-/* =========================================
-12) fält-hjälpare HJÄLPKLASSER
-========================================= */
-
-.label-col {
-    width: 200px;
-    /* eller 180px, 220px – välj vad som känns bra */
-    flex-shrink: 0;
-    /* gör så att den aldrig krymper */
-}
 
 
 /* =========================================

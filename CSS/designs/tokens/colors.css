@@ -57,6 +57,20 @@
     --yellow-500: #e6a800;
     /* mörk accent */
 
+   /* =========================================
+      ORANGE / GOLD – accent mellan rosa & gult
+      ========================================= */
+      --orange-100: #ffd9a8;
+      /* ljus aprikos */
+      --orange-200: #ffb866;
+      /* mjuk orange */
+      --orange-300: #ff9933;
+      /* klar orange */
+      --orange-400: #ff7a00;
+      /* stark orange */
+      --orange-500: #cc5f00;
+      /* mörk guldorange */
+
     /* =========================================
        ACCENTFÄRGER
        ========================================= */
@@ -64,6 +78,11 @@
     /* primär accent */
     --accent-strong: var(--yellow-400);
     /* stark accent */
+
+   /* Accent baserat på orange */
+      --accent: var(--orange-300);
+      --accent-light: var(--orange-100);
+      --accent-strong: var(--orange-500);
 
     /* =========================================
        BAKGRUNDSFÄRGER
