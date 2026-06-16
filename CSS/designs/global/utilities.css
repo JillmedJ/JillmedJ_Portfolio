@@ -83,9 +83,7 @@ Lämplig för grid (men också flex och block)
     margin-top: 2rem;
 }
 
-/* 
-Lämplig för vertikala listor, ej grid.
-*/
+/* Lämplig för vertikala listor, ej grid. */
 .flow-vertical>*+* {
     margin-top: 1rem;
 }
@@ -272,11 +270,35 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 }
 
 /* =========================================
+GLOBAL LINK RESET
+========================================= */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================
 11) SECTION-FOOTER
 ========================================= */
 .section-footer {
     text-align: center;
     margin-top: 2rem;
+}
+
+.section-footer .footer-logo {
+    
+
+}
+
+.section-footer .footer-signature {
+    
+        border-radius: var(--border-radius-md);
+    
 }
 
 .section-footer-brand {
@@ -291,9 +313,24 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 .section-footer-brand img {
     max-height: 60px;
     height: auto;
+    background-color: var(--color-black);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    border-radius: var(--border-radius-md);
+}
+.section-footer-brand img:hover {
+    transform: translateY(-4px);
+    border-radius: var(--border-radius-md);
+    background-color: var(--bg-dark);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+        0 0 10px var(--accent-light);
+    /* mjuk skugga och lite glow */
 }
 
-
+.section-footer-brand span:hover {
+    transform: translateY(-3px);
+    /* color: var(--accent-strong); */
+}
 
 /* =========================================
 13) RESPONSIVA HJÄLPKLASSER
