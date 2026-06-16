@@ -554,7 +554,7 @@
            
             <!-- <section class="section" id="contact"> -->
             <section id="contact" class="section" aria-labelledby="contact-title">
-                <div class="container-even-more-narrow flow-whole-row">
+                <div class="container-even-more-narrow flow-whole">
                     <header class="section-header">
                         <h2 id="contact-title">
                             <!-- ICON message-square-heart -->
@@ -621,28 +621,30 @@
                                 </svg>
                                 Fyll i dina uppgifter nedan.
                             </p>
-                            <div class="container">
-                                <label" for="email">
-                                <!-- ICON mail -->
-                                <svg class="icon" 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                stroke="currentColor"
-                                    stroke-width="2" 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    aria-hidden="true"
-                                    >
-                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                                </svg>
-                                Din e-postadress
+                            <div class="flow-whole-row">
+                                <label for="email">
+                                    <!-- ICON mail -->
+                                    <svg class="icon" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 24 24" 
+                                    fill="none" 
+                                    stroke="currentColor"
+                                        stroke-width="2" 
+                                        stroke-linecap="round" 
+                                        stroke-linejoin="round" 
+                                        aria-hidden="true"
+                                        >
+                                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    </svg>
+                                    <span class="no-wrap">
+                                        Din e-postadress
+                                    </span>
                                 </label>
                                 <input type="email" id="email" name="email" placeholder="namne@example.com" required>
                                 
                             </div>
-                            <div class="container">
+                            <div class="flow-whole-row">
                                 <label for="full-name">
                                     <!-- ICON a-large-small -->
                                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -652,7 +654,9 @@
                                         <path d="m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16" />
                                         <path d="M3.304 13h6.392" />
                                     </svg>
-                                    Ditt för- och efternamn
+                                    <span class="no-wrap">
+                                        Ditt för- och efternamn
+                                    </span>
                                 </label>
                                 <input type="text" id="full-name" name="full-name" placeholder="Kent Hellgren" required>
                             </div>
@@ -662,48 +666,50 @@
                             <fieldset class="padding-bottom">
                                 <legend class="padding-top">Vem kontaktar mig?</legend>
                         
-                                <input type="radio" id="radio-private" name="radio-check" required value="private">
-                                <label for="radio-private">
-                                        <!-- ICON user-round -->
-                                        <svg class="icon"
-                                        xmlns="http://www.w3.org/2000/svg" 
-                                        viewBox="0 0 24 24" 
-                                        fill="none"
-                                        stroke="currentColor" 
-                                        stroke-width="2" 
-                                        stroke-linecap="round" 
-                                        stroke-linejoin="round"
-                                        aria-hidden="true"
-                                        >
-                                            <circle cx="12" cy="8" r="5" />
-                                            <path d="M20 21a8 8 0 0 0-16 0" />
-                                        </svg>
-                                    Privat kontakt
+                                <input class="hidden-input" type="radio" id="radio-private" name="radio-check" required value="private">
+                                <label class="button" for="radio-private">
+                                    <!-- ICON user-round -->
+                                    <svg class="icon"
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 24 24" 
+                                    fill="none"
+                                    stroke="currentColor" 
+                                    stroke-width="2" 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                    >
+                                        <circle cx="12" cy="8" r="5" />
+                                        <path d="M20 21a8 8 0 0 0-16 0" />
+                                    </svg>
+                                    <span class="no-wrap">
+                                        Privat kontakt
+                                    </span>
                                 </label>
                         
-                                <input type="radio" id="radio-company" name="radio-check" required value="company">
-                                <label for="radio-company">
-                                        <!-- ICON building-2 -->
-                                        <svg class="icon" 
-                                        xmlns="http://www.w3.org/2000/svg" 
-                                        viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" 
-                                        stroke-width="2" 
-                                        stroke-linecap="round" 
-                                        stroke-linejoin="round"
-                                        aria-hidden="true"
-                                        >
-                                            <path d="M10 12h4" />
-                                            <path d="M10 8h4" />
-                                            <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
-                                            <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
-                                            <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
-                                        </svg>
+                                <input class="hidden-input" type="radio" id="radio-company" name="radio-check" required value="company">
+                                <label class="button" for="radio-company">
+                                    <!-- ICON building-2 -->
+                                    <svg class="icon" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" 
+                                    stroke-width="2" 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                    >
+                                        <path d="M10 12h4" />
+                                        <path d="M10 8h4" />
+                                        <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                                        <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
+                                        <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+                                    </svg>
                                     Företagskontakt
                                 </label>
                         
-                                <input type="radio" id="radio-other" name="radio-check" required value="other">
-                                <label for="radio-other">
+                                <input class="hidden-input" type="radio" id="radio-other" name="radio-check" required value="other">
+                                <label class="button" for="radio-other">
                                     <!-- ICON ellipsis -->
                                     <svg class="icon" 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -719,7 +725,9 @@
                                         <circle cx="19" cy="12" r="1" />
                                         <circle cx="5" cy="12" r="1" />
                                     </svg>
+                                    <span class="no-wrap">
                                     Annat syfte
+                                    </span>
                                 </label>
                             </fieldset>
                         </div>
@@ -748,7 +756,7 @@
                             <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här..." required></textarea>
                         </div>
                     
-                        <div class="container center-vertical flow-whole-row">
+                        <div class="container flex-center">
                             
                             <button class="btn-post cta" type="submit">
                             <!-- ICON send -->

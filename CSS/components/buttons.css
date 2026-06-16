@@ -8,9 +8,43 @@
    - Padding, border-radius, font-weight
    - Bakgrundsfärg, textfärg
    - Transitioner
+
+      - Basstil för ALLA knappar - Används av .btn,
+      .cta,
+      .btn-post,
+      .button (radio-labels)
    ----------------------------------------- */
 
+.btn,
+.button,
+.cta,
+.btn-post {
+   display: inline-flex;
+   /* Ikon + text i rad */
+   align-items: center;
+   /* Vertikal centrering */
+   justify-content: center;
+   /* Horisontell centrering */
+   gap: 0.5rem;
+   /* Avstånd mellan ikon och text */
 
+   padding: 0.75rem 1.25rem;
+   /* Standard-padding */
+   border-radius: 0.5rem;
+   /* Mjuka hörn */
+   font-weight: 600;
+   /* Lite tyngre text */
+   font-size: 1rem;
+
+   border: none;
+   /* Ingen standardram */
+   cursor: pointer;
+   /* Pekaren blir hand */
+   transition: background 0.2s ease,
+      color 0.2s ease,
+      transform 0.15s ease;
+   /* Små animationer */  
+}
 
 /* -----------------------------------------
    Hover-effekter
@@ -18,7 +52,13 @@
    - Skugga, border, ljusning/mörkning
    ----------------------------------------- */
 
-
+.btn:hover,
+.button:hover,
+.cta:hover,
+.btn-post:hover {
+   transform: translateY(-2px);
+   /* Liten lyft-effekt */  
+}
 
 /* -----------------------------------------
    Fokus & aktiva tillstånd (focus/active)
@@ -27,7 +67,21 @@
    - active-state
    ----------------------------------------- */
 
+.btn:focus-visible,
+.button:focus-visible,
+.cta:focus-visible,
+.btn-post:focus-visible {
+   outline: 3px solid var(--brand-primary);
+   outline-offset: 3px;
+}
 
+.btn:active,
+.button:active,
+.cta:active,
+.btn-post:active {
+   transform: translateY(0);
+   /* Trycks ner igen */  
+}
 
 /* -----------------------------------------
    Primärknapp (.btn-primary)
@@ -36,7 +90,14 @@
    - Disabled-state
    ----------------------------------------- */
 
+.cta {
+   background: var(--brand-primary);
+   color: var(--text-on-primary);
+}
 
+.cta:hover {
+   background: var(--brand-primary-dark);  
+}
 
 /* -----------------------------------------
    Sekundärknapp (.btn-secondary)
@@ -45,7 +106,16 @@
    - Hover-effekter
    ----------------------------------------- */
 
+.btn-secondary {
+   background: transparent;
+   border: 2px solid var(--brand-primary);
+   color: var(--brand-primary);
+}
 
+.btn-secondary:hover {
+   background: var(--brand-primary);
+   color: var(--text-on-primary); 
+}
 
 /* -----------------------------------------
    Ikonknappar (.btn-icon)
@@ -54,7 +124,16 @@
    - Hover-effekter
    ----------------------------------------- */
 
+.btn-icon {
+   padding: 0.5rem;
+   border-radius: 50%;
+   width: 2.5rem;
+   height: 2.5rem;
+}
 
+.btn-icon:hover {
+   background: var(--surface-hover); 
+}
 
 /* -----------------------------------------
    Små knappar (.btn-small)
@@ -62,7 +141,10 @@
    - Mindre font-size
    ----------------------------------------- */
 
-
+.btn-small {
+   padding: 0.4rem 0.75rem;
+   font-size: 0.875rem; 
+}
 
 /* -----------------------------------------
    Stora knappar (.btn-large)
@@ -70,7 +152,10 @@
    - Större font-size
    ----------------------------------------- */
 
-
+.btn-large {
+   padding: 1rem 1.5rem;
+   font-size: 1.125rem; 
+}
 
 /* -----------------------------------------
    Blockknappar (100% bredd)
@@ -79,10 +164,51 @@
    - Centrering
    ----------------------------------------- */
 
+.btn-block {
+   width: 100%;
+   display: block;
+   text-align: center; 
+}
 
+/* -----------------------------------------
+RADIO-LABEL-KNAPPAR (custom radios)
+-----------------------------------------
+- Används i contact-sektionen
+- Input har class="hidden-input"
+- Label har class="button"
+----------------------------------------- */
+
+.button {
+   background: var(--surface);
+   border: 2px solid var(--border);
+   color: var(--text);
+   border-radius: 0.5rem;
+   padding: 0.75rem 1rem;
+}
+
+.hidden-input:checked+.button {
+   background: var(--brand-primary);
+   border-color: var(--brand-primary);
+   color: var(--text-on-primary);
+}
+
+.button:hover {
+   background: var(--surface-hover);     
+}
 
 /* -----------------------------------------
    Responsiva knappar (media queries)
    - Anpassa storlek, padding, textstorlek
    ----------------------------------------- */
 /* @media (max-width: 600px) {} */
+
+@media (max-width: 600px) {
+
+   .btn,
+   .button,
+   .cta,
+   .btn-post {
+      width: 100%;
+      /* Full bredd på mobil */
+   }
+}

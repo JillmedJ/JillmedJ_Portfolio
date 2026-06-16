@@ -2,15 +2,19 @@
    PRIMARY CTA (solid)
    ========================================= */
 .cta {
-    display: inline-block;
-
-    padding: 0.75rem 1.5rem;
-
-    border-radius: var(--border-radius-md);
 
     background-color: var(--accent);
     color: var(--color-black);
 
+    border-radius: var(--border-radius-md);
+    margin: 1rem 1.5rem;
+
+    text-decoration: none;
+
+/* 
+    display: inline-block;
+
+    padding: 0.75rem 1.5rem;
     font-weight: 600;
     text-decoration: none;
 
@@ -19,13 +23,12 @@
     text-align: center;
     justify-content: center;
 
-    margin: 1rem 1.5rem;
-    margin-bottom: 1.5;
+
+    margin-bottom: 1.5; */
 }
 
 .cta:hover {
     background-color: var(--accent-strong);
-    transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         /* mjuk skugga */
 }
@@ -38,15 +41,19 @@
    SECONDARY CTA (outline)
    ========================================= */
 .cta-outline {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
     border: 2px solid var(--accent);
     color: var(--accent);
+    background-color: transparent;
+
+    /* display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    
+    
     font-weight: 600;
     text-decoration: none;
-    background-color: transparent;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    
+    transition: background-color 0.2s ease, color 0.2s ease; */
 }
 
 .cta-outline:hover {
@@ -58,15 +65,19 @@
    GHOST CTA (minimal)
    ========================================= */
 .cta-ghost {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
     border: 1px solid transparent;
     color: var(--accent);
+    background-color: transparent;
+
+
+    /* display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    
     font-weight: 500;
     text-decoration: none;
-    background-color: transparent;
-    transition: border-color 0.2s ease, color 0.2s ease;
+    
+    transition: border-color 0.2s ease, color 0.2s ease; */
 }
 
 .cta-ghost:hover {
