@@ -169,6 +169,17 @@ input[type="radio"].hidden-input:checked+.icon-radio {
    transform: scale(1.1);
 }
 
+/* === RADIO BUTTON: CHECKED STATE === */
+.hidden-input:checked+label.button {
+   background-color: var(--accent-light);
+   border: 2px solid var(--accent-strong);
+   color: var(--pink-500);
+}
+
+.hidden-input:checked+label.button .icon {
+   stroke: var(--accent-strong);
+}
+
 /* --- Layout för formulär (grid/flex) -------------- */
 /* Ex: två kolumner, en kolumn, spacing */
 

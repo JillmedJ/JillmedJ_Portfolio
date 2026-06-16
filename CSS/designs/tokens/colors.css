@@ -56,34 +56,17 @@
     /* stark accent */
     --yellow-500: #e6a800;
     /* mörk accent */
+   --yellow-600: #cc9600;
+   /* djup guld */
+   --yellow-700: #b37f00;
+   /* antik guld/mörk honung */
 
    /* =========================================
-      ORANGE / GOLD – accent mellan rosa & gult
-      ========================================= */
-      --orange-100: #ffd9a8;
-      /* ljus aprikos */
-      --orange-200: #ffb866;
-      /* mjuk orange */
-      --orange-300: #ff9933;
-      /* klar orange */
-      --orange-400: #ff7a00;
-      /* stark orange */
-      --orange-500: #cc5f00;
-      /* mörk guldorange */
-
-    /* =========================================
-       ACCENTFÄRGER
-       ========================================= */
-    --accent: var(--yellow-300);
-    /* primär accent */
-    --accent-strong: var(--yellow-400);
-    /* stark accent */
-
-   /* Accent baserat på orange */
-      --accent: var(--orange-300);
-      --accent-light: var(--orange-100);
-      --accent-strong: var(--orange-500);
-
+      ACCENTFÄRGER (aprikos)
+   ========================================= */
+   --accent: var(--yellow-300);
+   --accent-light: var(--yellow-200);
+   --accent-strong: var(--yellow-600);
     /* =========================================
        BAKGRUNDSFÄRGER
        ========================================= */
