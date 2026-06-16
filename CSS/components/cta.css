@@ -3,13 +3,15 @@
    ========================================= */
 .cta {
 
-    background-color: var(--accent);
+    background-color: var(--btn-bg);
     color: var(--color-black);
+    border: 2px solid yellow;
 
     border-radius: var(--border-radius-md);
     margin: 1rem 1.5rem;
 
     text-decoration: none;
+
 
 /* 
     display: inline-block;

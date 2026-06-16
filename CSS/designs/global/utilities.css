@@ -190,6 +190,10 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     gap: 1rem;
 }
 
+.flex-grow {
+    flex: 1;
+}
+
 /* =========================================
 5) FLEX-SYSTEM - centrera vertikalt
 ========================================= */
@@ -289,7 +293,19 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 }
 
 /* =========================================
-12) RESPONSIVA HJÄLPKLASSER
+12) fält-hjälpare HJÄLPKLASSER
+========================================= */
+
+.label-col {
+    width: 200px;
+    /* eller 180px, 220px – välj vad som känns bra */
+    flex-shrink: 0;
+    /* gör så att den aldrig krymper */
+}
+
+
+/* =========================================
+13) RESPONSIVA HJÄLPKLASSER
 ========================================= */
 
 @media (max-width: 768px) {
