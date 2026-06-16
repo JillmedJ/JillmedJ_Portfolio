@@ -294,6 +294,7 @@ a:hover {
     
     border-radius: var(--border-radius-md);
     height: 3.3rem;
+    
 }
 
 .section-footer .footer-signature {
@@ -301,6 +302,7 @@ a:hover {
     border-radius: var(--border-radius-md);
     height: 3.1rem;
     padding: 0.2rem;
+    border: 2px solid var(--brand-primary);
 }
 
 .section-footer-brand {
@@ -316,7 +318,7 @@ a:hover {
     max-height: 60px;
     height: auto;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-
+    
     border-radius: var(--border-radius-md);
 }
 .section-footer-brand img:hover {
