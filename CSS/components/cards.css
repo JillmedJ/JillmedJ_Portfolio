@@ -1,30 +1,33 @@
 /* =========================================
-   CARD
+   CARD - BAS
    – Komponentens bas
    – Bakgrund, padding, rundning
+      Återanvänds av alla card-komponenter
 ========================================= */
+.card {
+   display: flex;
+   flex-direction: column;
 
-.project-card {
-   border-radius: var(--border-radius-md);
+   gap: var(--space-md);
    padding: var(--space-md);
-   /* padding här ger luft runt rubrik, bild och CTA */
 
-   /* Din gradient – behålls exakt som du gjort den */
-   background: linear-gradient(to bottom,
-         var(--pink-100) 0%,
-         var(--pink-300) 12%,
-         var(--pink-400) 20%,
-         var(--yellow-400) 60%,
-         var(--yellow-300) 80%,
-         var(--yellow-200) 90%,
-         var(--yellow-100) 100%);
+   border-radius: var(--border-radius-md);
+
+
+   background: var(--surface-100, #fff); /* neutral bas */
+
+   /* box-shadow: var(--shadow-sm); */
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-card:hover {
+.card:hover {
    transform: translateY(-6px);
    /* lyfter kortet lite */
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
    /* mjuk skugga */
+   /* box-shadow: var(--shadow-md); */
 }
 
 /* =========================================
@@ -32,33 +35,15 @@
    – Centrering, proportioner, spacing
 ========================================= */
 
-.project-card img {
+.card img {
+   display: block;
+
    width: 90%;
    max-width: 300px;
-   display: block;
-   margin: var(--space-md) auto;
-   /* centrerar + spacing */
-   border-radius: var(--border-radius-md);
-}
-
-.card--project {
-
-
-}
-
-.card--bubble {
+   margin: var(--space-md) auto; /* centrerar + spacing */
 
    border-radius: var(--border-radius-md);
-      padding: var(--space-md);
-      /* padding här ger luft runt rubrik, bild och CTA */
-   
-      /* Din gradient – behålls exakt som du gjort den */
-      background: linear-gradient(to bottom,
-            var(--pink-100) 0%,
-            var(--pink-300) 12%,
-            var(--pink-400) 20%,
-            var(--yellow-400) 60%,
-            var(--yellow-300) 80%,
-            var(--yellow-200) 90%,
-            var(--yellow-100) 100%);
 }
+
+
+

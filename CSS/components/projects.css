@@ -28,8 +28,6 @@
    – Bakgrund, padding, rundning
 ========================================= */
 .card--project {
-      
-      /* Din gradient – behålls exakt som du gjort den */
       background: linear-gradient(to bottom,
                   var(--pink-100) 0%,
                   var(--pink-300) 12%,

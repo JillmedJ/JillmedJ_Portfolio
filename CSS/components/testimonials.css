@@ -2,3 +2,21 @@
    TESTIMONIALS SECTION
    Pastel Bubble Gradient Mix (2C-3)
    ============================ */
+
+
+      .card--bubble {
+   
+         border-radius: var(--border-radius-md);
+         padding: var(--space-md);
+         /* padding här ger luft runt rubrik, bild och CTA */
+   
+         /* Din gradient – behålls exakt som du gjort den */
+         background: linear-gradient(to bottom,
+               var(--pink-100) 0%,
+               var(--pink-300) 12%,
+               var(--pink-400) 20%,
+               var(--yellow-400) 60%,
+               var(--yellow-300) 80%,
+               var(--yellow-200) 90%,
+               var(--yellow-100) 100%);
+      }
