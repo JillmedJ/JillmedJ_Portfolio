@@ -1,27 +1,153 @@
 /* =========================================
    FORMS.CSS
    ========================================= */
+/* -----------------------------------------
+   FORM BORDER TOKENS
+----------------------------------------- */
 
+:root {
+   --gold-500: #d4af37;
+   --form-border-color: var(--gold-500);
+   --form-border-width: 2px;  
+}
 /* --- Formulärens container ------------------------ */
 /* Ex: form { max-width, margin, padding } */
 
+/* -----------------------------------------
+   FORM CONTAINER
+   -----------------------------------------
+   Ger luft runt formulär och gör det lättare
+   att läsa och navigera.
+----------------------------------------- */
 
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   /* mer white space mellan sektioner */
+}
 
 /* --- Etiketter (label) ---------------------------- */
 /* Ex: spacing, font-weight, display-block */
 
+/* -----------------------------------------
+   LABELS
+   -----------------------------------------
+   Gör labels tydliga och ger spacing.
+----------------------------------------- */
 
+label {
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   /* ikon + text */
+   color: var(--text);
+}
 
 /* --- Inputfält (text, number, email, etc.) -------- */
 /* Ex: padding, border, border-radius, background */
 
+/* -----------------------------------------
+   INPUTS & TEXTAREA
+   -----------------------------------------
+   Snygga, moderna fält med luft.
+----------------------------------------- */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+fieldset,
+.button {
+   width: 100%;
+   padding: 0.75rem 1rem;
 
+   background-color: var(--surface);
+   color: var(--text);
+
+   font-size: 1rem;
+   line-height: 1.4;
+
+   border: var(--form-border-width) solid var(--form-border-color);
+   
+   border-radius: 0;
+   /* räta hörn */
+
+   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* =========================================
+12) fält-hjälpare HJÄLPKLASSER
+========================================= */
+
+.label-col {
+   width: 220px;
+   /* eller 180px, 200px, 240px – välj vad som känns bra */
+   flex-shrink: 0;
+   /* gör så att den aldrig krymper */
+}
 
 /* --- Fokus-styling (focus-visible) ---------------- */
 /* Ex: outline, border-color, glow-effekter */
 
+/* -----------------------------------------
+   FOKUS (focus-visible)  (GLOW-EFFEKT)
+   -----------------------------------------
+   Tydlig men inte skrikig fokusmarkering.
+----------------------------------------- */
+
+input:focus-visible,
+textarea:focus-visible {
+   outline: none;
+   border-color: var(--form-border-color);
+   /* box-shadow: 0 0 0 3px rgba(255, 20, 147, 0.45); */
+   
+   border-radius: 0;
+}
 
 
+/* box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.35),
+0 0 8px rgba(212, 175, 55, 0.35); */
+
+/* -----------------------------------------
+   FIELDSET & LEGEND
+   -----------------------------------------
+   Mer luft och tydligare struktur.
+----------------------------------------- */
+
+fieldset {
+   padding: 0.5rem;
+   margin: 0;
+   gap: 0.5rem;
+   border-radius: 0;
+   display: block;
+   background-color: var(--surface);
+   /* display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   min-width: 0; */
+}
+
+legend {
+   font-weight: 700;
+   padding: 0 0.5rem;
+   background-color: var(--surface);
+   width: auto;
+   /* display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   white-space: nowrap; */
+}
+
+/* legend span {
+   overflow: hidden;
+   text-overflow: clip;
+   white-space: nowrap;
+}
+
+legend .icon-radio {
+   flex-shrink: 0;
+} */
 /* --- Felmeddelanden / validation ------------------ */
 /* Ex: .error-message, .input-error */
 
@@ -32,12 +158,83 @@
 
 
 
+
+/* -----------------------------------------
+   RADIO-BUTTONS (custom)
+   -----------------------------------------
+   Du använder .hidden-input + .button
+   så vi lägger bara spacing här.
+----------------------------------------- */
+
+.button {
+   padding: 0.75rem 1rem;
+   background-color: var(--surface);
+   cursor: pointer;
+   transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.hidden-input:checked+.button {
+   background-color: var(--accent);
+   border-color: var(--accent);
+   color: var(--color-black);
+}
+
+/* RADIO – VISUELL CHECKED-STATE */
+input[type="radio"].hidden-input:checked+.icon-radio {
+   stroke: var(--accent);
+   fill: var(--accent-light);
+   transform: scale(1.1);
+}
+
+/* === RADIO BUTTON: CHECKED STATE === */
+.hidden-input:checked+label.button {
+   background-color: var(--accent-light);
+   border: 2px solid var(--accent-strong);
+   color: var(--pink-500);
+}
+
+.hidden-input:checked+label.button .icon {
+   stroke: var(--accent-strong);
+}
+
 /* --- Layout för formulär (grid/flex) -------------- */
 /* Ex: två kolumner, en kolumn, spacing */
 
 
 
+
+
+/* -----------------------------------------
+   SPACING FÖR RAD-LAYOUT (label + input)
+   -----------------------------------------
+   Detta ger luft mellan raderna.
+----------------------------------------- */
+
+.form-row {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 1rem;
+   /* extra white space */
+   min-width: 0;
+}
+
+.form-row>* {
+   min-width: 0;
+}
+
 /* --- Responsiva formulär -------------------------- */ /* Anpassa kolumner, input-bredd, spacing */
 /* @media (max-width: 600px) {
     
 } */
+
+@media (max-width: 600px) {
+   .form-row {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .label-col {
+      width: 100%;
+   }
+}

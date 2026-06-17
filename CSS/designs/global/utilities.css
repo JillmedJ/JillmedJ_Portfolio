@@ -38,7 +38,8 @@ UTILITIES.CSS – Layout & struktur
     gap: 1rem;
     text-align: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    /* margin-bottom: 3rem; */
 }
 
 /* =========================================
@@ -53,6 +54,13 @@ UTILITIES.CSS – Layout & struktur
 /* Smalare container (t.ex. textblock) */
 .container-narrow {
     max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Ännu smalare container (t.ex. textblock) */
+.container-even-more-narrow {
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -75,13 +83,7 @@ Lämplig för grid (men också flex och block)
     margin-top: 2rem;
 }
 
-/* 
-.flow
-– Lägger automatiskt spacing mellan alla barn ovantill
-– Perfekt för formulär, textblock, kortlistor
-Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x. MEN! bara mellan sig inte ovanför det första 
-Lämplig för vertikala listor, ej grid.
-*/
+/* Lämplig för vertikala listor, ej grid. */
 .flow-vertical>*+* {
     margin-top: 1rem;
 }
@@ -113,7 +115,8 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 
 }
 
-.flex-whole-row {
+/* borde kanske byta namnet från -row till -horisontal.. */
+.flew-whole-row {
     display: flex;
     /* Staplar barn vertikalt */
     flex-direction: row;
@@ -186,6 +189,10 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     gap: 1rem;
 }
 
+.flex-grow {
+    flex: 1;
+}
+
 /* =========================================
 5) FLEX-SYSTEM - centrera vertikalt
 ========================================= */
@@ -221,6 +228,13 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 /* =========================================
 7) GLOBALA MAX-WIDTHS
 ========================================= */
+
+.max-200 {
+    max-width: 200px;
+}
+.max-300 {
+    max-width: 300px;
+}
 .max-400 {
     max-width: 400px;
 }
@@ -249,10 +263,23 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 
 .card-lead {
     font-size: 1.05rem;
-        line-height: 1.5;
-        color: var(--text-muted);
-        /* valfritt */
-        max-width: 45ch;
+    line-height: 1.5;
+    color: var(--text-muted);
+    /* valfritt */
+    max-width: 45ch;
+}
+
+/* =========================================
+GLOBAL LINK RESET
+========================================= */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* =========================================
@@ -260,25 +287,71 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 ========================================= */
 .section-footer {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
-.section-footer-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
+.section-footer .footer-logo {
+    
+    border-radius: var(--border-radius-md);
+    height: 3.3rem;
+   
+    background-color: rgb(52, 51, 51);
+    /* background-color: #d4ad2f; */
+    /* background-color: #eac23f; */
+    /* background-color: #f5d44f; */
+}
+
+/* .section-footer .footer-logo img {
+för att arbeta med själva loggan
+} */
+
+.section-footer .footer-signature {
+    background-color: var(--bg-inner);
+    border-radius: var(--border-radius-md);
+    height: 3.3rem;
+    padding: 0.2rem;
 }
 
 .section-footer-brand img {
     max-height: 60px;
     height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    border-radius: var(--border-radius-md);
+    
+}
+.section-footer-brand img:hover {
+    transform: translateY(-4px);
+    border-radius: var(--border-radius-md);
+    background-color: var(--pink-600);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
+        0 0 10px var(--accent-light);
+    /* mjuk skugga och lite glow */
 }
 
+.section-footer-brand span:hover {
+    transform: translateY(-3px);
+    /* color: var(--accent-strong); */
+}
+
+/* .section-footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}*/
+
+.section-footer-brand-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+} 
+
 /* =========================================
-12) RESPONSIVA HJÄLPKLASSER
+13) RESPONSIVA HJÄLPKLASSER
 ========================================= */
 
 @media (max-width: 768px) {

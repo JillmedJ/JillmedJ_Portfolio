@@ -172,8 +172,22 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
     padding-top: 1rem;
 }
 
+.padding-top-lg {
+   padding-top: 2rem;
+}
+
 .padding-bottom {
     padding-bottom: 1rem;
+}
+
+.padding-sides {
+
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+
+.padding-bottom-lg {
+   padding-bottom: 2rem;
 }
 
 .margin-top {
