@@ -29,7 +29,7 @@
    HERO-BILD (LOGGA)
 ========================================= */
 #hero img {
-   width: 100%;
+   width: 60%;
    max-width: 900px; /* Justerbar storlek */
 
    margin: 0 auto;
