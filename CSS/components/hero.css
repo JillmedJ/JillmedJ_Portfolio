@@ -9,44 +9,84 @@
 
 
 /* =========================================
-   TAGLINE
-========================================= */
-.hero-tagline {
-   font-size: 1.25rem;
-   font-weight: 500;
-
-   /* color: var(--text-body);  Rosa brödtext */
-
-   display: inline-block;
-   max-width: 40ch;
-   text-align: center;
-}
-
-/* =========================================
    HERO-BILD (LOGGA)
 ========================================= */
 #hero img {
    width: 60%;
    max-width: 900px; /* Justerbar storlek */
-
+   height: auto;
    margin: 0 auto;
    margin-bottom: var(--space-md);
 
    display: block;
 
    object-fit: contain;
-
-   height: auto;
-
 }
+
+/* =========================================
+   RUBRIK
+   ========================================= */
 #hero h1 {
    font-size: 2rem;
    line-height: 1.2;
+   color: var(--pink-700);
+   font-weight: bold;
 }
 
-/* height: 50px;
-width: auto;
-object-fit: contain; */
+/* =========================================
+   BRÖDTEXT
+   ========================================= */
+#hero p {
+   font-size: 1.1rem;
+   /* samma som globalt */
+   max-width: 60ch;
+   margin-inline: auto;
+}
+
+/* =========================================
+   TAGLINE (ska ligga EFTER #hero p)
+   ========================================= */
+.hero-tagline {
+   font-size: 1.25rem;
+   font-weight: 500;
+   max-width: 40ch;
+   
+
+   display: inline-block;
+   
+   text-align: center;
+   
+   font-weight: bold;
+   color: var(--text-body);
+   
+   background-color: var(--pink-600);
+   padding: 1rem 2rem;
+   color: var(--text-accent);
+   border-radius: var(--border-radius-md);
+   
+}
+
+.p-group {
+   border-radius: var(--border-radius-md);
+   background: linear-gradient(to bottom,
+            var(--pink-500) 0%,
+            var(--pink-400) 40%,
+            var(--yellow-200) 100%);
+   padding: 2rem;
+   
+}
+
+.p-i {
+
+   font-weight: bolder;
+   color: var(--text-accent);
+   padding-bottom: 1rem;
+}
+
+.p-we {
+
+
+}
 
 /* =========================================
    TABLET (≥ 600px)
@@ -56,9 +96,13 @@ object-fit: contain; */
    #hero h1 {
       font-size: 3rem; /* större rubrik */
    }
+   #hero p {
+      font-size: 1.3rem;
+      max-width: 65ch;
+   }
 
-   .hero-tagline {
-      font-size: 1.6rem;
+   #hero .hero-tagline {
+      font-size: 2rem;
       max-width: 50ch;
    }
 }
@@ -71,9 +115,13 @@ object-fit: contain; */
    #hero h1 {
       font-size: 4rem;
    }
-
-   .hero-tagline {
-      font-size: 1.8rem;
+   
+   #hero p {
+      font-size: 1.5rem;
+      max-width: 70ch;
+   }
+   #hero .hero-tagline {
+      font-size: 2.1rem;
       max-width: 60ch;
    }
 
