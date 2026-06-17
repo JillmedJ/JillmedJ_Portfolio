@@ -3,20 +3,83 @@
    Pastel Bubble Gradient Mix (2C-3)
    ============================ */
 
+      /* Modifierare: card-variant för testimonials */
+   .card--bubble {
+      padding: var(--space-md);
 
-      .card--bubble {
+      background: linear-gradient(to bottom,
+            var(--pink-100) 0%,
+            var(--pink-300) 12%,
+            var(--pink-400) 20%,
+            var(--yellow-400) 60%,
+            var(--yellow-300) 80%,
+            var(--yellow-200) 90%,
+            var(--yellow-100) 100%);
+
+      border-radius: 70px 10px 200px 10px;
+   }
+
+   /* GRID – spacing hanteras av utilities (grid-auto + gap) */
+   .testimonials-grid {
+      /* inget behövs här just nu */
+   }
+
+      /* =========================================
+      AVATAR
+      – Rund, mjuk, bubble-känsla
+      – Kan bytas till <img> senare
+   ========================================= */
    
-         border-radius: var(--border-radius-md);
-         padding: var(--space-md);
-         /* padding här ger luft runt rubrik, bild och CTA */
+      .testimonial-avatar {
+         width: 64px;
+         height: 64px;
    
-         /* Din gradient – behålls exakt som du gjort den */
-         background: linear-gradient(to bottom,
-               var(--pink-100) 0%,
-               var(--pink-300) 12%,
-               var(--pink-400) 20%,
-               var(--yellow-400) 60%,
-               var(--yellow-300) 80%,
-               var(--yellow-200) 90%,
-               var(--yellow-100) 100%);
+         border-radius: 50%;
+         background: rgba(255, 255, 255, 0.6);
+         /* mjuk bubbla */
+   
+         display: flex;
+         align-items: center;
+         justify-content: center;
+   
+         font-weight: 700;
+         font-size: 1.25rem;
+         color: var(--pink-500);
+   
+         margin-bottom: var(--space-md);
+      }
+   
+      /* Om du senare använder <img> istället för initialer */
+      .testimonial-avatar img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+   
+      /* =========================================
+      CITAT
+   ========================================= */
+   
+      .testimonial-quote {
+         font-size: 1.1rem;
+         line-height: 1.6;
+         font-weight: 500;
+         color: var(--gray-900);
+      }
+   
+      /* =========================================
+      META (namn + roll)
+   ========================================= */
+   
+      .testimonial-meta {
+         margin-top: var(--space-md);
+         display: flex;
+         flex-direction: column;
+         gap: 0.25rem;
+      }
+   
+      .testimonial-meta span {
+         font-size: 0.9rem;
+         color: var(--gray-700);
       }
