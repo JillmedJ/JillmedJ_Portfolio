@@ -387,7 +387,13 @@ för att arbeta med själva loggan
 /* =========================================
 13) RESPONSIVA HJÄLPKLASSER
 ========================================= */
+/* @media (max-width: 600px) {
 
+    .container-narrow,
+    .container-even-more-narrow {
+        max-width: 100%;
+    }
+} */
 
 @media (max-width: 768px) {
     .hide-mobile {
