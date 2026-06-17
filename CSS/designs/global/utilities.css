@@ -112,7 +112,6 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     display: flex;
     flex-direction: column;
     gap: 2rem; /* Större spacing-variant */
-
 }
 
 /* borde kanske byta namnet från -row till -horisontal.. */
@@ -154,7 +153,10 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 .flex {
     display: flex;
 }
-
+/* flex-center
+   - Perfekt när du vill centrera ALLT i en container
+   - Används i hero, modals, knapprader, ikoner
+*/
 .flex-center {
     display: flex;
     align-items: center;
@@ -210,6 +212,38 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     justify-content: center;
 }
 
+/* som margin left auto och margin right auto */
+.center-inline {
+    margin-inline: auto;
+}
+
+.text-40ch {
+    max-width: 40ch;
+    margin-inline: auto;
+}
+
+.text-50ch {
+    max-width: 50ch;
+    margin-inline: auto;
+}
+
+.text-60ch {
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+.text-70ch {
+    max-width: 70ch;
+    margin-inline: auto;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
 /* =========================================
 6) GLOBALA heights - lämplig för ex. hero (svh = smart viewport height)
 ========================================= */
@@ -353,6 +387,7 @@ för att arbeta med själva loggan
 /* =========================================
 13) RESPONSIVA HJÄLPKLASSER
 ========================================= */
+
 
 @media (max-width: 768px) {
     .hide-mobile {

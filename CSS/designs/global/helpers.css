@@ -43,15 +43,7 @@
    FLEX-HJÄLPARE
    ========================================= */
 
-/* flex-center
-   - Perfekt när du vill centrera ALLT i en container
-   - Används i hero, modals, knapprader, ikoner
-*/
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* flex-col
    - Gör att flexbarn staplas i kolumn
@@ -180,22 +172,37 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
     padding-bottom: 1rem;
 }
 
+.padding-bottom-lg {
+   padding-bottom: 2rem;
+}
+
 .padding-sides {
 
    padding-left: 1rem;
    padding-right: 1rem;
 }
 
-.padding-bottom-lg {
-   padding-bottom: 2rem;
+.padding-sides-lg {
+
+   padding-left: 2rem;
+   padding-right: 2rem;
 }
+
 
 .margin-top {
     margin-top: 1rem;
 }
 
+.margin-top-lg {
+   margin-top: 2rem;
+}
+
 .margin-bottom {
     margin-bottom: 1rem;
+}
+
+.margin-bottom-lg {
+   margin-bottom: 2rem;
 }
 
 /* =========================================
