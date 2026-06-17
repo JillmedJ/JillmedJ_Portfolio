@@ -38,6 +38,12 @@
     --pink-500: #a02185;
     /* mörk brand */
 
+   --pink-600: #86186d;
+      --pink-700: #6d145a;
+      --pink-800: #540f47;
+      --pink-900: #3c0b34;
+
+
     /* Brandfärger (för knappar, highlights, nav) */
     --brand-bg: var(--pink-100);
     --brand: var(--pink-400);

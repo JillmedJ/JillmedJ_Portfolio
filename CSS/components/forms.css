@@ -122,15 +122,32 @@ fieldset {
    border-radius: 0;
    display: block;
    background-color: var(--surface);
+   /* display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   min-width: 0; */
 }
 
 legend {
    font-weight: 700;
    padding: 0 0.5rem;
    background-color: var(--surface);
-      width: auto;
+   width: auto;
+   /* display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   white-space: nowrap; */
 }
 
+/* legend span {
+   overflow: hidden;
+   text-overflow: clip;
+   white-space: nowrap;
+}
+
+legend .icon-radio {
+   flex-shrink: 0;
+} */
 /* --- Felmeddelanden / validation ------------------ */
 /* Ex: .error-message, .input-error */
 
@@ -199,8 +216,12 @@ input[type="radio"].hidden-input:checked+.icon-radio {
    gap: 1rem;
    margin-bottom: 1rem;
    /* extra white space */
+   min-width: 0;
 }
 
+.form-row>* {
+   min-width: 0;
+}
 
 /* --- Responsiva formulär -------------------------- */ /* Anpassa kolumner, input-bredd, spacing */
 /* @media (max-width: 600px) {

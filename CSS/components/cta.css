@@ -8,10 +8,13 @@
     border: 2px solid yellow;
 
     border-radius: var(--border-radius-md);
-    margin: 1rem 1.5rem;
+    margin-left: 1rem;
 
     text-decoration: none;
 
+    /* display: flex;
+    align-items: center;
+    gap: 0.5rem; */
 
 /* 
     display: inline-block;
@@ -28,6 +31,15 @@
 
     margin-bottom: 1.5; */
 }
+
+/* .cta span {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+} */
+/* .cta .icon {
+    flex-shrink: 0;
+} */
 
 .cta:hover {
     background-color: var(--accent-strong);

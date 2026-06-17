@@ -1,6 +1,6 @@
 #contact .container-narrow {
     width: 80%;
-    height: 75%;
+    /* height: 75%; */ min-height: auto;
     border-radius: var(--border-radius-md);
     padding: var(--space-lg);
     
@@ -70,7 +70,36 @@ form p.text-center {
 #contact fieldset {
     border: 4px double var(--pink-500);
     padding: var(--space-sm);
-
-    
-    
 }
+
+.no-yellow {
+
+    border: 2px solid var(--pink-700);
+}
+
+.no-yellow-submit {
+
+    margin-top: 1rem;
+    border: 2px solid var(--pink-700);
+}
+
+/* @media (max-width: 768px) {
+    #contact .container-narrow {
+        width: 100%;
+        padding: var(--space-md);
+    }
+
+    .form-container {
+        padding: var(--space-md);
+    }
+
+    form p.text-center {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .no-yellow {
+        border-width: 1px;
+    }
+} */
