@@ -4,10 +4,23 @@
       – Grundlayout (mobil först)
 ========================================= */
 /* =========================================
-   YTTERSTA HERO-SEKTIONEN 
-========================================= */
-.hero {
+  HERO – Layout & höjd
+   ========================================= */
+#hero {
+   /* Sticky-kompatibel höjd */
    min-height: calc(100svh - var(--nav-height));
+
+   /* Utility-tänk: layout styr spacing, inte barnen */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   /* Avstånd mellan alla element */
+   gap: var(--space-lg);
+
+   /* Luft i sidled */
+   padding-inline: var(--space-lg);
 }
 
 /* =========================================
@@ -15,6 +28,8 @@
 ========================================= */
 #hero img {
    width: 50%;
+   max-height: 40vh;
+      /* Förhindrar att bilden trycker ut texten */
    object-fit: contain;
 }
 
@@ -22,14 +37,16 @@
    RUBRIK
    ========================================= */
 #hero h1 {
-   font-size: 2rem;
+   /* font-size: 2rem; */
+   font-size: clamp(1.8rem, 4vw, 4rem); /* Höjd- & breddresponsiv */
    line-height: 1.2;
    font-weight: bold;
 
    /* color: var(--pink-700); */
-   color: var(--text-accent); 
+   color: var(--text-accent);
    background-color: var(--pink-600);
-   
+
+   padding: var(--space-sm) var(--space-md);
    border-radius: var(--border-radius-md);
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       /* mjuk skugga */
@@ -39,20 +56,23 @@
    BRÖDTEXT
    ========================================= */
 #hero p {
-   font-size: 1.1rem; /* samma som globalt */
+   /*font-size: 1.1rem; samma som globalt */
+   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 /* =========================================
    TAGLINE (ska ligga EFTER #hero p)
    ========================================= */
 #hero .hero-tagline {
-   font-size: 1.5rem;
-   font-weight: 500;
-   font-weight: bold;
+   /* font-size: 1.5rem; */
+   font-size: clamp(1.2rem, 3vw, 2rem);
+      font-weight: bold;
 
    color: var(--text-body);
    /* color: var(--text-accent); */
    background-color: var(--pink-600);
+
+   padding: var(--space-sm) var(--space-md);
 
    border-radius: var(--border-radius-md);
 
@@ -60,13 +80,17 @@
       /* mjuk skugga */
 }
 
+/* =========================================
+   P-GROUP (bakgrundsblock)
+   ========================================= */
 #hero .p-group {
+   padding: var(--space-md);
    border-radius: var(--border-radius-md);
    background: linear-gradient(to bottom,
             var(--pink-500) 0%,
             var(--pink-400) 40%,
             var(--yellow-200) 100%);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
                /* mjuk skugga */
 }
 
@@ -112,7 +136,7 @@
    #hero h1 {
       font-size: 4rem;
    }
-   
+
    #hero p {
       font-size: 1.5rem;
    }
