@@ -113,10 +113,14 @@
    - Fixar att bilder inte skapar konstiga mellanrum
    - Detta är en av de viktigaste globala reglerna
 */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+img,
+svg,
+video,
+canvas,
+iframe {
+   max-width: 100%;
+   height: auto;
+   display: block;
 }
 
 /* =========================================

@@ -7,28 +7,35 @@
   HERO – Layout & höjd
    ========================================= */
 #hero {
-   /* Sticky-kompatibel höjd */
-   min-height: calc(100svh - var(--nav-height));
+   
+   min-height: calc(100svh - var(--nav-height)); /* Sticky-kompatibel höjd */
+
+   gap: var(--space-xl); /* Avstånd mellan alla element */
+      
+   padding-inline: var(--space-lg); /* Luft i sidled */
 
    /* Utility-tänk: layout styr spacing, inte barnen */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
 
-   /* Avstånd mellan alla element */
-   gap: var(--space-lg);
-
-   /* Luft i sidled */
-   padding-inline: var(--space-lg);
+#hero header {
+   display: flex;
+   flex-direction: column;
+   gap: var(--space-md); /* spacing mellan img, h1 och tagline */
 }
 
 /* =========================================
    HERO-BILD (LOGGA)
 ========================================= */
 #hero img {
-   width: 50%;
-   max-height: 40vh;
+   width: clamp(150px, 40%, 300px);
+   max-height: 35vh;
+
+   /* width: 50%;
+   max-height: 40vh; */
       /* Förhindrar att bilden trycker ut texten */
    object-fit: contain;
 }
@@ -41,12 +48,15 @@
    font-size: clamp(1.8rem, 4vw, 4rem); /* Höjd- & breddresponsiv */
    line-height: 1.2;
    font-weight: bold;
+   padding: var(--space-sm) var(--space-md);
+   max-width: 30ch;
 
+   letter-spacing: 0.01ch;
    /* color: var(--pink-700); */
    color: var(--text-accent);
    background-color: var(--pink-600);
 
-   padding: var(--space-sm) var(--space-md);
+   
    border-radius: var(--border-radius-md);
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       /* mjuk skugga */
@@ -66,13 +76,18 @@
 #hero .hero-tagline {
    /* font-size: 1.5rem; */
    font-size: clamp(1.2rem, 3vw, 2rem);
-      font-weight: bold;
+   font-weight: bold;
+   padding: var(--space-sm) var(--space-md);
+   max-width: 40ch;
 
    color: var(--text-body);
    /* color: var(--text-accent); */
    background-color: var(--pink-600);
 
-   padding: var(--space-sm) var(--space-md);
+   /* background: linear-gradient(to bottom,
+            var(--pink-500) 0%,
+            var(--pink-400) 40%,
+            var(--yellow-200) 100%); */
 
    border-radius: var(--border-radius-md);
 
@@ -84,8 +99,13 @@
    P-GROUP (bakgrundsblock)
    ========================================= */
 #hero .p-group {
-   padding: var(--space-md);
+   padding: var(--space-lg);
+   max-width: 50ch;
+
+   text-align: center;
+
    border-radius: var(--border-radius-md);
+
    background: linear-gradient(to bottom,
             var(--pink-500) 0%,
             var(--pink-400) 40%,
@@ -95,7 +115,7 @@
 }
 
 #hero .p-i {
-   font-weight: bolder;
+   font-weight: bold;
    color: var(--text-accent);
 }
 
@@ -107,41 +127,13 @@
 /* =========================================
    TABLET (≥ 600px)
 ========================================= */
-@media (min-width: 600px) {
 
-   #hero h1 {
-      font-size: 3rem; /* större rubrik */
-   }
-   #hero p {
-      font-size: 1.3rem;
+@media (max-height: 700px) {
+   #hero {
+      gap: var(--space-md);
    }
 
-   #hero .hero-tagline {
-      font-size: 2rem;
-   }
-
-   #hero .p-i {
-      font-size: 1.5rem;
-   }
-}
-
-/* =========================================
-   DESKTOP (≥ 900px)
-========================================= */
-@media (min-width: 900px) {
-
-   #hero h1 {
-      font-size: 4rem;
-   }
-
-   #hero p {
-      font-size: 1.5rem;
-   }
-   #hero .hero-tagline {
-      font-size: 2.1rem;
-   }
-
-   #hero .p-i {
-      font-size: 1.7rem;
+   #hero img {
+      max-height: 25vh;
    }
 }
