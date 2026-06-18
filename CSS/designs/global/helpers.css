@@ -39,12 +39,28 @@
       font-size: 1.25rem; 
    }
 
+   .text-italic {
+
+      font-style: italic;
+         opacity: 0.9;
+   }
+
+   .text-italic-elegant {
+      font-style: italic;
+      letter-spacing: 0.5px;
+      opacity: 0.9; 
+   }
+
+   .text-italic-color {
+      font-style: italic;
+      color: var(--pink-200);
+      font-size: large;
+      font-weight:lighter;
+   }
+
 /* =========================================
    FLEX-HJÄLPARE
    ========================================= */
-
-
-
 /* flex-col
    - Gör att flexbarn staplas i kolumn
    - Bra för formulär, kort, hero-innehåll
@@ -127,7 +143,7 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   
+
 }
 
 /* =========================================
@@ -187,7 +203,6 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
    padding-left: 2rem;
    padding-right: 2rem;
 }
-
 
 .margin-top {
     margin-top: 1rem;

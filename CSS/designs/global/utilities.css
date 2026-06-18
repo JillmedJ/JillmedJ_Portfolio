@@ -8,9 +8,7 @@ UTILITIES.CSS – Layout & struktur
    - En standardcontainer för att centrera innehåll
    - Begränsar maxbredden så att text inte blir för bred
    - Ger luft runt innehållet
-   - Perfekt för sektioner som textblock, cards, gallerier
-*/
-
+   - Perfekt för sektioner som textblock, cards, gallerier */
 .layouta {
     max-width: 1000px;
     margin: 0 auto;
@@ -41,7 +39,6 @@ UTILITIES.CSS – Layout & struktur
     margin-bottom: 1rem;
     /* margin-bottom: 3rem; */
 }
-
 /* =========================================
 2) CONTAINERS - för layout och innehåll (ett inre lager) begränsar bredden + centrerar på innehåller (en del av innehållet på sidan (.section))
 ========================================= */
@@ -64,6 +61,24 @@ UTILITIES.CSS – Layout & struktur
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+
+.p-1 {
+    padding: 0.5rem;
+}
+
+.p-2 {
+    padding: 1rem;
+}
+
+.p-3 {
+    padding: 1.5rem;
+}
+
+.p-4 {
+    padding: 2rem;
+}
+
 
 /* =========================================
    5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad
@@ -92,6 +107,18 @@ Lämplig för grid (men också flex och block)
     margin-top: 2rem;
 }
 
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
 /* =========================================
 FLOW-SPACING (modern, gap-baserad)
 -----------------------------------------
@@ -115,12 +142,27 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 }
 
 /* borde kanske byta namnet från -row till -horisontal.. */
-.flew-whole-row {
+.flow-whole-row {
     display: flex;
     /* Staplar barn vertikalt */
     flex-direction: row;
     gap: 1rem;
     /* Avstånd mellan alla barn */
+}
+.gap-1 {
+    gap: 0.5rem;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.gap-3 {
+    gap: 1.5rem;
+}
+
+.gap-4 {
+    gap: 2rem;
 }
 /* =========================================
 3) GRID-SYSTEM
@@ -194,6 +236,8 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 .flex-grow {
     flex: 1;
 }
+
+
 
 /* =========================================
 5) FLEX-SYSTEM - centrera vertikalt
@@ -383,6 +427,16 @@ för att arbeta med själva loggan
     gap: 1rem;
 
 } 
+
+
+
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid var(--yellow-300);
+    outline-offset: 4px;
+}
 
 /* =========================================
 13) RESPONSIVA HJÄLPKLASSER
