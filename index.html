@@ -6,101 +6,91 @@
         <link rel="stylesheet" href="CSS/styles.css">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="visuals/images/favicon-j.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+
         <title>Jill med J</title>
     </head>
 
     <body>
         
-        <header>
-            <nav class="nav" aria-label="Huvudnavigation" >
-                <div class="container flex-between">
-
-                    <div class="brand-group flex-gap">
-
-                        <!-- SIGNATURE (ingen hover, ej klickbar) -->
-                        <img class="brand-signature" src="visuals/images/Jill_signature_transparent.png" alt="Min underskrift">
-                        
-                        <!-- LOGO/BRAND -->
-                        <a href="#hero" class="brand-logo-link active">
-                            <img class="brand-logo" src="visuals/images/Jill_diamand_no_text_transparent.png" alt="Min logga">
-                        </a>
+        <header class="nav-sticky">
+                <nav class="nav" aria-label="Huvudnavigation">
+                    <div class="container flex-between">
+                
+                        <div class="brand-group flex-gap">
+                
+                            <!-- SIGNATURE (ingen hover, ej klickbar) -->
+                            <img class="brand-signature" src="visuals/images/Jill_signature_transparent.png" alt="Min underskrift">
+                
+                            <!-- LOGO/BRAND -->
+                            <a href="#hero" class="brand-logo-link active">
+                                <img class="brand-logo" src="visuals/images/Jill_diamand_no_text_transparent.png" alt="Min logga">
+                            </a>
+                        </div>
+                
+                        <!-- NAVIGATION (med hover, klickbar)-->
+                        <ul class="nav-ul">
+                
+                
+                
+                            <li>
+                                <a href="#projects" class="active">
+                                    <!-- ICON file-check-corner -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="m14 20 2 2 4-4" />
+                                    </svg>
+                                    <span class="nav-text no-break">
+                                        Se mina projekt
+                                    </span>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="#contact" class="cta active">
+                                    <!-- ICON message-square-heart -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+                                        <path
+                                            d="M7.5 9.5c0 .687.265 1.383.697 1.844l3.009 3.264a1.14 1.14 0 0 0 .407.314 1 1 0 0 0 .783-.004 1.14 1.14 0 0 0 .398-.31l3.008-3.264A2.77 2.77 0 0 0 16.5 9.5 2.5 2.5 0 0 0 12 8a2.5 2.5 0 0 0-4.5 1.5" />
+                                    </svg>
+                                    <span class="nav-text no-break">
+                                        Contact me
+                                    </span>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="cv/JillmedJ-CV.pdf" class="active" download>
+                                    <!-- ICON download -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M12 15V3" />
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <path d="m7 10 5 5 5-5" />
+                                    </svg>
+                                    <span class="nav-text no-break">
+                                        Ladda ned mitt <span class="no-wrap text-italic-color">curriculum vitae</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- NAVIGATION (med hover, klickbar)-->
-                    <ul class="nav-ul">
-
-                        
-                        
-                        <li>
-                            <a href="#projects" class="active">
-                                <!-- ICON file-check-corner -->
-                                <svg class="icon" 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="0 0 24 24" 
-                                fill="none"
-                                stroke="currentColor" 
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round"
-                                aria-hidden="true">
-                                    <path
-                                        d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
-                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                    <path d="m14 20 2 2 4-4" />
-                                </svg>
-                                <span class="nav-text no-break">
-                                    Se mina projekt
-                                </span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="#contact" class="cta active">
-                                <!-- ICON message-square-heart -->
-                                <svg class="icon" 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="0 0 24 24" 
-                                fill="none"
-                                stroke="currentColor" 
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round"
-                                aria-hidden="true">
-                                    <path
-                                        d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
-                                    <path
-                                        d="M7.5 9.5c0 .687.265 1.383.697 1.844l3.009 3.264a1.14 1.14 0 0 0 .407.314 1 1 0 0 0 .783-.004 1.14 1.14 0 0 0 .398-.31l3.008-3.264A2.77 2.77 0 0 0 16.5 9.5 2.5 2.5 0 0 0 12 8a2.5 2.5 0 0 0-4.5 1.5" />
-                                </svg>
-                                <span class="nav-text no-break">
-                                    Contact me
-                                </span>
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a href="cv/JillmedJ-CV.pdf" class="active" download>
-                                <!-- ICON download -->
-                                <svg class="icon"
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    viewBox="0 0 24 24" 
-                                    fill="none" 
-                                    stroke="currentColor"
-                                    stroke-width="2" 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    aria-hidden="true"
-                                    >
-                                    <path d="M12 15V3" />
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <path d="m7 10 5 5 5-5" />
-                                </svg>
-                                <span class="nav-text no-break">
-                                    Ladda ned mitt <span class="no-wrap text-italic-color">curriculum vitae</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+            
         </header>
 
         <main>

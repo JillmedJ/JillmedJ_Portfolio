@@ -11,6 +11,12 @@
    Detta är bakgrundsremsan som sträcker sig
    över hela sidans bredd.
 ========================================= */
+.nav-sticky {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
 /* Navens bakgrund och textfärg.
    Detta är unikt för nav → ska ligga här. */
 .nav {
@@ -18,9 +24,7 @@
    color: var(--color-white); /* Vit text i nav (för kontrast) */
    padding: 0.7rem 3.5rem;
 
-   position: sticky;
-   top: 0;
-   z-index: 1000;
+   
    backdrop-filter: blur(8px);
 }
 

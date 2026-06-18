@@ -54,8 +54,10 @@
    .text-italic-color {
       font-style: italic;
       color: var(--pink-200);
-      font-size: large;
+      font-size: 1.3rem;
       font-weight:lighter;
+      font-family: "Playfair Display", Georgia,
+         serif;
    }
 
 /* =========================================
