@@ -14,9 +14,9 @@
 @import "designs/global/utilities.css";
 
 /* GLOBAL BEHAVIOR */
-html {
+/* html {
     scroll-behavior: smooth;
-} 
+}  */
 
 /* COMPONENTS */
 @import "components/nav.css";
