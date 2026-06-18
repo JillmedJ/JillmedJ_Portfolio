@@ -54,6 +54,9 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    transition: color 0.2s ease, transform 0.25s ease;
    border-radius: var(--border-radius-md);
    padding: 1rem;
+
+   /* flex-wrap: nowrap;
+      overflow: hidden; */
 }
 
 
@@ -75,6 +78,8 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
       /* 8% större */
 }
 
+
+
 /* Signaturen – ingen hover */
 .brand-signature {
    height: 40px;
@@ -91,6 +96,17 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    /* background */
    border-radius: var(--border-radius-md);
    
+   /* filter:
+         drop-shadow(0 0 4px rgba(0, 0, 0, 0.7)) */
+         /* mörk bas */
+         /* drop-shadow(0 0 10px rgba(255, 255, 255, 1)) */
+         /* vit kärna */
+         /* drop-shadow(0 0 25px rgba(255, 215, 0, 0.9)) */
+         /* guld kärna */
+         /* drop-shadow(0 0 45px rgba(255, 215, 0, 0.6)) */
+         /* guld aura */
+         /* drop-shadow(0 0 70px rgba(255, 215, 0, 0.4)); */
+      /* stor aura */
 }
 
 /* Loggan – hover-effekt */
@@ -145,10 +161,7 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    Detta är nav-specifik responsiv logik → ligger här. */
 
 @media (min-width: 650px) {
-   .nav-text {
-      display: inline;
-   }
-
+   
    .nav-ul {
       /* flex-direction: row; */
       justify-content: flex-end; /* Länkarna hamnar till höger */
@@ -160,9 +173,18 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    Nav-specifik responsiv logik → ligger här. */
 @media (min-width: 900px) {
    .nav-ul {
-      gap: 2rem; /* luftigt */
+      gap: 1rem; /* lite luft */
    }
+      .nav-text {
+         display: inline;
+      }
 }
+
+/* @media (max-width: 919px) {
+   .nav-text {
+      display: none;
+   }
+} */
 
 /* STOR (≥ 1200px) – vertikal nav */
 /* @media (min-width: 1200px) {
