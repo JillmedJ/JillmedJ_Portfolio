@@ -1,7 +1,8 @@
 /* =========================================
 UTILITIES.CSS – Layout & struktur
 ========================================= */
-
+:root {
+    --nav-height: 80px;}
 /* --- Layout-hjälpare - Centrerar innehåll och begränsar maxbredd */
 
 /* .layouta
