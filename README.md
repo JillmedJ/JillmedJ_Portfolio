@@ -232,3 +232,6 @@ Det här projektet är lika mycket en portfolio som det är en dokumentation av 
 Det här är början.
 En början jag är stolt över, för den är min – och den är på väg åt rätt håll.
 Jag bygger inte bara en portfolio. Jag bygger min kompetens, mitt uttryck och min framtid.
+
+Länkar:
+https://coolors.co/palettes/popular/blue

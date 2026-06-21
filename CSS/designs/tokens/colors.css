@@ -7,7 +7,7 @@
 ========================================= */
 
 :root {
-
+   
     /* =========================================
        BASFÄRGER (neutrala)
        ========================================= */
@@ -24,7 +24,6 @@
     --gray-500: #666666;
     --gray-600: #333333;
 
-
     /* =========================================
        PRIMÄRA FÄRGER (rosa tema)
        ========================================= */
@@ -39,11 +38,16 @@
     --pink-500: #a02185;
     /* mörk brand */
 
+   --pink-600: #86186d;
+      --pink-700: #6d145a;
+      --pink-800: #540f47;
+      --pink-900: #3c0b34;
+
+
     /* Brandfärger (för knappar, highlights, nav) */
     --brand-bg: var(--pink-100);
     --brand: var(--pink-400);
     --brand-dark: var(--pink-500);
-
 
     /* =========================================
        SEKUNDÄRA FÄRGER (gult tema)
@@ -58,17 +62,17 @@
     /* stark accent */
     --yellow-500: #e6a800;
     /* mörk accent */
+   --yellow-600: #cc9600;
+   /* djup guld */
+   --yellow-700: #b37f00;
+   /* antik guld/mörk honung */
 
-
-    /* =========================================
-       ACCENTFÄRGER
-       ========================================= */
-    --accent: var(--yellow-300);
-    /* primär accent */
-    --accent-strong: var(--yellow-400);
-    /* stark accent */
-
-
+   /* =========================================
+      ACCENTFÄRGER (aprikos)
+   ========================================= */
+   --accent: var(--yellow-300);
+   --accent-light: var(--yellow-200);
+   --accent-strong: var(--yellow-600);
     /* =========================================
        BAKGRUNDSFÄRGER
        ========================================= */
@@ -79,7 +83,6 @@
     --bg-section: var(--pink-100);
     --bg-dark: var(--pink-500);
     /* mörk sektion */
-
 
     /* =========================================
        TEXTFÄRGER
@@ -94,7 +97,6 @@
     /* gul highlight */
     --text-highlight: var(--pink-200);
     /* ljus rosa highlight */
-
 
     /* =========================================
        KNAPPFÄRGER
@@ -117,4 +119,3 @@
        ========================================= */
    --icon-color: var(--pink-500);
 }
-

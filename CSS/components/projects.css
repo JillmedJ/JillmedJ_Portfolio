@@ -1,117 +1,110 @@
 /* =========================================
-   GALLERY.CSS
-   ========================================= */
+   PORTFOLIO / PROJECTS SECTION
+   – Sektionens övergripande styling
+   – Text, tagline, container
+========================================= */
 
-/* ⭐ Hur flex och grid passar in i detta Tänk så här: 🟩 Flexbox=layout inuti en rad eller kolumn Flex är bäst när du vill: lägga saker bredvid varandra centrera saker styra ordning låta saker wrap:a skapa knapprader,
-      nav,
-      kort i rad,
-      logga+text Flex är “lokal layout”. 🟦 Grid=layout av hela sektioner Grid är bäst när du vill: skapa kolumnsystem skapa komplexa layouter styra både rader och kolumner göra tidningsliknande layout placera element i ett rutnät Grid är “global layout”. 
-      
-      3) Galleri → grid (3–4 kolumner) → eller flex med wrap
-
-
-
-
-
-/* --- Galleri-container (animal-gallery) ----------- */
-/* Layout: flex/grid, wrap, gap, centrering */
-
-.grid-container {
-
-       /* height: 80svh;  */
-       /* någon valua av denna som jag vill ha tror jag : ) */
-      /* height: 800px; */
-      /* display: grid; */
-      /* grid-template-columns: 200px 200px 200px; */
-      /* grid-template-columns: 0.5fr 0.5fr 0.5fr ; */
-      /* grid-template-rows: px px px  */
-      /* grid-template-rows: 1.2fr 1.2fr 1.2fr; */
-
-      
-/* 
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 60svh;
-
-
-
-
-
-      gap: 1rem;
-      margin: 0 auto;
-      padding: 1rem; */
+#projects .section-tagline {
+      font-size: 1.1rem;
+      max-width: 55ch; /* ch är en typografisk enhet som alltså ger 1ch per teckenbredd.*/
+      margin: 0 auto var(--space-lg);
+      text-align: center;
 }
 
-.grid-container9 {
-
-      /* height: 80svh; */
-      /* någon valua av denna som jag vill ha tror jag : ) */
-      /* height: 800px; */
-      /* display: grid; */
-      /* grid-template-columns: 200px 200px 200px; */
-      /* grid-template-columns: 0.5fr 0.5fr 0.5fr ; */
-      /* grid-template-rows: px px px  */
-      /* grid-template-rows: 1.2fr 1.2fr 1.2fr; */
-
-
-      /* grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr; */
-
-      /* grid-auto-columns: 1fr; */
-      /* grid-auto-rows: 1fr;
-
-
-
-      gap: 1rem;
-      margin: 0 auto;
-      padding: 1rem;
-
-      justify-items: center;
-      align-items: center;
-
-      justify-content: center;
-      align-content: center; */
-
+/* =========================================
+   GRID
+   – Baslayout för cardsen
+   – 1 kolumn på mobil
+========================================= */
+#projects .grid-auto {
+      display: grid;
+      grid-template-columns: 1fr;
+      /* gap hanteras av utilities.css (flow-whole i cardsen) */
 }
 
-/* --- Kolumnlogik / antal kort per rad ------------- */
+/* =========================================
+   CARD
+   – Komponentens bas
+   – Bakgrund, padding, rundning
+========================================= */
+.card--project {
+      background: linear-gradient(to bottom,
+                  var(--pink-100) 0%,
+                  var(--pink-300) 12%,
+                  var(--pink-400) 20%,
+                  var(--yellow-400) 60%,
+                  var(--yellow-300) 80%,
+                  var(--yellow-200) 90%,
+                  var(--yellow-100) 100%);
+}
 
+/* =========================================
+   CARD TITLE
+   – Rubrikens utseende
+   – Ingen margin behövs tack vare card-padding + flow-whole
+   – Gradient-border med rundade hörn (pseudo-element)
+========================================= */
 
-
-/* Desktop*/
-
-/* tablet*/
-
-/* mobil */
-
-
-
-
-/* --- Avstånd mellan kort -------------------------- */
-/* gap, margin, padding */
-
-.item {
-
-      /* height: 15rem;
-      width: 15rem;
-      padding: 2rem;
-      background-color: rgb(175, 175, 248);
-
-      color: rgb(78, 78, 201);
+.project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.6rem 1rem;
       text-align: center;
 
-      border-radius: 8px;
+      background-color: var(--pink-400); /* Bakgrundsfärg */
+      overflow: hidden; /* Viktigt: klipper innehållet så att hörnen blir runda */
 
-      font-size: 2rem; */
+      border-radius: var(--border-radius-md); /* Token-driven border-radius (samma som CTA, cards, bilder) */
 
+      position: relative; /* krävs för pseudo-elementet */
+      z-index: 1;
 }
 
-/* --- Responsiv layout ----------------------------- */
-/* Tablet-layout */
-/* @media (max-width: 900px) {
-    
-} */
+.project-title::before { /* Gradient-border som följer border-radius */
+      content: "";
+      position: absolute;
+      inset: 0; /* täcker hela ytan */
+      padding: 4px; /* border-bredd */
+      border-radius: inherit; /* ärver exakt samma rundning som titeln */
+      background: var(--border-gradient-soft); /* min gradient-token från border.css*/
+      -webkit-mask: /* Mask-trick som skapar en "hålighet" i mitten = riktig border */
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude; 
+      z-index: -1; /* lägger border bakom innehållet */
+}
 
-/* Mobil-layout */
-/* @media (max-width: 600px) { 
-    
-} */
+.project-title:hover {
+      transform: translateY(-6px);
+      /* lyfter kortet lite */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            /* mjuk skugga */
+}
+
+/* =========================================
+   CTA I CARD
+   – margin-top: auto fungerar tack vare flow-whole (flex-col)
+========================================= */
+.card--project .cta {
+      margin-top: auto;
+}
+
+/* =========================================
+   MEDIA QUERIES
+   – Alla samlade längst ned (best practice)
+   – Gridens responsiva kolumner
+========================================= */
+/* TABLET */
+@media (min-width: 600px) {
+      #projects .grid-auto {
+            grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+      #projects .grid-auto {
+            grid-template-columns: repeat(3, 1fr);
+      }
+}

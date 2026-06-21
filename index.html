@@ -4,161 +4,141 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="stylesheet" href="CSS/styles.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="visuals/images/favicon-j.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+
         <title>Jill med J</title>
     </head>
 
-    <body class="debug">
-
-        <header>
-            <nav aria-label="Huvudnavigation">
-                <!--  LOGO brand -->
-                <a href="#hero" class="nav-brand">
-                    <img src="visuals/images/SVG/logo.svg" alt="Min logga">
-                    <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
-                </a>
-                <!-- ICON home -->
-                <a href="#hem" class="nav-icon">
-                    <svg class="icon"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor"
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        aria-hidden="true">
-                        <path d="M8.62 13.8A2.25 2.25 0 1 1 12 10.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z" />
-                        <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                    </svg>
-                    <span class="nav-text">
-                        Hem
-                    </span>
-                </a>
-                <ul>
-                    <li>
-                        <a href="#projects">
-                            <span class="nav-icon">
-                                <!-- ICON file-check-corner -->
-                                <svg class="icon"
-                                    xmlns="http://www.w3.org/2000/svg"     
-                                    viewBox="0 0 24 24"    
-                                    fill="none" 
-                                    stroke="currentColor"
-                                    stroke-width="2" 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" aria-hidden="true"
-                                    >
-                                    <path d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
-                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                    <path d="m14 20 2 2 4-4" />
-                                </svg>
-                            </span>
-                            <span class="nav-text no-break">
-                                Se mina projekt
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="cta">
-                            <span class="nav-icon">
-                                <!-- ICON message-square-heart -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" 
-                                    fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path
-                                        d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
-                                    <path
-                                        d="M7.5 9.5c0 .687.265 1.383.697 1.844l3.009 3.264a1.14 1.14 0 0 0 .407.314 1 1 0 0 0 .783-.004 1.14 1.14 0 0 0 .398-.31l3.008-3.264A2.77 2.77 0 0 0 16.5 9.5 2.5 2.5 0 0 0 12 8a2.5 2.5 0 0 0-4.5 1.5" />
-                                </svg>
-                            </span>
-                            <span class="nav-text no-break">
-                                Contact me
-                            </span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="cv/JillmedJ-CV.pdf" download>
-                            <span class="nav-icon">
-                                <!-- ICON download -->
-                                <svg class="icon"
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    viewBox="0 0 24 24" 
-                                    fill="none" 
-                                    stroke="currentColor"
-                                    stroke-width="2" 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    aria-hidden="true"
-                                    >
-                                    <path d="M12 15V3" />
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <path d="m7 10 5 5 5-5" />
-                                </svg>
-                            </span>
-                            <span class="nav-text no-break">
-                                Ladda ned mitt curriculum vitae
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+    <body>
+        
+        <header class="nav-sticky">
+                <nav class="nav" aria-label="Huvudnavigation">
+                    <div class="container flex-between">
+                
+                        <div class="brand-group flex-gap">
+                
+                            <!-- SIGNATURE (ingen hover, ej klickbar) -->
+                            <img class="brand-signature" src="visuals/images/Jill_signature_transparent.png" alt="Min underskrift">
+                
+                            <!-- LOGO/BRAND -->
+                            <a href="#hero" class="brand-logo-link active">
+                                <img class="brand-logo" src="visuals/images/Jill_diamand_no_text_transparent.png" alt="Min logga">
+                            </a>
+                        </div>
+                
+                        <!-- NAVIGATION (med hover, klickbar)-->
+                        <ul class="nav-ul">
+                
+                
+                
+                            <li>
+                                <a href="#projects" class="active">
+                                    <!-- ICON file-check-corner -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="m14 20 2 2 4-4" />
+                                    </svg>
+                                    <span class="nav-text no-break">
+                                        Se mina projekt
+                                    </span>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="#contact" class="cta active">
+                                    <!-- ICON message-square-heart -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+                                        <path
+                                            d="M7.5 9.5c0 .687.265 1.383.697 1.844l3.009 3.264a1.14 1.14 0 0 0 .407.314 1 1 0 0 0 .783-.004 1.14 1.14 0 0 0 .398-.31l3.008-3.264A2.77 2.77 0 0 0 16.5 9.5 2.5 2.5 0 0 0 12 8a2.5 2.5 0 0 0-4.5 1.5" />
+                                    </svg>
+                                    <span class="nav-text no-break">
+                                        Contact me
+                                    </span>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="cv/JillmedJ-CV.pdf" class="active" download>
+                                    <!-- ICON download -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M12 15V3" />
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <path d="m7 10 5 5 5-5" />
+                                    </svg>
+                                    <span class="nav-text no-break">
+                                        Ladda ned mitt <span class="no-break text-italic-color">curriculum vitae</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            
         </header>
 
         <main>
-
-            <section class="section-large vh-100 center-vertical" aria-labelledby="hero-title" id="hero">
+            <section class="section" aria-labelledby="hero-title" id="hero">
+                
                 <div class="container flow-whole">
 
-                    <header class="text-center">
-
-                        <img 
-                        src="visuals/images/PNG/logoNoBackground.png" 
-                        alt="Min logga"
-                        >
+                    <header class="text-center padding-sides flex-center">
+                        
+                        <img class="inline-block" src="visuals/images/logo-transparent-no-text.png" alt="Min logga">
 
                         <h1 class="text-center" id="hero-title">
-                            Jill med J - Systemutvecklare to be
+                            <span class="no-wrap h1-name">Jill med J </span>
+                            <span class="h1-dash">- </span>
+                            <span class="no-wrap h1-role">Systemutvecklare to be</span>
                         </h1>
-                        <p class="hero-tagline">
-                            Lärande utvecklare som trivs bäst när idéer får delas.
+                        <p class="hero-tagline container-narrow">
+                            <span class="tagline-part-1 no-break">Jag lär mig </span>
+                            <span class="tagline-dash">— </span>
+                            <span class="tagline-part-2 no-break">och jag älskar det.</span>
                         </p>
                     </header>
 
-                    <div class="text-center">
-                        <p>
-                            Jag lär mig — och jag älskar det.
+                    <div class="text-center p-group container-even-more-narrow">
+                        <p class="p-i padding-top">
+                            Jag trivs bäst när idéer får delas.
                         </p>
-                        
-                        <p>
+                        <p class="p-we">
                             Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.
                         </p>
                     </div>
                     
-                    <footer class="text-center">
-                        <a href="#projects" class="cta">
+                    <footer class="section-footer text-center">
+                            <a href="#projects" class="cta" id="hero-cta">
                                 <!-- ICON file-check-corner -->
-                                <svg class="icon" 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    viewBox="0 0 24 24" 
-                                    fill="none" 
-                                    stroke="currentColor"
-                                    stroke-width="2" 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    aria-hidden="true"
-                                    >
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path
                                         d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
                                     <path d="M14 2v5a1 1 0 0 0 1 1h5" />
                                     <path d="m14 20 2 2 4-4" />
                                 </svg>
-                            <span class="no-break">
-                                Se mina projekt
-                            </span>
-                        </a>
+                                <span class="no-break">
+                                    Se mina projekt
+                                </span>
+                            </a>
                     </footer>
                 </div>
-                
             </section>
 
             <!-- ABOUT / SHOWCASE -->
@@ -179,7 +159,7 @@
                                     My Path
                                 </h3>
                                 <figure class="about-image">
-                                    <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
+                                    <img src="visuals/images/logo-transparent.png" alt="Min logga" loading="lazy" decoding="async">
                                     <figcaption></figcaption>
                                 </figure>
                             </header>
@@ -252,7 +232,7 @@
                                     My Skills
                                 </h3>
                                 <figure class="about-image">
-                                    <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
+                                    <img src="visuals/images/logo-transparent.png" alt="Min logga" loading="lazy" decoding="async">
                                     <figcaption></figcaption>
                                 </figure>
                             </header>
@@ -305,7 +285,7 @@
                                     What Drives Me
                                 </h3>
                                 <figure class="about-image">
-                                    <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga" loading="lazy" decoding="async">
+                                    <img src="visuals/images/logo-transparent.png" alt="Min logga" loading="lazy" decoding="async">
                                     <figcaption></figcaption>
                                 </figure>
                             </header>
@@ -399,8 +379,8 @@
                     <div class="container">
                         <div class="section-footer-brand">
                             <a href="#hero">
-                                <img src="visuals/images/SVG/logo.svg" alt="Min logga">
-                                <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
+                                <img src="visuals/images/logo-transparent.svg" alt="Min logga">
+                                <img src="visuals/images/signature.png" alt="Min underskrift">
                             </a>
                             <a class="cta" href="#projects"> -->
                                 <!-- uppdaterad version -->
@@ -430,419 +410,420 @@
                             </a>
                         </div>
                     </div>
-                </footer>
-            </section> -->
-        
-            <!-- <section class="section grid-container" id="projects"> -->
-            <section id="projects" aria-labelledby="projects-title">
+                </footer> -->
+            </section>
 
+            <!-- PROJECTS / PORTFOLIO -->
+            <section id="projects" class="section my-portfolio" aria-labelledby="projects-title">
+                <div class="container flow-whole">
+            
+                    <header class="text-center">
+                        <h2 id="projects-title">
+                            My Portfolio
+                        </h2>
+                        <p class="section-tagline">
+                            Projekt jag har byggt och utvecklat
+                        </p>
+                    </header>
 
-                <h2 id="projects-title">
-                    My Portfolio
-                </h2>
-
-                <article class="item">
-                    <header>
-                        <h3>
-                            <span class="icon">
-                                <!-- ICON file-check-corner -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <!-- GRID med cards -->
+                    <div class="grid-auto">
+                    
+                        <!-- CARD 1 -->
+                        <article class="card card--project flow-whole">
+                            <img src="visuals/images/logo-transparent.svg" alt="Projektbild">
+                    
+                            <h3 class="project-title flex-gap flex-center">
+                                <svg class="icon"
+                                xmlns="http://www.w3.org/2000/svg"  
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor"
+                                stroke-width="2" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                aria-hidden="true"
+                                >
                                     <path
                                         d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
                                     <path d="M14 2v5a1 1 0 0 0 1 1h5" />
                                     <path d="m14 20 2 2 4-4" />
                                 </svg>
-                            </span>
-                            Projektets namn (1)
-                        </h3>
-                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
-                    </header>
+                                Kommande projekt
+                            </h3>
                     
-                    <p>
-                        Kort beskrivning av projektet.
-                    </p>
-                    <a href="#">
-                        Läs mer om projekt 1
-                    </a>
+                            <p class="text-center card-lead">
+                                Soon: en första glimt av vad detta projekt kommer att handla om.
 
-                </article> 
-
-                <article class="item">
-                    <header>
-                        <h3>
-                            <span class="icon">
-                                <!-- ICON file-check-corner -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
-                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                    <path d="m14 20 2 2 4-4" />
-                                </svg>
-                            </span>
-                            Projektets namn (2)
-                        </h3>
-                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
-                    </header>
+                            </p>
                     
-                    <p>Kort beskrivning av projektet.</p>
-                    <a href="#">Läs mer om projekt 2</a>
-
-                </article> 
-
-                <article class="item">
-                    <header>
-                        <h3>
-                            <span class="icon">
-                                <!-- ICON file-check-corner -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
-                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                    <path d="m14 20 2 2 4-4" />
-                                </svg>
-                            </span>
-                            Projektets namn (3)
-                        </h3>
-                        <img src="visuals/images/PNG/logoNoBackground.png" alt="Min logga">
-                    </header>
-                    
-                    <p>Kort beskrivning av projektet.</p>
-                    <a href="#">Läs mer om projekt 3</a>
-
-                </article>
-
-                <footer aria-label="Projektsektionens länkar">
-                    <!-- <div class="container"> -->
-                        <ul>
-                            <li>
-                                <a href="https://github.com/JillmedJ" target="_blank">
-                                    <span class="icon">
-                                    <!-- ICON file-plus -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" 
-                                    class="icon" 
-                                    viewBox="0 0 24 24" 
-                                    fill="none" 
-                                    stroke="currentColor"
-                                        stroke-width="2" 
-                                        stroke-linecap="round" 
-                                        stroke-linejoin="round" 
-                                        aria-hidden="true">
-                                        <path
-                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                        <path d="M9 15h6" />
-                                        <path d="M12 18v-6" />
-                                    </svg>
-                                    </span>
-                                    Min GitHub.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://låtsaslänk4" target="_blank">
-                                    <span class="icon">
-                                        <!-- ICON file-plus -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <path
-                                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-                                            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                            <path d="M9 15h6" />
-                                            <path d="M12 18v-6" />
-                                        </svg>
-                                    </span>
-                                    Annat jag har hittat på.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://låtsaslänk5" target="_blank">
-                                    <span class="icon">
-                                        <!-- ICON file-plus -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <path
-                                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-                                            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                            <path d="M9 15h6" />
-                                            <path d="M12 18v-6" />
-                                        </svg>
-                                    </span>
-                                    Mina icke digitala skapalser med hjälp av penna och papper.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://låtsaslänk6" target="_blank">
-                                    <span class="icon">
-                                    <!-- ICON file-plus -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path
-                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                        <path d="M9 15h6" />
-                                        <path d="M12 18v-6" />
-                                    </svg>
-                                </span>
-                                Mina icke digitala skapalser med hjälp av olika material
+                            <a href="#" class="cta margin-bottom">
+                                Upptäck projektet när det släpps
                             </a>
-                            </li>
-                            <li>
-                                <a href="https://låtsaslänk7" target="_blank">
-                                    <!-- ICON file-plus -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path
-                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                        <path d="M9 15h6" />
-                                        <path d="M12 18v-6" />
-                                    </svg>
-                                    Mina skapelser kopplat till pedagogik.
-                                </a>
-                            </li>
-                        </ul>
-                    
-                    <!-- </div> -->
-                </footer>
+                        </article>
 
+                        <!-- CARD 2 -->
+                        <article class="card card--project flow-whole">
+                            <img src="visuals/images/logo-transparent.svg" alt="Projektbild">
+                        
+                            <h3 class="project-title flex-gap flex-center">
+                                <svg class="icon"
+                                xmlns="http://www.w3.org/2000/svg"  
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor"
+                                stroke-width="2" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                aria-hidden="true"
+                                >
+                                    <path
+                                        d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
+                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                    <path d="m14 20 2 2 4-4" />
+                                </svg>
+                                Projekt på G
+                            </h3>
+                        
+                            <p class="text-center card-lead">
+                                Inom kort: ta en snabb sneak peek på något jag arbetar med just nu.
+
+                            </p>
+                        
+                            <a href="#" class="cta margin-bottom">
+                                Upptäck projektet när det släpps
+                            </a>
+                        </article>
+
+                        <!-- CARD 3 -->
+                        <article class="card card--project flow-whole">
+                            <img src="visuals/images/logo-transparent.svg" alt="Projektbild">
+                        
+                            <h3 class="project-title flex-gap flex-center">
+                                <svg class="icon"
+                                xmlns="http://www.w3.org/2000/svg"  
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor"
+                                stroke-width="2" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                aria-hidden="true"
+                                >
+                                    <path
+                                        d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
+                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                    <path d="m14 20 2 2 4-4" />
+                                </svg>
+                                Upcoming projekt
+                            </h3>
+                        
+                            <p class="text-center card-lead">
+                                Snart: ta del av projekt huvudidé i korthet.
+                            </p>
+                        
+                            <a href="#" class="cta margin-bottom">
+                                Upptäck projektet när det släpps
+                            </a>          
+                        </article>
+                    </div>
+                    <!-- FOOTER-LÄNKAR -->
+                    <footer class="section-footer text-center" aria-label="Projektsektionens länkar">
+                        
+                        <a href="https://github.com/JillmedJ" target="_blank" class="cta">
+                            <!-- ICON file-plus -->
+                            <svg class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor"
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            aria-hidden="true"
+                            >
+                                <path
+                                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                                <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                <path d="M9 15h6" />
+                                <path d="M12 18v-6" />
+                            </svg>
+                            Min GitHub.
+                        </a>
+
+                    </footer>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS SECTION -->
+            <section class="testimonials section">
+                <div class="container-narrow flow-whole">
+            
+                    <h2 class="section-title text-center">Vad andra säger</h2>
+            
+                    <!-- GRID -->
+                    <div class="testimonials-grid grid-auto">
+            
+                        <!-- TESTIMONIAL CARD -->
+                        <article class="card card--bubble testimonial-card flow-whole">
+            
+                            <!-- AVATAR (du kan byta till img senare) -->
+                            <div class="testimonial-avatar">
+                                <!-- Exempel: initialer -->
+                                <span>K.H.</span>
+                            </div>
+            
+                            <!-- CITAT -->
+                            <p class="testimonial-quote text-center">
+                                “Jill är en fantastisk lagspelare som alltid levererar genomtänkta lösningar.”
+                            </p>
+            
+                            <!-- NAMN + ROLL -->
+                            <div class="testimonial-meta">
+                                <strong>Kent Hellgren</strong>
+                                <span>Handledare, Ägare</span>
+                            </div>
+            
+                        </article>
+            
+                        <!-- Du kan duplicera fler cards här -->
+            
+                    </div>
+                </div>
             </section>
            
             <!-- <section class="section" id="contact"> -->
-            <section id="contact" aria-labelledby="contact-title">
+            <section id="contact" class="section" aria-labelledby="contact-title">
+                <div class="container-narrow flow-whole">
 
-                <header>
-                    <h2 id="contact-title">
-                        <span class="icon">
+                    <header class="section-header">
+                        <h2 id="contact-title">
                             <!-- ICON message-square-heart -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" 
-                                fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg class="icon"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor"
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            aria-hidden="true"
+                            >
                                 <path
                                     d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
                                 <path
                                     d="M7.5 9.5c0 .687.265 1.383.697 1.844l3.009 3.264a1.14 1.14 0 0 0 .407.314 1 1 0 0 0 .783-.004 1.14 1.14 0 0 0 .398-.31l3.008-3.264A2.77 2.77 0 0 0 16.5 9.5 2.5 2.5 0 0 0 12 8a2.5 2.5 0 0 0-4.5 1.5" />
                             </svg>
-                        </span>
-                        Contact me
-                    </h2>
-                    <h3>
-                    Nyfiken? Hör gärna av dig!
-                    </h3>
-                    <p>
-                        <span class="icon"><!-- ICON messages-square -->
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path
-                                d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-                            <path
-                                d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" />
-                        </svg>
-                        </span>
-                        Jag är nämligen också nyfiken på vad du tänker och vad jag kan hjälpa dig med. Skriv gärna några rader nedan.
-                    </p>
-                </header>
-
-                <form action="https://formshow.systementor.se" method="POST">
-                
-                    <div class="container"> <!-- class? -->
-                        <p>
-                            <span class="icon">
-                                <!-- ICON contact-round -->
-                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                class="icon" 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M16 2v2" />
-                                    <path d="M17.915 22a6 6 0 0 0-12 0" />
-                                    <path d="M8 2v2" />
-                                    <circle cx="12" cy="12" r="4" />
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                </svg>
-                            </span>
-                            Fyll i dina uppgifter nedan.
+                            Contact me
+                        </h2>
+                        <h3 class="text-center">
+                            Nyfiken? Hör gärna av dig!
+                        </h3>
+                        <p class="text-center lead ">
+                            <!-- ICON messages-square -->
+                            <svg class="icon"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor"
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            aria-hidden="true"
+                            >
+                                <path
+                                    d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                                <path
+                                    d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" />
+                            </svg>
+                            Jag är nämligen också nyfiken på vad du tänker och vad jag kan hjälpa dig med. Skriv gärna några rader nedan.
                         </p>
-
-                        <label for="email">
-                            <span>
-                                <!-- ICON mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                                    <rect x="2" y="4" width="20" height="16" rx="2" />                          
-                                </svg>
-                            </span>
-                            Din e-postadress
-                        </label>
-                        <input type="email" id="email" name="email" placeholder="namne@example.com" required>
-
-                        <label for="full-name">
-                            <span class="icon">
-                                <!-- ICON a-large-small -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="m15 16 2.536-7.328a1.02 1.02 0 0 1 1.928 0L22 16" />
-                                    <path d="M15.697 14h5.606" />
-                                    <path d="m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16" />
-                                    <path d="M3.304 13h6.392" />
-                                </svg>
-                            </span>
-                            Ditt för- och efternamn
-                        </label>
-                        <input 
-                        type="text" 
-                        id="full-name" 
-                        name="full-name" 
-                        placeholder="Kent Hellgren" 
-                        required>
-                    </div>
-
-                    <fieldset>
-                        <legend>Vem kontaktar mig?</legend>
-
-                        <input 
-                            type="radio" 
-                            id="radio-private" 
-                            name="radio-check" 
-                            required
-                            value="private"
-                        >
-                        <label for="radio-private">
-                            <span class="icon">
-                                <!-- ICON user-round -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <circle cx="12" cy="8" r="5" />
-                                    <path d="M20 21a8 8 0 0 0-16 0" />
-                                </svg>
-                            </span>
-                            Privat kontakt
-                        </label>
-                                                
-                        <input 
-                            type="radio" 
-                            id="radio-company" 
-                            name="radio-check"
-                            required
-                            value="company"
-                        >
-                        <label for="radio-company">
-                            <span>
-                                <!-- ICON building-2 -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M10 12h4" />
-                                    <path d="M10 8h4" />
-                                    <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
-                                    <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
-                                    <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
-                                </svg>
-
-                            </span>
-                            Företagskontakt
-                        </label>
+                    </header>
+                    
+                    <form action="https://formspree.io/f/xrevvzvb" method="POST">
+                        <div class="form-container">
+                            <div class="flow-whole padding-sides">
+                                <p class="text-center" role="note">
+                                    <!-- ICON contact-round -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M16 2v2" />
+                                        <path d="M17.915 22a6 6 0 0 0-12 0" />
+                                        <path d="M8 2v2" />
+                                        <circle cx="12" cy="12" r="4" />
+                                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    </svg>
+                                    Fyll i dina uppgifter nedan.
+                                </p>
+                            
+                                <!-- EMAIL -->
+                                <div class="form-row flex flex-gap">
+                                    <label class="label-col" for="email">
+                                        <!-- ICON mail -->
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                                        </svg>
+                                        <span class="no-wrap">
+                                            Din e-postadress
+                                        </span>
+                                    </label>
+                                    <input class="flex-grow" type="email" id="email" name="email" placeholder="namne@example.com" required>
+                                </div>
+                            
+                                <!-- FULL NAME -->
+                                <div class="form-row flex flex-gap">
+                                    <label class="label-col" for="full-name">
+                                        <!-- ICON a-large-small -->
+                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="m15 16 2.536-7.328a1.02 1.02 0 0 1 1.928 0L22 16" />
+                                            <path d="M15.697 14h5.606" />
+                                            <path d="m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16" />
+                                            <path d="M3.304 13h6.392" />
+                                        </svg>
+                                        <span class="no-wrap">
+                                            Ditt för- och efternamn
+                                        </span>
+                                    </label>
+                                    <input class="flex-grow" type="text" id="full-name" name="full-name" placeholder="Kent Hellgren" required>
+                                </div>
+                            </div>
+                            
+                            <!-- RADIO GROUP -->
+                            <div class="flow-whole flex-center padding-sides">
+                                <fieldset>
+                                    <legend>
+                                        Vem kontaktar mig?
+                                    </legend>
+                            
+                                    <div class="flex flex-gap">
+                                        <input class="hidden-input" type="radio" id="radio-private" name="radio-check" required value="private">
+                                        <label class="button" for="radio-private">
+                                            <!-- ICON user-round -->
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="8" r="5" />
+                                                <path d="M20 21a8 8 0 0 0-16 0" />
+                                            </svg>
+                                            <span class="no-wrap">
+                                                Privat kontakt
+                                            </span>
+                                        </label>
+                            
+                                        <input class="hidden-input" type="radio" id="radio-company" name="radio-check" required value="company">
+                                        <label class="button" for="radio-company">
+                                            <!-- ICON building-2 -->
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M10 12h4" />
+                                                <path d="M10 8h4" />
+                                                <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                                                <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
+                                                <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+                                            </svg>
+                                            Företagskontakt
+                                        </label>
+                            
+                                        <input class="hidden-input" type="radio" id="radio-other" name="radio-check" required value="other">
+                                        <label class="button" for="radio-other">
+                                            <!-- ICON ellipsis -->
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="1" />
+                                                <circle cx="19" cy="12" r="1" />
+                                                <circle cx="5" cy="12" r="1" />
+                                            </svg>
+                                            <span class="no-wrap">
+                                                Annat syfte
+                                            </span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            
+                            <!-- MESSAGE -->
+                            <div class="flow-whole padding-top-lg padding-sides">
+                                <label for="message">
+                                    <!-- ICON square-pen -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                        <path
+                                            d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
+                                    </svg>
+                                    <span class="no-wrap">
+                                        Ditt meddelande
+                                    </span>
+                                </label>
+                                <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här..." required></textarea>
+                            </div>
+                            
+                            <!-- SUBMIT -->
+                            <div class="flex-center">
+                            
+                                <button class="cta no-yellow-submit" type="submit">
+                                    <!-- ICON send -->
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                                        <path d="m21.854 2.147-10.94 10.939" />
+                                    </svg>
+                                    Skicka
+                                </button>
+                            </div>
+                        </div>
                         
-                        <input 
-                            type="radio" 
-                            id="radio-other" 
-                            name="radio-check" 
-                            required
-                            value="other
-                        >
-                        <label for="radio-other"><span class="icon">
-                            <!-- ICON ellipsis -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <circle cx="12" cy="12" r="1" />
-                                <circle cx="19" cy="12" r="1" />
-                                <circle cx="5" cy="12" r="1" />
-                            </svg>
-                        </span>
-                        Annat syfte
-                    </label>
-
-                    </fieldset>
-
-                    <div class="form">
-                        <label for="message">
-                            <span class="icon">
-                                <!-- ICON square-pen -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" 
-                                    fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                    </form>
+                </div>
+                
+                <footer class="section-footer text-center">
+                    <div class="container flex-center ">
+                        <div class="section-footer-brand flex-center">
+                            <div class="section-footer-brand-group center-vertical">
+                                <a href="#hero">
+                                    <img class="footer-logo no-yellow" src="visuals/images/Jill_diamand_no_text_transparent.png" alt="Min logga">
+                                </a>
+                                <a href="#hero">
+                                    <img class="footer-signature no-yellow" src="visuals/images/Jill_signature_transparent.png" alt="Min underskrift">
+                                </a>
+                            </div>
+                            
+                            <a class="cta no-yellow" href="#projects">
+                                <!-- ICON file-check-corner -->
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <path
-                                        d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
+                                        d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
+                                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                    <path d="m14 20 2 2 4-4" />
                                 </svg>
-
-                            </span>
-                            Ditt meddelande
-                        </label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            rows="5" 
-                            placeholder="Skriv ditt meddelande här..."
-                            required
-                        ></textarea>
-                        <!-- <button class="btn-reset" type="reset">Reset</button> -->
+                                <span class="no-break">
+                                    Se mina projekt
+                                </span>
+                            </a>
+                
+                            <a class="cta no-yellow" href="cv/JillmedJ-CV.pdf" download>
+                                <!-- ICON download -->
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M12 15V3" />
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <path d="m7 10 5 5 5-5" />
+                                </svg>
+                                <span class="no-break">
+                                    Ladda ned mitt curriculum vitae
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    
-                    <div>
-                        <span class="icon">
-                            <!-- ICON send -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path
-                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-                                <path d="m21.854 2.147-10.94 10.939" />
-                            </svg>
-                        
-                        </span>
-                        <button class="btn-post" type="submit">
-                            Skicka
-                        </button>
-                    </div>
-                </form>
-
-                <footer>
-                    <a href="#hero" class="nav-brand">
-                        <img src="visuals/images/SVG/logo.svg" alt="Min logga">
-                        <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
-                    </a>
-                    <a href="#projects">
-                        <span class="icon">
-                            <!-- ICON file-check-corner -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path
-                                    d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
-                                <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                                <path d="m14 20 2 2 4-4" />
-                            </svg>
-                        </span>
-                        <span class="no-break">
-                            Se mina projekt
-                        </span>
-                    </a>
-                    
-                    <a href="cv/JillmedJ-CV.pdf" download>
-                        <span class="icon">
-                            <!-- ICON download -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" 
-                                fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M12 15V3" />
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                <path d="m7 10 5 5 5-5" />
-                            </svg>
-                        </span>
-                        <span class="no-break">
-                            Ladda ned mitt curriculum vitae
-                        </span>
-                    </a>
                 </footer>
                 <!-- (allmänt kontaktformulär -->
 
@@ -860,13 +841,6 @@
                 
                 Du bestämmer om och när du ringer. -->
 
-                
-
-                
-                
-
-                
-
             </section>
 
         </main>
@@ -876,8 +850,8 @@
             <div class="container">
                 <div class="footer-brand"> 
                     <a href="#hero" class="nav-brand">
-                        <img src="visuals/images/SVG/logo.svg" alt="Min logga">
-                        <img src="visuals/images/PNG/signature.png" alt="Min underskrift">
+                        <!-- <img src="visuals/images/logo-transparent.svg" alt="Min logga">
+                        <img src="visuals/images/signature.png" alt="Min underskrift"> -->
                     </a>
                 </div>
 

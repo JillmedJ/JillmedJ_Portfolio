@@ -1,5 +1,5 @@
 /* =========================================
-   NAV.CSS
+   NAV.CSS    NAV – komponentens egna regler
    - Färger från colors.css
    - Hover-effekter
    - Mobilanpassning
@@ -11,33 +11,30 @@
    Detta är bakgrundsremsan som sträcker sig
    över hela sidans bredd.
 ========================================= */
-.nav-container {
+.nav-sticky {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+/* Navens bakgrund och textfärg.
+   Detta är unikt för nav → ska ligga här. */
+.nav {
    background-color: var(--brand-dark); /* Mörk rosa bakgrund */
    color: var(--color-white); /* Vit text i nav (för kontrast) */
-   padding: 1rem 0;
+   padding: 0.7rem 3.5rem;
+
+   
+   backdrop-filter: blur(8px);
 }
 
 /* =========================================
-   LOGGA + SIGNATUR
-========================================= */
-.nav-brand {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-.nav-brand img {
-   height: 50px;
-   width: auto;
-   object-fit: contain;
-}
-
-/* =========================================
-   NAV-LÄNKAR (UL + LI + A)
+   NAV-LÄNKAR (UL + LI + A) UL: navens länklista. Layouten (flex) är nav-specifik → ligger här.
 ========================================= */
 .nav-ul {
-   display: flex;    
-   justify-content: center; /* Mobil: centrerad ikonrad */
+   display: flex;
+   justify-content: center; /* Mobil: centrerad ikonrad */ /* ← FIXAR VERTIKAL CENTRERING */
+   align-items: center;
    gap: 0.75rem; /* mindre gap */ /* Mobil: kompakt */
    margin: 0; /* inre luft: */
    padding: 0; /*  inre luft: */
@@ -46,42 +43,129 @@
 }
 
 /* =========================================
-LÄNKARNA (ikon + text)
+LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
 ========================================= */
-
 .nav-ul a {
    display: flex; /* Viktigt för ikon + text */
-   align-items: center; 
+   align-items: center;
    gap: 0.5rem; /* Avstånd mellan ikon och text */
 
    text-decoration: none;
+
    font-weight: 500;
    color: var(--pink-100); /* Ljus rosa text */
-   transition: color 0.2s ease;
+   /* transition: color 0.2s ease; */
+   transition: color 0.2s ease, transform 0.25s ease;
+   border-radius: var(--border-radius-md);
+   padding: 1rem;
+
+   /* flex-wrap: nowrap;
+      overflow: hidden; */
 }
 
+
+.nav-ul a:focus {
+   outline: 2px solid var(--yellow-300);
+   outline-offset: 4px;
+}
+
+.nav-ul a.active {
+   color: var(--yellow-300);
+   font-weight: 600;
+}
 /* =========================================
    HOVER-EFFEKT
 ========================================= */
 .nav-ul a:hover {
    color: var(--yellow-300); /* Gul accent vid hover */
+   transform: scale(1.08);
+      /* 8% större */
+}
+
+
+
+/* Signaturen – ingen hover */
+.brand-signature {
+   height: 40px;
+   width: auto;
+   /* aspect-ratio: 1.5 / 1;*/
+   min-width: 60px;
+      /* eller vad som passar din signatur */
+   flex-shrink: 0; /* förhindra krympning */
+
+   pointer-events: none;
+   /* gör att den inte reagerar på hover */
+
+   /* transform: translateY(1px); */
+   /* background */
+   border-radius: var(--border-radius-md);
+   
+   /* filter:
+         drop-shadow(0 0 4px rgba(0, 0, 0, 0.7)) */
+         /* mörk bas */
+         /* drop-shadow(0 0 10px rgba(255, 255, 255, 1)) */
+         /* vit kärna */
+         /* drop-shadow(0 0 25px rgba(255, 215, 0, 0.9)) */
+         /* guld kärna */
+         /* drop-shadow(0 0 45px rgba(255, 215, 0, 0.6)) */
+         /* guld aura */
+         /* drop-shadow(0 0 70px rgba(255, 215, 0, 0.4)); */
+      /* stor aura */
+}
+
+/* Loggan – hover-effekt */
+.brand-logo-link img {
+   height: 55px;
+   width: auto;
+   min-width: 55px;
+   max-width: none;
+   flex-shrink: 0;
+
+   /* transition: transform 0.2s ease, opacity 0.2s ease; */
+   transition: transform 0.25s ease;
+   /* transform: translateY(1px);  */
+   /* sänk xanatalpx */
+   /* background-color: black;
+    */
+   border-radius: var(--border-radius-md);
+}
+
+.nav-ul a:focus {
+   outline: 2px solid var(--yellow-300);
+   outline-offset: 4px;
+}
+
+.brand-logo-link:hover img {
+   /* transform: scale(1.08);
+   opacity: 0.85; */
+   transform: scale(1.20);
+      /* 20% större */
+}
+
+.brand-group {
+   display: flex;
+   align-items: center;
+}
+
+.brand-group img {
+   flex-shrink: 0;
 }
 
 /* =========================================
    RESPONSIVE DESIGN
    ========================================= */
-   
+
 /* MOBIL (default) – bara ikoner */
 .nav-text {
    display: none;
 }
 
-/* MELLAN (≥ 600px) – ikon + text, horisontellt */
-@media (min-width: 600px) {
-   .nav-text {
-      display: inline;
-   }
+/* MELLAN (≥ 650px) – ikon + text, horisontellt */
+/* Mellan: visa text + öka gap.
+   Detta är nav-specifik responsiv logik → ligger här. */
 
+@media (min-width: 650px) {
+   
    .nav-ul {
       /* flex-direction: row; */
       justify-content: flex-end; /* Länkarna hamnar till höger */
@@ -89,11 +173,22 @@ LÄNKARNA (ikon + text)
    }
 }
 
+/* Stor: ännu mer luft.
+   Nav-specifik responsiv logik → ligger här. */
 @media (min-width: 900px) {
    .nav-ul {
-      gap: 2rem; /* luftigt */
+      gap: 1rem; /* lite luft */
    }
+      .nav-text {
+         display: inline;
+      }
 }
+
+/* @media (max-width: 919px) {
+   .nav-text {
+      display: none;
+   }
+} */
 
 /* STOR (≥ 1200px) – vertikal nav */
 /* @media (min-width: 1200px) {
@@ -105,5 +200,5 @@ LÄNKARNA (ikon + text)
    .nav-ul {
       flex-direction: column;
       gap: 1.5rem;
-   }  
+   }
 } */
