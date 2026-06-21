@@ -16,13 +16,22 @@
 
    gap: var(--space-xl); /* Avstånd mellan alla element */
       
-   padding-inline: var(--space-lg); /* Luft i sidled */
+   padding-inline: 0;
+   width: 100%;
+   margin: 0 auto;
 
-   /* Utility-tänk: layout styr spacing, inte barnen */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
+}
+
+#hero .container {
+   padding-inline: 0; /* ingen sidopadding i minsta läget */
+   margin-inline: auto; /* centrera innehållet */
+   width: 100%;
+   max-width: 1200px;
 }
 
 #hero header {
@@ -83,6 +92,7 @@
 #hero p {
    /*font-size: 1.1rem; samma som globalt */
    font-size: clamp(1rem, 2vw, 1.4rem);
+   
 }
 
 /* =========================================
@@ -114,6 +124,8 @@
    ========================================= */
 #hero .p-group {
    padding: var(--space-xs) var(--space-md);
+   
+   width: 385px;
    max-width: 50ch;
 
    text-align: center;
@@ -125,6 +137,7 @@
             var(--pink-400) 40%,
             var(--yellow-200) 100%);
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
+   
 }
 
 #hero .p-i {
@@ -136,12 +149,24 @@
 
 }
 
+#hero .cta {
+   width: fit-content;
+   margin-inline: auto;
+}
+
 /* Media queries */
 /* =========================================
-   TABLET (≥ 500px)
+   TABLET
 ========================================= */
 
 /* @media (max-width: 520px) { }*/
+
+@media (min-width: 600px) {
+   #hero .container {
+      padding-inline: var(--space-lg);
+   }
+}
+
 @media (max-width: 780px) {
    #hero {
          justify-content: flex-start;
@@ -181,15 +206,37 @@
 
 @media (max-height: 700px) {
    #hero {
-      gap: var(--space-md);
       justify-content: flex-start;
       padding-top: calc(var(--nav-height) + 2rem);
+      min-height: auto;
+      /* margin-top: var(--space-xxs);
+      gap: var(--space-xxs); */
    }
-
    #hero img {
       max-height: 25vh;
    }
+   #hero h1 {
+      font-size: clamp(1.4rem, 3vw, 2.5rem);
+   }
+   #hero-title {
+      /* gap: var(--space-xxs); */
+      /* margin-top: var(--space-xxs);
+      margin-bottom: var(--space-xxs); */
+   }
+   #hero header{
+      gap: var(--space-xxs);
+   }
+   #hero .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.6rem);
+      margin-top: var(--space-xxs);
+   }
+   #hero .p-group {
+      max-width: 200ch;
+      width: auto;
+      margin-top: 0;
+   }
 }
+
 /* =========================================
    DESKTOP (≥ 1024px)
 ========================================= */
