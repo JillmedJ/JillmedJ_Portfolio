@@ -140,34 +140,6 @@
    
 }
 
-/* Dölj default-pilen */
-#hero .p-group summary {
-   list-style: none;
-   font-weight: bold;
-   color: var(--text-accent);
-   cursor: pointer;
-}
-
-/* Ta bort default marker */
-#hero .p-group summary::-webkit-details-marker {
-   display: none;
-}
-
-/* Lite spacing när blocket är öppet */
-#hero .p-group[open] {
-   padding-bottom: var(--space-md);
-}
-
-#hero .p-group summary::after {
-   content: "▾";
-   float: right;
-   transition: transform 0.2s ease;
-}
-
-#hero .p-group[open] summary::after {
-   transform: rotate(180deg);
-}
-
 #hero .p-i {
    font-weight: bold;
    color: var(--text-accent);
