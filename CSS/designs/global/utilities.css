@@ -21,14 +21,17 @@ UTILITIES.CSS – Layout & struktur
 ========================================= */
 .section {
     padding: 4rem 0;
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
 .section-small {
     padding: 2rem 0;
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
 .section-large {
     padding: 6rem 0;
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
 .section-header {
@@ -63,7 +66,6 @@ UTILITIES.CSS – Layout & struktur
     padding: 0 1rem;
 }
 
-
 .p-1 {
     padding: 0.5rem;
 }
@@ -79,7 +81,6 @@ UTILITIES.CSS – Layout & struktur
 .p-4 {
     padding: 2rem;
 }
-
 
 /* =========================================
    5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad
@@ -402,8 +403,22 @@ för att arbeta med själva loggan
     border-radius: var(--border-radius-md);
     background-color: var(--pink-600);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15),
-        0 0 10px var(--accent-light);
-    /* mjuk skugga och lite glow */
+        0 0 10px var(--accent-light); /* mjuk skugga och lite glow */
+}
+
+.section-footer-brand-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    min-width: 0;
+    /* tillåt krympning */
+    flex-shrink: 1;
+    /* låt gruppen bli smalare */
+}
+
+.section-footer-brand-group span {
+    white-space: normal; /* tillåt radbrytning */
 }
 
 .section-footer-brand span:hover {
@@ -411,21 +426,14 @@ för att arbeta med själva loggan
     /* color: var(--accent-strong); */
 }
 
-/* .section-footer-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
-}*/
+.section-footer .cta {
+    min-width: 0;
+    flex-shrink: 1;
+}
 
-.section-footer-brand-group {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-} 
+.section-footer .cta span {
+    white-space: normal;
+}
 
 a:focus,
 button:focus,
@@ -437,6 +445,12 @@ input:focus {
 /* =========================================
 13) RESPONSIVA HJÄLPKLASSER
 ========================================= */
+@media (max-width: 400px) {
+    .section-footer .cta span {
+        display: none;
+    }
+}
+
 /* @media (max-width: 600px) {
 
     .container-narrow,
