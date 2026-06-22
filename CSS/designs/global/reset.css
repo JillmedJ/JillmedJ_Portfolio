@@ -31,3 +31,24 @@ ren och lätt att jobba med.
     padding: 0;
     /* slipper browser‑skillnader och får full kontroll. */
 }
+
+/* =========================================
+GLOBAL LINK RESET
+========================================= */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid var(--yellow-300);
+    outline-offset: 4px;
+}

@@ -60,6 +60,24 @@
          serif;
    }
 
+   /* =========================================
+    TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande paragraftexter.
+   ========================================= */
+      .lead {
+         font-size: 1.25rem;
+         line-height: 1.6;
+         max-width: 60ch;
+         margin-bottom: 1.5rem;
+      }
+   
+      .card-lead {
+         font-size: 1.05rem;
+         line-height: 1.5;
+         color: var(--text-muted);
+         /* valfritt */
+         max-width: 45ch;
+      }
+
 /* =========================================
    FLEX-HJÄLPARE
    ========================================= */
