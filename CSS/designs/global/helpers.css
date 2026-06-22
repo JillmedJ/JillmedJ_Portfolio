@@ -152,6 +152,49 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
 
 }
 
+.skills-list li::before {
+   content: "•";
+   color: var(--accent-color);
+   margin-right: 0.5rem;
+}
+
+.skill-icon {
+   width: 48px;
+   height: 48px;
+   transition: transform 0.2s ease;
+}
+
+
+.skills-list ul {
+   list-style: none;
+   padding: 0;
+   margin: 1rem 0;
+}
+
+.skills-list li {
+   margin-bottom: 0.5rem;
+   font-size: 0.95rem;
+}
+
+.skill-icon:hover {
+   transform: scale(1.08);
+}
+/* =========================================
+   TECH-BADGE HJÄLPKLASS
+========================================= */
+.tech-badge {
+   display: inline-block;
+   padding: 0.35rem 0.75rem;
+   background-color: #4A90E2;
+   /* Autofac-blå eller valfri färg */
+   color: white;
+   font-size: 0.85rem;
+   font-weight: 600;
+   border-radius: 6px;
+   letter-spacing: 0.3px;
+   white-space: nowrap;
+}
+
 /* =========================================
    LOGO HJÄLPKLASS
 ========================================= */

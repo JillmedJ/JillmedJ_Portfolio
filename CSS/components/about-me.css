@@ -147,6 +147,14 @@ content: "";
 
                 
 } */
+
+.badge-autofac {
+    background-color: #4A90E2;
+}
+
+.badge-a11y {
+    background-color: #1E88E5;
+}
 @media (max-width: 700px) {
     .about-me-header {
         grid-template-columns: 1fr;
