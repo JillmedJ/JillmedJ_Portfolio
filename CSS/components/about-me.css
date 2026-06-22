@@ -1,88 +1,5 @@
-
-.about-me-container {
-    /* background-color: var(--pink-500); */
-    /* Mörk rosa bakgrund */
-    /* padding: 1rem 0; */
-    /* Luft ovanför och under nav */
-    /* color: var(--text-body); */
-        /* Ljus rosa text */
-        /* border-radius: var(--border-radius-md);
-        border: 20px solid transparent;
-            border-image: linear-gradient(to right, var(--pink-300), var(--yellow-300)) 1; */
-
-}
-
-about-me-container about-me-header {
-    
-
-}
-
-.about-me-header {
-    /* align-self: start; */
-    /* display: flex;
-    justify-content: center;
-    */
-
-    /* margin: 0 auto; */
-    /* Centrerar nav-innehållet */
-    /* padding: 1.5rem; */
-    /* luft */
-    
-    /* gap: 2.5rem; */
-    /* margin-bottom: 0; */
-}
-
-
-.about-me-container p {
-
-    /* text-align: center;
-    padding: 1rem 3rem;
-    background-color: var(--bg-section);
-    
-    border-radius: 0.5rem;
-     */
-
-    /* border: 20px solid transparent;
-        border-image: linear-gradient(to right,
-                var(--pink-300),
-                var(--pink-200),
-                var(--yellow-200),
-                var(--yellow-300)) 1; */
-
-}
-
-.about-me-inner-container {
-    /* display: flex */
-
-}
-
-/* .about-me-container::before {
-    content: "";
-        position: absolute;
-        height: 6px;
-        width: 100%;
-        background: linear-gradient(to right,
-                var(--pink-300),
-                var(--pink-200),
-                var(--yellow-200),
-                var(--yellow-300));
-        bottom: 0;
-        left: 0;
-        border-radius: var(--border-radius-sm);
-} */
-
-#about h2 {
-
-    /* padding: 1rem 3rem; */
-    /* border: 10px solid transparent;
-        border-image: linear-gradient(to right,
-                var(--pink-300),
-                var(--pink-200),
-                var(--yellow-200),
-                var(--yellow-300)) 1; */
-    
-
-
+#about {
+    padding-bottom: 2rem;
 }
 
 .about-image {
@@ -95,58 +12,37 @@ about-me-container about-me-header {
     justify-self: center;
 }
 
-.about-text {
+.about-block {
 
-    /* padding: 1rem; */
+    background: linear-gradient(to bottom,
+                var(--pink-100) 0%,
+                var(--pink-300) 12%,
+                var(--pink-400) 20%,
+                var(--yellow-400) 60%,
+                var(--yellow-300) 80%,
+                var(--yellow-200) 90%,
+                var(--yellow-100) 100%);
+
+    padding: 3rem 1.5rem;
+    border-radius: var(--border-radius-md);
 }
 
-.p1 {
-
-
+.about-block:hover {
+    transform: translateY(-6px);
+    /* lyfter kortet lite */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* mjuk skugga */
 }
 
-.p2 {
-
-
+.badge-autofac {
+    background-color: #4A90E2;
 }
 
-.p3 {
-
-
+.badge-a11y {
+    background-color: #1E88E5;
 }
 
-.p4 {
 
-
-}
-
-.p5 {
-
-}
-
-.p6 {
-
-
-}
-
-/* #about h2::after {
-
-    
-content: "";
-    display: block;
-    height: 6px;
-    width: 100%;
-
-    background-color: var(--yellow-300);
-    margin: 0.2rem auto 0;
-    background: linear-gradient(to right,
-            var(--pink-300),
-            var(--yellow-300));
-            margin: 0.5rem auto 0;
-                border-radius: var(--border-radius-sm);
-
-                
-} */
 @media (max-width: 700px) {
     .about-me-header {
         grid-template-columns: 1fr;
@@ -162,4 +58,3 @@ content: "";
         margin-top: 2rem;
     }
 }
-

@@ -12,7 +12,11 @@
 @import "designs/global/helpers.css";
 @import "designs/global/debug.css";
 @import "designs/global/utilities.css";
-/* ← här */
+
+/* GLOBAL BEHAVIOR */
+/* html {
+    scroll-behavior: smooth;
+}  */
 
 /* COMPONENTS */
 @import "components/nav.css";
@@ -20,8 +24,12 @@
 @import "components/about-me.css";
 @import "components/cards.css";
 @import "components/footer.css";
+@import "components/forms.css";
+@import "components/buttons.css";
 @import "components/cta.css";
 @import "components/projects.css";
+@import "components/contact.css";
+@import "components/testimonials.css";
 
 /* === GLOBAL BODY BACKGROUND === */
 /* body {

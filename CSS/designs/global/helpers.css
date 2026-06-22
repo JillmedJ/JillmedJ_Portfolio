@@ -5,7 +5,7 @@
    De är inte knutna till en specifik komponent.
    ========================================= */
 
-/* --- Utility-klasser (text-center, flex-center) --- */
+/* --- Utility-hjälpar-klasser (text-center, flex-center) --- */
 /* =========================================
    TEXT-HJÄLPARE
    ========================================= */
@@ -39,20 +39,30 @@
       font-size: 1.25rem; 
    }
 
+   .text-italic {
+
+      font-style: italic;
+         opacity: 0.9;
+   }
+
+   .text-italic-elegant {
+      font-style: italic;
+      letter-spacing: 0.5px;
+      opacity: 0.9; 
+   }
+
+   .text-italic-color {
+      font-style: italic;
+      color: var(--pink-200);
+      font-size: 1.3rem;
+      font-weight:lighter;
+      font-family: "Playfair Display", Georgia,
+         serif;
+   }
+
 /* =========================================
    FLEX-HJÄLPARE
    ========================================= */
-
-/* flex-center
-   - Perfekt när du vill centrera ALLT i en container
-   - Används i hero, modals, knapprader, ikoner
-*/
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* flex-col
    - Gör att flexbarn staplas i kolumn
    - Bra för formulär, kort, hero-innehåll
@@ -103,10 +113,14 @@
    - Fixar att bilder inte skapar konstiga mellanrum
    - Detta är en av de viktigaste globala reglerna
 */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+img,
+svg,
+video,
+canvas,
+iframe {
+   max-width: 100%;
+   height: auto;
+   display: block;
 }
 
 /* =========================================
@@ -135,7 +149,60 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   
+
+}
+
+.skills-list li::before {
+   content: "•";
+   color: var(--accent-color);
+   margin-right: 0.5rem;
+}
+
+.skill-icon {
+
+   width: 48px;
+   height: 48px;
+   transition: transform 0.2s ease;
+
+}
+
+.skills-icons {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+   gap: 1.5rem;
+   justify-items: center;
+   margin: 2rem 0;
+
+}
+
+.skills-list ul {
+   list-style: none;
+   padding: 0;
+   margin: 1rem 0;
+}
+
+.skills-list li {
+   margin-bottom: 0.5rem;
+   font-size: 0.95rem;
+}
+
+.skill-icon:hover {
+   transform: scale(1.08);
+}
+/* =========================================
+   TECH-BADGE HJÄLPKLASS
+========================================= */
+.tech-badge {
+   display: inline-block;
+   padding: 0.35rem 0.75rem;
+   background-color: #4A90E2;
+   /* Autofac-blå eller valfri färg */
+   color: white;
+   font-size: 0.85rem;
+   font-weight: 600;
+   border-radius: 6px;
+   letter-spacing: 0.3px;
+   white-space: nowrap;
 }
 
 /* =========================================
@@ -172,16 +239,44 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
     padding-top: 1rem;
 }
 
+.padding-top-lg {
+   padding-top: 2rem;
+}
+
 .padding-bottom {
     padding-bottom: 1rem;
+}
+
+.padding-bottom-lg {
+   padding-bottom: 2rem;
+}
+
+.padding-sides {
+
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+
+.padding-sides-lg {
+
+   padding-left: 2rem;
+   padding-right: 2rem;
 }
 
 .margin-top {
     margin-top: 1rem;
 }
 
+.margin-top-lg {
+   margin-top: 2rem;
+}
+
 .margin-bottom {
     margin-bottom: 1rem;
+}
+
+.margin-bottom-lg {
+   margin-bottom: 2rem;
 }
 
 /* =========================================

@@ -1,0 +1,105 @@
+#contact .container-narrow {
+    width: 80%;
+    /* height: 75%; */ min-height: auto;
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+    
+    background: linear-gradient(to bottom,
+                var(--pink-100) 0%,
+                var(--pink-300) 20%,
+                var(--yellow-400) 60%,
+                var(--yellow-300) 80%,
+                var(--yellow-200) 90%,
+                var(--yellow-100) 100%);
+
+    /* border: 4px solid var(--pink-500); */
+        /* eller var(--yellow-400) */
+}
+
+#contact p.text-center .icon {
+    width: 1.4rem;
+    /* eller 1.3rem, 1.5rem – testa! */
+    height: 1.4rem;
+    position: relative;
+        top: -3px;
+        /* testa -1px, -2px, 0px */
+}
+
+form p.text-center {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#contact .hidden-input:checked+.icon-radio {
+    stroke: var(--accent);
+    fill: var(--accent-light);
+}
+
+.form-container {
+    padding: 1rem;
+    
+    border-radius: var(--border-radius-md);
+    background: linear-gradient(to bottom,
+                var(--pink-400) 0%,
+                var(--pink-200) 10%,
+                var(--pink-100) 20%,
+                var(--yellow-400) 60%,
+                var(--yellow-300) 80%,
+                var(--yellow-200) 90%,
+                var(--yellow-100) 100%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#contact input,
+#contact textarea {
+    border: 1px solid var(--pink-500);
+    /* tydlig ram */
+    background-color: rgba(255, 254, 254, 0.77);
+    /* lätt ljus bakgrund */
+    color: var(--pink-500);
+    /* textfärg */
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: var(--pink-500);
+    opacity: 1;
+}
+
+#contact fieldset {
+    border: 4px double var(--pink-500);
+    padding: var(--space-sm);
+}
+
+.no-yellow {
+
+    border: 2px solid var(--pink-700);
+}
+
+.no-yellow-submit {
+
+    margin-top: 1rem;
+    border: 2px solid var(--pink-700);
+}
+
+/* @media (max-width: 768px) {
+    #contact .container-narrow {
+        width: 100%;
+        padding: var(--space-md);
+    }
+
+    .form-container {
+        padding: var(--space-md);
+    }
+
+    form p.text-center {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .no-yellow {
+        border-width: 1px;
+    }
+} */

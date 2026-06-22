@@ -3,71 +3,245 @@
 
       – Grundlayout (mobil först)
 ========================================= */
+#hero.section {
+   padding-top: 0;
+   padding-bottom: 0;
+}
 /* =========================================
-   YTTERSTA HERO-SEKTIONEN 
-========================================= */
+  HERO – Layout & höjd
+   ========================================= */
 #hero {
-   /*background-color: var(--bg-main);  Rosa huvudbakgrund */
-   /*color: var(--text-body);  Rosa brödtext */
+   scroll-margin-top: calc(var(--nav-height) + 1rem);
+   min-height: calc(100svh - var(--nav-height)); /* Sticky-kompatibel höjd */
+
+   gap: var(--space-xl); /* Avstånd mellan alla element */
+      
+   padding-inline: 0;
+   width: 100%;
+   margin: 0 auto;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
 }
 
-/* =========================================
-   TAGLINE
-========================================= */
-.hero-tagline {
-   font-size: 1.25rem;
-   font-weight: 500;
+#hero .container {
+   padding-inline: 0; /* ingen sidopadding i minsta läget */
+   margin-inline: auto; /* centrera innehållet */
+   width: 100%;
+   max-width: 1200px;
+}
 
-   /* color: var(--text-body);  Rosa brödtext */
+#hero header {
+   display: flex;
+   flex-direction: column;
+   gap: var(--space-md); /* spacing mellan img, h1 och tagline */
+}
 
-   display: inline-block;
-   max-width: 40ch;
-   text-align: center;
+/* Desktop: håll allt på en rad */
+#hero-title {
+   
+   max-width: none;
+      /* Viktigt: låt rubriken få plats */
+}
+
+/* Se till att orden inte bryts mitt i */
+.h1-name,
+.h1-role {
+   white-space: nowrap;
 }
 
 /* =========================================
    HERO-BILD (LOGGA)
 ========================================= */
 #hero img {
-   width: 100%;
-   max-width: 900px; /* Justerbar storlek */
+   width: clamp(250px, 50%, 600px); /* första: minsta tillåtna värdet, ideala värdet, största tillåtna värdet
+      max-height: 40vh; */
+   max-height: 35vh;
 
-   margin: 0 auto;
-   margin-bottom: var(--space-md);
-
-   display: block;
+   /* width: 50%;
+   max-height: 40vh; */
+      /* Förhindrar att bilden trycker ut texten */
+   object-fit: contain;
 }
 
 /* =========================================
-   TABLET (≥ 600px)
+   RUBRIK
+   ========================================= */
+#hero h1 {
+   /* font-size: 2rem; */
+   font-size: clamp(1.8rem, 4vw, 4rem); /* Höjd- & breddresponsiv */
+   line-height: 1.2;
+   font-weight: bold;
+   padding: var(--space-xs) var(--space-md);
+   
+   letter-spacing: 0.01ch;
+   /* color: var(--pink-700); */
+   color: var(--text-accent);
+   background-color: var(--pink-600);
+   
+   border-radius: var(--border-radius-md);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
+}
+
+/* =========================================
+   BRÖDTEXT
+   ========================================= */
+#hero p {
+   /*font-size: 1.1rem; samma som globalt */
+   font-size: clamp(1rem, 2vw, 1.4rem);
+   
+}
+
+/* =========================================
+   TAGLINE (ska ligga EFTER #hero p)
+   ========================================= */
+#hero .hero-tagline {
+   /* font-size: 1.5rem; */
+   font-size: clamp(1.2rem, 3vw, 2rem);
+   font-weight: bold;
+   padding: var(--space-xs) var(--space-sm);
+   max-width: 40ch;
+
+   color: var(--text-accent);
+   background-color: var(--pink-600);
+
+   /* background: linear-gradient(to bottom,
+            var(--pink-500) 0%,
+            var(--pink-400) 40%,
+            var(--yellow-200) 100%); */
+
+   border-radius: var(--border-radius-md);
+
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
+
+}
+
+/* =========================================
+   P-GROUP (bakgrundsblock)
+   ========================================= */
+#hero .p-group {
+   padding: var(--space-xs) var(--space-md);
+   
+   width: 385px;
+   max-width: 50ch;
+
+   text-align: center;
+
+   border-radius: var(--border-radius-md);
+
+   background: linear-gradient(to bottom,
+            var(--pink-500) 0%,
+            var(--pink-400) 40%,
+            var(--yellow-200) 100%);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
+   
+}
+
+#hero .p-i {
+   font-weight: bold;
+   color: var(--text-accent);
+}
+
+.p-we {
+
+}
+
+#hero .cta {
+   width: fit-content;
+   margin-inline: auto;
+}
+
+/* Media queries */
+/* =========================================
+   TABLET
 ========================================= */
+
+/* @media (max-width: 520px) { }*/
+
 @media (min-width: 600px) {
+   #hero .container {
+      padding-inline: var(--space-lg);
+   }
+}
 
-   #hero h1 {
-      font-size: 2.5rem; /* större rubrik */
+@media (max-width: 780px) {
+   #hero {
+         justify-content: flex-start;
+         padding-top: calc(var(--nav-height) + 2rem);
+      }
+   #hero-title {
+      display: flex;
+      flex-direction: column;  /* Tvinga två rader */
+      align-items: center;
+
+      white-space: normal; /* Tillåt radbrytning */
+      padding: var(--space-xs) var(--space-sm); /* Tillåt radbrytning */
+      gap: var(--space-xs);
+      max-width: 100%; /* Låt bakgrunden följa med */
    }
 
+   .h1-dash {
+      display: none; /* Dölj bindestrecket */
+   }
    .hero-tagline {
-      font-size: 1.4rem;
-      max-width: 45ch;
+      white-space: normal;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-xs);
+   }
+
+   .tagline-dash {
+      display: none;
+   }
+}
+/* =========================================
+   TABLET - LOW-VIEWPORT-HEIGHT (≤ 700px)
+      – Används när skärmen är låg (t.ex. laptop)
+      – Gör hero mer kompakt så att allt får plats
+   ========================================= */
+
+@media (max-height: 700px) {
+   #hero {
+      justify-content: flex-start;
+      padding-top: calc(var(--nav-height) + 2rem);
+      min-height: auto;
+      /* margin-top: var(--space-xxs);
+      gap: var(--space-xxs); */
+   }
+   #hero img {
+      max-height: 25vh;
+   }
+   #hero h1 {
+      font-size: clamp(1.4rem, 3vw, 2.5rem);
+   }
+   #hero-title {
+      /* gap: var(--space-xxs); */
+      /* margin-top: var(--space-xxs);
+      margin-bottom: var(--space-xxs); */
+   }
+   #hero header{
+      gap: var(--space-xxs);
+   }
+   #hero .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.6rem);
+      margin-top: var(--space-xxs);
+   }
+   #hero .p-group {
+      max-width: 200ch;
+      width: auto;
+      margin-top: 0;
    }
 }
 
 /* =========================================
-   DESKTOP (≥ 900px)
+   DESKTOP (≥ 1024px)
 ========================================= */
-@media (min-width: 900px) {
-
-   #hero h1 {
-      font-size: 3rem;
-   }
-
-   .hero-tagline {
-      font-size: 1.5rem;
-      max-width: 50ch;
-   }
-
-   #hero img {
-      max-width: 1000px;
+@media (min-width: 1024px) {
+   #hero .section-footer {
+      margin-top: 0.5rem;
    }
 }

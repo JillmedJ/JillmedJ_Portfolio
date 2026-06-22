@@ -16,7 +16,6 @@
    – Baslayout för cardsen
    – 1 kolumn på mobil
 ========================================= */
-
 #projects .grid-auto {
       display: grid;
       grid-template-columns: 1fr;
@@ -28,12 +27,7 @@
    – Komponentens bas
    – Bakgrund, padding, rundning
 ========================================= */
-
-.project-card {
-      border-radius: var(--border-radius-md);
-      padding: var(--space-md); /* padding här ger luft runt rubrik, bild och CTA */
-
-      /* Din gradient – behålls exakt som du gjort den */
+.card--project {
       background: linear-gradient(to bottom,
                   var(--pink-100) 0%,
                   var(--pink-300) 12%,
@@ -42,27 +36,6 @@
                   var(--yellow-300) 80%,
                   var(--yellow-200) 90%,
                   var(--yellow-100) 100%);
-}
-
-.project-card:hover {
-      transform: translateY(-6px);
-      /* lyfter kortet lite */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      /* mjuk skugga */ 
-}
-
-/* =========================================
-   CARD IMAGE
-   – Centrering, proportioner, spacing
-========================================= */
-
-.project-card img {
-      width: 90%;
-      max-width: 300px;
-      display: block;
-      margin: var(--space-md) auto;
-      /* centrerar + spacing */
-      border-radius: var(--border-radius-md);
 }
 
 /* =========================================
@@ -109,13 +82,11 @@
             /* mjuk skugga */
 }
 
-
 /* =========================================
    CTA I CARD
    – margin-top: auto fungerar tack vare flow-whole (flex-col)
 ========================================= */
-
-.project-card .cta {
+.card--project .cta {
       margin-top: auto;
 }
 
@@ -124,7 +95,6 @@
    – Alla samlade längst ned (best practice)
    – Gridens responsiva kolumner
 ========================================= */
-
 /* TABLET */
 @media (min-width: 600px) {
       #projects .grid-auto {
