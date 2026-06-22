@@ -202,13 +202,13 @@ RADIO-LABEL-KNAPPAR (custom radios)
    ----------------------------------------- */
 /* @media (max-width: 600px) {} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
    .btn,
    .button,
    .cta,
    .btn-post {
-      width: 100%;
+      width: 100%; */
       /* Full bredd på mobil */
-   }
-}
+   /* }
+} */
