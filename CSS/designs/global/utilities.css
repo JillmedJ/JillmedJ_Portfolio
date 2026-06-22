@@ -484,3 +484,18 @@ input:focus {
         /* 3 kolumner på tablet/desktop */
     }
 }
+
+/* Grid-variant för About-sektionen */
+.grid-about-2 {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    /* Mobil */
+}
+
+@media (min-width: 768px) {
+    .grid-about-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}

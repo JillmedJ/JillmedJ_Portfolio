@@ -159,11 +159,21 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
 }
 
 .skill-icon {
+
    width: 48px;
    height: 48px;
    transition: transform 0.2s ease;
+
 }
 
+.skills-icons {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+   gap: 1.5rem;
+   justify-items: center;
+   margin: 2rem 0;
+
+}
 
 .skills-list ul {
    list-style: none;
