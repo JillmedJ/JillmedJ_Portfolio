@@ -649,7 +649,7 @@
                                 <path
                                     d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" />
                             </svg>
-                            Jag är nämligen också nyfiken på vad du tänker och vad jag kan hjälpa dig med. Skriv gärna några rader nedan.
+                            Jag är nämligen också nyfiken - på vad du tänker och vad jag kan hjälpa dig med. Skriv gärna några rader nedan.
                         </p>
                     </header>
                     
@@ -673,8 +673,15 @@
                                 <div class="form-row flex flex-gap">
                                     <label class="label-col" for="email">
                                         <!-- ICON mail -->
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <svg class="icon" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        viewBox="0 0 24 24" 
+                                        fill="none" 
+                                        stroke="currentColor"
+                                            stroke-width="2" 
+                                            stroke-linecap="round" 
+                                            stroke-linejoin="round" 
+                                            aria-hidden="true">
                                             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                                             <rect x="2" y="4" width="20" height="16" rx="2" />
                                         </svg>
@@ -682,15 +689,28 @@
                                             Din e-postadress
                                         </span>
                                     </label>
-                                    <input class="flex-grow" type="email" id="email" name="email" placeholder="namne@example.com" required>
+                                    <input class="flex-grow" 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="name@example.com" 
+                                    required
+                                    aria-label="Din e-postadress">
                                 </div>
                             
                                 <!-- FULL NAME -->
                                 <div class="form-row flex flex-gap">
                                     <label class="label-col" for="full-name">
                                         <!-- ICON a-large-small -->
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <svg class="icon" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        viewBox="0 0 24 24" 
+                                        fill="none" 
+                                        stroke="currentColor"
+                                            stroke-width="2" 
+                                            stroke-linecap="round" 
+                                            stroke-linejoin="round" 
+                                            aria-hidden="true">
                                             <path d="m15 16 2.536-7.328a1.02 1.02 0 0 1 1.928 0L22 16" />
                                             <path d="M15.697 14h5.606" />
                                             <path d="m2 16 4.039-9.69a.5.5 0 0 1 .923 0L11 16" />
@@ -700,7 +720,15 @@
                                             Ditt för- och efternamn
                                         </span>
                                     </label>
-                                    <input class="flex-grow" type="text" id="full-name" name="full-name" placeholder="Kent Hellgren" required>
+                                    <input class="flex-grow" 
+                                    type="text" 
+                                    id="full-name" 
+                                    name="full-name" 
+                                    placeholder="Kent Hellgren" 
+                                    required
+                                    minlength="2"
+                                    maxlength="50"
+                                    aria-label="Ditt namn">
                                 </div>
                             </div>
                             
@@ -712,7 +740,12 @@
                                     </legend>
                             
                                     <div class="flex flex-gap">
-                                        <input class="hidden-input" type="radio" id="radio-private" name="radio-check" required value="private">
+                                        <input class="hidden-input" 
+                                        type="radio" 
+                                        id="radio-private" 
+                                        name="reason"
+                                        required 
+                                        value="private">
                                         <label class="button" for="radio-private">
                                             <!-- ICON user-round -->
                                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -726,7 +759,7 @@
                                             </span>
                                         </label>
                             
-                                        <input class="hidden-input" type="radio" id="radio-company" name="radio-check" required value="company">
+                                        <input class="hidden-input" type="radio" id="radio-company" name="reason"value="company">
                                         <label class="button" for="radio-company">
                                             <!-- ICON building-2 -->
                                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -741,7 +774,7 @@
                                             Företags&shy;kontakt
                                         </label>
                             
-                                        <input class="hidden-input" type="radio" id="radio-other" name="radio-check" required value="other">
+                                        <input class="hidden-input" type="radio" id="radio-other" name="reason" value="other">
                                         <label class="button" for="radio-other">
                                             <!-- ICON ellipsis -->
                                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -773,7 +806,14 @@
                                         Ditt meddelande
                                     </span>
                                 </label>
-                                <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här..." required></textarea>
+                                <textarea id="message" 
+                                name="message" 
+                                rows="5" 
+                                placeholder="Skriv ditt meddelande här..." 
+                                required
+                                minlength="10"
+                                maxlength="500"
+                                aria-label="Ditt meddelande"></textarea>
                             </div>
                             
                             <!-- SUBMIT -->
@@ -840,13 +880,6 @@
             </section>
 
         </main>
-
-
-
-
-
-
-
 
         <footer class="section site-footer" id="site-footer">
 
