@@ -1,100 +1,61 @@
 Jill med J – Min portfolio (pågående arbete)
-
 Senast uppdaterad: 1 juni 2026
-CTA‑strategi (sammanfattning)
-Primär CTA:
-
-Contact me
-
-Placeras i nav och hero
-
-Ser ut som en knapp
-
-Sekundära CTA:er:
-
-Se mina projekt
-
-Ladda ner CV
-
-Placeras i hero, sektioner, footer
-
-Ser ut som vanliga länkar
-
-Sociala CTA:er:
-
-GitHub, LinkedIn, Instagram, Facebook
-
-Endast ikoner
-
-Placeras i footer
-
-Senast uppdaterad: 26 april 2026
 
 Välkommen hit.
-Det här är min digitala verkstad, mitt pågående bygge och min plats för lärande.
-Jag är Jill med J, och mitt namn är Jill. Den här portfolion är både ett projekt och en resa.
-En resa i HTML, CSS, JavaScript och allt det där som får webben att leva.
-
-🏷️ Badges
-Dessa badges ger en snabb överblick över projektets status och tekniker:
-
-https://img.shields.io/badge/status-under_development-yellow
-https://img.shields.io/badge/HTML5-structure-orange
-https://img.shields.io/badge/CSS3-layout-blue
-https://img.shields.io/badge/JavaScript-planned-yellow
-https://img.shields.io/badge/version_control-GitHub-lightgrey
+Det här är min digitala verkstad och mitt pågående bygge.
+Jag är Jill med J, och den här portfolion är både ett projekt och en resa — en resa i HTML, CSS, JavaScript och allt det där som får webben att leva.
 
 🌱 Status: Under utveckling
-Den här sidan är inte färdig, och det är helt enligt plan.
-Jag bygger den bit för bit, med samma envisa nyfikenhet som när man löser ett pussel utan att tjuvkika på bilden på kartongen.
+Sidan är inte färdig, och det är helt enligt plan.
+Jag bygger den steg för steg och försöker hålla en balans mellan struktur, kreativitet och lärande.
 
 Just nu arbetar jag med:
 
-att fylla sektionerna med innehåll och fortsätta förbättra strukturen
+att fylla sektionerna med innehåll
 
-att skapa tydliga CTA-flöden
+att förbättra layout och responsivitet
 
-att hålla HTML-koden semantisk, ren och begriplig
+att skapa tydliga CTA‑flöden
 
-att lära mig, reflektera och förbättra — i den ordningen
+att hålla HTML‑koden semantisk och lätt att förstå
 
 att fortsätta utveckla min förståelse för webbutvecklingens grunder
 
-✨ Features
-Nuvarande och planerade funktioner i projektet:
+✨ Funktioner
+Det här är funktioner som finns eller är planerade:
 
-Semantisk och ren HTML‑struktur
+Semantisk HTML‑struktur
 
 Tydliga CTA‑flöden
 
-Responsiv design (planerad)
+Responsiv design (mobil först)
 
-Interaktiva mikroeffekter (planerat)
+Portfolio‑sektion med projekt (placeholder just nu)
 
-Projektgalleri med beskrivningar (planerat)
+Testimonials‑sektion (placeholder just nu)
 
-Kontaktformulär (planerat)
+Kontaktformulär med HTML‑validering
 
 Live‑publicering via GitHub Pages eller Netlify (planerat)
 
 🎯 Syfte
 Syftet med portfolion är att visa vem jag är, vad jag gör och hur jag tänker.
-Inte bara vad jag kan “just nu”, utan hur jag lär mig, prioriterar och utvecklas.
-Jag uppskattar språk, tydlighet och små finurligheter — och arbetar med att även få med detta i min kod.
+Jag vill inte bara visa vad jag kan just nu, utan också hur jag lär mig och utvecklas.
+Jag gillar tydlighet, språk och små detaljer — och försöker få med det även i min kod.
 
 🧰 Tekniker och verktyg
 HTML5 – struktur och semantik
 
 CSS3 – layout, typografi och visuellt uttryck
 
-JavaScript – planerat för interaktivitet och små mikroeffekter
+JavaScript – planerat för interaktivitet
 
-Git & GitHub – versionshantering och dokumentation
+Git & GitHub – versionshantering
 
-Reflektion – mitt kanske viktigaste verktyg
+Reflektion – mitt viktigaste verktyg
 
 ▶️ Hur du kör projektet
-Det här projektet är byggt i ren HTML, CSS och JavaScript.
+Projektet är byggt i ren HTML, CSS och JavaScript.
 
 Så här kör du det:
 
@@ -108,130 +69,83 @@ Ingen installation krävs.
 
 📁 Projektstruktur
 En översikt över hur projektet är organiserat:
-
-Kod
-/Images
-/PNG
-/SVG
-/CSS
-/JS
-cv/
+/css
+/js
+/visuals
+/cv
 index.html
 README.md
+
 Strukturen kommer att växa i takt med projektet.
 
 📚 Lärande och prioriteringar
-Jag är i utbildningsfas, och jag arbetar aktivt med att:
+Jag arbetar aktivt med att:
 
 förstå varför något fungerar, inte bara hur
 
-skriva kod som är enkel att läsa (även för framtida mig)
+skriva kod som är lätt att läsa
 
 våga testa, misslyckas och göra om
 
-bygga upp en stabil grund innan jag springer vidare
-
-✨ Om tonen i projektet
-Jag gillar ord.
-Gamla ord, precisa ord, lekfulla ord.
-Så även om koden är strikt och strukturerad, får språket gärna glimra till här och där.
-Det är fortfarande jag som bygger — och jag vill att det ska märkas.
+bygga en stabil grund innan jag springer vidare
 
 📌 Att göra (nästa steg)
-fylla hero-sektionen med verkligt innehåll
+fylla hero‑sektionen med verkligt innehåll
 
-lägga in mina projekt och beskriva dem tydligt
+lägga in mina projekt
 
-skapa ett kontaktformulär
+fortsätta förbättra responsiviteten
 
-fortsätta putsa på detaljerna
+lägga in riktiga testimonials
 
-Det här är alltså början.
-En början jag är stolt över — för den är min, och den är på väg åt rätt håll.
+publicera sidan live
+
+Nice-to-have: det finns flera saker jag skulle vilja lägga till och utveckla.
 
 🗺️ Roadmap
-En översikt över vart projektet är på väg.
-Den här listan kommer att förändras, växa och ibland krympa – precis som ett levande projekt ska.
+Fas 1 – Grundstruktur (klar / pågående)
 
-Fas 1 – Grundstruktur (pågående)
-[x] Skapa projektmapp och filstruktur
+    [x] Skapa projektmapp och filstruktur
 
-[x] Skriva första versionen av README
+    [x] Första versionen av README
 
-[x] Bygga nav + grundläggande CTA-flöden
+    [x] Bygga navbar och CTA‑flöden
 
-[x] Skapa sektionerna: hero, about, projects, contact
+    [x] Skapa sektionerna: hero, about, projects, contact
 
-[ ] Fyll hero-sektionen med verkligt innehåll
+    [ ] Fyll hero‑sektionen med verkligt innehåll
 
-[x] Skriv första versionen av “About me”
+    Fas 2 – Layout och design (pågående)
 
-Fas 2 – Layout och design
-[ ] Skapa grundläggande CSS-struktur
+    [x] Grundläggande CSS‑struktur
 
-[ ] Definiera färgpalett och typografi
+    [x] Layout för hero
 
-[ ] Bygga layout för hero
+    [ ] Layout för projects
 
-[ ] Bygga layout för projects
+    [x] Responsiv design (mobil först)
 
-[ ] Responsiv design (mobil först)
+    Fas 3 – Interaktivitet (planerat)
 
-Fas 3 – Interaktivitet
-[ ] Lägga till JavaScript för små mikroeffekter
+    [ ] JavaScript för mikroeffekter
 
-[ ] Smooth scroll
+    [ ] Smooth scroll
 
-[ ] Hover-effekter och små animationer
+    [x] Hover‑effekter
 
-[ ] Kontaktformulär (ev. med mailto eller backend senare)
+Fas 4 – Finputsning och presentation (planerat)
 
-Fas 4 – Finputsning och presentation
-[ ] Lägga in riktiga projekt
+    [ ] Lägga in riktiga projekt
 
-[ ] Skriva projektbeskrivningar
+    [ ] Skriva projektbeskrivningar
 
-[ ] Ta screenshots och lägga in i README
+    [ ] Ta screenshots
 
-[ ] Lägga upp sidan live (GitHub Pages eller Netlify)
+    [ ] Publicera sidan live
 
-[ ] Slutlig genomgång och reflektion
-
-📸 Screenshots (kommer senare)
-Här kommer jag lägga in bilder som visar hur projektet utvecklas över tid.
-
-Plats reserverad för framtida glimtar.
-
-📝 Lärande och reflektion
-Jag är i utbildningsfas och arbetar aktivt med att:
-
-förstå varför något fungerar, inte bara hur
-
-skriva kod som framtida Jill tackar mig för
-
-våga göra fel och lära mig av det
-
-prioritera det viktigaste först
-
-hålla balansen mellan struktur och kreativitet
-
-Det här projektet är lika mycket en portfolio som det är en dokumentation av min resa.
-
-📌 TODO (kortversion)
-[ ] Fyll hero med verkligt innehåll
-
-[x] Skriv om mig-sektionen
-
-[ ] Lägg in första projektet
-
-[ ] Skapa kontaktformulär
-
-[ ] Starta CSS-strukturen
+    [ ] Slutlig genomgång
 
 ✨ Avslutande ord
 Det här är början.
 En början jag är stolt över, för den är min – och den är på väg åt rätt håll.
 Jag bygger inte bara en portfolio. Jag bygger min kompetens, mitt uttryck och min framtid.
-
-Länkar:
-https://coolors.co/palettes/popular/blue
