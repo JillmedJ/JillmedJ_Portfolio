@@ -83,3 +83,43 @@
          font-size: 0.9rem;
          color: var(--gray-700);
       }
+
+      /* =========================================
+   MEDIA QUERIES – RESPONSIV TYPOGRAFI
+========================================= */
+
+/* Tablet */
+@media (min-width: 600px) {
+   .testimonial-avatar {
+      font-size: 1.4rem;
+      width: 72px;
+      height: 72px;
+   }
+
+   .testimonial-quote {
+      font-size: 1.5rem;
+      line-height: 1.7;
+   }
+
+   .testimonial-meta span {
+      font-size: 1rem;
+   }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+   .testimonial-avatar {
+      font-size: 1.6rem;
+      width: 80px;
+      height: 80px;
+   }
+
+   .testimonial-quote {
+      font-size: 1.8rem;
+      line-height: 1.75;
+   }
+
+   .testimonial-meta span {
+      font-size: 1.05rem;
+   }
+}
