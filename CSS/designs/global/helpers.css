@@ -60,6 +60,17 @@
          serif;
    }
 
+   .text-italic-color-darker {
+      font-style: italic;
+      color: var(--pink-400);
+      font-size: 1.3rem;
+      
+      font-family: "Playfair Display", Georgia,
+         serif;
+      font-weight: 500;
+      
+   }
+
    /* =========================================
     TEXTBLOCK (ex till bootstrap) används ex till introducerande texter, som till en första paragraf som ska sticka ut från de andra texterna, gör texten lite större än resterande paragraftexter.
    ========================================= */
@@ -303,9 +314,6 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
 .no-break {
     white-space: nowrap;
 }
-
-
-
 
 /* =========================================
    GRADIENT BORDER UTILITY
