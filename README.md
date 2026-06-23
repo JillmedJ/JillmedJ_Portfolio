@@ -35,8 +35,7 @@ Portfolio‑sektion med projekt (placeholder just nu)
 Testimonials‑sektion (placeholder just nu)
 
 Kontaktformulär med HTML‑validering
-
-Live‑publicering via GitHub Pages eller Netlify (planerat)
+[x] Live‑publicering via GitHub Pages eller Netlify (planerat) - https://jillmedj.github.io/JillmedJ_Portfolio/
 
 🎯 Syfte
 Syftet med portfolion är att visa vem jag är, vad jag gör och hur jag tänker.
@@ -98,7 +97,7 @@ fortsätta förbättra responsiviteten
 
 lägga in riktiga testimonials
 
-publicera sidan live
+[x] publicera sidan live - https://jillmedj.github.io/JillmedJ_Portfolio/
 
 Nice-to-have: det finns flera saker jag skulle vilja lägga till och utveckla.
 
@@ -141,7 +140,7 @@ Fas 4 – Finputsning och presentation (planerat)
 
     [ ] Ta screenshots
 
-    [ ] Publicera sidan live
+    [X ] Publicera sidan live
 
     [ ] Slutlig genomgång
 
