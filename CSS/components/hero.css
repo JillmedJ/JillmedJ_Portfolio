@@ -24,7 +24,6 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
 }
 
 #hero .container {
@@ -38,6 +37,7 @@
    display: flex;
    flex-direction: column;
    gap: var(--space-md); /* spacing mellan img, h1 och tagline */
+   padding-top: var(--space-md);
 }
 
 /* Desktop: håll allt på en rad */
@@ -56,7 +56,7 @@
    HERO-BILD (LOGGA)
 ========================================= */
 #hero img {
-   width: clamp(250px, 50%, 600px); /* första: minsta tillåtna värdet, ideala värdet, största tillåtna värdet
+   width: clamp(180px, 40%, 450px); /* första: minsta tillåtna värdet, ideala värdet, största tillåtna värdet
       max-height: 40vh; */
    max-height: 35vh;
 
@@ -170,6 +170,7 @@
    text-align: center;
    align-items: center;
    max-width: 40ch;
+   padding-top: 1rem;
 }
 
 #hero .p-i {
@@ -226,6 +227,8 @@
          align-items: flex-start;
       }
 }
+/* padding-bottom: 1rem;
+padding-top: var(--space-lg); */
 
 @media (max-width: 780px) {
    #hero {
@@ -237,10 +240,10 @@
       flex-direction: column;  /* Tvinga två rader */
       align-items: center;
 
-      white-space: normal; /* Tillåt radbrytning */
-      padding: var(--space-xs) var(--space-sm); /* Tillåt radbrytning */
+      white-space: normal;
       gap: var(--space-xs);
       max-width: 100%; /* Låt bakgrunden följa med */
+      
    }
    .h1-dash {
       display: none; /* Dölj bindestrecket */
