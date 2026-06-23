@@ -42,7 +42,6 @@
 
 /* Desktop: håll allt på en rad */
 #hero-title {
-   
    max-width: none;
       /* Viktigt: låt rubriken få plats */
 }
@@ -92,7 +91,6 @@
 #hero p {
    /*font-size: 1.1rem; samma som globalt */
    font-size: clamp(1rem, 2vw, 1.4rem);
-   
 }
 
 /* =========================================
@@ -116,17 +114,27 @@
    border-radius: var(--border-radius-md);
 
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
+}
 
+.hero-tagline-inside {
+   font-size: clamp(1rem, 2.5vw, 1.6rem);
+   margin-bottom: var(--space-sm);
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /* =========================================
    P-GROUP (bakgrundsblock)
    ========================================= */
 #hero .p-group {
-   padding: var(--space-xs) var(--space-md);
+   padding: var(--space-md);
    
-   width: 385px;
-   max-width: 50ch;
+   /* width: 385px; */
+   /* max-width: 50ch; */
+   /* max-width: 100%; */
+   width: min(90%, 800px);
+   max-width: 800px;
 
    text-align: center;
 
@@ -137,16 +145,40 @@
             var(--pink-400) 40%,
             var(--yellow-200) 100%);
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
-   
+}
+
+.hero-jill-block {
+   display: flex;
+   flex-direction: column;
+   gap: var(--space-sm);
+   align-items: center;
+   padding-top: 1rem;
+}
+
+.jill-img {
+   width: 100%;
+   max-width: 280px;
+   height: auto;
+   object-fit: cover;
+   border-radius: var(--border-radius-md);
+}
+
+.hero-text-block {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   max-width: 40ch;
 }
 
 #hero .p-i {
    font-weight: bold;
-   color: var(--text-accent);
+   color: var(--pink-700);
 }
 
 .p-we {
-
+   
 }
 
 #hero .cta {
@@ -167,6 +199,34 @@
    }
 }
 
+@media (min-width: 768px) {
+   .hero-jill-block {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      gap: var(--space-lg);
+   }
+   #hero .p-i {
+      color: var(--text-accent);
+   }
+
+   .hero-jill-block .p-we {
+      max-width: 40ch;
+      text-align: left;
+   }
+
+   .hero-jill-block .jill-img {
+      max-width: 280px;
+      /* lagom storlek */
+      border-radius: var(--border-radius-md);
+   }
+      .hero-text-block {
+         text-align: left;
+         align-items: flex-start;
+      }
+}
+
 @media (max-width: 780px) {
    #hero {
          justify-content: flex-start;
@@ -182,7 +242,6 @@
       gap: var(--space-xs);
       max-width: 100%; /* Låt bakgrunden följa med */
    }
-
    .h1-dash {
       display: none; /* Dölj bindestrecket */
    }
@@ -193,7 +252,6 @@
       align-items: center;
       gap: var(--space-xs);
    }
-
    .tagline-dash {
       display: none;
    }
