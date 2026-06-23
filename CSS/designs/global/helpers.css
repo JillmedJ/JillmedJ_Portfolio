@@ -304,6 +304,36 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
     white-space: nowrap;
 }
 
+
+
+
+/* =========================================
+   GRADIENT BORDER UTILITY
+   ========================================= */
+
+.gradient-border-soft {
+   position: relative;
+   overflow: hidden;
+   /* krävs för rundade hörn */
+   border-radius: var(--border-radius-md);
+}
+
+.gradient-border-soft::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   padding: 4px;
+   /* border-bredd */
+   border-radius: inherit;
+   background: var(--border-gradient-soft);
+   -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+   -webkit-mask-composite: xor;
+   mask-composite: exclude;
+   z-index: -1;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 /* 
 🌟 Hur ska du tänka kring helpers.css? 
 Helpers.css är som en verktygslåda. 
