@@ -58,6 +58,9 @@
 
       position: relative; /* krävs för pseudo-elementet */
       z-index: 1;
+
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            /* mjuk skugga */
 }
 
 .project-title::before { /* Gradient-border som följer border-radius */

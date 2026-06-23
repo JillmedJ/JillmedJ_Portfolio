@@ -24,7 +24,6 @@
    color: var(--color-white); /* Vit text i nav (för kontrast) */
    padding: 0.7rem 3.5rem;
 
-   
    backdrop-filter: blur(8px);
 }
 
@@ -81,8 +80,6 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    transform: scale(1.08);
       /* 8% större */
 }
-
-
 
 /* Signaturen – ingen hover */
 .brand-signature {
@@ -165,7 +162,6 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    Detta är nav-specifik responsiv logik → ligger här. */
 
 @media (min-width: 650px) {
-   
    .nav-ul {
       /* flex-direction: row; */
       justify-content: flex-end; /* Länkarna hamnar till höger */

@@ -83,7 +83,7 @@ UTILITIES.CSS – Layout & struktur
 }
 
 /* =========================================
-   5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad
+5) FLOW-SPACING (automatisk vertikal spacing) VERTIKAL - marginbaserad
 ========================================= */
 /* 
 .flow
@@ -199,6 +199,13 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     /* Mobil */
 }
 
+.grid-auto-mobile {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    /* default: 1 kolumn på mobil */
+}
+
 /* =========================================
 4) FLEX-SYSTEM
 ========================================= */
@@ -206,8 +213,8 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     display: flex;
 }
 /* flex-center
-   - Perfekt när du vill centrera ALLT i en container
-   - Används i hero, modals, knapprader, ikoner
+- Perfekt när du vill centrera ALLT i en container
+- Används i hero, modals, knapprader, ikoner
 */
 .flex-center {
     display: flex;
@@ -364,13 +371,6 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     .hide-desktop {
         display: none !important;
     }
-}
-
-.grid-auto-mobile {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    /* default: 1 kolumn på mobil */
 }
 
 @media (min-width: 768px) {

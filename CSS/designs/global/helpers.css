@@ -167,7 +167,6 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
    display: inline-flex;
    align-items: center;
    justify-content: center;
-
 }
 
 .skills-list li::before {
@@ -177,11 +176,9 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
 }
 
 .skill-icon {
-
    width: 48px;
    height: 48px;
    transition: transform 0.2s ease;
-
 }
 
 .skills-icons {
@@ -190,7 +187,6 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
    gap: 1.5rem;
    justify-items: center;
    margin: 2rem 0;
-
 }
 
 .skills-list ul {
@@ -214,7 +210,7 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
    display: inline-block;
    padding: 0.35rem 0.75rem;
    background-color: #4A90E2;
-   /* Autofac-blå eller valfri färg */
+   /* Autofac - what colour to use? : ) */
    color: white;
    font-size: 0.85rem;
    font-weight: 600;
@@ -270,7 +266,6 @@ VISUELLT DOLDA ELEMENT (tillgänglighet)
 }
 
 .padding-sides {
-
    padding-left: 1rem;
    padding-right: 1rem;
 }
