@@ -109,6 +109,7 @@
    background-color: var(--bg-inner);
    border-radius: var(--border-radius-md);
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* mjuk skugga */
+   color: var(--yellow-300);
 }
 
 .footer-logo:hover,

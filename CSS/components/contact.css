@@ -96,12 +96,14 @@ form p.text-center {
 
 .no-yellow {
     border: 2px solid var(--pink-700);
+    
 }
 
 .no-yellow-submit {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     border: 2px solid var(--pink-700);
+    color: var(--yellow-300);
 }
 
 @media (min-width: 768px) {
