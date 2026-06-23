@@ -78,12 +78,7 @@
       z-index: -1; /* lägger border bakom innehållet */
 }
 
-.project-title:hover {
-      transform: translateY(-6px);
-      /* lyfter kortet lite */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            /* mjuk skugga */
-}
+
 
 /* =========================================
    CTA I CARD

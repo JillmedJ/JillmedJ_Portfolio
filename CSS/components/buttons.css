@@ -196,6 +196,15 @@ RADIO-LABEL-KNAPPAR (custom radios)
    background: var(--surface-hover);     
 }
 
+.is-disabled {
+   pointer-events: none;
+   /* går inte att klicka */
+   /* opacity: 0.5; */
+   /* ser avstängd ut */
+   cursor: not-allowed;
+   /* visar att den inte är aktiv */
+}
+
 /* -----------------------------------------
    Responsiva knappar (media queries)
    - Anpassa storlek, padding, textstorlek

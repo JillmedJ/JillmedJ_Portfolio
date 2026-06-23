@@ -33,6 +33,7 @@ h2 {
     line-height: 1.3;
     font-weight: 700;
     margin-bottom: 1rem;
+    
 }
 
 h3 {
@@ -63,6 +64,13 @@ p   {
     line-height: 1.6;
     
 }
+
+/* .section-tagline {
+    font-family: "Sansita Swashed", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+} */
 
 figcaption {
     font-weight: 500;
