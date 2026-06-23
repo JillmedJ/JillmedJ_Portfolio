@@ -1,7 +1,14 @@
+#contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 #contact .container-narrow {
-    width: 95%;
+    width: 100%;
     /* height: 75%; */ min-height: auto;
     border-radius: var(--border-radius-md);
+    
+    
     padding: 2.5rem;
     
     background: linear-gradient(to bottom,
@@ -47,11 +54,14 @@ form p.text-center {
                 var(--yellow-100) 100%);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-top: -1.5rem;
-    min-width: 90%;
+    
     padding: 1rem 1.5rem;
 
+    width: 100%;
+    max-width: 600px;
+    /* eller 540px, välj vad som känns bäst */
+    margin-inline: auto;
 }
-
 
 #contact input,
 #contact textarea {
@@ -94,32 +104,19 @@ form p.text-center {
     border: 2px solid var(--pink-700);
 }
 
-/* @media (max-width: 768px) {
-    #contact .container-narrow {
-        width: 100%;
-        padding: var(--space-md);
-    }
-
-    .form-container {
-        padding: var(--space-md);
-    }
-
-    form p.text-center {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .no-yellow {
-        border-width: 1px;
-    }
-} */
-
 @media (min-width: 768px) {
     #contact .container-narrow {
         width: 80%;
         /* desktop-bredd */
         padding: var(--space-lg);
         /* mer luft */
+    }
+    #contact fieldset {
+        padding: var(--space-md);
+        /* eller var(--space-lg) om du vill ha ännu mer luft */
+    }
+    #contact button {
+        margin: 3rem 2rem 2rem 2rem;
+        width: 40%;
     }
 }
