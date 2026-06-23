@@ -145,11 +145,9 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
 
 /* borde kanske byta namnet från -row till -horisontal.. */
 .flow-whole-row {
-    display: flex;
-    /* Staplar barn vertikalt */
+    display: flex; /* Staplar barn vertikalt */
     flex-direction: row;
-    gap: 1rem;
-    /* Avstånd mellan alla barn */
+    gap: 1rem; /* Avstånd mellan alla barn */
 }
 .gap-1 {
     gap: 0.5rem;

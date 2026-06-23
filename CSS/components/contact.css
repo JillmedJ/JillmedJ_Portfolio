@@ -1,8 +1,8 @@
 #contact .container-narrow {
-    width: 80%;
+    width: 95%;
     /* height: 75%; */ min-height: auto;
     border-radius: var(--border-radius-md);
-    padding: var(--space-lg);
+    padding: 2.5rem;
     
     background: linear-gradient(to bottom,
                 var(--pink-100) 0%,
@@ -21,8 +21,7 @@
     /* eller 1.3rem, 1.5rem – testa! */
     height: 1.4rem;
     position: relative;
-        top: -3px;
-        /* testa -1px, -2px, 0px */
+    top: -3px; /* testa -1px, -2px, 0px */
 }
 
 form p.text-center {
@@ -36,9 +35,7 @@ form p.text-center {
     fill: var(--accent-light);
 }
 
-.form-container {
-    padding: 1rem;
-    
+#contact .form-container {
     border-radius: var(--border-radius-md);
     background: linear-gradient(to bottom,
                 var(--pink-400) 0%,
@@ -49,7 +46,12 @@ form p.text-center {
                 var(--yellow-200) 90%,
                 var(--yellow-100) 100%);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: -1.5rem;
+    min-width: 90%;
+    padding: 1rem 1.5rem;
+
 }
+
 
 #contact input,
 #contact textarea {
@@ -69,7 +71,17 @@ form p.text-center {
 
 #contact fieldset {
     border: 4px double var(--pink-500);
-    padding: var(--space-sm);
+    /* padding: var(--space-sm); */
+}
+
+#contact fieldset .flex {
+    gap: 0.25rem;
+    /* eller 0.5rem */
+}
+
+#contact fieldset label.button {
+    padding: 0.2rem;
+    /* mindre än 0.75rem 1rem */
 }
 
 .no-yellow {
@@ -77,8 +89,8 @@ form p.text-center {
 }
 
 .no-yellow-submit {
-
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
     border: 2px solid var(--pink-700);
 }
 
@@ -102,3 +114,12 @@ form p.text-center {
         border-width: 1px;
     }
 } */
+
+@media (min-width: 768px) {
+    #contact .container-narrow {
+        width: 80%;
+        /* desktop-bredd */
+        padding: var(--space-lg);
+        /* mer luft */
+    }
+}

@@ -74,6 +74,16 @@ fieldset,
    /* räta hörn */
 
    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+   
+}
+
+textarea {
+   font-family: inherit;/* samma som input */
+   font-size: 1rem;/* samma som input */
+   line-height: 1.4;/* samma som input */
+   resize: vertical;/* tillåt bara höjdändring */
+   max-width: 100%;/* säkerställ att den aldrig blir bredare än containern */
+   box-sizing: border-box; /* räkna in padding i bredden */
 }
 
 /* =========================================
