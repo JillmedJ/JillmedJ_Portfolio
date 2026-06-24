@@ -88,7 +88,11 @@
        TEXTFÄRGER
        ========================================= */
     --text-body: var(--pink-300);
-    /* brödtext */
+    /* rosa brödtext */
+   --text-main: var(--color-black);
+   /* svart brödtext*/
+   --text-main-soft: var(--gray-600);
+   /* ljussvart brödtext */
     --text-heading: var(--pink-500);
     /* rubriker */
     --text-muted: var(--gray-500);

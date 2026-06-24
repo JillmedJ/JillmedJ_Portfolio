@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/styles.css">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="visuals/images/favicon-j.png">
@@ -12,7 +12,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
             rel="stylesheet">
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -25,30 +25,36 @@
             href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Monoton&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansita+Swashed:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Great+Vibes&family=Kumar+One+Outline&family=Monoton&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansita+Swashed:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+
 
         <title>Jill med J</title>
     </head>
 
     <body>
-        
+
         <header class="nav-sticky">
                 <nav class="nav" aria-label="Huvudnavigation">
                     <div class="container flex-between">
-                
+
                         <div class="brand-group flex-gap">
-                
+
                             <!-- SIGNATURE (ingen hover, ej klickbar) -->
                             <img class="brand-signature" src="visuals/images/Jill_signature_transparent.png" alt="Min underskrift - mitt förnamn">
-                
+
                             <!-- LOGO/BRAND -->
                             <a href="#hero" class="brand-logo-link active">
                                 <img class="brand-logo" src="visuals/images/Jill_diamand_no_text_transparent.png" alt="Min logga - färgrik diamant med ett urskuret enkelt J i mitten upp mot toppen">
                             </a>
                         </div>
-                
+
                         <!-- NAVIGATION (med hover, klickbar)-->
                         <ul class="nav-ul">
-                
+
                             <li>
                                 <a href="#projects" class="active">
                                     <!-- ICON file-check-corner -->
@@ -65,7 +71,7 @@
                                     </span>
                                 </a>
                             </li>
-                
+
                             <li>
                                 <a href="#contact" class="cta active">
                                     <!-- ICON message-square-heart -->
@@ -82,17 +88,17 @@
                                     </span>
                                 </a>
                             </li>
-                
+
                             <li>
                                 <a href="cv/JillmedJ-CV.pdf" class="active" download aria-label="Ladda ned mitt CV som PDF" aria-hidden="true">
                                     <!-- ICON download -->
-                                    <svg class="icon" 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    viewBox="0 0 24 24" 
+                                    <svg class="icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
                                     fill="none"
-                                        stroke="currentColor" 
-                                        stroke-width="2" 
-                                        stroke-linecap="round" 
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
                                         stroke-linejoin="round"
                                         aria-hidden="true">
                                         <path d="M12 15V3" />
@@ -107,51 +113,60 @@
                         </ul>
                     </div>
                 </nav>
-            
+
         </header>
 
         <main>
             <section class="section" aria-labelledby="hero-title" id="hero">
-                
-                <div class="container flow-whole">
 
-                    <header class="text-center padding-sides flex-center">
-                        
-                        <img class="inline-block" src="visuals/images/logo-transparent-no-text.png" alt="Min logga - färgrik diamant med ett urskuret enkelt J i mitten upp mot toppen">
+                <div class="container flow-whole p-group">
 
-                        <h1 class="text-center flex" id="hero-title">
-                            <span class="no-wrap h1-name">Jill med J </span>
-                            <span class="h1-dash">- </span>
-                            <span class="no-wrap h1-role">Systemutvecklare to be</span>
+                    <header class="hero-header text-center">
+
+                        <!-- Portfolio label -->
+                        <p class="hero-portfolio-detail">Portfolio</p>
+
+                        <!-- Logotyp -->
+                        <img class="inline-block" 
+                        src="visuals/images/logo-transparent-no-text.png" 
+                        alt="Min logga - färgrik diamant med ett urskuret enkelt J i mitten upp mot toppen">
+
+                        <!-- Huvudrubrik -->
+                        <h1 class="hero-title" id="hero-title">
+                            <!-- <span class="no-wrap h1-name">Jill med J</span>
+                            <span class="h1-dash">-</span>
+                            <span class="no-wrap h1-role">Systemutvecklare to be</span> -->
+                            Jill med J <span class="h1-dash">-</span> Systemutvecklare to be
+                            <span class="hero-location">Enköping, Sverige</span>
                         </h1>
                     </header>
-
-                    <div class="text-center p-group container-even-more-narrow">
-
-                        <p class="hero-tagline hero-tagline-inside">
-                            <span class="tagline-part-1 no-break">Jag lär mig </span>
-                            <span class="tagline-dash">— </span>
-                            <span class="tagline-part-2 no-break"> och jag älskar det.</span>
-                        </p>
-
+                        
+                        <!-- Jill-block -->
                         <div class="hero-jill-block">
-
-                            <img class="jill-img" src="visuals/images/Jill-fiskar.jpg"
+                            <img class="jill-img" 
+                            src="visuals/images/Jill-fiskar.jpg"
                                 alt="Jag i sjölandskap på en båt med en abborre i händerna, vilken jag då precis fiskat upp.">
+
                             <div class="hero-text-block">
+                                <!-- Tagline -->
+                                <p class="hero-tagline hero-tagline-inside">
+                                    Jag lär mig och jag älskar det.
+                                </p>
+                                <!-- intro -->
                                 <p class="p-i flex">
                                     Jag trivs bäst när idéer får delas.
+                                <!-- </p>
+                                <p class="p-we"> -->
+                                    Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.
                                 </p>
-                                <p class="p-we">
-                                    Jag bidrar med engagemang, nyfikenhet och en vilja att tänka, bygga och skapa lösningar tillsammans.</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <footer class="section-footer text-center">
-                            <a href="#projects" class="cta" id="hero-cta">
+
+                    <!-- <footer class="section-footer text-center">
+                            <a href="#projects" class="cta" id="hero-cta">-->
                                 <!-- ICON file-check-corner -->
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path
                                         d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6" />
@@ -163,8 +178,8 @@
                                 </span>
                             </a>
                     </footer>
-                </div>
-            </section>
+                </div>-->
+            </section> 
 
             <!-- ABOUT / SHOWCASE -->
             <section class="section" id="about" aria-labelledby="about-title" >
@@ -186,7 +201,7 @@
                                 <h3 class="text-center">
                                     What Drives Me
                                 </h3>
-<!--                                 
+<!--
                                 <figure class="about-image">
                                     <img src="visuals/images/logo-transparent.png" alt="Min logga" loading="lazy" decoding="async">
                                     <figcaption></figcaption>
@@ -202,7 +217,7 @@
                                     en sådan
                                     vill jag bidra.
                                 </p>
-                        
+
                                 <p>
                                     Dessutom har jag ett naturligt starkt intresse för verksamhetsutveckling — särskilt hur reflektion kan
                                     användas för att
@@ -214,7 +229,7 @@
                                 </p>
                             </div>
                         </article>
-                    
+
                         <!-- BLOCK 2: My Skills -->
                         <article class="about-block flow-whole">
 
@@ -227,7 +242,7 @@
                                     <figcaption></figcaption>
                                 </figure>
                             </header>
-                    
+
                             <div class="text-left text-60ch center-inline">
                                 <p>
                                     Jag arbetar med att skapa smidiga arbetsflöden och skriva kod som är tydlig och lätt att följa.
@@ -243,7 +258,7 @@
                                         <path fill="#323330"
                                             d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z" />
                                     </svg>
-                                    
+
                                     <!-- ICON: C# / .NET (visual/icons/tech-icons/filnamn.svg) -->
                                     <svg xmlns="http://www.w3.org/2000/svg" class="skill-icon" viewBox="0 0 128 128" aria-hidden="true">
                                         <path fill="#9B4F96"
@@ -321,26 +336,26 @@
                                                 d="M90.767 127.126a7.968 7.968 0 0 0 6.35-.244l26.353-12.681a8 8 0 0 0 4.53-7.209V21.009a8 8 0 0 0-4.53-7.21L97.117 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026L15.6 32.013a5.328 5.328 0 0 0-6.807.302l-7.048 6.411a5.335 5.335 0 0 0-.006 7.888L20.796 64 1.74 81.387a5.336 5.336 0 0 0 .006 7.887l7.048 6.411a5.327 5.327 0 0 0 6.807.303l21.974-16.68 50.45 46.025a7.96 7.96 0 0 0 2.743 1.793Zm5.252-92.183L57.74 64l38.28 29.058V34.943Z"
                                                 clip-rule="evenodd" />
                                         </mask>
-                                    
+
                                         <g mask="url(#a)">
                                             <path fill="#0065A9"
                                                 d="M123.471 13.82 97.097 1.12A7.973 7.973 0 0 0 88 2.668L1.662 81.387a5.333 5.333 0 0 0 .006 7.887l7.052 6.411a5.333 5.333 0 0 0 6.811.303l103.971-78.875c3.488-2.646 8.498-.158 8.498 4.22v-.306a8.001 8.001 0 0 0-4.529-7.208Z" />
-                                    
+
                                             <g filter="url(#b)">
                                                 <path fill="#007ACC"
                                                     d="m123.471 114.181-26.374 12.698A7.973 7.973 0 0 1 88 125.333L1.662 46.613a5.333 5.333 0 0 1 .006-7.887l7.052-6.411a5.333 5.333 0 0 1 6.811-.303l103.971 78.874c3.488 2.647 8.498.159 8.498-4.219v.306a8.001 8.001 0 0 1-4.529 7.208Z" />
                                             </g>
-                                    
+
                                             <g filter="url(#c)">
                                                 <path fill="#1F9CF0"
                                                     d="M97.098 126.882A7.977 7.977 0 0 1 88 125.333c2.952 2.952 8 .861 8-3.314V5.98c0-4.175-5.048-6.266-8-3.313a7.977 7.977 0 0 1 9.098-1.549L123.467 13.8A8 8 0 0 1 128 21.01v85.982a8 8 0 0 1-4.533 7.21l-26.369 12.681Z" />
                                             </g>
-                                    
+
                                             <path fill="url(#d)" fill-rule="evenodd"
                                                 d="M90.69 127.126a7.968 7.968 0 0 0 6.349-.244l26.353-12.681a8 8 0 0 0 4.53-7.21V21.009a8 8 0 0 0-4.53-7.21L97.039 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026-21.974-16.68a5.328 5.328 0 0 0-6.807.302l-7.048 6.411a5.336 5.336 0 0 0-.006 7.888L20.718 64 1.662 81.386a5.335 5.335 0 0 0 .006 7.888l7.048 6.411a5.328 5.328 0 0 0 6.807.303l21.975-16.681 50.45 46.026a7.959 7.959 0 0 0 2.742 1.793Zm5.252-92.184L57.662 64l38.28 29.057V34.943Z"
                                                 clip-rule="evenodd" opacity="0.25" style="mix-blend-mode:overlay" />
                                         </g>
-                                    
+
                                         <defs>
                                             <filter id="b" width="144.744" height="113.408" x="-8.41115" y="22.5944" color-interpolation-filters="sRGB"
                                                 filterUnits="userSpaceOnUse">
@@ -352,7 +367,7 @@
                                                 <feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow_1_36" />
                                                 <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_36" result="shape" />
                                             </filter>
-                                    
+
                                             <filter id="c" width="56.6667" height="144.007" x="79.6667" y="-8.0035" color-interpolation-filters="sRGB"
                                                 filterUnits="userSpaceOnUse">
                                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -363,7 +378,7 @@
                                                 <feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow_1_36" />
                                                 <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_36" result="shape" />
                                             </filter>
-                                    
+
                                             <linearGradient id="d" x1="63.9222" x2="63.9222" y1="0.329902" y2="127.67" gradientUnits="userSpaceOnUse">
                                                 <stop stop-color="#fff" />
                                                 <stop offset="1" stop-color="#fff" stop-opacity="0" />
@@ -377,17 +392,17 @@
                                             d="M95 2.3l30.5 12.3v98.7l-30.7 12.4-49-48.7-31 24.1-12.3-6.2V33.1l12.3-5.9 31 24.3zM14.8 45.7v37.5l18.5-19zm48.1 18.5l31.9 25.1V39z" />
                                     </svg>
                                 </div>
-                            
+
 
                             <!-- BADGES -->
                             <div class="flex flex-wrap flex-center gap-2">
                                 <!-- BADGE: Autofac -->
                                 <span class="tech-badge badge-autofac">Autofac</span>
-                                
+
                                 <!-- BADGE: Accessibility -->
                                 <span class="tech-badge badge-a11y">Accessibility</span>
                             </div>
-<!--                             
+<!--
                             <h4 class="text-center">
                                 Tekniska färdigheter
                             </h4>
@@ -398,9 +413,9 @@
                                     <li><strong>Verktyg:</strong> Git, GitHub, Figma, Visual Studio, VS Code</li>
                                 </ul>
                             </div> -->
-                            
+
                         </article>
-                    
+
                     </div>
                 </div>
             </section>
@@ -408,7 +423,7 @@
             <!-- PROJECTS / PORTFOLIO -->
             <section id="projects" class="section my-portfolio" aria-labelledby="projects-title">
                 <div class="container flow-whole">
-            
+
                     <header class="text-center">
                         <h2 id="projects-title">
                             My Portfolio
@@ -420,20 +435,20 @@
 
                     <!-- GRID med cards -->
                     <div class="grid-auto">
-                    
+
                         <!-- CARD 1 -->
                         <article class="card card--project flow-whole">
                             <img src="visuals/images/logo-transparent.svg" alt="Förhandsbild av kommande projekt">
-                    
+
                             <h3 class="project-title flex-gap flex-center">
                                 <svg class="icon"
-                                xmlns="http://www.w3.org/2000/svg"  
-                                viewBox="0 0 24 24" 
-                                fill="none" 
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
                                 stroke="currentColor"
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
                                 aria-hidden="true"
                                 >
                                     <path
@@ -443,12 +458,12 @@
                                 </svg>
                                 Kommande projekt
                             </h3>
-                    
+
                             <p class="text-center card-lead">
                                 Soon: en första glimt av vad detta projekt kommer att handla om.
 
                             </p>
-                    
+
                             <a href="#" class="cta margin-bottom" role="button">
                                 Upptäck projektet när det släpps
                             </a>
@@ -457,16 +472,16 @@
                         <!-- CARD 2 -->
                         <article class="card card--project flow-whole">
                             <img src="visuals/images/logo-transparent.svg" alt="Förhandsbild av kommande projekt">
-                        
+
                             <h3 class="project-title flex-gap flex-center">
                                 <svg class="icon"
-                                xmlns="http://www.w3.org/2000/svg"  
-                                viewBox="0 0 24 24" 
-                                fill="none" 
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
                                 stroke="currentColor"
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
                                 aria-hidden="true"
                                 >
                                     <path
@@ -476,12 +491,12 @@
                                 </svg>
                                 Projekt på G
                             </h3>
-                        
+
                             <p class="text-center card-lead">
                                 Inom kort: ta en snabb sneak peek på något jag arbetar med just nu.
 
                             </p>
-                        
+
                             <a href="#" class="cta margin-bottom" role="button">
                                 Upptäck projektet när det släpps
                             </a>
@@ -490,16 +505,16 @@
                         <!-- CARD 3 -->
                         <article class="card card--project flow-whole">
                             <img src="visuals/images/logo-transparent.svg" alt="Förhandsbild av kommande projekt">
-                        
+
                             <h3 class="project-title flex-gap flex-center">
                                 <svg class="icon"
-                                xmlns="http://www.w3.org/2000/svg"  
-                                viewBox="0 0 24 24" 
-                                fill="none" 
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
                                 stroke="currentColor"
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
                                 aria-hidden="true"
                                 >
                                     <path
@@ -509,21 +524,21 @@
                                 </svg>
                                 Upcoming projekt
                             </h3>
-                        
+
                             <p class="text-center card-lead">
                                 Snart: ta del av projekt huvudidé i korthet.
                             </p>
-                        
+
                             <a href="#" class="cta margin-bottom" role="button">
                                 Upptäck projektet när det släpps
-                            </a>          
+                            </a>
                         </article>
                     </div>
 
                     <!-- FOOTER-LÄNKAR -->
                     <footer class="section-footer">
                         <div class="section-footer-row">
-                            
+
                             <img class="footer-signature no-yellow" src="visuals/images/Jill_signature_transparent.png"
                                     alt="Min underskrift - mitt förnamn">
 
@@ -531,7 +546,7 @@
                                 <img class="footer-logo no-yellow" src="visuals/images/Jill_diamand_no_text_transparent.png"
                                     alt="Min logga - färgrik diamant med ett urskuret enkelt J i mitten upp mot toppen">
                             </a>
-                
+
                             <a class="footer-cta" href="#projects" role="button">
                                 <!-- ICON file-check-corner -->
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -560,7 +575,7 @@
                                     Ladda ned mitt <span class="no-break text-italic-color"> curriculum vitae</span>
                                 </span>
                             </a>
-                            
+
                         </div>
                     </footer>
                 </div>
@@ -569,40 +584,40 @@
             <!-- TESTIMONIALS SECTION -->
             <section class="testimonials section">
                 <div class="container-narrow flow-whole">
-            
+
                     <h2 class="section-title text-center">Vad andra säger</h2>
-            
+
                     <!-- GRID -->
                     <div class="testimonials-grid grid-auto">
-            
+
                         <!-- TESTIMONIAL CARD -->
                         <article class="card card--bubble testimonial-card flow-whole">
-            
+
                             <!-- AVATAR (du kan byta till img senare) -->
                             <div class="testimonial-avatar">
                                 <!-- Exempel: initialer -->
                                 <span>K.H.</span>
                             </div>
-            
+
                             <!-- CITAT -->
                             <p class="testimonial-quote text-center">
                                 “Kommande omdömen och kommentarer.”
                             </p>
-            
+
                             <!-- NAMN + ROLL -->
                             <div class="testimonial-meta">
                                 <strong>Kent Hellgren</strong>
                                 <span>Handledare, Ägare</span>
                             </div>
-            
+
                         </article>
-            
+
                         <!-- Du kan duplicera fler cards här -->
-            
+
                     </div>
                 </div>
             </section>
-           
+
             <!-- <section class="section" id="contact"> -->
             <section id="contact" class="section" aria-labelledby="contact-title">
                 <div class="container-narrow flow-whole">
@@ -611,13 +626,13 @@
                         <h2 id="contact-title">
                             <!-- ICON message-square-heart -->
                             <svg class="icon"
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 24 24" 
-                            fill="none" 
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
                             stroke="currentColor"
-                            stroke-width="2" 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                             aria-hidden="true"
                             >
                                 <path
@@ -633,13 +648,13 @@
                         <p class="text-center lead ">
                             <!-- ICON messages-square -->
                             <svg class="icon"
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 24 24" 
-                            fill="none" 
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
                             stroke="currentColor"
-                            stroke-width="2" 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                             aria-hidden="true"
                             >
                                 <path
@@ -650,7 +665,7 @@
                             Jag är nämligen också nyfiken - på vad du tänker och vad jag kan hjälpa dig med. Skriv gärna några rader nedan.
                         </p>
                     </header>
-                    
+
                     <form action="https://formspree.io/f/xrevvzvb" method="POST">
                         <div class="form-container">
                             <div class="flow-whole padding-sides">
@@ -666,19 +681,19 @@
                                     </svg>
                                     Fyll i dina uppgifter nedan.
                                 </p>
-                            
+
                                 <!-- EMAIL -->
                                 <div class="form-row flex flex-gap">
                                     <label class="label-col" for="email">
                                         <!-- ICON mail -->
-                                        <svg class="icon" 
-                                        xmlns="http://www.w3.org/2000/svg" 
-                                        viewBox="0 0 24 24" 
-                                        fill="none" 
+                                        <svg class="icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
                                         stroke="currentColor"
-                                            stroke-width="2" 
-                                            stroke-linecap="round" 
-                                            stroke-linejoin="round" 
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
                                             aria-hidden="true">
                                             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                                             <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -687,27 +702,27 @@
                                             Din e-postadress
                                         </span>
                                     </label>
-                                    <input class="flex-grow" 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    placeholder="name@example.com" 
+                                    <input class="flex-grow"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="name@example.com"
                                     required
                                     aria-label="Din e-postadress">
                                 </div>
-                            
+
                                 <!-- FULL NAME -->
                                 <div class="form-row flex flex-gap">
                                     <label class="label-col" for="full-name">
                                         <!-- ICON a-large-small -->
-                                        <svg class="icon" 
-                                        xmlns="http://www.w3.org/2000/svg" 
-                                        viewBox="0 0 24 24" 
-                                        fill="none" 
+                                        <svg class="icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
                                         stroke="currentColor"
-                                            stroke-width="2" 
-                                            stroke-linecap="round" 
-                                            stroke-linejoin="round" 
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
                                             aria-hidden="true">
                                             <path d="m15 16 2.536-7.328a1.02 1.02 0 0 1 1.928 0L22 16" />
                                             <path d="M15.697 14h5.606" />
@@ -718,31 +733,31 @@
                                             Ditt för- och efternamn
                                         </span>
                                     </label>
-                                    <input class="flex-grow" 
-                                    type="text" 
-                                    id="full-name" 
-                                    name="full-name" 
-                                    placeholder="Kent Hellgren" 
+                                    <input class="flex-grow"
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    placeholder="Kent Hellgren"
                                     required
                                     minlength="2"
                                     maxlength="50"
                                     aria-label="Ditt namn">
                                 </div>
                             </div>
-                            
+
                             <!-- RADIO GROUP -->
                             <div class="flow-whole flex-center padding-sides">
                                 <fieldset>
                                     <legend>
                                         Vem kontaktar mig?
                                     </legend>
-                            
+
                                     <div class="flex flex-gap">
-                                        <input class="hidden-input" 
-                                        type="radio" 
-                                        id="radio-private" 
+                                        <input class="hidden-input"
+                                        type="radio"
+                                        id="radio-private"
                                         name="reason"
-                                        required 
+                                        required
                                         value="private">
                                         <label class="button" for="radio-private">
                                             <!-- ICON user-round -->
@@ -756,7 +771,7 @@
                                                 Privat kontakt
                                             </span>
                                         </label>
-                            
+
                                         <input class="hidden-input" type="radio" id="radio-company" name="reason"value="company">
                                         <label class="button" for="radio-company">
                                             <!-- ICON building-2 -->
@@ -771,7 +786,7 @@
                                             </svg>
                                             Företags&shy;kontakt
                                         </label>
-                            
+
                                         <input class="hidden-input" type="radio" id="radio-other" name="reason" value="other">
                                         <label class="button" for="radio-other">
                                             <!-- ICON ellipsis -->
@@ -789,7 +804,7 @@
                                     </div>
                                 </fieldset>
                             </div>
-                            
+
                             <!-- MESSAGE -->
                             <div class="flow-whole padding-top-lg padding-sides">
                                 <label for="message">
@@ -804,19 +819,19 @@
                                         Ditt meddelande
                                     </span>
                                 </label>
-                                <textarea id="message" 
-                                name="message" 
-                                rows="5" 
-                                placeholder="Skriv ditt meddelande här..." 
+                                <textarea id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Skriv ditt meddelande här..."
                                 required
                                 minlength="10"
                                 maxlength="500"
                                 aria-label="Ditt meddelande"></textarea>
                             </div>
-                            
+
                             <!-- SUBMIT -->
                             <div class="flex-center justify-center">
-                            
+
                                 <button class="cta no-yellow-submit" type="submit">
                                     <!-- ICON send -->
                                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -829,24 +844,24 @@
                                 </button>
                             </div>
                         </div>
-                        
+
                     </form>
                 </div>
-                
+
                 <!-- (allmänt kontaktformulär -->
 
                 <!-- (maila mig direkt(förprogrammerat meddelande som skickas iväg när de fyllt i required informations) )mailto‑länk (maila migformulär) -->
-                
+
 
                 <!--särskild checkbox att fylla i och då visas: typ:  (förprogrammerat meddelande som skickas iväg när de fyllt i required informations) Alternativ 3: Mailto‑länk
                 CTA: “Låt oss samtala” → öppnar mail:
-                
+
                 html
                 <a href="mailto:jill@example.com">Låt oss samtala</a>
                 De kan skriva:
-                
+
                 “Hej Jill, kan vi ta ett samtal? Mitt nummer är …”
-                
+
                 Du bestämmer om och när du ringer. -->
                 <!-- FOOTER-LÄNKAR -->
                 <footer class="section-footer">
@@ -856,7 +871,7 @@
                             <img class="footer-logo no-yellow" src="visuals/images/Jill_diamand_no_text_transparent.png"
                                 alt="Min logga - färgrik diamant med ett urskuret enkelt J i mitten upp mot toppen">
                         </a>
-                
+
                         <a class="footer-cta" href="cv/JillmedJ-CV.pdf" download>
                             <!-- ICON download -->
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -872,7 +887,7 @@
 
                         <img class="footer-signature no-yellow" src="visuals/images/Jill_signature_transparent.png"
                             alt="Min underskrift - mitt förnamn">
-                
+
                     </div>
                 </footer>
             </section>
@@ -883,7 +898,7 @@
 
             <div class="container">
 
-                <div class="site-footer-brand"> 
+                <div class="site-footer-brand">
                     <a href="#hero" aria-label="Till startsidan" class="site-footer-logo-link">
                         <img class="site-footer-logo" src="visuals/images/logo-transparent.svg" alt="Min logga - färgrik diamant med ett urskuret enkelt J i mitten upp mot toppen">
                     </a>
@@ -891,11 +906,11 @@
                 </div>
 
                 <div class="site-footer-links" aria-hidden="true">
-                    
+
                     <a href="https://github.com/JillmedJ" target="_blank" rel="noopener noreferrer">
                         <span class="icon">
                             <!-- ICON GitHub-brand -->
-                            <img src="visuals/icons/brands/GitHub/GitHub_Invertocat_Black.png" 
+                            <img src="visuals/icons/brands/GitHub/GitHub_Invertocat_Black.png"
                             alt="GitHubs officiella logotyp"
                             class="icon">
                         </span>
@@ -924,11 +939,11 @@
                                 alt="Facebooks officiella logotyp" class="icon">
                         </span>
                     </a>
-                    
+
                     <a href="#projects">
                         <span class="icon">
                             <!-- ICON file-check-corner -->
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24
                                                     24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
                                 <path
@@ -941,11 +956,11 @@
                             Se mina projekt
                         </span>
                     </a>
-                    
+
                     <a href="#contact" aria-hidden="true">
                         <span class="icon">
                             <!-- ICON message-square-heart -->
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24
                                                     24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
                                 <path
@@ -963,13 +978,13 @@
                         <span class="icon">
                             <!-- ICON download -->
                             <svg class="icon"
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 24 24" 
-                            fill="none" 
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
                             stroke="currentColor"
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
                                 aria-hidden="true">
                                 <path d="M12 15V3" />
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -984,7 +999,7 @@
           </div>
 
         </footer>
-        
+
         <script src="index.js"></script>
     </body>
 </html>
