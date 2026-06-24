@@ -89,7 +89,7 @@ UTILITIES.CSS – Layout & struktur
 .flow
 – Lägger automatiskt spacing mellan alla barn ovantill
 – Perfekt för formulär, textblock, kortlistor
-Flow är en container, > = direkta barn, * +* = varje element som kommer efter ett annat element - dessa får x.
+Flow är en container, > är/för direkta barn, * +* är/för varje element som kommer efter ett annat element - dessa får x.
 Lämplig för grid (men också flex och block)
 */
 .flow> * { 

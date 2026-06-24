@@ -101,6 +101,12 @@ lägga in riktiga testimonials
 
 Nice-to-have: det finns flera saker jag skulle vilja lägga till och utveckla.
 
+se över hela projektet och lägga in mina variabler så de nyttjas konsekvent. gäller ex. spacing, borders och kulörer. och jag vill då också ha "färdiga" hur-templates för effektivitet och tydlighet.
+
+tror jag vill byta namn på projects till portfolio
+
+vill ordna gradient-border-soft på mina img i footern
+
 🗺️ Roadmap
 Fas 1 – Grundstruktur (klar / pågående)
 

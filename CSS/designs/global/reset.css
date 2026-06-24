@@ -22,7 +22,7 @@ ren och lätt att jobba med.
     /* --- Sätter box-sizing ---------------------------- */
 
     box-sizing: border-box;
-    /* box-sizing: border-box; är den viktigaste delen av en modern reset. Det gör layouten förutsägbar och är standard i alla seriösa projekt. */
+    /* box-sizing: border-box; är den viktigaste delen av en modern reset. Det gör layouten förutsägbar och är standard i alla seriösa projekt. Beräknar/fokuserar "insidan" */
 
     /* --- Tar bort margin/padding ---------------------- */
 
