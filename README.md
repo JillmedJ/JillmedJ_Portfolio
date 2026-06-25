@@ -1,62 +1,70 @@
-Jill med J – Min portfolio (pågående arbete)
+Jill med J – Min portfolio
 Senast uppdaterad: 1 juni 2026
 
 Välkommen hit.
 Det här är min digitala verkstad och mitt pågående bygge.
 Jag är Jill med J, och den här portfolion är både ett projekt och en resa — en resa i HTML, CSS, JavaScript och allt det där som får webben att leva.
 
-🌱 Status: Under utveckling
-Sidan är inte färdig, och det är helt enligt plan.
-Jag bygger den steg för steg och försöker hålla en balans mellan struktur, kreativitet och lärande.
+🌱 Status
+Sidan är under utveckling, men uppfyller samtliga krav för G‑nivå i kursen Webbutveckling Frontend.
 
-Just nu arbetar jag med:
+✨ Funktioner och sektioner
+Portfolion innehåller:
 
-att fylla sektionerna med innehåll
+Porträttbild
 
-att förbättra layout och responsivitet
+Navbar
 
-att skapa tydliga CTA‑flöden
+Hero‑sektion
 
-att hålla HTML‑koden semantisk och lätt att förstå
+About me
 
-att fortsätta utveckla min förståelse för webbutvecklingens grunder
+Skills / kunskaper
 
-✨ Funktioner
-Det här är funktioner som finns eller är planerade:
+Portfolio / Projects (placeholder just nu)
 
-Semantisk HTML‑struktur
+Testimonials (placeholder just nu)
 
-Tydliga CTA‑flöden
+Kontaktformulär med HTML5‑validering
 
-Responsiv design (mobil först)
+Footer
 
-Portfolio‑sektion med projekt (placeholder just nu)
+Länk för att ladda ner mitt CV
 
-Testimonials‑sektion (placeholder just nu)
+Länkar till GitHub, LinkedIn, Instagram och Facebook
 
-Kontaktformulär med HTML‑validering
-[x] Live‑publicering via GitHub Pages eller Netlify (planerat) - https://jillmedj.github.io/JillmedJ_Portfolio/
+🧰 Tekniker och principer
+Jag använder:
 
-🎯 Syfte
-Syftet med portfolion är att visa vem jag är, vad jag gör och hur jag tänker.
-Jag vill inte bara visa vad jag kan just nu, utan också hur jag lär mig och utvecklas.
-Jag gillar tydlighet, språk och små detaljer — och försöker få med det även i min kod.
+HTML5 – semantisk struktur
 
-🧰 Tekniker och verktyg
-HTML5 – struktur och semantik
+CSS3 – layout, typografi, tokens, komponenter
 
-CSS3 – layout, typografi och visuellt uttryck
+Flexbox och CSS Grid – för layout och responsivitet
+
+Mobile‑first – designen byggs från små skärmar och uppåt
 
 JavaScript – planerat för interaktivitet
 
 Git & GitHub – versionshantering
 
-Reflektion – mitt viktigaste verktyg
+🧪 Testning
+Jag har manuellt testat:
+
+navigation och länkar
+
+kontaktformuläret (HTML5‑validering, required‑fält, e‑postformat)
+
+responsivitet på mobil och desktop
+
+CV‑nedladdning
+
+att inga konsol‑fel uppstår
+
+Det är inte möjligt att skicka felaktiga uppgifter i formuläret tack vare HTML5‑validering.
 
 ▶️ Hur du kör projektet
 Projektet är byggt i ren HTML, CSS och JavaScript.
-
-Så här kör du det:
 
 Klona eller ladda ned projektet
 
@@ -67,90 +75,53 @@ Klona eller ladda ned projektet
 Ingen installation krävs.
 
 📁 Projektstruktur
-En översikt över hur projektet är organiserat:
+Kod
 /css
 /js
 /visuals
 /cv
 index.html
 README.md
-
-Strukturen kommer att växa i takt med projektet.
-
 📚 Lärande och prioriteringar
 Jag arbetar aktivt med att:
 
-förstå varför något fungerar, inte bara hur
+skriva semantisk och lättläst kod
 
-skriva kod som är lätt att läsa
+använda tokens för färger, spacing och borders
 
-våga testa, misslyckas och göra om
+bygga återanvändbara komponenter
 
-bygga en stabil grund innan jag springer vidare
+förstå varför saker fungerar, inte bara hur
 
-📌 Att göra (nästa steg)
+📌 Att göra
 fylla hero‑sektionen med verkligt innehåll
 
-lägga in mina projekt
-
-fortsätta förbättra responsiviteten
+lägga in riktiga projekt
 
 lägga in riktiga testimonials
 
-[x] publicera sidan live - https://jillmedj.github.io/JillmedJ_Portfolio/
-
-Nice-to-have: det finns flera saker jag skulle vilja lägga till och utveckla.
-
-se över hela projektet och lägga in mina variabler så de nyttjas konsekvent. gäller ex. spacing, borders och kulörer. och jag vill då också ha "färdiga" hur-templates för effektivitet och tydlighet.
-
-tror jag vill byta namn på projects till portfolio
-
-vill ordna gradient-border-soft på mina img i footern
+fortsätta förbättra responsiviteten
 
 🗺️ Roadmap
-Fas 1 – Grundstruktur (klar / pågående)
+Fas 1 – Grundstruktur  
+✔ Filstruktur
+✔ Navbar
+✔ Sektioner
+✔ Första README
 
-    [x] Skapa projektmapp och filstruktur
+Fas 2 – Layout och design  
+✔ Grundläggande CSS
+✔ Responsiv design
+⬜ Finputsning av projects
 
-    [x] Första versionen av README
+Fas 3 – Interaktivitet  
+⬜ JavaScript för mikroeffekter
+⬜ Smooth scroll
 
-    [x] Bygga navbar och CTA‑flöden
-
-    [x] Skapa sektionerna: hero, about, projects, contact
-
-    [ ] Fyll hero‑sektionen med verkligt innehåll
-
-    Fas 2 – Layout och design (pågående)
-
-    [x] Grundläggande CSS‑struktur
-
-    [x] Layout för hero
-
-    [ ] Layout för projects
-
-    [x] Responsiv design (mobil först)
-
-    Fas 3 – Interaktivitet (planerat)
-
-    [ ] JavaScript för mikroeffekter
-
-    [ ] Smooth scroll
-
-    [x] Hover‑effekter
-
-Fas 4 – Finputsning och presentation (planerat)
-
-    [ ] Lägga in riktiga projekt
-
-    [ ] Skriva projektbeskrivningar
-
-    [ ] Ta screenshots
-
-    [X ] Publicera sidan live
-
-    [ ] Slutlig genomgång
+Fas 4 – Presentation  
+⬜ Lägga in riktiga projekt
+⬜ Slutlig genomgång
 
 ✨ Avslutande ord
 Det här är början.
-En början jag är stolt över, för den är min – och den är på väg åt rätt håll.
-Jag bygger inte bara en portfolio. Jag bygger min kompetens, mitt uttryck och min framtid.
+Jag bygger inte bara en portfolio — jag bygger min kompetens, mitt uttryck och min framtid.
