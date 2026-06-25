@@ -21,7 +21,6 @@
    gap: var(--space-md);
 }
 
-
 /* =========================================
    HERO – Layout & höjd
 ========================================= */
@@ -321,7 +320,6 @@
    }
 
    #hero .hero-tagline {
-      
       margin-top: var(--space-xxs);
    }
 
@@ -336,5 +334,18 @@
 @media (min-width: 1024px) {
    #hero .section-footer {
       margin-top: 0.5rem;
+   }
+}
+@media (min-height: 1400px) {
+   #hero {
+      min-height: calc(85svh - var(--nav-height));
+   }
+}
+
+@media (min-height: 1800px) {
+   #hero.section {
+      min-height: calc(70svh - var(--nav-height));
+      margin-bottom: 0;
+      padding-bottom: 0;
    }
 }
