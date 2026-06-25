@@ -322,8 +322,7 @@ iframe {
 
 .gradient-border-soft {
    position: relative;
-   overflow: hidden;
-   /* krävs för rundade hörn */
+   overflow: hidden; /* krävs för rundade hörn */
    border-radius: var(--border-radius-md);
 }
 
@@ -331,8 +330,7 @@ iframe {
    content: "";
    position: absolute;
    inset: 0;
-   padding: 4px;
-   /* border-bredd */
+   padding: 4px; /* border-bredd */
    border-radius: inherit;
    background: var(--border-gradient-soft);
    -webkit-mask:

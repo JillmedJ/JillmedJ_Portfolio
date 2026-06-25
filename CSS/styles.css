@@ -4,8 +4,8 @@
 @import "designs/tokens/typography.css";
 @import "designs/tokens/borders.css";
 @import "designs/tokens/layers.css";
-@import "designs/tokens/borders-examples.css";
-@import "designs/tokens/layers-examples.css";
+/* @import "designs/tokens/borders-examples.css";
+@import "designs/tokens/layers-examples.css"; */
 
 /* GLOBAL DESIGN */
 @import "designs/global/reset.css";
