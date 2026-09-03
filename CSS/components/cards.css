@@ -13,7 +13,6 @@
 
    border-radius: var(--border-radius-md);
 
-
    background: var(--surface-100, #fff); /* neutral bas */
 
    /* box-shadow: var(--shadow-sm); */
@@ -44,6 +43,3 @@
 
    border-radius: var(--border-radius-md);
 }
-
-
-

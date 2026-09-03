@@ -92,6 +92,49 @@
       color: var(--gray-700);
    }
 
+   .meta-wrap {
+      max-width: 45ch;
+   }
+
+   .meta-yh {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem; /* liten spacing */
+   }
+
+      /* Roll */
+   .meta-yh .meta-role {
+      font-size: 0.9rem;
+      color: var(--gray-700);
+   }
+
+   /* Utbildningsprogram */
+   .meta-yh .meta-program {
+      font-size: 0.85rem;
+      color: var(--gray-700);
+   }
+
+   /* Skola */
+   .meta-yh .meta-school {
+      font-size: 0.85rem;
+      color: var(--gray-700);
+      max-width: 45ch;
+      /* styr radbrytning*/
+   }
+
+   .meta-program .meta-dotnet {
+      color: var(--gray-600);
+      /* mjukare färg */
+      font-weight: 400;
+      /* normal vikt */
+      letter-spacing: 0.5px;
+      /* gör .NET lite luftigare */
+      opacity: 0.85;
+      font-size: 0.80rem;
+   }
+
+   
+
       /* =========================================
    MEDIA QUERIES – RESPONSIV TYPOGRAFI
 ========================================= */
