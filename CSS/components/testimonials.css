@@ -26,18 +26,17 @@
    margin-top: auto;
 }
 
-
 /* GRID – spacing hanteras av utilities (grid-auto + gap) */
 .testimonials-grid {
    /* inget behövs här just nu */
 }
 
-   /* =========================================
-   AVATAR
-   – Rund, mjuk, bubble-känsla
-   – Kan bytas till <img> senare
-   ========================================= */
-   
+/* =========================================
+AVATAR
+– Rund, mjuk, bubble-känsla
+– Kan bytas till <img> senare
+========================================= */
+
 .testimonial-avatar {
    width: 64px;
    height: 64px;
@@ -81,6 +80,13 @@ CITAT
    line-height: 1.55;
    font-weight: 500;
    color: var(--gray-900);
+   max-width: 45ch;
+   margin-inline: auto;
+   text-indent: 0.75rem;
+   letter-spacing: 0.1px;
+   opacity: 0.98;
+   margin-bottom: 0.75rem;
+   font-family: 'Handlee', sans-serif;
 }
    
 /* =========================================
