@@ -95,6 +95,7 @@ META (namn + roll)
    gap: 0.25rem;
 }
 
+/* Bas: alla spans i meta har samma utgångspunkt */
 .testimonial-meta span {
    font-size: 0.9rem;
    color: var(--gray-700);
@@ -110,27 +111,44 @@ META (namn + roll)
    gap: 0.25rem; /* liten spacing */
 }
 
-   /* Roll */
+   /* Roll 1 största*/
 .meta-yh .meta-role {
-   font-size: 0.9rem;
    color: var(--gray-700);
+   font-size: 1em;
+      /* 100% */
 }
 
-/* Utbildningsprogram */
+/* Roll 2 – litelite mindre = Nu blir Studeranderepresentant exakt lika stor som Klasskamrat. */
+.meta-role.meta-role-soft {
+   font-size: 0.97em;
+      /* 97% */
+   color: var(--gray-700);
+   /* samma färg som Klasskamrat */
+   font-weight: 400;
+   /* lättare vikt/mjukare */
+
+   opacity: 0.97;
+   /*optiskt, minimalt mjukare, knappt synlig */
+   
+}
+
+/* Utbildning – litelite mindre än roll 2 */
 .meta-yh .meta-program {
-   font-size: 0.85rem;
+   font-size: 0.94em;
+      /* 94% */
    color: var(--gray-700);
 }
 
-/* Skola */
+/* Skola – litelite mindre än utbildning */
 .meta-yh .meta-school {
-   font-size: 0.85rem;
+   font-size: 0.92em; /* 92% */
    color: var(--gray-700);
    max-width: 45ch;
    /* styr radbrytning*/
 }
 
-.meta-program .meta-dotnet {
+/* Akronym (.NET) – mjukare men inte mindre */
+.meta-program .meta-acronym {
    color: var(--gray-600);
    /* mjukare färg */
    font-weight: 400;
@@ -138,10 +156,21 @@ META (namn + roll)
    letter-spacing: 0.5px;
    /* gör .NET lite luftigare */
    opacity: 0.85;
-   font-size: 0.80rem;
+   font-size: 0.80rem; /* separat typografisk stil */
 }
 
-
+/* mjuk parentes,
+mindre än roll 2 ex. (kollega)*/
+.meta-role .meta-soft {
+   color: var(--gray-600);
+   /* mjukare ton */
+   font-weight: 400;
+   /* lättare vikt */
+   opacity: 0.9;
+   /* optiskt mjukare */
+   font-size: 0.85em;
+      /* /* 85% av roll 2*/
+}
 
 /* =========================================
 MEDIA QUERIES – RESPONSIV TYPOGRAFI
