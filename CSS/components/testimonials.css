@@ -5,6 +5,9 @@
 
    /* Modifierare: card-variant för testimonials */
 .card--bubble {
+   display: flex;
+   flex-direction: column;
+
    padding: var(--space-md);
 
    background: linear-gradient(to bottom,
@@ -19,124 +22,129 @@
    border-radius: 70px 10px 200px 10px;
 }
 
-   /* GRID – spacing hanteras av utilities (grid-auto + gap) */
-   .testimonials-grid {
-      /* inget behövs här just nu */
-   }
+.card--bubble .testimonial-meta {
+   margin-top: auto;
+}
 
-      /* =========================================
-      AVATAR
-      – Rund, mjuk, bubble-känsla
-      – Kan bytas till <img> senare
+
+/* GRID – spacing hanteras av utilities (grid-auto + gap) */
+.testimonials-grid {
+   /* inget behövs här just nu */
+}
+
+   /* =========================================
+   AVATAR
+   – Rund, mjuk, bubble-känsla
+   – Kan bytas till <img> senare
    ========================================= */
    
-   .testimonial-avatar {
-      width: 64px;
-      height: 64px;
+.testimonial-avatar {
+   width: 64px;
+   height: 64px;
 
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.6);
-      /* mjuk bubbla */
+   border-radius: 50%;
+   background: rgba(255, 255, 255, 0.6);
+   /* mjuk bubbla */
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--pink-500);
+   font-weight: 700;
+   font-size: 1.25rem;
+   color: var(--pink-500);
 
-      margin-bottom: var(--space-md);
-   }
+   margin-bottom: var(--space-md);
+}
 
-   /* Om du senare använder <img> istället för initialer */
-   .testimonial-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-   }
+/* Om du senare använder <img> istället för initialer */
+.testimonial-avatar img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
 
-   /* =========================================
-   CITAT
+/* =========================================
+CITAT
 ========================================= */
 
-   /* .testimonial-quote {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      font-weight: 500;
-      color: var(--gray-900);
-   } */
+/* .testimonial-quote {
+   font-size: 1.1rem;
+   line-height: 1.6;
+   font-weight: 500;
+   color: var(--gray-900);
+} */
 
-   .testimonial-quote {
-      font-size: clamp(0.85rem, 1.2vw, 1.2rem);
-      line-height: 1.55;
-      font-weight: 500;
-      color: var(--gray-900);
-   }
+.testimonial-quote {
+   font-size: clamp(0.85rem, 1.2vw, 1.2rem);
+   line-height: 1.55;
+   font-weight: 500;
+   color: var(--gray-900);
+}
    
-   /* =========================================
-   META (namn + roll)
+/* =========================================
+META (namn + roll)
 ========================================= */
 
-   .testimonial-meta {
-      margin-top: var(--space-md);
-      margin-bottom: var(--space-md);
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-   }
+.testimonial-meta {
+   margin-top: var(--space-md);
+   margin-bottom: var(--space-md);
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
 
-   .testimonial-meta span {
-      font-size: 0.9rem;
-      color: var(--gray-700);
-   }
+.testimonial-meta span {
+   font-size: 0.9rem;
+   color: var(--gray-700);
+}
 
-   .meta-wrap {
-      max-width: 45ch;
-   }
+.meta-wrap {
+   max-width: 45ch;
+}
 
-   .meta-yh {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem; /* liten spacing */
-   }
+.meta-yh {
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem; /* liten spacing */
+}
 
-      /* Roll */
-   .meta-yh .meta-role {
-      font-size: 0.9rem;
-      color: var(--gray-700);
-   }
+   /* Roll */
+.meta-yh .meta-role {
+   font-size: 0.9rem;
+   color: var(--gray-700);
+}
 
-   /* Utbildningsprogram */
-   .meta-yh .meta-program {
-      font-size: 0.85rem;
-      color: var(--gray-700);
-   }
+/* Utbildningsprogram */
+.meta-yh .meta-program {
+   font-size: 0.85rem;
+   color: var(--gray-700);
+}
 
-   /* Skola */
-   .meta-yh .meta-school {
-      font-size: 0.85rem;
-      color: var(--gray-700);
-      max-width: 45ch;
-      /* styr radbrytning*/
-   }
+/* Skola */
+.meta-yh .meta-school {
+   font-size: 0.85rem;
+   color: var(--gray-700);
+   max-width: 45ch;
+   /* styr radbrytning*/
+}
 
-   .meta-program .meta-dotnet {
-      color: var(--gray-600);
-      /* mjukare färg */
-      font-weight: 400;
-      /* normal vikt */
-      letter-spacing: 0.5px;
-      /* gör .NET lite luftigare */
-      opacity: 0.85;
-      font-size: 0.80rem;
-   }
+.meta-program .meta-dotnet {
+   color: var(--gray-600);
+   /* mjukare färg */
+   font-weight: 400;
+   /* normal vikt */
+   letter-spacing: 0.5px;
+   /* gör .NET lite luftigare */
+   opacity: 0.85;
+   font-size: 0.80rem;
+}
 
-   
 
-      /* =========================================
-   MEDIA QUERIES – RESPONSIV TYPOGRAFI
+
+/* =========================================
+MEDIA QUERIES – RESPONSIV TYPOGRAFI
 ========================================= */
 
 /* Tablet */
