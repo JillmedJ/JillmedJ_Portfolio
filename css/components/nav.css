@@ -156,6 +156,36 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    display: none;
 }
 
+/* MOBILFIX FÖR CTA */
+@media (max-width: 480px) {
+
+   /* Göm texten i CTA-knappen */
+   .nav-ul .cta .nav-text {
+      display: none;
+   }
+
+   /* Gör CTA-knappen till en ren ikonknapp */
+   .nav-ul .cta {
+      padding: 0.4rem;
+      background: none;
+      /* ingen gul bakgrund */
+      border: none;
+      /* ingen ram */
+      min-width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* Justera ikonen så den blir snygg */
+   .nav-ul .cta .icon {
+      width: 24px;
+      height: 24px;
+   }
+}
+
+
+
 /* MELLAN (≥ 650px) – ikon + text, horisontellt */
 /* Mellan: visa text + öka gap.
    Detta är nav-specifik responsiv logik → ligger här. */
