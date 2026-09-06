@@ -242,6 +242,20 @@
 ========================================= */
 @media (max-width: 480px) {
 
+   /* Minska space ovanför hero */
+      #hero.section {
+         padding-top: calc(var(--nav-height) + 0.5rem);
+      }
+   
+      /* Minska gap mellan hero-element */
+      #hero {
+         gap: var(--space-sm);
+      }
+   
+      /* Minska min-height så hero inte trycker ut layouten */
+      #hero {
+         min-height: auto;
+      }
    /* Minska font-size */
    #hero h1 {
       font-size: clamp(2rem, 6vw, 3rem);
