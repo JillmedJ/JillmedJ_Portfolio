@@ -23,3 +23,46 @@ console.log($0);
                 <input id="text-box">
                 <button id="text-box-submit">Submit</button>
                 <p id="output"> </p> */}
+
+                // ===============================
+// TESTIMONIALS SLIDESHOW
+// ===============================
+
+// Hämta alla slides
+const testimonialSlides = document.querySelectorAll(".testimonial-slide");
+
+// Index för aktuell slide
+let testimonialIndex = 0;
+
+// Funktion: visa en specifik slide
+function showTestimonialSlide(n) {
+    testimonialSlides.forEach(slide => slide.classList.remove("active"));
+    testimonialSlides[n].classList.add("active");
+}
+
+// Funktion: nästa slide
+function nextTestimonial() {
+    testimonialIndex = (testimonialIndex + 1) % testimonialSlides.length;
+    showTestimonialSlide(testimonialIndex);
+}
+
+// Funktion: föregående slide
+function prevTestimonial() {
+    testimonialIndex = (testimonialIndex - 1 + testimonialSlides.length) % testimonialSlides.length;
+    showTestimonialSlide(testimonialIndex);
+}
+
+// Auto‑rotation (var 6:e sekund)
+setInterval(nextTestimonial, 6000);
+
+// Navigation‑knappar
+const nextBtn = document.querySelector(".testimonial-next");
+const prevBtn = document.querySelector(".testimonial-prev");
+
+if (nextBtn && prevBtn) {
+    nextBtn.addEventListener("click", nextTestimonial);
+    prevBtn.addEventListener("click", prevTestimonial);
+}
+
+// Visa första slide direkt
+showTestimonialSlide(testimonialIndex);
