@@ -1,9 +1,9 @@
 /* ============================
-   TESTIMONIALS SECTION
-   Pastel Bubble Gradient Mix (2C-3)
-   ============================ */
+TESTIMONIALS SECTION
+Pastel Bubble Gradient Mix (2C-3)
+============================ */
 
-   /* Modifierare: card-variant för testimonials */
+/* Modifierare: card-variant för testimonials */
 .card--bubble {
    display: flex;
    flex-direction: column;
@@ -27,17 +27,10 @@
 }
 
 .testimonial-card {
-   padding: var(--space-md) var(--space-lg);
-   /* mer höjd, mindre sidluft */
-   max-width: 900px;
-   /* bredare kort */
+   padding: var(--space-sm) var(--space-lg);
+   max-width: 950px;
    margin: 0 auto;
-   /* centrerat */
-}
-
-/* GRID – spacing hanteras av utilities (grid-auto + gap) */
-.testimonials-grid {
-   /* inget behövs här just nu */
+   /* centrerar */
 }
 
 /* =========================================
@@ -76,14 +69,6 @@ AVATAR
 /* =========================================
 CITAT
 ========================================= */
-
-/* .testimonial-quote {
-   font-size: 1.1rem;
-   line-height: 1.6;
-   font-weight: 500;
-   color: var(--gray-900);
-} */
-
 .testimonial-quote {
    font-size: clamp(0.85rem, 1.2vw, 1.2rem);
    line-height: 1.55;
@@ -198,7 +183,7 @@ mindre än roll 2 ex. (kollega)*/
    max-width: 100%;
    margin: 0 auto;
 
-   min-height: 450px;
+   min-height: 350px;
 }
 
 /* Varje slide (döljs som standard) */
@@ -261,17 +246,6 @@ mindre än roll 2 ex. (kollega)*/
 .testimonial-dot.active {
    opacity: 1;
    background: var(--pink-600);
-}
-
-.testimonial-prev,
-.testimonial-next {
-   top: 45%;
-   /* lite högre upp */
-   padding: 1rem;
-   font-size: 2rem;
-   color: var(--pink-700);
-   z-index: 10;
-   /* ovanför allt */
 }
 
 /* =========================================
