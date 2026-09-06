@@ -92,8 +92,8 @@
    display: block;
    /* flex-wrap: wrap; */
    text-align: center;
-   /* justify-content: center;
-   gap: 0.25rem; */
+   /* justify-content: center; */
+   gap: 0.25rem; 
    white-space: normal; /* ← tillåt naturlig radbrytning */
 }
 /* =========================================
