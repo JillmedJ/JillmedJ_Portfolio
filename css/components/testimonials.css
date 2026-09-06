@@ -28,7 +28,7 @@ Pastel Bubble Gradient Mix (2C-3)
 
 .testimonial-card {
    padding: var(--space-sm) var(--space-lg);
-   max-width: 950px;
+   max-width: 950px; /* tror typ inte att denna biter? */
    margin: 0 auto;
    /* centrerar */
 }
@@ -183,7 +183,7 @@ mindre än roll 2 ex. (kollega)*/
    max-width: 100%;
    margin: 0 auto;
 
-   min-height: 350px;
+   min-height: 320px;
 }
 
 /* Varje slide (döljs som standard) */
@@ -207,11 +207,11 @@ mindre än roll 2 ex. (kollega)*/
    top: 50%; /* centrerar pilarna vertikalt*/
    transform: translateY(-50%); /* centrerar pilarna vertikalt*/
 
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-weight: bold;
    color: var(--pink-700);
 
-   padding: 1rem; /* ger klickyta*/
+   padding: 0.75rem; /* ger klickyta*/
    
    user-select: none;
 }
@@ -230,7 +230,7 @@ mindre än roll 2 ex. (kollega)*/
    display: flex;
    justify-content: center;
    gap: 0.5rem;
-   margin-top: 1rem;
+   margin-top: 1.5rem;
 }
 
 .testimonial-dot {
