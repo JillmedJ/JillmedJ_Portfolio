@@ -190,6 +190,7 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
    }
 
    /* Ikonens storlek */
