@@ -147,6 +147,16 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    flex-shrink: 0;
 }
 
+.nav-cta {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 1rem;
+   border-radius: var(--border-radius-md);
+   color: var(--pink-100);
+   text-decoration: none;
+}
+
 /* =========================================
    RESPONSIVE DESIGN
    ========================================= */
@@ -156,7 +166,9 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
    display: none;
 }
 
-/* MOBILFIX FÖR CTA */
+/* =========================================
+   NAV-CTA (mobil)
+   ========================================= */
 @media (max-width: 480px) {
 
    /* Göm texten i CTA-knappen */
@@ -164,27 +176,46 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
       display: none;
    }
 
-   /* Gör CTA-knappen till en ren ikonknapp */
+   /* Ren ikonknapp */
    .nav-ul .cta {
-      padding: 0.4rem;
+      padding: 0.5rem;
       background: none;
       /* ingen gul bakgrund */
-      border: none;
-      /* ingen ram */
+      border: 1px solid var(--pink-200);
+      color: var(--pink-200);
+
+      border-radius: var(--border-radius-md);
+
       min-width: auto;
       display: flex;
       align-items: center;
       justify-content: center;
    }
 
-   /* Justera ikonen så den blir snygg */
-   .nav-ul .cta .icon {
-      width: 24px;
-      height: 24px;
+   /* Ikonens storlek */
+   .nav-cta .icon {
+      /* width: 24px;
+      height: 24px; */
+
+      width: 26px;
+      height: 26px;
+      stroke-width: 2.2;
+   }
+
+   /* Inaktivera hover-effekt */
+   .nav-cta:hover {
+      background: none;
+      color: var(--pink-200);
+      transform: none;
+   }
+
+   /* Inaktivera active-effekt */
+   .nav-cta.active {
+      background: none;
+      color: var(--pink-200);
+      font-weight: 500;
    }
 }
-
-
 
 /* MELLAN (≥ 650px) – ikon + text, horisontellt */
 /* Mellan: visa text + öka gap.
