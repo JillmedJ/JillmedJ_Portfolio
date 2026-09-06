@@ -33,6 +33,11 @@ Pastel Bubble Gradient Mix (2C-3)
    /* centrerar */
 }
 
+/* Override för card-basen i testimonials */
+.testimonial-slideshow .testimonial-card {
+   padding: var(--space-xxs) var(--space-lg);
+}
+
 /* =========================================
 AVATAR
 – Rund, mjuk, bubble-känsla
