@@ -356,7 +356,7 @@
 @media (max-width: 780px) {
    #hero {
       justify-content: flex-start;
-      padding-top: calc(var(--nav-height) + 2rem);
+      padding-top: calc(var(--nav-height) - 05rem);
    }
 
    #hero-title {
