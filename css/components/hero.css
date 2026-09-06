@@ -244,7 +244,8 @@
 
    /* Minska space ovanför hero */
       #hero.section {
-         padding-top: calc(var(--nav-height) - 0.2rem);
+         padding-top: calc(var(--nav-height) - 0.5rem);
+         padding-inline: var(--space-sm);
       }
    
       /* Minska gap mellan hero-element */
@@ -368,7 +369,7 @@
 @media (max-height: 700px) {
    #hero {
       justify-content: flex-start;
-      padding-top: calc(var(--nav-height) + 2rem);
+      padding-top: calc(var(--nav-height) - 0.5rem);
       min-height: auto;
    }
 
