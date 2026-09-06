@@ -88,10 +88,13 @@
 }
 
 #hero-title {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 0.25rem;
+   /* display: flex; */
+   display: block;
+   /* flex-wrap: wrap; */
+   text-align: center;
+   /* justify-content: center;
+   gap: 0.25rem; */
+   white-space: normal; /* ← tillåt naturlig radbrytning */
 }
 /* =========================================
    Dasheriet mobile first
@@ -100,6 +103,13 @@
 .h1-dash {
    margin-inline: 0.25rem;
    display: inline;
+}
+
+.h1-name,
+.h1-dash,
+.h1-role {
+   display: inline;
+   /* ← kritiskt: förhindrar att de bryts separat */
 }
 
 /* =========================================
