@@ -93,6 +93,27 @@
    – Alla samlade längst ned (best practice)
    – Gridens responsiva kolumner
 ========================================= */
+/* MOBIL */
+@media (max-width: 480px) {
+      .footer-signature {
+            display: none;
+      }
+
+      .section-footer-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-md);
+      }
+
+      .footer-cta {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+      }
+}
+
+
 /* TABLET */
 @media (min-width: 600px) {
       #projects .grid-auto {
