@@ -274,6 +274,7 @@
       min-width: 120px;
       height: auto;
       padding-bottom: 0;
+      margin-bottom: -0.4rem;
    }
 
    .site-footer-brand {
