@@ -266,6 +266,20 @@
 /* =========================================
       RESPONSIVE SECTION-FOOTER
       ========================================= */
+@media (max-width: 480px) {
+
+   .site-footer-logo,
+   .site-footer-signature {
+      max-width: 140px;
+      min-width: 140px;
+      height: auto;
+   }
+
+   .site-footer-brand {
+      gap: var(--space-sm);
+   }
+}
+
 
 @media (min-width: 785px) {
    .footer-cta {
