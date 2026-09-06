@@ -244,7 +244,7 @@
 
    /* Minska space ovanför hero */
       #hero.section {
-         padding-top: calc(var(--nav-height) - 0.5rem);
+         padding-top: calc(var(--nav-height) - 0.2rem);
       }
    
       /* Minska gap mellan hero-element */
