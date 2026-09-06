@@ -269,8 +269,12 @@
 @media (max-width: 480px) {
 
    #site-footer {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding-top: var(--space-md);
+      padding-bottom: var(--space-md);
+   }
+
+   .site-footer .container {
+      gap: var(--space-md);
    }
 
    .site-footer-logo,
@@ -278,13 +282,6 @@
       max-width: 120px;
       min-width: 120px;
       height: auto;
-      
-      padding-top: 0.2rem;
-      padding-bottom: 0.2rem;
-      margin-top: -0.4rem;
-      /* ← drar upp dem */
-      margin-bottom: -0.4rem;
-      /* ← drar ned dem */
    }
 
    .site-footer-brand {
