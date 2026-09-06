@@ -9,7 +9,7 @@
    sektionens yttre ram
 ========================================= */
 #hero.section {
-   padding-top: calc(var(--nav-height) + 1.5rem);
+   padding-top: calc(var(--nav-height) - 0.2rem);
    padding-inline: var(--space-md);
 }
 
