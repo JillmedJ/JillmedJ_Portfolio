@@ -99,14 +99,15 @@
             display: none;
       }
 
-      /* .section-footer-row {
+      .section-footer-row {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
             align-items: center;
             gap: var(--space-md);
       }
 
-      .footer-cta {
+      /* .footer-cta {
             width: 100%;
             text-align: center;
             justify-content: center;
