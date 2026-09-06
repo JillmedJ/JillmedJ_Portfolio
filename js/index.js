@@ -66,3 +66,65 @@ if (nextBtn && prevBtn) {
 
 // Visa första slide direkt
 showTestimonialSlide(testimonialIndex);
+
+// ===============================
+// Pagination dots
+// ===============================
+
+const dotsContainer = document.querySelector(".testimonial-dots");
+
+// Skapa en dot för varje slide
+testimonialSlides.forEach((_, index) => {
+    const dot = document.createElement("div");
+    dot.classList.add("testimonial-dot");
+    dot.addEventListener("click", () => {
+        testimonialIndex = index;
+        showTestimonialSlide(testimonialIndex);
+        updateDots();
+    });
+    dotsContainer.appendChild(dot);
+});
+
+// Uppdatera dots när slide ändras
+function updateDots() {
+    const dots = document.querySelectorAll(".testimonial-dot");
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[testimonialIndex].classList.add("active");
+}
+
+// Kör en gång vid start
+updateDots();
+
+
+// ===============================
+// Swipe på mobil
+// ===============================
+
+let startX = 0;
+
+document.querySelector(".testimonial-slideshow").addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+document.querySelector(".testimonial-slideshow").addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+
+    if (startX - endX > 50) {
+        nextTestimonial(); // swipe vänster → nästa
+    } else if (endX - startX > 50) {
+        prevTestimonial(); // swipe höger → föregående
+    }
+});
+
+let autoSlide = setInterval(nextTestimonial, 6000);
+
+const slideshow = document.querySelector(".testimonial-slideshow");
+
+slideshow.addEventListener("mouseenter", () => {
+    clearInterval(autoSlide);
+});
+
+slideshow.addEventListener("mouseleave", () => {
+    autoSlide = setInterval(nextTestimonial, 6000);
+});
+

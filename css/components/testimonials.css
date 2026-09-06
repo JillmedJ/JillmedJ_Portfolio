@@ -26,6 +26,15 @@
    margin-top: auto;
 }
 
+.testimonial-card {
+   padding: var(--space-md) var(--space-lg);
+   /* mer höjd, mindre sidluft */
+   max-width: 900px;
+   /* bredare kort */
+   margin: 0 auto;
+   /* centrerat */
+}
+
 /* GRID – spacing hanteras av utilities (grid-auto + gap) */
 .testimonials-grid {
    /* inget behövs här just nu */
@@ -188,6 +197,8 @@ mindre än roll 2 ex. (kollega)*/
    /* gör att pilarna kan placeras absolut */
    max-width: 100%;
    margin: 0 auto;
+
+   min-height: 450px;
 }
 
 /* Varje slide (döljs som standard) */
@@ -205,28 +216,63 @@ mindre än roll 2 ex. (kollega)*/
 .testimonial-prev,
 .testimonial-next {
    cursor: pointer;
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
+   position: absolute; /* gör att pilarna kan placeras fritt */
+   z-index: 5; /* pilarna ligger ovanför kortet */
 
-   padding: 1rem;
+   top: 50%; /* centrerar pilarna vertikalt*/
+   transform: translateY(-50%); /* centrerar pilarna vertikalt*/
+
    font-size: 2rem;
    font-weight: bold;
-
    color: var(--pink-700);
+
+   padding: 1rem; /* ger klickyta*/
+   
    user-select: none;
 }
 
 /* Placering */
 .testimonial-prev {
-   left: 0;
+   left: 1rem; /* inne i kortet */
 }
 
 .testimonial-next {
-   right: 0;
+   right: 1rem; /* inne i kortet */
 }
 
+/* Pagination dots */
+.testimonial-dots {
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+   margin-top: 1rem;
+}
 
+.testimonial-dot {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: var(--pink-300);
+   opacity: 0.5;
+   cursor: pointer;
+   transition: opacity 0.3s ease;
+}
+
+.testimonial-dot.active {
+   opacity: 1;
+   background: var(--pink-600);
+}
+
+.testimonial-prev,
+.testimonial-next {
+   top: 45%;
+   /* lite högre upp */
+   padding: 1rem;
+   font-size: 2rem;
+   color: var(--pink-700);
+   z-index: 10;
+   /* ovanför allt */
+}
 
 /* =========================================
 MEDIA QUERIES – RESPONSIV TYPOGRAFI
@@ -239,6 +285,13 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    .testimonial-next {
       font-size: 1.5rem;
       padding: 0.5rem;
+   }
+   .testimonial-prev {
+      left: -0.5rem;
+   }
+
+   .testimonial-next {
+      right: -0.5rem;
    }
 }
 
