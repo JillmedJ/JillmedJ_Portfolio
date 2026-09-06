@@ -588,13 +588,11 @@
 
                     <h2 class="section-title text-center">Vad andra säger</h2>
 
+                    <!-- SLIDES -->
                     <div class="testimonial-slideshow">
-                        
-                        <!-- SLIDES -->
-                        
 
-                            <!-- TESTIMONIAL CARD -->
-                        <div class="testimonial-slide">
+                        <!-- TESTIMONIAL CARD -->
+                        <div class="testimonial-slide active">
                             <article class="card card--bubble testimonial-card flow-whole">
                             
                                 <!-- AVATAR (du kan byta till img senare) -->
@@ -736,10 +734,12 @@
                             </article>
                         </div>
                             <!-- Du kan duplicera fler cards här -->
-
+                            <!-- Navigation arrows -->
+                        <a class="testimonial-prev">&#10094;</a>
+                        <a class="testimonial-next">&#10095;</a>
                         
-                    </div>
-                </div>
+                    </div> <!-- END slideshow -->
+                </div> <!-- END container -->
             </section>
 
             <!-- <section class="section" id="contact"> -->
@@ -956,7 +956,7 @@
                             <!-- SUBMIT -->
                             <div class="flex-center justify-center">
 
-                                <button class="cta no-yellow-submit" type="submit">
+                                <button id="text-box-submit" class="cta no-yellow-submit" type="submit">
                                     <!-- ICON send -->
                                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1126,6 +1126,6 @@
 
         </footer>
 
-        <script src="js/index.js"></script>
+        <script src="js/index.js" defer></script>
     </body>
 </html>

@@ -1,4 +1,5 @@
 
+console.log("JS körs!");
 
 // Kod för text-box i Contact me-section.
 let usersCommunication;
@@ -15,7 +16,6 @@ document.getElementById("text-box-submit").onclick = function(){
 
 // #####################################################################
 
-console.log($0);
 {/* <h2 id="text-box-h2">Kommunicera med mig!</h2>
 
                 <label>Vad vill du förmedla? </label>
