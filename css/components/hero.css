@@ -95,6 +95,7 @@
    /* justify-content: center; */
    gap: 0; 
    white-space: normal; /* ← tillåt naturlig radbrytning */
+   max-width: 100%;
 }
 /* =========================================
    Dasheriet mobile first
@@ -110,14 +111,6 @@
 .h1-role {
    display: inline;
    /* ← kritiskt: förhindrar att de bryts separat */
-}
-
-/* =========================================
-   andra rubriker
-========================================= */
-/* Låt rubriken få plats på en rad i större lägen */
-#hero-title {
-   max-width: none;
 }
 
 /* =========================================
@@ -257,6 +250,12 @@
 @media (min-width: 768px) {
    #hero.section {
       padding-top: calc(var(--nav-height) + 3rem);
+   }
+
+   #hero-title {
+      max-width: none;
+      white-space: nowrap;
+      /* ← gör att rubriken hålls på en rad */
    }
 
    #hero {
