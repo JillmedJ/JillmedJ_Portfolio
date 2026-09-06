@@ -178,7 +178,7 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
 
    /* Ren ikonknapp */
    .nav-ul .cta {
-      padding: 0.6rem;
+      padding: 0.4rem;
       background: none;
       /* ingen gul bakgrund */
       border: 1px solid var(--pink-200);
@@ -186,7 +186,7 @@ LÄNKARNA (ikon + text) Detta är nav-specifikt → ligger här.
 
       border-radius: var(--border-radius-md);
 
-      min-width: 48px;
+      min-width: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
