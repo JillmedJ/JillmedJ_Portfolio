@@ -3,12 +3,22 @@
    – Sektionens övergripande styling
    – Text, tagline, container
 ========================================= */
+.project-card.flow-whole {
+      gap: var(--space-md);
+      /* mindre avstånd mellan element */
+}
 
 #projects .section-tagline {
       font-size: 1.5rem;
       max-width: 55ch; /* ch är en typografisk enhet som alltså ger 1ch per teckenbredd.*/
       margin: 0 auto var(--space-sm);
       text-align: center;
+}
+
+.project-card img {
+      max-height: 180px;
+      object-fit: contain;
+      margin-inline: auto;
 }
 
 /* För att pilarna inte ska hamna över footern */
@@ -39,6 +49,9 @@
                   var(--yellow-300) 80%,
                   var(--yellow-200) 90%,
                   var(--yellow-100) 100%);
+
+      padding: 1rem;
+            /* mindre padding än default */
 }
 
 /* =========================================
@@ -51,7 +64,7 @@
 .project-title {
       font-size: 1.3rem;
       font-weight: 600;
-     /* padding: 0.6rem 1rem; */
+     padding: 0.6rem 1rem;
       text-align: center;
 
       background-color: var(--pink-400); /* Bakgrundsfärg */
@@ -211,4 +224,7 @@
       .projects-grid {
             grid-template-columns: repeat(3, 1fr);
       }
+      .project-card {
+                  max-height: 480px;
+                  overflow: hidden;   }
 }
