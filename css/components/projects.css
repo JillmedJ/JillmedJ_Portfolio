@@ -89,10 +89,20 @@
 }
 
 /* =========================================
+   Pilarna
+========================================= */
+.project-prev,
+.project-next {
+      display: none;
+      /* göm som standard (desktop) */
+}
+/* =========================================
    MEDIA QUERIES
    – Alla samlade längst ned (best practice)
    – Gridens responsiva kolumner
 ========================================= */
+
+
 /* MOBIL */
 @media (max-width: 480px) {
       .footer-signature {
