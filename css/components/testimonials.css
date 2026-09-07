@@ -280,8 +280,7 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    }
 
    .testimonial-quote {
-      font-weight: 500;
-      /* lite tyngre */
+      font-weight: 450;
       letter-spacing: 0;
       /* mindre luft → mer tyngd */
       opacity: 1;
@@ -300,6 +299,7 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
       /* optiskt mjukare */
       color: var(--gray-600);
       align-self: flex-start;
+      font-weight: lighter;
    }
    .testimonial-avatar {
       width: 56px;
