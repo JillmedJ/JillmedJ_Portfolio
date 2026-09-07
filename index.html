@@ -435,10 +435,10 @@
                     </header>
 
                     <!-- GRID med cards -->
-                    <div class="grid-auto">
+                    <div class="projects-grid">
 
                         <!-- CARD 1 -->
-                        <article class="card card--project flow-whole">
+                        <article class="card card--project flow-whole project-card">
                             <img src="visuals/images/logo-transparent.svg" alt="Förhandsbild av kommande projekt">
 
                             <h3 class="project-title flex-gap flex-center">
@@ -471,7 +471,7 @@
                         </article>
 
                         <!-- CARD 2 -->
-                        <article class="card card--project flow-whole">
+                        <article class="card card--project flow-whole project-card">
                             <img src="visuals/images/logo-transparent.svg" alt="Förhandsbild av kommande projekt">
 
                             <h3 class="project-title flex-gap flex-center">
@@ -504,7 +504,7 @@
                         </article>
 
                         <!-- CARD 3 -->
-                        <article class="card card--project flow-whole">
+                        <article class="card card--project flow-whole project-card">
                             <img src="visuals/images/logo-transparent.svg" alt="Förhandsbild av kommande projekt">
 
                             <h3 class="project-title flex-gap flex-center">
@@ -535,6 +535,9 @@
                             </a>
                         </article>
                     </div>
+
+                    <div class="project-prev" onclick="nextProject(-1)">❮</div>
+                    <div class="project-next" onclick="nextProject(1)">❯</div>
 
                     <!-- FOOTER-LÄNKAR -->
                     <footer class="section-footer">

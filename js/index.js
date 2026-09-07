@@ -1,7 +1,8 @@
 
-console.log("JS körs!");
+// ===============================
+// CONTACT ME - Kod för text-box (i Contact me-section)
+// ===============================
 
-// Kod för text-box i Contact me-section.
 let usersCommunication;
 document.getElementById("text-box-submit").onclick = function(){
     // Hämta värdet från input-fältet
@@ -24,7 +25,7 @@ document.getElementById("text-box-submit").onclick = function(){
                 <button id="text-box-submit">Submit</button>
                 <p id="output"> </p> */}
 
-                // ===============================
+// ===============================
 // TESTIMONIALS SLIDESHOW
 // ===============================
 
@@ -127,4 +128,23 @@ slideshow.addEventListener("mouseenter", () => {
 slideshow.addEventListener("mouseleave", () => {
     autoSlide = setInterval(nextTestimonial, 6000);
 });
+
+// ===============================
+// PROJECTS SLIDESHOW
+// ===============================
+let projectIndex = 0;
+showProject(projectIndex);
+
+function nextProject(n) {
+   showProject(projectIndex += n);
+}
+
+function showProject(n) {
+   let cards = document.querySelectorAll(".project-card");
+   if (n >= cards.length) projectIndex = 0;
+   if (n < 0) projectIndex = cards.length - 1;
+
+   cards.forEach(card => card.classList.remove("active"));
+   cards[projectIndex].classList.add("active");
+}
 

@@ -108,6 +108,65 @@
       }
 
 }
+@media (max-width: 600px) {
+      .projects-grid {
+            display: block;
+            /* stänger av grid */
+      }
+
+      .project-card {
+            display: none;
+            /* döljs som standard */
+      }
+
+      .project-card.active {
+            display: block;
+            /* visas av JS */
+      }
+            /* Slideshow-pilar */
+            .project-prev,
+            .project-next {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  color: var(--pink-700);
+                  padding: 0.5rem;
+                  cursor: pointer;
+      
+                  /* Bubble-känsla */
+                  background: rgba(255, 255, 255, 0.45);
+                  border-radius: 50%;
+                  backdrop-filter: blur(4px);
+      
+                  /* Klickyta */
+                  width: 2.2rem;
+                  height: 2.2rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+      
+                  z-index: 10;
+                  /* ovanför kortet */
+            }
+      
+            /* Placering */
+            .project-prev {
+                  left: 0.5rem;
+                  /* lite inåt */
+            }
+      
+            .project-next {
+                  right: 0.5rem;
+                  /* lite inåt */
+            }
+      
+            /* För att pilarna inte ska hamna över footern */
+            #projects {
+                  position: relative;
+            }
+}
 
 
 /* TABLET */

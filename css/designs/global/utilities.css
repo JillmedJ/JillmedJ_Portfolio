@@ -210,6 +210,12 @@ Fördelar: inga margin‑konflikter, inga konstiga effekter i grid, inga “för
     /* default: 1 kolumn på mobil */
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
 /* =========================================
 4) FLEX-SYSTEM
 ========================================= */
