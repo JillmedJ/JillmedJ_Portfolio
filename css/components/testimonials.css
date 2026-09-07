@@ -275,28 +275,28 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    .testimonial-prev {
       left: -0.5rem;
    }
-
    .testimonial-next {
       right: -0.5rem;
    }
 
-      .testimonial-quote {
-         font-weight: 600;
-         /* lite tyngre */
-         letter-spacing: 0;
-         /* mindre luft → mer tyngd */
-         opacity: 1;
-         /* full styrka */
-         text-indent: 0.5rem;
-         /* lite mindre indent */
-      }
-   
-      .testimonial-meta span {
-         font-size: 0.85rem;
-         /* lite mindre → citatet får fokus */
-         opacity: 0.9;
-         /* optiskt mjukare */
-      }
+   .testimonial-quote {
+      font-weight: 600;
+      /* lite tyngre */
+      letter-spacing: 0;
+      /* mindre luft → mer tyngd */
+      opacity: 1;
+      /* full styrka */
+      text-indent: 0.5rem;
+      /* lite mindre indent */
+      font-size: 1.1rem;
+   }
+
+   .testimonial-meta span {
+      font-size: 0.85rem;
+      /* lite mindre → citatet får fokus */
+      opacity: 0.9;
+      /* optiskt mjukare */
+   }
 }
 
 /* Tablet */
