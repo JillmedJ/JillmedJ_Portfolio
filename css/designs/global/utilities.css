@@ -52,6 +52,12 @@ UTILITIES.CSS – Layout & struktur
     padding: 0 1rem;
 }
 
+.container-wide {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 /* Smalare container (t.ex. textblock) */
 .container-narrow {
     max-width: 800px;
