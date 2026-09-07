@@ -90,7 +90,9 @@ CITAT
    opacity: 0.98;
    /* margin-bottom: 0.5rem; */
    font-family: 'Handlee', sans-serif;
-   min-width: 20ch;
+   text-wrap: balance;
+   hyphens: auto;
+   margin-bottom: var(--space-sm);
 }
    
 /* =========================================
@@ -98,7 +100,7 @@ META (namn + roll)
 ========================================= */
 
 .testimonial-meta {
-   margin-top: var(--space-sm);
+   margin-top: var(--space-md);
    margin-bottom: var(--space-sm);
    display: flex;
    flex-direction: column;
@@ -320,6 +322,5 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    .meta-school {
       max-width: 70ch;
       /* bredare text → färre rader → lägre kort */
-      min-width: 40ch;
    }
 }
