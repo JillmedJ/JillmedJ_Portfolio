@@ -4,7 +4,7 @@
    – Text, tagline, container
 ========================================= */
 .project-card.flow-whole {
-      gap: var(--space-md);
+      gap: var(--space-sm);
       /* mindre avstånd mellan element */
 }
 
@@ -64,7 +64,7 @@
 .project-title {
       font-size: 1.3rem;
       font-weight: 600;
-     padding: 0.6rem 1rem;
+      padding: 0.6rem 1rem;
       text-align: center;
 
       background-color: var(--pink-400); /* Bakgrundsfärg */
