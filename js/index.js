@@ -137,6 +137,7 @@ showProject(projectIndex);
 
 function nextProject(n) {
    showProject(projectIndex += n);
+   updateProjectDots();
 }
 
 function showProject(n) {
@@ -146,5 +147,74 @@ function showProject(n) {
 
    cards.forEach(card => card.classList.remove("active"));
    cards[projectIndex].classList.add("active");
+
+   updateProjectDots();
 }
+
+// ===============================
+// PROJECTS — Pagination dots
+// ===============================
+
+const projectDotsContainer = document.querySelector(".projects-dots");
+const projectCards = document.querySelectorAll(".project-card");
+
+// Skapa en dot för varje project-card
+projectCards.forEach((_, index) => {
+    const dot = document.createElement("div");
+    dot.classList.add("project-dot");
+
+    dot.addEventListener("click", () => {
+        projectIndex = index;
+        showProject(projectIndex);
+        updateProjectDots();
+    });
+
+    projectDotsContainer.appendChild(dot);
+});
+
+// Uppdatera dots när slide ändras
+function updateProjectDots() {
+    const dots = document.querySelectorAll(".project-dot");
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[projectIndex].classList.add("active");
+}
+
+// Kör en gång vid start
+updateProjectDots();
+
+// ===============================
+// PROJECTS — Swipe på mobil
+// ===============================
+
+let projectStartX = 0;
+
+document.querySelector(".projects-grid").addEventListener("touchstart", (e) => {
+    projectStartX = e.touches[0].clientX;
+});
+
+document.querySelector(".projects-grid").addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+
+    if (projectStartX - endX > 50) {
+        nextProject(1); // swipe vänster → nästa
+    } else if (endX - projectStartX > 50) {
+        nextProject(-1); // swipe höger → föregående
+    }
+});
+
+// ===============================
+// PROJECTS — Hover pause (om du lägger till auto-rotation senare)
+// ===============================
+
+const projectsSlideshow = document.querySelector(".projects-grid");
+
+projectsSlideshow.addEventListener("mouseenter", () => {
+    clearInterval(projectAutoSlide);
+});
+
+projectsSlideshow.addEventListener("mouseleave", () => {
+    projectAutoSlide = setInterval(() => nextProject(1), 6000);
+});
+
+let projectAutoSlide = setInterval(() => nextProject(1), 6000);
 
