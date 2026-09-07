@@ -11,16 +11,19 @@
       text-align: center;
 }
 
+/* För att pilarna inte ska hamna över footern */
+#projects {
+      position: relative;
+}
 /* =========================================
    GRID
    – Baslayout för cardsen
    – 1 kolumn på mobil
 ========================================= */
-#projects .grid-auto {
+/* #projects .grid-auto {
       display: grid;
       grid-template-columns: 1fr;
-      /* gap hanteras av utilities.css (flow-whole i cardsen) */
-}
+} */
 
 /* =========================================
    CARD
@@ -77,9 +80,6 @@
       mask-composite: exclude; 
       z-index: -1; /* lägger border bakom innehållet */
 }
-
-
-
 /* =========================================
    CTA I CARD
    – margin-top: auto fungerar tack vare flow-whole (flex-col)
@@ -101,8 +101,6 @@
    – Alla samlade längst ned (best practice)
    – Gridens responsiva kolumner
 ========================================= */
-
-
 /* MOBIL */
 @media (max-width: 480px) {
       .footer-signature {
@@ -133,62 +131,58 @@
             display: block;
             /* visas av JS */
       }
-            /* Slideshow-pilar */
-            .project-prev,
-            .project-next {
-                  position: absolute;
-                  top: 50%;
-                  transform: translateY(-50%);
-                  font-size: 1.6rem;
-                  font-weight: 700;
-                  color: var(--pink-700);
-                  padding: 0.5rem;
-                  cursor: pointer;
-      
-                  /* Bubble-känsla */
-                  background: rgba(255, 255, 255, 0.45);
-                  border-radius: 50%;
-                  backdrop-filter: blur(4px);
-      
-                  /* Klickyta */
-                  width: 2.2rem;
-                  height: 2.2rem;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-      
-                  z-index: 10;
-                  /* ovanför kortet */
-            }
-      
-            /* Placering */
-            .project-prev {
-                  left: 0.5rem;
-                  /* lite inåt */
-            }
-      
-            .project-next {
-                  right: 0.5rem;
-                  /* lite inåt */
-            }
-      
-            /* För att pilarna inte ska hamna över footern */
-            #projects {
-                  position: relative;
-            }
-}
+      /* Slideshow-pilar */
+      .project-prev,
+      .project-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--pink-700);
+            padding: 0.5rem;
+            cursor: pointer;
 
+            /* Bubble-känsla */
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 50%;
+            backdrop-filter: blur(4px);
+
+            /* Klickyta */
+            width: 2.2rem;
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            z-index: 10;
+            /* ovanför kortet */
+      }
+      
+      /* Placering */
+      .project-prev {
+            left: 0.5rem;
+            /* lite inåt */
+      }
+
+      .project-next {
+            right: 0.5rem;
+            /* lite inåt */
+      }
+}
 
 /* TABLET */
 @media (min-width: 600px) {
-      #projects .grid-auto {
+      .projects-grid {
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
       }
 }
 
 /* DESKTOP */
 @media (min-width: 900px) {
-      #projects .grid-auto {
+      .projects-grid {
             grid-template-columns: repeat(3, 1fr);
       }
 }
