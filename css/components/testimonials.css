@@ -271,8 +271,6 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    .testimonial-next {
       font-size: 1.5rem;
       padding: 0.5rem;
-      background: rgba(255, 255, 255, 0.4);
-      border-radius: 50%;
    }
    .testimonial-prev {
       left: 0.25rem;
@@ -301,11 +299,13 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
       opacity: 0.9;
       /* optiskt mjukare */
       color: var(--gray-600);
+      align-self: flex-start;
    }
    .testimonial-avatar {
       width: 56px;
       height: 56px;
-      font-size: 1.1rem;  
+      font-size: 1.1rem;
+      align-self: flex-start;
    }
 }
 
