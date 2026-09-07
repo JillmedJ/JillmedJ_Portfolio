@@ -62,7 +62,9 @@ AVATAR
    font-size: 1.25rem;
    color: var(--pink-500);
 
-   margin-bottom: var(--space-md);
+   margin-bottom: var(--space-sm);
+   margin-top: var(--space-sm);
+   margin-right: var(--space-lg);
 }
 
 /* Om du senare använder <img> istället för initialer */
@@ -164,6 +166,7 @@ META (namn + roll)
    /* gör .NET lite luftigare */
    opacity: 0.85;
    font-size: 0.80rem; /* separat typografisk stil */
+   
 }
 
 /* mjuk parentes,
@@ -317,6 +320,6 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    .meta-school {
       max-width: 70ch;
       /* bredare text → färre rader → lägre kort */
-      max-width: 40ch;
+      min-width: 40ch;
    }
 }
