@@ -69,7 +69,7 @@ if (nextBtn && prevBtn) {
 showTestimonialSlide(testimonialIndex);
 
 // ===============================
-// Pagination dots
+// Testimonials - Pagination dots
 // ===============================
 
 const dotsContainer = document.querySelector(".testimonial-dots");
@@ -98,7 +98,7 @@ updateDots();
 
 
 // ===============================
-// Swipe på mobil
+// Testimonials - Swipe på mobil
 // ===============================
 
 let startX = 0;
@@ -129,27 +129,15 @@ slideshow.addEventListener("mouseleave", () => {
     autoSlide = setInterval(nextTestimonial, 6000);
 });
 
+
+
+
+
+
 // ===============================
 // PROJECTS SLIDESHOW
 // ===============================
 let projectIndex = 0;
-showProject(projectIndex);
-
-function nextProject(n) {
-   showProject(projectIndex += n);
-   updateProjectDots();
-}
-
-function showProject(n) {
-   let cards = document.querySelectorAll(".project-card");
-   if (n >= cards.length) projectIndex = 0;
-   if (n < 0) projectIndex = cards.length - 1;
-
-   cards.forEach(card => card.classList.remove("active"));
-   cards[projectIndex].classList.add("active");
-
-   updateProjectDots();
-}
 
 // ===============================
 // PROJECTS — Pagination dots
@@ -179,8 +167,35 @@ function updateProjectDots() {
     dots[projectIndex].classList.add("active");
 }
 
+// ===============================
+// PROJECTS — Visa första slide EFTER dots finns
+// ===============================
 // Kör en gång vid start
 updateProjectDots();
+showProject(projectIndex);
+
+// ===============================
+// PROJECTS — Slideshow-funktioner
+// ===============================
+
+function nextProject(n) {
+   showProject(projectIndex += n);
+   updateProjectDots();
+}
+
+function showProject(n) {
+   let cards = document.querySelectorAll(".project-card");
+   if (n >= cards.length) projectIndex = 0;
+   if (n < 0) projectIndex = cards.length - 1;
+
+   cards.forEach(card => card.classList.remove("active"));
+   cards[projectIndex].classList.add("active");
+
+}
+
+
+
+
 
 // ===============================
 // PROJECTS — Swipe på mobil
