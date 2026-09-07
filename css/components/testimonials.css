@@ -8,7 +8,7 @@ Pastel Bubble Gradient Mix (2C-3)
    display: flex;
    flex-direction: column;
 
-   padding: var(--space-md);
+   /* padding: var(--space-sm); */
 
    background: linear-gradient(to bottom,
          var(--pink-100) 0%,
@@ -27,15 +27,17 @@ Pastel Bubble Gradient Mix (2C-3)
 }
 
 .testimonial-card {
-   padding: var(--space-sm) var(--space-lg);
+   /* padding: var(--space-xs) var(--space-lg); */
+   display: block;
+      /* viktigt: slår ut flex från .card */
    max-width: 950px; /* tror typ inte att denna biter? */
    margin: 0 auto;
    /* centrerar */
 }
 
-/* Override för card-basen i testimonials */
+/* padding inom testimonial-cardsen = behåll */
 .testimonial-slideshow .testimonial-card {
-   padding: var(--space-xxs) var(--space-lg);
+   padding: var(--space-sm) var(--space-lg);
 }
 
 /* =========================================
@@ -79,7 +81,7 @@ CITAT
    line-height: 1.55;
    font-weight: 500;
    color: var(--gray-900);
-   max-width: 45ch;
+   /* max-width: 45ch; */
    margin-inline: auto;
    text-indent: 0.75rem;
    letter-spacing: 0.1px;
@@ -134,7 +136,6 @@ META (namn + roll)
 
    opacity: 0.97;
    /*optiskt, minimalt mjukare, knappt synlig */
-   
 }
 
 /* Utbildning – litelite mindre än roll 2 */
@@ -285,6 +286,7 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
    .testimonial-quote {
       font-size: 1.5rem;
       line-height: 1.7;
+      max-width: 60ch;
    }
 
    .testimonial-meta span {
@@ -307,5 +309,12 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
 
    .testimonial-meta span {
       font-size: 1.05rem;
+   }
+
+   .testimonial-quote,
+   .meta-wrap,
+   .meta-school {
+      max-width: 70ch;
+      /* bredare text → färre rader → lägre kort */
    }
 }
