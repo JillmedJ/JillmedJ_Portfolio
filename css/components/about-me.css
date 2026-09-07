@@ -23,6 +23,8 @@
     border-radius: var(--border-radius-md);
 }
 
+
+
 .about-block:hover {
     transform: translateY(-6px);
     /* lyfter kortet lite */
