@@ -5,9 +5,9 @@
 ========================================= */
 
 #projects .section-tagline {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       max-width: 55ch; /* ch är en typografisk enhet som alltså ger 1ch per teckenbredd.*/
-      margin: 0 auto var(--space-lg);
+      margin: 0 auto var(--space-sm);
       text-align: center;
 }
 
@@ -51,7 +51,7 @@
 .project-title {
       font-size: 1.3rem;
       font-weight: 600;
-      padding: 0.6rem 1rem;
+     /* padding: 0.6rem 1rem; */
       text-align: center;
 
       background-color: var(--pink-400); /* Bakgrundsfärg */
@@ -64,6 +64,7 @@
 
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             /* mjuk skugga */
+            /* margin-bottom: 0.5rem; kan jag göra detta? */
 }
 
 .project-title::before { /* Gradient-border som följer border-radius */
