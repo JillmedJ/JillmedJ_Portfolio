@@ -5,39 +5,41 @@ Pastel Bubble Gradient Mix (2C-3)
 
 /* Modifierare: card-variant för testimonials */
 .card--bubble {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-   /* padding: var(--space-sm); */
+  /* padding: var(--space-sm); */
 
-   background: linear-gradient(to bottom,
-         var(--pink-100) 0%,
-         var(--pink-300) 12%,
-         var(--pink-400) 20%,
-         var(--yellow-400) 60%,
-         var(--yellow-300) 80%,
-         var(--yellow-200) 90%,
-         var(--yellow-100) 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--pink-100) 0%,
+    var(--pink-300) 12%,
+    var(--pink-400) 20%,
+    var(--yellow-400) 60%,
+    var(--yellow-300) 80%,
+    var(--yellow-200) 90%,
+    var(--yellow-100) 100%
+  );
 
-   border-radius: 70px 10px 200px 10px;
+  border-radius: 70px 10px 200px 10px;
 }
 
 .card--bubble .testimonial-meta {
-   margin-top: auto;
+  margin-top: auto;
 }
 
 .testimonial-card {
-   /* padding: var(--space-xs) var(--space-lg); */
-   display: block;
-      /* viktigt: slår ut flex från .card */
-   max-width: 950px; /* tror typ inte att denna biter? */
-   margin: 0 auto;
-   /* centrerar */
+  /* padding: var(--space-xs) var(--space-lg); */
+  display: block;
+  /* viktigt: slår ut flex från .card */
+  max-width: 950px; /* tror typ inte att denna biter? */
+  margin: 0 auto;
+  /* centrerar */
 }
 
 /* padding inom testimonial-cardsen = behåll */
 .testimonial-slideshow .testimonial-card {
-   padding: var(--space-sm) var(--space-lg);
+  padding: var(--space-sm) var(--space-lg);
 }
 
 /* =========================================
@@ -47,141 +49,140 @@ AVATAR
 ========================================= */
 
 .testimonial-avatar {
-   width: 64px;
-   height: 64px;
+  width: 64px;
+  height: 64px;
 
-   border-radius: 50%;
-   background: rgba(255, 255, 255, 0.6);
-   /* mjuk bubbla */
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  /* mjuk bubbla */
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   font-weight: 700;
-   font-size: 1.25rem;
-   color: var(--pink-500);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--pink-500);
 
-   margin-bottom: var(--space-sm);
-   margin-top: var(--space-sm);
-   margin-right: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-sm);
+  margin-right: var(--space-lg);
 }
 
 /* Om du senare använder <img> istället för initialer */
 .testimonial-avatar img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* =========================================
 CITAT
 ========================================= */
 .testimonial-quote {
-   font-size: clamp(0.85rem, 1.2vw, 1.2rem);
-   line-height: 1.45;
-   font-weight: 500;
-   color: var(--gray-900);
-   /* max-width: 45ch; */
-   margin-inline: auto;
-   text-indent: 0.75rem;
-   letter-spacing: 0.1px;
-   opacity: 0.98;
-   /* margin-bottom: 0.5rem; */
-   font-family: 'Handlee', sans-serif;
-   text-wrap: balance;
-   hyphens: auto;
-   margin-bottom: var(--space-sm);
+  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
+  line-height: 1.45;
+  font-weight: 500;
+  color: var(--gray-900);
+  /* max-width: 45ch; */
+  margin-inline: auto;
+  text-indent: 0.75rem;
+  letter-spacing: 0.1px;
+  opacity: 0.98;
+  /* margin-bottom: 0.5rem; */
+  font-family: "Handlee", sans-serif;
+  text-wrap: balance;
+  hyphens: auto;
+  margin-bottom: var(--space-sm);
 }
-   
+
 /* =========================================
 META (namn + roll)
 ========================================= */
 
 .testimonial-meta {
-   margin-top: var(--space-md);
-   margin-bottom: var(--space-sm);
-   display: flex;
-   flex-direction: column;
-   gap: 0.15rem;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 /* Bas: alla spans i meta har samma utgångspunkt */
 .testimonial-meta span {
-   font-size: 0.9rem;
-   color: var(--gray-700);
+  font-size: 0.9rem;
+  color: var(--gray-700);
 }
 
 .meta-wrap {
-   max-width: 60ch;
+  max-width: 60ch;
 }
 
 .meta-yh {
-   display: flex;
-   flex-direction: column;
-   gap: 0.25rem; /* liten spacing */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* liten spacing */
 }
 
-   /* Roll 1 största*/
+/* Roll 1 största*/
 .meta-yh .meta-role {
-   color: var(--gray-700);
-   font-size: 1em;
-      /* 100% */
+  color: var(--gray-700);
+  font-size: 1em;
+  /* 100% */
 }
 
 /* Roll 2 – litelite mindre = Nu blir Studeranderepresentant exakt lika stor som Klasskamrat. */
 .meta-role.meta-role-soft {
-   font-size: 0.97em;
-      /* 97% */
-   color: var(--gray-700);
-   /* samma färg som Klasskamrat */
-   font-weight: 400;
-   /* lättare vikt/mjukare */
+  font-size: 0.97em;
+  /* 97% */
+  color: var(--gray-700);
+  /* samma färg som Klasskamrat */
+  font-weight: 400;
+  /* lättare vikt/mjukare */
 
-   opacity: 0.97;
-   /*optiskt, minimalt mjukare, knappt synlig */
+  opacity: 0.97;
+  /*optiskt, minimalt mjukare, knappt synlig */
 }
 
 /* Utbildning – litelite mindre än roll 2 */
 .meta-yh .meta-program {
-   font-size: 0.94em;
-      /* 94% */
-   color: var(--gray-700);
+  font-size: 0.94em;
+  /* 94% */
+  color: var(--gray-700);
 }
 
 /* Skola – litelite mindre än utbildning */
 .meta-yh .meta-school {
-   font-size: 0.92em; /* 92% */
-   color: var(--gray-700);
-   max-width: 45ch;
-   /* styr radbrytning*/
+  font-size: 0.92em; /* 92% */
+  color: var(--gray-700);
+  max-width: 45ch;
+  /* styr radbrytning*/
 }
 
 /* Akronym (.NET) – mjukare men inte mindre */
 .meta-program .meta-acronym {
-   color: var(--gray-600);
-   /* mjukare färg */
-   font-weight: 400;
-   /* normal vikt */
-   letter-spacing: 0.5px;
-   /* gör .NET lite luftigare */
-   opacity: 0.85;
-   font-size: 0.80rem; /* separat typografisk stil */
-   
+  color: var(--gray-600);
+  /* mjukare färg */
+  font-weight: 400;
+  /* normal vikt */
+  letter-spacing: 0.5px;
+  /* gör .NET lite luftigare */
+  opacity: 0.85;
+  font-size: 0.8rem; /* separat typografisk stil */
 }
 
 /* mjuk parentes,
 mindre än roll 2 ex. (kollega)*/
 .meta-role .meta-soft {
-   color: var(--gray-600);
-   /* mjukare ton */
-   font-weight: 400;
-   /* lättare vikt */
-   opacity: 0.9;
-   /* optiskt mjukare */
-   font-size: 0.85em;
-      /* /* 85% av roll 2*/
+  color: var(--gray-600);
+  /* mjukare ton */
+  font-weight: 400;
+  /* lättare vikt */
+  opacity: 0.9;
+  /* optiskt mjukare */
+  font-size: 0.85em;
+  /* /* 85% av roll 2*/
 }
 
 /* =========================================
@@ -190,74 +191,78 @@ mindre än roll 2 ex. (kollega)*/
 
 /* Slideshow wrapper */
 .testimonial-slideshow {
-   position: relative;
-   /* gör att pilarna kan placeras absolut */
-   max-width: 100%;
-   margin: 0 auto;
+  position: relative;
+  /* gör att pilarna kan placeras absolut */
+  max-width: 100%;
+  margin: 0 auto;
 
-   min-height: 320px;
+  min-height: 320px;
 }
 
 /* Varje slide (döljs som standard) */
 .testimonial-slide {
-   display: none;
-   /* JS visar en åt gången */
+  display: none;
+  /* JS visar en åt gången */
 }
 
 /* Aktiv slide */
 .testimonial-slide.active {
-   display: block;
+  display: block;
 }
 
-/* Navigation arrows */
+/* =========================================
+   Pilarna
+========================================= */
 .testimonial-prev,
 .testimonial-next {
-   cursor: pointer;
-   position: absolute; /* gör att pilarna kan placeras fritt */
-   z-index: 5; /* pilarna ligger ovanför kortet */
+  cursor: pointer;
+  position: absolute; /* gör att pilarna kan placeras fritt */
+  z-index: 5; /* pilarna ligger ovanför kortet */
 
-   top: 50%; /* centrerar pilarna vertikalt*/
-   transform: translateY(-50%); /* centrerar pilarna vertikalt*/
+  top: 50%; /* centrerar pilarna vertikalt*/
+  transform: translateY(-50%); /* centrerar pilarna vertikalt*/
 
-   font-size: 1.8rem;
-   font-weight: bold;
-   color: var(--pink-700);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--pink-700);
 
-   padding: 0.75rem; /* ger klickyta*/
-   
-   user-select: none;
+  padding: 0.75rem; /* ger klickyta*/
+
+  user-select: none;
 }
 
 /* Placering */
 .testimonial-prev {
-   left: 1rem; /* inne i kortet */
+  left: 1rem; /* inne i kortet */
 }
 
 .testimonial-next {
-   right: 1rem; /* inne i kortet */
+  right: 1rem; /* inne i kortet */
 }
 
-/* Pagination dots */
-.testimonial-dots {
-   display: flex;
-   justify-content: center;
-   gap: 0.5rem;
-   margin-top: 1.5rem;
+/* =========================================
+   Pagination dots
+========================================= */
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
 }
 
-.testimonial-dot {
-   width: 12px;
-   height: 12px;
-   border-radius: 50%;
-   background: var(--pink-300);
-   opacity: 0.5;
-   cursor: pointer;
-   transition: opacity 0.3s ease;
+.testimonials-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--pink-300);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
-.testimonial-dot.active {
-   opacity: 1;
-   background: var(--pink-600);
+.testimonials-dot.active {
+  opacity: 1;
+  background: var(--pink-600);
 }
 
 /* =========================================
@@ -266,89 +271,88 @@ MEDIA QUERIES – RESPONSIV TYPOGRAFI
 
 /* Mobilanpassning */
 @media (max-width: 480px) {
+  .testimonial-prev,
+  .testimonial-next {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .testimonial-prev {
+    left: 0.25rem;
+  }
+  .testimonial-next {
+    right: 0.25rem;
+  }
 
-   .testimonial-prev,
-   .testimonial-next {
-      font-size: 1.5rem;
-      padding: 0.5rem;
-   }
-   .testimonial-prev {
-      left: 0.25rem;
-   }
-   .testimonial-next {
-      right: 0.25rem;
-   }
+  .testimonial-quote {
+    font-weight: 500;
+    letter-spacing: 0;
+    /* mindre luft → mer tyngd */
+    opacity: 1;
+    /* full styrka */
+    text-indent: 0.5rem;
+    /* lite mindre indent */
+    font-size: 1.1rem;
+    line-height: 1.55;
+    max-width: 45ch;
+  }
 
-   .testimonial-quote {
-      font-weight: 500;
-      letter-spacing: 0;
-      /* mindre luft → mer tyngd */
-      opacity: 1;
-      /* full styrka */
-      text-indent: 0.5rem;
-      /* lite mindre indent */
-      font-size: 1.1rem;
-      line-height: 1.55;
-      max-width: 45ch;
-   }
-
-   .testimonial-meta span {
-      font-size: 0.85rem;
-      /* lite mindre → citatet får fokus */
-      opacity: 0.9;
-      /* optiskt mjukare */
-      color: var(--gray-600);
-      align-self: flex-start;
-      font-weight: lighter;
-   }
-   .testimonial-avatar {
-      width: 56px;
-      height: 56px;
-      font-size: 1.1rem;
-      align-self: flex-start;
-   }
+  .testimonial-meta span {
+    font-size: 0.85rem;
+    /* lite mindre → citatet får fokus */
+    opacity: 0.9;
+    /* optiskt mjukare */
+    color: var(--gray-600);
+    align-self: flex-start;
+    font-weight: lighter;
+  }
+  .testimonial-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 1.1rem;
+    align-self: flex-start;
+  }
 }
 
 /* Tablet */
 @media (min-width: 600px) {
-   .testimonial-avatar {
-      font-size: 1.4rem;
-      width: 72px;
-      height: 72px;
-   }
+  .testimonial-avatar {
+    font-size: 1.4rem;
+    width: 72px;
+    height: 72px;
+  }
 
-   .testimonial-quote {
-      font-size: 1.5rem;
-      line-height: 1.7;
-      max-width: 60ch;
-   }
+  .testimonial-quote {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 60ch;
+  }
 
-   .testimonial-meta span {
-      font-size: 1rem;
-   }
+  .testimonial-meta span {
+    font-size: 1rem;
+  }
 }
 
 /* Desktop */
 @media (min-width: 900px) {
-   .testimonial-avatar {
-      font-size: 1.6rem;
-      width: 80px;
-      height: 80px;
-   }
+  .testimonial-avatar {
+    font-size: 1.6rem;
+    width: 80px;
+    height: 80px;
+  }
 
-   .testimonial-quote {
-      font-size: 1.8rem;
-      line-height: 1.75;
-   }
+  .testimonial-quote {
+    font-size: 1.8rem;
+    line-height: 1.75;
+  }
 
-   .testimonial-meta span {
-      font-size: 1.05rem;
-   }
+  .testimonial-meta span {
+    font-size: 1.05rem;
+  }
 
-   .testimonial-quote,
-   .meta-wrap,
-   .meta-school {
-      max-width: 70ch;
-      /* bredare text → färre rader → lägre kort */
-   }
+  .testimonial-quote,
+  .meta-wrap,
+  .meta-school {
+    max-width: 70ch;
+    /* bredare text → färre rader → lägre kort */
+  }
 }

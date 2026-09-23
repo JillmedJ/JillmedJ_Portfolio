@@ -4,36 +4,35 @@
    – Text, tagline, container
 ========================================= */
 .project-card.flow-whole {
-      gap: var(--space-sm);
-      /* mindre avstånd mellan element */
+  gap: var(--space-sm);
+  /* mindre avstånd mellan element */
 }
 
 #projects .section-tagline {
-      font-size: 1.5rem;
-      max-width: 55ch; /* ch är en typografisk enhet som alltså ger 1ch per teckenbredd.*/
-      margin: 0 auto var(--space-sm);
-      text-align: center;
+  font-size: 1.5rem;
+  max-width: 55ch; /* ch är en typografisk enhet som alltså ger 1ch per teckenbredd.*/
+  margin: 0 auto var(--space-sm);
+  text-align: center;
+}
+
+.project-slide {
+  display: none;
+}
+
+.project-slide.active {
+  display: block;
 }
 
 .project-card img {
-      max-height: 180px;
-      object-fit: contain;
-      margin-inline: auto;
+  max-height: 180px;
+  object-fit: contain;
+  margin-inline: auto;
 }
 
 /* För att pilarna inte ska hamna över footern */
 #projects {
-      position: relative;
+  position: relative;
 }
-/* =========================================
-   GRID
-   – Baslayout för cardsen
-   – 1 kolumn på mobil
-========================================= */
-/* #projects .grid-auto {
-      display: grid;
-      grid-template-columns: 1fr;
-} */
 
 /* =========================================
    CARD
@@ -41,17 +40,19 @@
    – Bakgrund, padding, rundning
 ========================================= */
 .card--project {
-      background: linear-gradient(to bottom,
-                  var(--pink-100) 0%,
-                  var(--pink-300) 12%,
-                  var(--pink-400) 20%,
-                  var(--yellow-400) 60%,
-                  var(--yellow-300) 80%,
-                  var(--yellow-200) 90%,
-                  var(--yellow-100) 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--pink-100) 0%,
+    var(--pink-300) 12%,
+    var(--pink-400) 20%,
+    var(--yellow-400) 60%,
+    var(--yellow-300) 80%,
+    var(--yellow-200) 90%,
+    var(--yellow-100) 100%
+  );
 
-      padding: 1rem;
-            /* mindre padding än default */
+  padding: 1rem;
+  /* mindre padding än default */
 }
 
 /* =========================================
@@ -62,37 +63,42 @@
 ========================================= */
 
 .project-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-      padding: 0.6rem 1rem;
-      text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  text-align: center;
 
-      background-color: var(--pink-400); /* Bakgrundsfärg */
-      overflow: hidden; /* Viktigt: klipper innehållet så att hörnen blir runda */
+  background-color: var(--pink-400); /* Bakgrundsfärg */
+  overflow: hidden; /* Viktigt: klipper innehållet så att hörnen blir runda */
 
-      border-radius: var(--border-radius-md); /* Token-driven border-radius (samma som CTA, cards, bilder) */
+  border-radius: var(
+    --border-radius-md
+  ); /* Token-driven border-radius (samma som CTA, cards, bilder) */
 
-      position: relative; /* krävs för pseudo-elementet */
-      z-index: 1;
+  position: relative; /* krävs för pseudo-elementet */
+  z-index: 1;
 
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            /* mjuk skugga */
-            /* margin-bottom: 0.5rem; kan jag göra detta? */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* mjuk skugga */
+  /* margin-bottom: 0.5rem; kan jag göra detta? */
 }
 
-.project-title::before { /* Gradient-border som följer border-radius */
-      content: "";
-      position: absolute;
-      inset: 0; /* täcker hela ytan */
-      padding: 4px; /* border-bredd */
-      border-radius: inherit; /* ärver exakt samma rundning som titeln */
-      background: var(--border-gradient-soft); /* min gradient-token från border.css*/
-      -webkit-mask: /* Mask-trick som skapar en "hålighet" i mitten = riktig border */
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude; 
-      z-index: -1; /* lägger border bakom innehållet */
+.project-title::before {
+  /* Gradient-border som följer border-radius */
+  content: "";
+  position: absolute;
+  inset: 0; /* täcker hela ytan */
+  padding: 4px; /* border-bredd */
+  border-radius: inherit; /* ärver exakt samma rundning som titeln */
+  background: var(
+    --border-gradient-soft
+  ); /* min gradient-token från border.css*/
+  -webkit-mask: /* Mask-trick som skapar en "hålighet" i mitten = riktig border */
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1; /* lägger border bakom innehållet */
 }
 
 /* =========================================
@@ -100,7 +106,32 @@
    – margin-top: auto fungerar tack vare flow-whole (flex-col)
 ========================================= */
 .card--project .cta {
-      margin-top: auto;
+  margin-top: auto;
+}
+
+/* =========================================
+PROJECTS SLIDESHOW
+========================================= */
+
+/* Slideshow wrapper */
+.projects-slideshow {
+  position: relative;
+  /* gör att pilarna kan placeras absolut */
+  max-width: 100%;
+  margin: 0 auto;
+
+  min-height: 320px;
+}
+
+/* Varje slide (döljs som standard) */
+.project-slide {
+  display: none;
+  /* JS visar en åt gången */
+}
+
+/* Aktiv slide */
+.project-slide.active {
+  display: block;
 }
 
 /* =========================================
@@ -108,32 +139,56 @@
 ========================================= */
 .project-prev,
 .project-next {
-      display: none;
-      /* göm som standard (desktop) */
+  cursor: pointer;
+  position: absolute; /* gör att pilarna kan placeras fritt */
+  z-index: 5; /* pilarna ligger ovanför kortet */
+
+  top: 50%; /* centrerar pilarna vertikalt*/
+  transform: translateY(-50%); /* centrerar pilarna vertikalt*/
+
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--pink-700);
+
+  padding: 0.75rem; /* ger klickyta*/
+
+  user-select: none;
 }
+
+/* Placering */
+.project-prev {
+  left: 1rem; /* inne i kortet */
+}
+
+.project-next {
+  right: 1rem; /* inne i kortet */
+}
+
 /* =========================================
-   Dots
+   Pagination dots
 ========================================= */
 .projects-dots {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .project-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--pink-300);
-      opacity: 0.5;
-      cursor: pointer;
-      transition: opacity 0.3s ease, background 0.3s ease;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--pink-300);
+  opacity: 0.5;
+  cursor: pointer;
+  transition:
+    opacity 0.3s ease,
+    background 0.3s ease;
 }
 
 .project-dot.active {
-      opacity: 1;
-      background: var(--pink-600);
+  opacity: 1;
+  background: var(--pink-600);
 }
 /* =========================================
    MEDIA QUERIES
@@ -142,89 +197,65 @@
 ========================================= */
 /* MOBIL */
 @media (max-width: 480px) {
-      .footer-signature {
-            display: none;
-      }
+  .footer-signature {
+    display: none;
+  }
 
-      .section-footer-row {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-items: center;
-            gap: var(--space-md);
-      }
-
+  .section-footer-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    gap: var(--space-md);
+  }
 }
+
 @media (max-width: 600px) {
-      .projects-grid {
-            display: block;
-            /* stänger av grid */
-      }
+  /* Slideshow-pilar */
+  .project-prev,
+  .project-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--pink-700);
+    padding: 0.5rem;
+    cursor: pointer;
 
-      .project-card {
-            display: none;
-            /* döljs som standard */
-      }
+    /* Bubble-känsla */
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
 
-      .project-card.active {
-            display: block;
-            /* visas av JS */
-      }
-      /* Slideshow-pilar */
-      .project-prev,
-      .project-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--pink-700);
-            padding: 0.5rem;
-            cursor: pointer;
+    /* Klickyta */
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-            /* Bubble-känsla */
-            background: rgba(255, 255, 255, 0.45);
-            border-radius: 50%;
-            backdrop-filter: blur(4px);
+    z-index: 10;
+    /* ovanför kortet */
+  }
 
-            /* Klickyta */
-            width: 2.2rem;
-            height: 2.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+  /* Placering */
+  .project-prev {
+    left: 0.5rem;
+    /* lite inåt */
+  }
 
-            z-index: 10;
-            /* ovanför kortet */
-      }
-      
-      /* Placering */
-      .project-prev {
-            left: 0.5rem;
-            /* lite inåt */
-      }
-
-      .project-next {
-            right: 0.5rem;
-            /* lite inåt */
-      }
-}
-
-/* TABLET */
-@media (min-width: 600px) {
-      .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-      }
+  .project-next {
+    right: 0.5rem;
+    /* lite inåt */
+  }
 }
 
 /* DESKTOP */
-@media (min-width: 900px) {
-      .projects-grid {
-            grid-template-columns: repeat(3, 1fr);
-      }
-      .project-card {
-                  max-height: 480px;
-                  overflow: hidden;   }
-}
+/* @media (min-width: 900px) {
+
+  .project-card {
+    max-height: 480px;
+    overflow: hidden;
+  }
+} */

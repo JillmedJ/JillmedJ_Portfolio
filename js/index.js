@@ -25,6 +25,7 @@ document.getElementById("text-box-submit").onclick = function(){
                 <button id="text-box-submit">Submit</button>
                 <p id="output"> </p> */}
 
+
 // ===============================
 // TESTIMONIALS SLIDESHOW
 // ===============================
@@ -45,34 +46,24 @@ function showTestimonialSlide(n) {
 function nextTestimonial() {
     testimonialIndex = (testimonialIndex + 1) % testimonialSlides.length;
     showTestimonialSlide(testimonialIndex);
+    updateTestimonialDots();
 }
 
 // Funktion: föregående slide
 function prevTestimonial() {
     testimonialIndex = (testimonialIndex - 1 + testimonialSlides.length) % testimonialSlides.length;
     showTestimonialSlide(testimonialIndex);
-}
-
-// Auto‑rotation (var 6:e sekund)
-setInterval(nextTestimonial, 6000);
-
-// Navigation‑knappar
-const nextBtn = document.querySelector(".testimonial-next");
-const prevBtn = document.querySelector(".testimonial-prev");
-
-if (nextBtn && prevBtn) {
-    nextBtn.addEventListener("click", nextTestimonial);
-    prevBtn.addEventListener("click", prevTestimonial);
+    updateTestimonialDots();
 }
 
 // Visa första slide direkt
 showTestimonialSlide(testimonialIndex);
 
 // ===============================
-// Testimonials - Pagination dots
+// TESTIMONIALS - Pagination dots
 // ===============================
 
-const dotsContainer = document.querySelector(".testimonial-dots");
+const testimonialDotsContainer = document.querySelector(".testimonial-dots");
 
 // Skapa en dot för varje slide
 testimonialSlides.forEach((_, index) => {
@@ -81,53 +72,72 @@ testimonialSlides.forEach((_, index) => {
     dot.addEventListener("click", () => {
         testimonialIndex = index;
         showTestimonialSlide(testimonialIndex);
-        updateDots();
+        updateTestimonialDots();
     });
-    dotsContainer.appendChild(dot);
+    testimonialDotsContainer.appendChild(dot);
 });
 
 // Uppdatera dots när slide ändras
-function updateDots() {
+function updateTestimonialDots() {
     const dots = document.querySelectorAll(".testimonial-dot");
     dots.forEach(dot => dot.classList.remove("active"));
     dots[testimonialIndex].classList.add("active");
 }
 
 // Kör en gång vid start
-updateDots();
-
+updateTestimonialDots();
 
 // ===============================
 // Testimonials - Swipe på mobil
 // ===============================
 
-let startX = 0;
+let testimonialStartX = 0;
 
 document.querySelector(".testimonial-slideshow").addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
+    testimonialStartX = e.touches[0].clientX;
 });
 
 document.querySelector(".testimonial-slideshow").addEventListener("touchend", (e) => {
     const endX = e.changedTouches[0].clientX;
 
-    if (startX - endX > 50) {
+    if (testimonialStartX - endX > 50) {
         nextTestimonial(); // swipe vänster → nästa
-    } else if (endX - startX > 50) {
+    } else if (endX - testimonialStartX > 50) {
         prevTestimonial(); // swipe höger → föregående
     }
 });
 
-let autoSlide = setInterval(nextTestimonial, 6000);
 
-const slideshow = document.querySelector(".testimonial-slideshow");
+// ===============================
+// TESTIMONIALS — Auto‑rotation (var 6:e sekund)
+// ===============================
 
-slideshow.addEventListener("mouseenter", () => {
-    clearInterval(autoSlide);
+let testimonialAutoSlide = setInterval(nextTestimonial, 6000);
+
+// ===============================
+// TESTIMONIALS — Hover pause
+// ===============================
+
+const testimonialSlideshow = document.querySelector(".testimonial-slideshow");
+
+testimonialSlideshow.addEventListener("mouseenter", () => {
+    clearInterval(testimonialAutoSlide);
 });
 
-slideshow.addEventListener("mouseleave", () => {
-    autoSlide = setInterval(nextTestimonial, 6000);
+testimonialSlideshow.addEventListener("mouseleave", () => {
+    testimonialAutoSlide = setInterval(nextTestimonial, 6000);
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -137,23 +147,50 @@ slideshow.addEventListener("mouseleave", () => {
 // ===============================
 // PROJECTS SLIDESHOW
 // ===============================
+
+// Hämta alla slides
+const projectsSlides = document.querySelectorAll(".project-slide");
+
+// Index för aktuell slide
 let projectIndex = 0;
+
+// Funktion: visa en specifik slide
+function showProjectSlide(n) {
+    projectsSlides.forEach(slide => slide.classList.remove("active"));
+    projectsSlides[n].classList.add("active");
+}
+
+// Funktion: nästa slide
+function nextProject() {
+    projectIndex = (projectIndex + 1) % projectsSlides.length;
+    showProjectSlide(projectIndex);
+    updateProjectDots();
+}
+
+// Funktion: föregående slide
+function prevProject() {
+    projectIndex = (projectIndex - 1 + projectsSlides.length) % projectsSlides.length;
+    showProjectSlide(projectIndex);
+    updateProjectDots();
+}
+
+// Visa första slide direkt
+showProjectSlide(projectIndex);
 
 // ===============================
 // PROJECTS — Pagination dots
 // ===============================
 
-const projectDotsContainer = document.querySelector(".projects-dots");
-const projectCards = document.querySelectorAll(".project-card");
+const projectDotsContainer = document.querySelector(".project-dots");
 
-// Skapa en dot för varje project-card
-projectCards.forEach((_, index) => {
+// Skapa en dot för varje slide
+projectsSlides.forEach((_, index) => {
     const dot = document.createElement("div");
     dot.classList.add("project-dot");
 
     dot.addEventListener("click", () => {
         projectIndex = index;
-        showProject(projectIndex);
+        showProjectSlide(projectIndex);
         updateProjectDots();
     });
 
@@ -167,35 +204,8 @@ function updateProjectDots() {
     dots[projectIndex].classList.add("active");
 }
 
-// ===============================
-// PROJECTS — Visa första slide EFTER dots finns
-// ===============================
 // Kör en gång vid start
 updateProjectDots();
-showProject(projectIndex);
-
-// ===============================
-// PROJECTS — Slideshow-funktioner
-// ===============================
-
-function nextProject(n) {
-   showProject(projectIndex += n);
-   updateProjectDots();
-}
-
-function showProject(n) {
-   let cards = document.querySelectorAll(".project-card");
-   if (n >= cards.length) projectIndex = 0;
-   if (n < 0) projectIndex = cards.length - 1;
-
-   cards.forEach(card => card.classList.remove("active"));
-   cards[projectIndex].classList.add("active");
-
-}
-
-
-
-
 
 // ===============================
 // PROJECTS — Swipe på mobil
@@ -203,33 +213,36 @@ function showProject(n) {
 
 let projectStartX = 0;
 
-document.querySelector(".projects-grid").addEventListener("touchstart", (e) => {
+document.querySelector(".projects-slideshow").addEventListener("touchstart", (e) => {
     projectStartX = e.touches[0].clientX;
 });
 
-document.querySelector(".projects-grid").addEventListener("touchend", (e) => {
+document.querySelector(".projects-slideshow").addEventListener("touchend", (e) => {
     const endX = e.changedTouches[0].clientX;
 
     if (projectStartX - endX > 50) {
-        nextProject(1); // swipe vänster → nästa
+        nextProject(); // swipe vänster → nästa
     } else if (endX - projectStartX > 50) {
-        nextProject(-1); // swipe höger → föregående
+        prevProject(); // swipe höger → föregående
     }
 });
 
 // ===============================
-// PROJECTS — Hover pause (om du lägger till auto-rotation senare)
+// PROJECTS — Auto-rotation (var 6:e sekund)
 // ===============================
 
-const projectsSlideshow = document.querySelector(".projects-grid");
+let projectAutoSlide = setInterval(nextProject, 6000);
+
+// ===============================
+// PROJECTS — Hover pause
+// ===============================
+
+const projectsSlideshow = document.querySelector(".projects-slideshow");
 
 projectsSlideshow.addEventListener("mouseenter", () => {
     clearInterval(projectAutoSlide);
 });
 
 projectsSlideshow.addEventListener("mouseleave", () => {
-    projectAutoSlide = setInterval(() => nextProject(1), 6000);
+    projectAutoSlide = setInterval(nextProject, 6000);
 });
-
-let projectAutoSlide = setInterval(() => nextProject(1), 6000);
-
