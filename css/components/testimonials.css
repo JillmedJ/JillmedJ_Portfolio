@@ -243,14 +243,14 @@ mindre än roll 2 ex. (kollega)*/
 /* =========================================
    Pagination dots
 ========================================= */
-.testimonials-dots {
+.testimonial-dots {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1.5rem;
 }
 
-.testimonials-dot {
+.testimonial-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -260,7 +260,7 @@ mindre än roll 2 ex. (kollega)*/
   transition: opacity 0.3s ease;
 }
 
-.testimonials-dot.active {
+.testimonial-dot.active {
   opacity: 1;
   background: var(--pink-600);
 }

@@ -121,6 +121,8 @@ PROJECTS SLIDESHOW
   margin: 0 auto;
 
   min-height: 320px;
+
+  padding-inline: 2.5rem; /* ger luft åt pilarna */
 }
 
 /* Varje slide (döljs som standard) */
@@ -157,17 +159,17 @@ PROJECTS SLIDESHOW
 
 /* Placering */
 .project-prev {
-  left: 1rem; /* inne i kortet */
+  left: -1.5rem; /* inne i kortet */
 }
 
 .project-next {
-  right: 1rem; /* inne i kortet */
+  right: -1.5rem; /* inne i kortet */
 }
 
 /* =========================================
    Pagination dots
 ========================================= */
-.projects-dots {
+.project-dots {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
