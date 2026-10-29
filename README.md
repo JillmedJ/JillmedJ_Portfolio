@@ -2,6 +2,10 @@
 
 [Se portfolion live](https://jillmedj.github.io/JillmedJ_Portfolio/)
 
+<!-- Skärmbild av portfolions startsida (hero-sektionen) -->
+<!-- ! = bild, [ ] = alt-text för skärmläsare, ( ) = relativ sökväg från README.md -->
+![Skärmbild av portfolions startsida med menyn, diamantloggan med ett J och rubriken "Jill med J - Systemutvecklare to be" på rosa bakgrund](visuals/meta/portfolio_big_hero_upper.png)
+
 Jag byggde portfolion under utbildningen Systemutvecklare .NET, som en inlämningsuppgift i kursen Dynamiska webbapplikationer. Uppgiften gav mig också något mer: ett naturligt forum för Jill med J som konstnär. Det tyckte jag var väldigt roligt och spännande.
 
 ## Innehåll
@@ -72,6 +76,10 @@ Jag vill vidareutveckla:
 # Jill with a J – My portfolio
 
 [See the portfolio live](https://jillmedj.github.io/JillmedJ_Portfolio/)
+
+<!-- Screenshot of the portfolio's start page (the hero section) -->
+<!-- ! = image, [ ] = alt text for screen readers, ( ) = relative path from README.md -->
+![Screenshot of the portfolio's start page with the menu, the diamond logo with a J and the heading "Jill med J - Systemutvecklare to be" on a pink background](visuals/meta/portfolio_big_hero_upper.png)
 
 I built this portfolio during my studies in System Development .NET, as an assignment in the course Dynamic Web Applications. The assignment also gave me something more: a natural forum for Jill with a J as an artist. I found that really fun and exciting.
 
