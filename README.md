@@ -1,127 +1,128 @@
-Jill med J – Min portfolio
-Senast uppdaterad: 1 juni 2026
+# Jill med J – Min portfolio
 
-Välkommen hit.
-Det här är min digitala verkstad och mitt pågående bygge.
-Jag är Jill med J, och den här portfolion är både ett projekt och en resa — en resa i HTML, CSS, JavaScript och allt det där som får webben att leva.
+[Se portfolion live](https://jillmedj.github.io/JillmedJ_Portfolio/)
 
-🌱 Status
-Sidan är under utveckling, men uppfyller samtliga krav för G‑nivå i kursen Webbutveckling Frontend.
+Jag byggde portfolion under utbildningen Systemutvecklare .NET, som en inlämningsuppgift i kursen Dynamiska webbapplikationer. Uppgiften gav mig också något mer: ett naturligt forum för Jill med J som konstnär. Det tyckte jag var väldigt roligt och spännande.
 
-✨ Funktioner och sektioner
-Portfolion innehåller:
+## Innehåll
+- Navbar med min egen logga och mitt nedladdningsbara CV
+- CTA:er som leder vidare på sidan
+- Hero
+- About Me
+- My Projects: ett bildspel med mina projekt
+- Vad andra säger: ett bildspel med testimonials
+- Kontaktformulär med HTML5-validering, kopplat till min mejl via Formspree
+- Footer med länkar
 
-Porträttbild
+## Teknik och principer
+- **HTML5** med semantiska taggar (`header`, `nav`, `main`, `section`, `article`, `footer`)
+- **CSS3**, komponentbaserad och byggd på **tokens** för färger, spacing, typografi, borders och lager
+- **Mobile first** och responsiv design med Flexbox och CSS Grid
+- **JavaScript** för bildspelet med testimonials: pilar, pagineringsprickar, swipe på mobil, automatisk växling och paus vid hover
+- **Tillgänglighet:** alt-texter, aria-attribut och semantisk struktur
+- **Git och GitHub** för versionshantering, publicerad med GitHub Pages
 
-Navbar
+## Så har jag testat
+Jag har testat manuellt:
+- navigation och länkar
+- kontaktformuläret (HTML5-validering, obligatoriska fält och e-postformat)
+- responsivitet på mobil och desktop
+- nedladdning av CV
+- att inga fel syns i konsolen
 
-Hero‑sektion
+## Så kör du projektet
+Projektet är byggt i ren HTML, CSS och JavaScript. Ingen installation krävs.
+1. Klona eller ladda ned projektet.
+2. Öppna projektmappen.
+3. Öppna `index.html` i valfri webbläsare.
 
-About me
-
-Skills / kunskaper
-
-Portfolio / Projects (placeholder just nu)
-
-Testimonials (placeholder just nu)
-
-Kontaktformulär med HTML5‑validering
-
-Footer
-
-Länk för att ladda ner mitt CV
-
-Länkar till GitHub, LinkedIn, Instagram och Facebook
-
-🧰 Tekniker och principer
-Jag använder:
-
-HTML5 – semantisk struktur
-
-CSS3 – layout, typografi, tokens, komponenter
-
-Flexbox och CSS Grid – för layout och responsivitet
-
-Mobile‑first – designen byggs från små skärmar och uppåt
-
-JavaScript – planerat för interaktivitet
-
-Git & GitHub – versionshantering
-
-🧪 Testning
-Jag har manuellt testat:
-
-navigation och länkar
-
-kontaktformuläret (HTML5‑validering, required‑fält, e‑postformat)
-
-responsivitet på mobil och desktop
-
-CV‑nedladdning
-
-att inga konsol‑fel uppstår
-
-Det är inte möjligt att skicka felaktiga uppgifter i formuläret tack vare HTML5‑validering.
-
-▶️ Hur du kör projektet
-Projektet är byggt i ren HTML, CSS och JavaScript.
-
-Klona eller ladda ned projektet
-
-Öppna projektmappen
-
-Öppna index.html i valfri webbläsare
-
-Ingen installation krävs.
-
-📁 Projektstruktur
-Kod
-/css
-/js
-/visuals
-/cv
+## Projektstruktur
+```text
+/css             styles.css samlar allt: tokens, globala stilar och komponenter
+/cv              mitt CV som PDF
+/documentation   förklaringar av CSS-arkitekturen
+/js              index.js med bildspel och formulär
+/projects
+/visuals         ikoner, bilder och logga
 index.html
 README.md
-📚 Lärande och prioriteringar
+```
+
+## Det här arbetar jag med
 Jag arbetar aktivt med att:
+- skriva semantisk och lättläst kod
+- använda tokens för färger, spacing och borders
+- bygga återanvändbara komponenter
+- förstå varför saker fungerar, inte bara hur
 
-skriva semantisk och lättläst kod
+## Nästa steg
+Jag vill vidareutveckla:
+- projektdelen: byta ut platshållarna mot pågående och färdiga projekt
+- tillgängligheten, till exempel att bildspelen går att pausa och stoppa (WCAG 2.2.2)
+- responsiviteten
+- spacingen
+- laddningstiden
+- My Skills
+- en engelsk version av sidan
+- en toggle för att byta färgtema
 
-använda tokens för färger, spacing och borders
+<details>
+<summary>🇬🇧 In English</summary>
 
-bygga återanvändbara komponenter
+# Jill with a J – My portfolio
 
-förstå varför saker fungerar, inte bara hur
+[See the portfolio live](https://jillmedj.github.io/JillmedJ_Portfolio/)
 
-📌 Att göra
-fylla hero‑sektionen med verkligt innehåll
+I built this portfolio during my studies in System Development .NET, as an assignment in the course Dynamic Web Applications. The assignment also gave me something more: a natural forum for Jill with a J as an artist. I found that really fun and exciting.
 
-lägga in riktiga projekt
+## Contents
+- Navbar with my own logo and my downloadable CV
+- CTAs that lead further into the page
+- Hero
+- About Me
+- My Projects: a slideshow of my projects
+- What others say: a slideshow of testimonials
+- Contact form with HTML5 validation, connected to my email through Formspree
+- Footer with links
 
-lägga in riktiga testimonials
+## Tech and principles
+- **HTML5** with semantic tags (`header`, `nav`, `main`, `section`, `article`, `footer`)
+- **CSS3**, component-based and built on **tokens** for colors, spacing, typography, borders and layers
+- **Mobile first** and responsive design with Flexbox and CSS Grid
+- **JavaScript** for the testimonial slideshow: arrows, pagination dots, swipe on mobile, auto-rotation and pause on hover
+- **Accessibility:** alt texts, aria attributes and semantic structure
+- **Git and GitHub** for version control, published with GitHub Pages
 
-fortsätta förbättra responsiviteten
+## How I have tested
+I have tested manually:
+- navigation and links
+- the contact form (HTML5 validation, required fields and email format)
+- responsiveness on mobile and desktop
+- CV download
+- that no errors show in the console
 
-🗺️ Roadmap
-Fas 1 – Grundstruktur  
-✔ Filstruktur
-✔ Navbar
-✔ Sektioner
-✔ Första README
+## How to run the project
+The project is built in plain HTML, CSS and JavaScript. No installation needed.
+1. Clone or download the project.
+2. Open the project folder.
+3. Open `index.html` in any browser.
 
-Fas 2 – Layout och design  
-✔ Grundläggande CSS
-✔ Responsiv design
-⬜ Finputsning av projects
+## What I'm working on
+I'm actively working on:
+- writing semantic and readable code
+- using tokens for colors, spacing and borders
+- building reusable components
+- understanding why things work, not just how
 
-Fas 3 – Interaktivitet  
-⬜ JavaScript för mikroeffekter
-⬜ Smooth scroll
+## Next steps
+I want to develop:
+- the projects section: replacing placeholders with ongoing and finished projects
+- accessibility, for example making the slideshows possible to pause and stop (WCAG 2.2.2)
+- responsiveness
+- spacing
+- loading time
+- My Skills
+- an English version of the site
+- a toggle for switching color theme
 
-Fas 4 – Presentation  
-⬜ Lägga in riktiga projekt
-⬜ Slutlig genomgång
-
-✨ Avslutande ord
-Det här är början.
-Jag bygger inte bara en portfolio — jag bygger min kompetens, mitt uttryck och min framtid.
+</details>
